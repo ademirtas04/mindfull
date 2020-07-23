@@ -10,8 +10,8 @@ import Foundation
 
 class JourneyStop {
     
-    private let title: String = ""
-    private let description: String = ""
+    private var title: String = ""
+    private var description: String = ""
     private var completed: Bool = false
 
     init (title :String, description :String){
