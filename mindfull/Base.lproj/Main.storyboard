@@ -70,7 +70,13 @@
                     <view key="view" contentMode="scaleToFill" id="qdl-gV-0at">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree5" translatesAutoresizingMaskIntoConstraints="NO" id="maC-L3-C2J">
+                                <rect key="frame" x="-11" y="83" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63302570581436157" green="0.55723774433135986" blue="0.51729428768157959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DKw-8W-AkA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-garden-50" id="qiY-zl-M6K"/>
@@ -78,12 +84,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFV-8n-ejI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="1260"/>
+            <point key="canvasLocation" x="1040.8" y="1259.8200899550227"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons8-garden-50" width="29" height="29"/>
         <image name="icons8-home-50" width="29" height="29"/>
         <image name="icons8-path-50" width="29" height="29"/>
+        <image name="tree5" width="192" height="262"/>
     </resources>
 </document>

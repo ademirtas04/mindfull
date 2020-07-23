@@ -3,7 +3,7 @@
 //  mindfull
 //
 //  Created by Alp Demirtas on 7/23/20.
-//  Copyright © 2020 Alp Demirtas. All rights reserved.
+//  Copyright © 2020 Alp Demirtas.    All rights reserved.
 //
 
 import UIKit
