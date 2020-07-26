@@ -16,6 +16,7 @@
 		0244600724C9E79E00B61AA5 /* mindfullUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244600624C9E79E00B61AA5 /* mindfullUITests.swift */; };
 		0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601424CA088100B61AA5 /* JourneyStop.swift */; };
 		0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601624CA0C5200B61AA5 /* JourneyController.swift */; };
+		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0244600824C9E79E00B61AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0244601424CA088100B61AA5 /* JourneyStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStop.swift; sourceTree = "<group>"; };
 		0244601624CA0C5200B61AA5 /* JourneyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyController.swift; sourceTree = "<group>"; };
+		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				0244601424CA088100B61AA5 /* JourneyStop.swift */,
 				02445FE824C9E79900B61AA5 /* ViewController.swift */,
 				0244601624CA0C5200B61AA5 /* JourneyController.swift */,
+				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
 				02445FED24C9E79D00B61AA5 /* Assets.xcassets */,
 				02445FEF24C9E79D00B61AA5 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
+				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

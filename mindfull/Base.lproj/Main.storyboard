@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zZ9-FC-reX">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -35,8 +35,33 @@
             <objects>
                 <viewController id="Bn4-oq-gQe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-dw-6z9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="2qW-1P-CuG">
+                                <rect key="frame" x="172.66666666666666" y="33" width="30" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="ZL6-71-sDa"/>
+                                    <constraint firstAttribute="width" constant="30" id="oHd-Il-nhQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po1-Hf-Bqz">
+                                <rect key="frame" x="207.66666666666666" y="33" width="43.333333333333343" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="po1-Hf-Bqz" firstAttribute="top" secondItem="Pj9-dw-6z9" secondAttribute="top" constant="33" id="0ND-pj-suH"/>
+                            <constraint firstItem="po1-Hf-Bqz" firstAttribute="leading" secondItem="2qW-1P-CuG" secondAttribute="trailing" constant="5" id="A4S-P1-PZO"/>
+                            <constraint firstItem="2qW-1P-CuG" firstAttribute="centerX" secondItem="Pj9-dw-6z9" secondAttribute="centerX" id="IWz-34-1HE"/>
+                            <constraint firstItem="po1-Hf-Bqz" firstAttribute="leading" secondItem="2qW-1P-CuG" secondAttribute="trailing" constant="5" id="U6Y-yG-5gE"/>
+                            <constraint firstItem="2qW-1P-CuG" firstAttribute="centerX" secondItem="Pj9-dw-6z9" secondAttribute="centerX" id="Uw1-Dz-hvN"/>
+                            <constraint firstItem="x1D-aX-cP5" firstAttribute="trailing" secondItem="po1-Hf-Bqz" secondAttribute="trailing" constant="124" id="kYq-u0-Wzq"/>
+                            <constraint firstItem="2qW-1P-CuG" firstAttribute="top" secondItem="Pj9-dw-6z9" secondAttribute="top" constant="33" id="ymo-i1-CJ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x1D-aX-cP5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-path-50" id="QtK-LH-kbc"/>
@@ -51,9 +76,30 @@
             <objects>
                 <viewController id="fjg-sW-ScX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bow-JQ-qQg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="9VO-za-7C3">
+                                <rect key="frame" x="172.66666666666666" y="33" width="30" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="1Sc-4c-QnD"/>
+                                    <constraint firstAttribute="width" constant="30" id="BI7-T4-IU8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AU-7M-phq">
+                                <rect key="frame" x="207.66666666666666" y="35" width="43.333333333333343" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8AU-7M-phq" firstAttribute="top" secondItem="bow-JQ-qQg" secondAttribute="top" constant="35" id="2ZQ-Lj-Wdd"/>
+                            <constraint firstItem="8AU-7M-phq" firstAttribute="leading" secondItem="9VO-za-7C3" secondAttribute="trailing" constant="5" id="ElZ-N4-rpE"/>
+                            <constraint firstItem="9VO-za-7C3" firstAttribute="top" secondItem="bow-JQ-qQg" secondAttribute="top" constant="33" id="K4S-Vj-V0k"/>
+                            <constraint firstItem="9VO-za-7C3" firstAttribute="centerX" secondItem="bow-JQ-qQg" secondAttribute="centerX" id="kCD-XK-kmm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mvr-Ri-Cib"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-home-50" id="IEA-XX-6mV"/>
@@ -68,11 +114,11 @@
             <objects>
                 <viewController id="vce-aH-bqn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdl-gV-0at">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zCX-bv-ryn">
-                                <rect key="frame" x="7.5" y="43.5" width="360" height="530"/>
+                                <rect key="frame" x="7.6666666666666572" y="116" width="360" height="530"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sL1-LH-4uB">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="106"/>
@@ -176,11 +222,28 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="f7b-m6-djt">
+                                <rect key="frame" x="172.66666666666666" y="33" width="30" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="EH1-xP-cmr"/>
+                                    <constraint firstAttribute="width" constant="30" id="wLr-Kv-PoE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yo-t7-xrT">
+                                <rect key="frame" x="207.66666666666666" y="33" width="43.333333333333343" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.63302570581436157" green="0.55723774433135986" blue="0.51729428768157959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="f7b-m6-djt" firstAttribute="centerX" secondItem="qdl-gV-0at" secondAttribute="centerX" id="180-9Y-tGK"/>
+                            <constraint firstItem="0Yo-t7-xrT" firstAttribute="leading" secondItem="f7b-m6-djt" secondAttribute="trailing" constant="5" id="6fp-Nn-Ky8"/>
+                            <constraint firstItem="f7b-m6-djt" firstAttribute="top" secondItem="qdl-gV-0at" secondAttribute="top" constant="33" id="Twf-NO-6ed"/>
                             <constraint firstItem="zCX-bv-ryn" firstAttribute="centerX" secondItem="qdl-gV-0at" secondAttribute="centerX" id="UtD-tB-nh6"/>
                             <constraint firstItem="zCX-bv-ryn" firstAttribute="centerY" secondItem="qdl-gV-0at" secondAttribute="centerY" constant="-25" id="fnL-GN-cEO"/>
+                            <constraint firstItem="0Yo-t7-xrT" firstAttribute="top" secondItem="qdl-gV-0at" secondAttribute="top" constant="33" id="hDj-fO-mem"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DKw-8W-AkA"/>
                     </view>
@@ -193,6 +256,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="coins" width="50" height="50"/>
         <image name="icons8-garden-50" width="29" height="29"/>
         <image name="icons8-home-50" width="29" height="29"/>
         <image name="icons8-path-50" width="29" height="29"/>

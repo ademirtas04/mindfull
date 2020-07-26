@@ -9,6 +9,7 @@
 import UIKit
 
 class JourneyController: UIViewController {
+    var coins: Int = 0
     let numStops: Int = 15
 
     var journey = [JourneyStop]()
@@ -18,5 +19,9 @@ class JourneyController: UIViewController {
         let firstJourney: JourneyStop = JourneyStop(title: "Write your name", description: "If we're going on this adventure, I might as well know your name.")
         journey.insert(firstJourney, at: 0)
         super.viewDidLoad()
+    }
+    
+    func addCoins(c: Int){
+        coins = coins + c
     }
 }
