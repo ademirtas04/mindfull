@@ -9,7 +9,7 @@
 import UIKit
 
 class GardenController: UIViewController {
-    var coins: Int = 0
+    static var coins: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +27,7 @@ class GardenController: UIViewController {
     }
     */
     
-    func addCoins(c: Int){
+    static func addCoins(c: Int){
         coins = coins + c
     }
 

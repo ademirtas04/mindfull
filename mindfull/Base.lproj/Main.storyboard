@@ -250,6 +250,14 @@
                                     <action selector="stopThreePressed:" destination="Bn4-oq-gQe" eventType="touchUpInside" id="e1w-iR-sdG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtV-p9-n1q">
+                                <rect key="frame" x="348" y="724" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow"/>
+                                <connections>
+                                    <action selector="arrowPressed:" destination="Bn4-oq-gQe" eventType="touchUpInside" id="E46-Jz-pJ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -273,6 +281,21 @@
                         <outlet property="Description" destination="BnD-V7-FNY" id="gpy-Gg-CfW"/>
                         <outlet property="Header" destination="u7G-rW-pog" id="415-tF-qwg"/>
                         <outlet property="Title" destination="u7G-rW-pog" id="T5R-Xk-ofe"/>
+                        <outlet property="stopEight" destination="LsS-hB-JMM" id="PGM-Md-bOD"/>
+                        <outlet property="stopEleven" destination="aya-Ig-KN3" id="rI7-1G-r91"/>
+                        <outlet property="stopFifteen" destination="0Qr-HW-Wnp" id="3vV-BS-v8X"/>
+                        <outlet property="stopFive" destination="eVW-1A-wki" id="pyy-PR-Kmk"/>
+                        <outlet property="stopFour" destination="eUU-Mf-vk8" id="VuU-Ol-MKX"/>
+                        <outlet property="stopFourteen" destination="Uls-VM-LaU" id="kzW-gX-6Rp"/>
+                        <outlet property="stopNine" destination="PZs-6G-9Bv" id="kcl-qx-hIG"/>
+                        <outlet property="stopOne" destination="LAC-rr-DpJ" id="Zps-uj-rv9"/>
+                        <outlet property="stopSeven" destination="Gjf-1F-OPM" id="oeH-nJ-rrF"/>
+                        <outlet property="stopSix" destination="rFF-MV-BVr" id="AOk-RB-wJP"/>
+                        <outlet property="stopTen" destination="qps-Hi-xsI" id="DJe-IM-qn2"/>
+                        <outlet property="stopThirteen" destination="BFa-sK-tnR" id="43L-S9-zmx"/>
+                        <outlet property="stopThree" destination="cXe-oK-xjZ" id="hy5-x6-3kN"/>
+                        <outlet property="stopTwelve" destination="wtv-WB-WK0" id="DTx-ni-13b"/>
+                        <outlet property="stopTwo" destination="yc3-pZ-CCE" id="ejJ-XN-His"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFb-te-ngL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -588,6 +611,7 @@
         <image name="Screen Shot 2020-07-27 at 3.10.50 PM" width="352" height="75"/>
         <image name="Screen Shot 2020-07-27 at 3.18.45 PM" width="351" height="72"/>
         <image name="Screen Shot 2020-07-27 at 3.19.57 PM" width="351" height="74"/>
+        <image name="arrow" width="30" height="30"/>
         <image name="coins" width="50" height="50"/>
         <image name="download" width="550.79998779296875" height="550.79998779296875"/>
         <image name="icons8-garden-50" width="29" height="29"/>

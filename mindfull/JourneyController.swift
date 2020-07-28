@@ -9,7 +9,7 @@
 import UIKit
 
 class JourneyController: UIViewController {
-    var coins: Int = 0
+    static var coins: Int = 0
     var completed: Int = 0
     let numStops: Int = 15
     
@@ -17,6 +17,23 @@ class JourneyController: UIViewController {
 
     @IBOutlet weak var Header: UILabel!
     @IBOutlet weak var Description: UILabel!
+    @IBOutlet weak var stopOne: UIButton!
+    @IBOutlet weak var stopTwo: UIButton!
+    @IBOutlet weak var stopThree: UIButton!
+    @IBOutlet weak var stopFour: UIButton!
+    @IBOutlet weak var stopFive: UIButton!
+    @IBOutlet weak var stopSix: UIButton!
+    @IBOutlet weak var stopSeven: UIButton!
+    @IBOutlet weak var stopEight: UIButton!
+    @IBOutlet weak var stopNine: UIButton!
+    @IBOutlet weak var stopTen: UIButton!
+    @IBOutlet weak var stopEleven: UIButton!
+    @IBOutlet weak var stopTwelve: UIButton!
+    @IBOutlet weak var stopThirteen: UIButton!
+    @IBOutlet weak var stopFourteen: UIButton!
+    @IBOutlet weak var stopFifteen: UIButton!
+    
+    
     var journey = [JourneyStop]()
     
 
@@ -26,7 +43,7 @@ class JourneyController: UIViewController {
         super.viewDidLoad()
     }
     
-    func addCoins(c: Int){
+    static func addCoins(c: Int){
         coins = coins + c
     }
     
@@ -36,6 +53,14 @@ class JourneyController: UIViewController {
         Description.text = "Meditate for 30 seconds"
     }
     
+    @IBAction func arrowPressed(_ sender: Any) {
+        if(Header.text == "Your First Mindfulness Exercise" && completed == 0){
+            stopOne.setImage(UIImage(named: "completed"), for: .normal)
+            JourneyController.addCoins(c: 200)
+            GardenController.addCoins(c: 200)
+            completed = completed + 1
+        }
+    }
     
     @IBAction func stopTwoPressed(_ sender: Any) {
     }
