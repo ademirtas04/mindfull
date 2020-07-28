@@ -280,7 +280,6 @@
                     <connections>
                         <outlet property="Description" destination="BnD-V7-FNY" id="gpy-Gg-CfW"/>
                         <outlet property="Header" destination="u7G-rW-pog" id="415-tF-qwg"/>
-                        <outlet property="Title" destination="u7G-rW-pog" id="T5R-Xk-ofe"/>
                         <outlet property="stopEight" destination="LsS-hB-JMM" id="PGM-Md-bOD"/>
                         <outlet property="stopEleven" destination="aya-Ig-KN3" id="rI7-1G-r91"/>
                         <outlet property="stopFifteen" destination="0Qr-HW-Wnp" id="3vV-BS-v8X"/>
