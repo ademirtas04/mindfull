@@ -60,21 +60,53 @@ class JourneyController: UIViewController {
             GardenController.addCoins(c: 200)
             completed = completed + 1
         }
+        if(Header.text == "Let's Do a Quick Body Scan" && completed == 1){
+            stopTwo.setImage(UIImage(named: "completed"), for: .normal)
+            JourneyController.addCoins(c: 200)
+            GardenController.addCoins(c: 200)
+            completed = completed + 1
+        }
+        if(Header.text == "Let's Try Mindful Eating" && completed == 2){
+            stopThree.setImage(UIImage(named: "completed"), for: .normal)
+            JourneyController.addCoins(c: 200)
+            GardenController.addCoins(c: 200)
+            completed = completed + 1
+        }
+        if(Header.text == "Let's Try Mindful Journaling" && completed == 3){
+            stopFour.setImage(UIImage(named: "completed"), for: .normal)
+            JourneyController.addCoins(c: 200)
+            GardenController.addCoins(c: 200)
+            completed = completed + 1
+        }
+        if(Header.text == "Let's Go on a Mindful Walk" && completed == 4){
+            stopFive.setImage(UIImage(named: "completed"), for: .normal)
+            JourneyController.addCoins(c: 200)
+            GardenController.addCoins(c: 200)
+            completed = completed + 1
+        }
     }
     
     @IBAction func stopTwoPressed(_ sender: Any) {
+        Header.text = "Let's Do a Quick Body Scan"
+        Description.text = "Body Scan for 2 minutes"
     }
     
     
     @IBAction func stopThreePressed(_ sender: Any) {
+        Header.text = "Let's Try Mindful Eating"
+        Description.text = "Analyze the taste and texture of your next meal"
     }
     
     
     @IBAction func stopFourPressed(_ sender: Any) {
+        Header.text = "Let's Try Mindful Journaling"
+        Description.text = "Write five things you are grateful for"
     }
     
     
     @IBAction func stopFivePressed(_ sender: Any) {
+        Header.text = "Let's Go on a Mindful Walk"
+        Description.text = "Walk for at least 20 minutes and note all of the colors you see"
     }
     
     
