@@ -16,12 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-pe-C4W">
-                                <rect key="frame" x="60" y="636" width="294" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindfull Logo" translatesAutoresizingMaskIntoConstraints="NO" id="M98-Ny-XhL" userLabel="Insert Logo Here">
+                                <rect key="frame" x="111" y="20" width="192" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="5s4-yY-aTQ"/>
+                                    <constraint firstAttribute="width" constant="192" id="lDb-bY-lJJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="CvS-y0-aCw">
+                                <rect key="frame" x="7" y="216" width="400" height="90"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="2Df-2g-7vy"/>
+                                    <constraint firstAttribute="width" constant="400" id="eFo-hF-IH2"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="j6N-tH-rLd">
+                                <rect key="frame" x="7" y="486" width="400" height="90"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="sIQ-MK-Bmy"/>
+                                    <constraint firstAttribute="height" constant="90" id="sg4-Xo-UI2"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert brief intro to mindful here  ... ... ... ... ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgD-eu-3uF">
+                                <rect key="frame" x="32" y="286" width="350" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2Q2-gF-NQ8"/>
+                                    <constraint firstAttribute="width" constant="350" id="nDw-pv-q7R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Start the Mindfulness Quiz!">
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before we get started,  let's take a quick questionnaire  to see how mindfull you are!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lN-W1-qcC">
+                                <rect key="frame" x="37" y="576" width="340" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-pe-C4W">
+                                <rect key="frame" x="57" y="696" width="300" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="73p-Ep-AC0"/>
+                                    <constraint firstAttribute="width" constant="300" id="xy8-pD-p3v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Take the questionnaire!">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -30,6 +74,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M98-Ny-XhL" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="5Rv-mE-iPI"/>
+                            <constraint firstItem="M98-Ny-XhL" firstAttribute="top" secondItem="Rav-vA-Ogo" secondAttribute="top" constant="20" id="EWu-j4-8A7"/>
+                            <constraint firstItem="2lN-W1-qcC" firstAttribute="top" secondItem="j6N-tH-rLd" secondAttribute="bottom" id="G22-YG-K8u"/>
+                            <constraint firstItem="sgD-eu-3uF" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="PHQ-OG-5xd"/>
+                            <constraint firstItem="j6N-tH-rLd" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="QkK-B8-B7a"/>
+                            <constraint firstItem="j6N-tH-rLd" firstAttribute="top" secondItem="sgD-eu-3uF" secondAttribute="bottom" id="SkA-5R-oO7"/>
+                            <constraint firstItem="3Ta-pe-C4W" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="bwh-pk-7L1"/>
+                            <constraint firstItem="2lN-W1-qcC" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="fOM-r0-p0b"/>
+                            <constraint firstItem="sgD-eu-3uF" firstAttribute="top" secondItem="CvS-y0-aCw" secondAttribute="bottom" constant="-20" id="ft8-dM-Jku"/>
+                            <constraint firstItem="CvS-y0-aCw" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="gL2-Fs-Epi"/>
+                            <constraint firstItem="CvS-y0-aCw" firstAttribute="top" secondItem="M98-Ny-XhL" secondAttribute="bottom" constant="-20" id="pdq-Ia-PD1"/>
+                            <constraint firstItem="3Ta-pe-C4W" firstAttribute="top" secondItem="2lN-W1-qcC" secondAttribute="bottom" constant="30" id="xjF-Hk-mvY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rav-vA-Ogo"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome!" id="WcO-1B-ang"/>
@@ -39,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAG-eT-Kee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="-1023"/>
+            <point key="canvasLocation" x="-423.1884057971015" y="-1023.2142857142857"/>
         </scene>
         <!--Login-->
         <scene sceneID="PzT-ta-cKm">
@@ -63,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Xh-mc-Myp">
-                                <rect key="frame" x="60" y="519" width="294" height="143.5"/>
+                                <rect key="frame" x="60" y="464" width="294" height="151.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90B-BT-2ZM">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="42"/>
@@ -76,10 +134,16 @@
                                         <rect key="frame" x="0.0" y="52" width="294" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="enterName:" destination="PkI-hD-Mlg" eventType="editingDidEnd" id="YgA-kn-ADO"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl0-4t-eJp">
-                                        <rect key="frame" x="0.0" y="101.5" width="294" height="42"/>
+                                        <rect key="frame" x="0.0" y="101.5" width="294" height="50"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CXh-nB-ZDJ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -100,10 +164,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="YGR-yL-Pm4">
-                                <rect key="frame" x="7" y="448" width="400" height="92"/>
+                                <rect key="frame" x="7" y="394" width="400" height="90"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="1TQ-Yd-add"/>
+                                    <constraint firstAttribute="height" constant="90" id="1TQ-Yd-add"/>
                                     <constraint firstAttribute="width" constant="400" id="8yi-re-OqY"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
@@ -113,8 +177,8 @@
                         <constraints>
                             <constraint firstItem="rua-6D-hZA" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="563-bq-qch"/>
                             <constraint firstItem="2Xh-mc-Myp" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="7vk-oq-7T4"/>
-                            <constraint firstItem="2Xh-mc-Myp" firstAttribute="top" secondItem="YGR-yL-Pm4" secondAttribute="bottom" constant="-21" id="97q-er-Edq"/>
-                            <constraint firstItem="YGR-yL-Pm4" firstAttribute="top" secondItem="rua-6D-hZA" secondAttribute="bottom" constant="34" id="HVy-yh-x6d"/>
+                            <constraint firstItem="2Xh-mc-Myp" firstAttribute="top" secondItem="YGR-yL-Pm4" secondAttribute="bottom" constant="-20" id="97q-er-Edq"/>
+                            <constraint firstItem="YGR-yL-Pm4" firstAttribute="top" secondItem="rua-6D-hZA" secondAttribute="bottom" constant="-20" id="HVy-yh-x6d"/>
                             <constraint firstItem="qcJ-Be-540" firstAttribute="top" secondItem="ica-9w-qYB" secondAttribute="top" constant="80" id="Ny3-6Q-I38"/>
                             <constraint firstItem="D3R-jK-Aey" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="RsT-L2-uKj"/>
                             <constraint firstItem="ica-9w-qYB" firstAttribute="trailing" secondItem="2Xh-mc-Myp" secondAttribute="trailing" constant="60" id="UP8-A5-WQq"/>
@@ -144,10 +208,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YZ-Gw-yzW">
-                                <rect key="frame" x="60" y="652" width="294" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YZ-Gw-yzW">
+                                <rect key="frame" x="57" y="708" width="300" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FRZ-f0-uuo"/>
+                                    <constraint firstAttribute="width" constant="300" id="ndf-XN-ZAS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -156,19 +223,69 @@
                                     <action selector="continueButton:" destination="Dht-1E-qSo" eventType="touchUpInside" id="Lny-N6-dfg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindfullness Questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k1-Qw-5Dl">
+                                <rect key="frame" x="31.5" y="40" width="351" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5sn-tQ-dla"/>
+                                    <constraint firstAttribute="width" constant="351" id="r9W-pi-JlJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-FF-ku4">
+                                <rect key="frame" x="20" y="130" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="ECF-K0-qOB"/>
+                                    <constraint firstAttribute="height" constant="60" id="j0O-mI-0Lb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="w2a-AV-jG0">
+                                <rect key="frame" x="7" y="60" width="400" height="90"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="aHq-Lb-g9h"/>
+                                    <constraint firstAttribute="height" constant="90" id="rFf-ie-OG6"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Question 2 ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-z7-U5Z">
+                                <rect key="frame" x="20" y="200" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="LZa-B8-PWp"/>
+                                    <constraint firstAttribute="height" constant="60" id="cD1-ew-3fp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8k1-Qw-5Dl" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="8UQ-9x-bpS"/>
+                            <constraint firstItem="FaM-FF-ku4" firstAttribute="top" secondItem="w2a-AV-jG0" secondAttribute="bottom" constant="-20" id="8pd-kH-8lZ"/>
+                            <constraint firstItem="5YZ-Gw-yzW" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="EXA-F8-5Mo"/>
+                            <constraint firstItem="JVE-z7-U5Z" firstAttribute="top" secondItem="FaM-FF-ku4" secondAttribute="bottom" constant="10" id="L5i-hE-dLY"/>
+                            <constraint firstItem="FaM-FF-ku4" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="T6g-JL-r1D"/>
+                            <constraint firstItem="w2a-AV-jG0" firstAttribute="top" secondItem="8k1-Qw-5Dl" secondAttribute="bottom" constant="-20" id="U19-6h-1OK"/>
+                            <constraint firstItem="8k1-Qw-5Dl" firstAttribute="top" secondItem="kyM-58-wh2" secondAttribute="top" constant="40" id="fly-sb-Jdg"/>
+                            <constraint firstItem="w2a-AV-jG0" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="jKm-Gu-i6R"/>
+                            <constraint firstItem="kyM-58-wh2" firstAttribute="bottom" secondItem="5YZ-Gw-yzW" secondAttribute="bottom" constant="50" id="ul7-1r-hYP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kyM-58-wh2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mindfulness Quiz" id="QMA-mL-8JY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHA-rT-Vqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="-1023"/>
+            <point key="canvasLocation" x="308.69565217391306" y="-1023.2142857142857"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Line" width="126.5" height="49.5"/>
+        <image name="Line" width="450" height="75"/>
         <image name="mindfull Logo" width="480" height="360"/>
     </resources>
 </document>

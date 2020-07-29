@@ -16,17 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atc-Fx-ai6">
-                                <rect key="frame" x="114" y="705" width="188" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Let's Get Started!"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atc-Fx-ai6">
+                                <rect key="frame" x="107" y="664" width="200" height="75"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EeI-S6-h0i"/>
+                                    <constraint firstAttribute="height" constant="75" id="WdS-jq-XuQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="zZ9-FC-reX" kind="show" id="CLb-7j-dif"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindfull Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ib6-y4-KOK" userLabel="Insert Logo Here">
+                                <rect key="frame" x="15" y="232" width="384" height="432"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="432" id="iVd-lJ-K2b"/>
+                                    <constraint firstAttribute="width" constant="384" id="sgo-M9-lUh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to  mindfull!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTw-Wa-LGG">
+                                <rect key="frame" x="28" y="107" width="358" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="NJa-Vo-V5j"/>
+                                    <constraint firstAttribute="width" constant="358" id="OcA-sQ-DVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lTw-Wa-LGG" firstAttribute="centerX" secondItem="qrE-fg-h3l" secondAttribute="centerX" id="1es-W0-rZ1"/>
+                            <constraint firstItem="Ib6-y4-KOK" firstAttribute="centerX" secondItem="qrE-fg-h3l" secondAttribute="centerX" id="1fO-kg-2OW"/>
+                            <constraint firstItem="Ib6-y4-KOK" firstAttribute="centerY" secondItem="qrE-fg-h3l" secondAttribute="centerY" id="7ph-CJ-5Wq"/>
+                            <constraint firstItem="atc-Fx-ai6" firstAttribute="centerX" secondItem="qrE-fg-h3l" secondAttribute="centerX" id="RbZ-RG-eW6"/>
+                            <constraint firstItem="Ib6-y4-KOK" firstAttribute="top" secondItem="lTw-Wa-LGG" secondAttribute="bottom" id="SOd-H2-6Zh"/>
+                            <constraint firstItem="atc-Fx-ai6" firstAttribute="top" secondItem="Ib6-y4-KOK" secondAttribute="bottom" id="qh0-FO-Sqt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OFZ-7M-C0u"/>
                     </view>
                     <navigationItem key="navigationItem" id="AZN-cK-dNe"/>
@@ -595,6 +629,7 @@
         <image name="icons8-garden-50" width="29" height="29"/>
         <image name="icons8-home-50" width="29" height="29"/>
         <image name="icons8-path-50" width="29" height="29"/>
+        <image name="mindfull Logo" width="320" height="240"/>
         <image name="tree5" width="72" height="106"/>
         <image name="uncompleted" width="30" height="30"/>
     </resources>
