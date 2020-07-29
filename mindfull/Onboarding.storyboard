@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome!-->
+        <scene sceneID="ec5-DF-11S">
+            <objects>
+                <viewController id="Zqe-or-KKU" customClass="OnboardingWelcomeViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZlJ-fo-LUL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-pe-C4W">
+                                <rect key="frame" x="60" y="636" width="294" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start the Mindfulness Quiz!">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="Zqe-or-KKU" eventType="touchUpInside" id="z08-db-b7d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rav-vA-Ogo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome!" id="WcO-1B-ang"/>
+                    <connections>
+                        <segue destination="Dht-1E-qSo" kind="show" identifier="toQuiz" id="FzM-7x-IOW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAG-eT-Kee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="-1023"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="PzT-ta-cKm">
+            <objects>
+                <viewController storyboardIdentifier="loginStoryBoard" id="PkI-hD-Mlg" customClass="LoginViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0v-CB-Wyy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindfull Logo" translatesAutoresizingMaskIntoConstraints="NO" id="D3R-jK-Aey" userLabel="Insert Logo Here">
+                                <rect key="frame" x="111" y="194" width="192" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="DL4-ii-NID"/>
+                                    <constraint firstAttribute="width" constant="192" id="p3H-V3-XRi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rua-6D-hZA">
+                                <rect key="frame" x="171.5" y="378" width="71.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Xh-mc-Myp">
+                                <rect key="frame" x="60" y="519" width="294" height="143.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90B-BT-2ZM">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Enter a username">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vye-DJ-Drq">
+                                        <rect key="frame" x="0.0" y="52" width="294" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl0-4t-eJp">
+                                        <rect key="frame" x="0.0" y="101.5" width="294" height="42"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Continue">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButton:" destination="PkI-hD-Mlg" eventType="touchUpInside" id="Gv8-C8-3MR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to mindfull!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-Be-540">
+                                <rect key="frame" x="28" y="124" width="358" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wwC-af-EXq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="YGR-yL-Pm4">
+                                <rect key="frame" x="7" y="448" width="400" height="92"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="1TQ-Yd-add"/>
+                                    <constraint firstAttribute="width" constant="400" id="8yi-re-OqY"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rua-6D-hZA" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="563-bq-qch"/>
+                            <constraint firstItem="2Xh-mc-Myp" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="7vk-oq-7T4"/>
+                            <constraint firstItem="2Xh-mc-Myp" firstAttribute="top" secondItem="YGR-yL-Pm4" secondAttribute="bottom" constant="-21" id="97q-er-Edq"/>
+                            <constraint firstItem="YGR-yL-Pm4" firstAttribute="top" secondItem="rua-6D-hZA" secondAttribute="bottom" constant="34" id="HVy-yh-x6d"/>
+                            <constraint firstItem="qcJ-Be-540" firstAttribute="top" secondItem="ica-9w-qYB" secondAttribute="top" constant="80" id="Ny3-6Q-I38"/>
+                            <constraint firstItem="D3R-jK-Aey" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="RsT-L2-uKj"/>
+                            <constraint firstItem="ica-9w-qYB" firstAttribute="trailing" secondItem="2Xh-mc-Myp" secondAttribute="trailing" constant="60" id="UP8-A5-WQq"/>
+                            <constraint firstItem="YGR-yL-Pm4" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="Zix-kg-ORK"/>
+                            <constraint firstItem="qcJ-Be-540" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="f3E-KP-Vz3"/>
+                            <constraint firstItem="2Xh-mc-Myp" firstAttribute="leading" secondItem="ica-9w-qYB" secondAttribute="leading" constant="60" id="jr5-Vv-YqM"/>
+                            <constraint firstItem="D3R-jK-Aey" firstAttribute="top" secondItem="qcJ-Be-540" secondAttribute="bottom" constant="20" id="nvo-Fy-tsg"/>
+                            <constraint firstItem="rua-6D-hZA" firstAttribute="top" secondItem="D3R-jK-Aey" secondAttribute="bottom" constant="40" id="rtn-hk-0bG"/>
+                            <constraint firstItem="2Xh-mc-Myp" firstAttribute="centerX" secondItem="U0v-CB-Wyy" secondAttribute="centerX" id="w45-x6-CyU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ica-9w-qYB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="Yc5-9G-apt"/>
+                    <connections>
+                        <segue destination="Zqe-or-KKU" kind="show" identifier="toWelcome" id="qVa-eC-1V6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w68-6w-Cte" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1186" y="-1023"/>
+        </scene>
+        <!--Mindfulness Quiz-->
+        <scene sceneID="itw-YH-t8w">
+            <objects>
+                <viewController id="Dht-1E-qSo" customClass="QuizViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dj5-P2-L7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YZ-Gw-yzW">
+                                <rect key="frame" x="60" y="652" width="294" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="Dht-1E-qSo" eventType="touchUpInside" id="Lny-N6-dfg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kyM-58-wh2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mindfulness Quiz" id="QMA-mL-8JY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHA-rT-Vqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="-1023"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Line" width="126.5" height="49.5"/>
+        <image name="mindfull Logo" width="480" height="360"/>
+    </resources>
+</document>
