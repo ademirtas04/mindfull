@@ -9,16 +9,25 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
-    var username: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    //Working on saving the username
+    
+    var username: String = "[Username]"
+    
+    @IBOutlet weak var enterName: UITextField!
+    
     @IBAction func nextButton(_ sender: Any) {
+        username = enterName.text ?? ""
+        
         self.performSegue(withIdentifier: "toWelcome", sender: self)
+    }
+    
+    func getUsername() -> String {
+        return username
     }
 }

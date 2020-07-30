@@ -21,6 +21,7 @@
 		C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161224D2114D00410194 /* QuizViewController.swift */; };
 		C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161424D21B6400410194 /* LoginViewController.swift */; };
 		C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */; };
+		C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E773F724D36CA700612765 /* TitleScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		C1BE161224D2114D00410194 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C1BE161424D21B6400410194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcomeViewController.swift; sourceTree = "<group>"; };
+		C1E773F724D36CA700612765 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				02445FE824C9E79900B61AA5 /* ViewController.swift */,
 				0244601624CA0C5200B61AA5 /* JourneyController.swift */,
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
+				C1E773F724D36CA700612765 /* TitleScreenViewController.swift */,
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
 				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
 				C1BE161424D21B6400410194 /* LoginViewController.swift */,
@@ -282,6 +285,7 @@
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
+				C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */,
 				C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,

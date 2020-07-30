@@ -17,7 +17,7 @@ class QuizViewController: UIViewController {
     }
     
 
-    @IBAction func continueButton(_ sender: Any) {
+    @IBAction func continueButton (_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC")
         self.present(mainVC, animated: true, completion: nil)
