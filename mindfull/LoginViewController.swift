@@ -21,3 +21,4 @@ class LoginViewController: UIViewController {
     @IBAction func nextButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toWelcome", sender: self)
     }
+}
