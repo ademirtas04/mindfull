@@ -19,6 +19,7 @@
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
 		C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D624D4BC01002BD945 /* MyParticle.sks */; };
 		C15F58D924D4BC01002BD945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D724D4BC01002BD945 /* Assets.xcassets */; };
+		C15F58DB24D4BD76002BD945 /* red.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58DA24D4BD76002BD945 /* red.sks */; };
 		C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BE160E24D20FD300410194 /* Onboarding.storyboard */; };
 		C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161224D2114D00410194 /* QuizViewController.swift */; };
 		C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161424D21B6400410194 /* LoginViewController.swift */; };
@@ -62,6 +63,7 @@
 		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
 		C15F58D624D4BC01002BD945 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		C15F58D724D4BC01002BD945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C15F58DA24D4BD76002BD945 /* red.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = red.sks; sourceTree = "<group>"; };
 		C1BE160E24D20FD300410194 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		C1BE161224D2114D00410194 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C1BE161424D21B6400410194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				02445FF224C9E79D00B61AA5 /* Info.plist */,
 				C15F58D624D4BC01002BD945 /* MyParticle.sks */,
 				C15F58D724D4BC01002BD945 /* Assets.xcassets */,
+				C15F58DA24D4BD76002BD945 /* red.sks */,
 			);
 			path = mindfull;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				02445FF124C9E79D00B61AA5 /* LaunchScreen.storyboard in Resources */,
 				02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */,
 				C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */,
+				C15F58DB24D4BD76002BD945 /* red.sks in Resources */,
 				C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */,
 				C15F58D924D4BC01002BD945 /* Assets.xcassets in Resources */,
 			);
