@@ -16,6 +16,7 @@
 		0244600724C9E79E00B61AA5 /* mindfullUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244600624C9E79E00B61AA5 /* mindfullUITests.swift */; };
 		0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601424CA088100B61AA5 /* JourneyStop.swift */; };
 		0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601624CA0C5200B61AA5 /* JourneyController.swift */; };
+		02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0140F24D47A9C00911EFA /* CustomizeController.swift */; };
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
 		C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BE160E24D20FD300410194 /* Onboarding.storyboard */; };
 		C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161224D2114D00410194 /* QuizViewController.swift */; };
@@ -57,6 +58,7 @@
 		0244600824C9E79E00B61AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0244601424CA088100B61AA5 /* JourneyStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStop.swift; sourceTree = "<group>"; };
 		0244601624CA0C5200B61AA5 /* JourneyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyController.swift; sourceTree = "<group>"; };
+		02B0140F24D47A9C00911EFA /* CustomizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
 		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
 		C1BE160E24D20FD300410194 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		C1BE161224D2114D00410194 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				02445FE624C9E79900B61AA5 /* AppDelegate.swift */,
 				0244601424CA088100B61AA5 /* JourneyStop.swift */,
+				02B0140F24D47A9C00911EFA /* CustomizeController.swift */,
 				02445FE824C9E79900B61AA5 /* ViewController.swift */,
 				0244601624CA0C5200B61AA5 /* JourneyController.swift */,
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
@@ -286,6 +289,7 @@
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
 				C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */,
+				02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */,
 				C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,

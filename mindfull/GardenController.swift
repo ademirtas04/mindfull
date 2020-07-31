@@ -15,8 +15,7 @@ class GardenController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
+    	
     /*
     // MARK: - Navigation
 
@@ -27,6 +26,9 @@ class GardenController: UIViewController {
     }
     */
     
+    @IBAction func goToCustomizable(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCustomize", sender: self)
+    }
     static func addCoins(c: Int){
         coins = coins + c
     }
