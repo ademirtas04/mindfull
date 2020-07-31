@@ -9,6 +9,8 @@
 import UIKit
 
 class OnboardingWelcomeViewController: UIViewController {
+    
+    var tempUsername = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +21,10 @@ class OnboardingWelcomeViewController: UIViewController {
     @IBAction func nextButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toQuiz", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! QuizViewController
+        vc.tempUsername2 = self.tempUsername
+    }
+    
 }

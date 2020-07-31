@@ -10,16 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    var username = ""
+    
+    @IBOutlet weak var enterName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    //Working on saving the username
-    
-    var username: String = "[Username]"
-    
-    @IBOutlet weak var enterName: UITextField!
     
     @IBAction func nextButton(_ sender: Any) {
         username = enterName.text ?? ""
@@ -27,7 +25,9 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier: "toWelcome", sender: self)
     }
     
-    func getUsername() -> String {
-        return username
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! OnboardingWelcomeViewController
+        vc.tempUsername = username
     }
+    
 }

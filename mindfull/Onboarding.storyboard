@@ -136,7 +136,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="enterName:" destination="PkI-hD-Mlg" eventType="editingDidEnd" id="9rB-e1-HnU"/>
+                                            <action selector="enterName:" destination="PkI-hD-Mlg" eventType="editingDidEnd" id="8Ww-eQ-YLC"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl0-4t-eJp">
@@ -194,8 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Yc5-9G-apt"/>
                     <connections>
-                        <outlet property="enterName" destination="vye-DJ-Drq" id="49K-xN-irl"/>
-                        <outlet property="username" destination="vye-DJ-Drq" id="HyB-I8-1fZ"/>
+                        <outlet property="enterName" destination="vye-DJ-Drq" id="t2t-c8-S1K"/>
                         <segue destination="Zqe-or-KKU" kind="show" identifier="toWelcome" id="qVa-eC-1V6"/>
                     </connections>
                 </viewController>
@@ -282,10 +281,23 @@
                         <viewLayoutGuide key="safeArea" id="kyM-58-wh2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mindfulness Quiz" id="QMA-mL-8JY"/>
+                    <connections>
+                        <segue destination="o0U-7i-1ya" kind="show" identifier="goToMain" id="viH-ie-HI1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHA-rT-Vqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="308.69565217391306" y="-1023.2142857142857"/>
+        </scene>
+        <!--mainVC-->
+        <scene sceneID="qYf-7i-A8P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="mainVC" id="o0U-7i-1ya" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ncd-79-PoN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fZ-c9-yJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="-1023"/>
         </scene>
     </scenes>
     <resources>

@@ -12,15 +12,12 @@ class TitleScreenViewController: UIViewController {
 
     @IBOutlet weak var checkUsername: UILabel!
     
+    var username = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
-        //Working on saving the username
-       
-        
-        let username = LoginViewController().getUsername()
         checkUsername.text = "You are logged in as \(username)"
     }
     
@@ -29,5 +26,4 @@ class TitleScreenViewController: UIViewController {
         let onboardingVC = storyboard.instantiateViewController(withIdentifier: "loginStoryBoard")
         self.present(onboardingVC, animated: true, completion: nil)
     }
- 
 }
