@@ -25,6 +25,8 @@
 		C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161424D21B6400410194 /* LoginViewController.swift */; };
 		C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */; };
 		C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E773F724D36CA700612765 /* TitleScreenViewController.swift */; };
+		C1FDE7AB24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */; };
+		C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		C1BE161424D21B6400410194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcomeViewController.swift; sourceTree = "<group>"; };
 		C1E773F724D36CA700612765 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
+		C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyAndWeeklyGoals.storyboard; sourceTree = "<group>"; };
+		C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedGoals.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,15 +131,17 @@
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
 				C1E773F724D36CA700612765 /* TitleScreenViewController.swift */,
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
-				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
 				C1BE161424D21B6400410194 /* LoginViewController.swift */,
 				C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */,
 				C1BE161224D2114D00410194 /* QuizViewController.swift */,
+				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
 				02445FEF24C9E79D00B61AA5 /* LaunchScreen.storyboard */,
 				02445FF224C9E79D00B61AA5 /* Info.plist */,
 				C15F58D624D4BC01002BD945 /* MyParticle.sks */,
 				C15F58D724D4BC01002BD945 /* Assets.xcassets */,
 				C15F58DA24D4BD76002BD945 /* red.sks */,
+				C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */,
+				C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */,
 			);
 			path = mindfull;
 			sourceTree = "<group>";
@@ -263,11 +269,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02445FF124C9E79D00B61AA5 /* LaunchScreen.storyboard in Resources */,
+				C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */,
 				02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */,
 				C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */,
 				C15F58DB24D4BD76002BD945 /* red.sks in Resources */,
 				C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */,
 				C15F58D924D4BC01002BD945 /* Assets.xcassets in Resources */,
+				C1FDE7AB24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -203,6 +203,26 @@
             </objects>
             <point key="canvasLocation" x="1066.6666666666667" y="-79.017857142857139"/>
         </scene>
+        <!--DWGVC-->
+        <scene sceneID="srW-wy-Ycx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="DWGVC" id="kcE-kD-e7n" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aXQ-mY-pNp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXd-3Z-6yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1036" y="1122"/>
+        </scene>
+        <!--PGVC-->
+        <scene sceneID="GXS-HE-Bvs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PersonalizedGoals" referencedIdentifier="PGVC" id="soA-xb-hGQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yvd-qW-PoX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ay-xR-JMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1037" y="1227"/>
+        </scene>
         <!--Journey-->
         <scene sceneID="gjT-4p-mYK">
             <objects>
@@ -211,15 +231,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="2qW-1P-CuG">
-                                <rect key="frame" x="10" y="10" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ZL6-71-sDa"/>
-                                    <constraint firstAttribute="width" constant="50" id="oHd-Il-nhQ"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-hb-V5c" userLabel="Settings">
-                                <rect key="frame" x="354" y="10" width="50" height="84"/>
+                                <rect key="frame" x="354" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CJg-73-SRA"/>
+                                    <constraint firstAttribute="width" constant="50" id="N3J-mJ-a2A"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="download"/>
                                 <connections>
                                     <segue destination="4fj-eV-wQT" kind="show" id="75E-t5-DXL"/>
@@ -369,27 +386,57 @@
                                     <action selector="arrowPressed:" destination="Bn4-oq-gQe" eventType="touchUpInside" id="E46-Jz-pJ6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prx-LJ-HYW">
-                                <rect key="frame" x="70" y="10" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOw-O7-Jwg">
+                                <rect key="frame" x="10" y="60" width="225" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="MVj-2N-xMe"/>
-                                    <constraint firstAttribute="height" constant="50" id="jlk-l4-AMt"/>
+                                    <constraint firstAttribute="width" constant="225" id="8fD-FP-oH5"/>
+                                    <constraint firstAttribute="height" constant="40" id="fdx-gd-FVc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Daily and Weekly Goals (dont delete but you can move around and customize)">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="toDWG:" destination="Bn4-oq-gQe" eventType="touchUpInside" id="NP8-xg-8iU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder for XP bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl5-3t-C9J">
+                                <rect key="frame" x="10" y="10" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="cYb-0y-aNA"/>
+                                    <constraint firstAttribute="height" constant="50" id="cnh-4Q-jbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb2-hl-jtn">
+                                <rect key="frame" x="10" y="110" width="225" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7x2-l5-vfk"/>
+                                    <constraint firstAttribute="width" constant="225" id="un1-XX-2gA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Personalized Goals (dont delete but you can move around and customize)">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="toPG:" destination="Bn4-oq-gQe" eventType="touchUpInside" id="yPf-VO-p0I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2qW-1P-CuG" firstAttribute="top" secondItem="x1D-aX-cP5" secondAttribute="top" constant="10" id="1Y2-tr-x20"/>
+                            <constraint firstItem="Xl5-3t-C9J" firstAttribute="top" secondItem="x1D-aX-cP5" secondAttribute="top" constant="10" id="4Kw-jH-ipk"/>
                             <constraint firstItem="x1D-aX-cP5" firstAttribute="trailing" secondItem="KvC-hb-V5c" secondAttribute="trailing" constant="10" id="7bU-yT-6Dq"/>
-                            <constraint firstItem="prx-LJ-HYW" firstAttribute="leading" secondItem="2qW-1P-CuG" secondAttribute="trailing" constant="10" id="BWI-Tp-mJg"/>
-                            <constraint firstItem="x1D-aX-cP5" firstAttribute="bottom" secondItem="KvC-hb-V5c" secondAttribute="bottom" constant="665" id="D94-2L-hhm"/>
+                            <constraint firstItem="ZOw-O7-Jwg" firstAttribute="top" secondItem="Xl5-3t-C9J" secondAttribute="bottom" id="Cmm-sq-9B8"/>
+                            <constraint firstItem="Xl5-3t-C9J" firstAttribute="leading" secondItem="x1D-aX-cP5" secondAttribute="leading" constant="10" id="Zck-eF-Eor"/>
                             <constraint firstItem="KvC-hb-V5c" firstAttribute="top" secondItem="x1D-aX-cP5" secondAttribute="top" constant="10" id="cIG-0z-GQ4"/>
-                            <constraint firstItem="KvC-hb-V5c" firstAttribute="leading" secondItem="x1D-aX-cP5" secondAttribute="leading" constant="354" id="iw1-Wb-Vok"/>
-                            <constraint firstItem="prx-LJ-HYW" firstAttribute="top" secondItem="x1D-aX-cP5" secondAttribute="top" constant="10" id="mYA-Mz-exT"/>
-                            <constraint firstItem="2qW-1P-CuG" firstAttribute="leading" secondItem="x1D-aX-cP5" secondAttribute="leading" constant="10" id="yFT-EM-RMb"/>
+                            <constraint firstItem="ZOw-O7-Jwg" firstAttribute="leading" secondItem="x1D-aX-cP5" secondAttribute="leading" constant="10" id="ga3-EO-GV5"/>
+                            <constraint firstItem="Rb2-hl-jtn" firstAttribute="leading" secondItem="x1D-aX-cP5" secondAttribute="leading" constant="10" id="oZp-6R-M9o"/>
+                            <constraint firstItem="Rb2-hl-jtn" firstAttribute="top" secondItem="ZOw-O7-Jwg" secondAttribute="bottom" constant="10" id="y9O-5X-6Qk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x1D-aX-cP5"/>
                     </view>
@@ -413,11 +460,13 @@
                         <outlet property="stopThree" destination="cXe-oK-xjZ" id="hy5-x6-3kN"/>
                         <outlet property="stopTwelve" destination="wtv-WB-WK0" id="DTx-ni-13b"/>
                         <outlet property="stopTwo" destination="yc3-pZ-CCE" id="ejJ-XN-His"/>
+                        <segue destination="kcE-kD-e7n" kind="show" identifier="toDWG" id="9rv-VD-la5"/>
+                        <segue destination="soA-xb-hGQ" kind="show" identifier="toPG" id="Zc6-nk-GLJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFb-te-ngL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="739"/>
+            <point key="canvasLocation" x="-423.1884057971015" y="738.61607142857144"/>
         </scene>
         <!--Home Screen-->
         <scene sceneID="gxu-5z-owa">
@@ -427,50 +476,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="9VO-za-7C3">
-                                <rect key="frame" x="10" y="10" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="1Sc-4c-QnD"/>
-                                    <constraint firstAttribute="width" constant="50" id="BI7-T4-IU8"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QER-BS-20Q">
-                                <rect key="frame" x="354" y="10" width="50" height="84"/>
+                                <rect key="frame" x="354" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vj0-Rx-oXc"/>
+                                    <constraint firstAttribute="width" constant="50" id="zCc-dv-epW"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="download"/>
                                 <connections>
                                     <segue destination="4fj-eV-wQT" kind="show" id="2bl-n7-DbU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPT-Cp-TtE">
-                                <rect key="frame" x="70" y="10" width="100" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="YoK-lk-XXY"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="bME-es-lvr"/>
-                                    <constraint firstAttribute="width" constant="100" id="fI3-DB-eED"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gem" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-jm-IeM">
-                                <rect key="frame" x="10" y="70" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="KZ4-Hy-Bqh"/>
-                                    <constraint firstAttribute="width" constant="50" id="v9l-FZ-bsB"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mvr-Ri-Cib" firstAttribute="bottom" secondItem="QER-BS-20Q" secondAttribute="bottom" constant="665" id="0at-gY-Pb2"/>
-                            <constraint firstItem="QER-BS-20Q" firstAttribute="leading" secondItem="Mvr-Ri-Cib" secondAttribute="leading" constant="354" id="2i2-NG-Enl"/>
-                            <constraint firstItem="9VO-za-7C3" firstAttribute="top" secondItem="Mvr-Ri-Cib" secondAttribute="top" constant="10" id="5Qi-AH-ZrX"/>
-                            <constraint firstItem="9VO-za-7C3" firstAttribute="leading" secondItem="Mvr-Ri-Cib" secondAttribute="leading" constant="10" id="7IC-GB-Feg"/>
-                            <constraint firstItem="ZPT-Cp-TtE" firstAttribute="top" secondItem="Mvr-Ri-Cib" secondAttribute="top" constant="10" id="DaJ-j3-5go"/>
-                            <constraint firstItem="ZPT-Cp-TtE" firstAttribute="leading" secondItem="9VO-za-7C3" secondAttribute="trailing" constant="10" id="GKX-gi-s5a"/>
                             <constraint firstItem="QER-BS-20Q" firstAttribute="top" secondItem="Mvr-Ri-Cib" secondAttribute="top" constant="10" id="KWW-Hr-gqg"/>
-                            <constraint firstItem="Tcx-jm-IeM" firstAttribute="leading" secondItem="Mvr-Ri-Cib" secondAttribute="leading" constant="10" id="QhP-I5-xWK"/>
-                            <constraint firstItem="Tcx-jm-IeM" firstAttribute="top" secondItem="9VO-za-7C3" secondAttribute="bottom" constant="10" id="cSv-sq-bxq"/>
                             <constraint firstItem="Mvr-Ri-Cib" firstAttribute="trailing" secondItem="QER-BS-20Q" secondAttribute="trailing" constant="10" id="yFH-13-PGf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mvr-Ri-Cib"/>
@@ -751,12 +771,10 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lgD-GR-JYS"/>
-        <segue reference="2bl-n7-DbU"/>
+        <segue reference="75E-t5-DXL"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Gem" width="135.33332824707031" height="137.33332824707031"/>
         <image name="arrow" width="30" height="30"/>
-        <image name="coins" width="50" height="50"/>
         <image name="customizable" width="50" height="50"/>
         <image name="download" width="765" height="765"/>
         <image name="icons8-garden-50" width="29" height="29"/>

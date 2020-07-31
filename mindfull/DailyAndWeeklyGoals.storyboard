@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VYd-PK-Ig7">
+            <objects>
+                <viewController storyboardIdentifier="DWGVC" id="XNt-iw-51x" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LpQ-Vn-nhf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner - Blue" translatesAutoresizingMaskIntoConstraints="NO" id="7pG-5G-Efn">
+                                <rect key="frame" x="7" y="54" width="400" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UJ7-ya-ThR"/>
+                                    <constraint firstAttribute="width" constant="400" id="y7y-5h-od7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner - Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="wqk-FV-kLW">
+                                <rect key="frame" x="32" y="168" width="350" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="JPg-Rf-kNc"/>
+                                    <constraint firstAttribute="height" constant="130" id="Sxd-Qr-E4v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily and Weekly Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vm-BlQ">
+                                <rect key="frame" x="32" y="76" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="a31-Km-lLQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="e1z-1M-sqZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="U5M-V1-6aO">
+                                <rect key="frame" x="7" y="129" width="400" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="CrK-4Y-Aj0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goals Change in  X Days XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-5B-qwT">
+                                <rect key="frame" x="82" y="270" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Kfx-6h-TNh"/>
+                                    <constraint firstAttribute="width" constant="250" id="SHL-aA-SsV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner - Purple" translatesAutoresizingMaskIntoConstraints="NO" id="2cf-xt-1PO">
+                                <rect key="frame" x="32" y="485" width="350" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="aU4-Pq-jyW"/>
+                                    <constraint firstAttribute="width" constant="350" id="jSt-Zq-LGk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mw-SO-FMK">
+                                <rect key="frame" x="57" y="210" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GuB-Oz-CDS"/>
+                                    <constraint firstAttribute="width" constant="300" id="pg9-6T-tiY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mm-rM-xha">
+                                <rect key="frame" x="57" y="527" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="dnH-TV-IBB"/>
+                                    <constraint firstAttribute="height" constant="30" id="nUf-KY-7GM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goals Change in XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-J1-Un5">
+                                <rect key="frame" x="82" y="587" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ej4-nc-aJW"/>
+                                    <constraint firstAttribute="height" constant="45" id="aEW-7y-JQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7S0-tM-aZW">
+                                <rect key="frame" x="20" y="325" width="374" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-k9-Oqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <state key="normal" title="Weekly Goal 1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzX-3k-vZl">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <state key="normal" title="Weekly Goal 2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6e-RC-W8B">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <state key="normal" title="Weekly Goal 3"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="5gX-9K-LD8"/>
+                                    <constraint firstAttribute="height" constant="170" id="xT9-4X-iPR"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-Um-2Eh">
+                                <rect key="frame" x="20" y="642" width="374" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwT-1e-Z2w">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <state key="normal" title="Daily Goal 1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-wh-IFd">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <state key="normal" title="Daily Goal 2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypy-eT-Rqh">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <state key="normal" title="Daily Goal 3"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="IQv-Lv-1Lw"/>
+                                    <constraint firstAttribute="height" constant="170" id="IZk-xJ-Zt7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="170" id="R2a-PX-yxY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7S0-tM-aZW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="4nW-tZ-QqO"/>
+                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="bottom" secondItem="yDT-Um-2Eh" secondAttribute="bottom" constant="50" id="5f7-P3-fLz"/>
+                            <constraint firstItem="Dji-J1-Un5" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="GGp-7k-Fc3"/>
+                            <constraint firstItem="yDT-Um-2Eh" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="20" id="HcH-fh-qM6"/>
+                            <constraint firstItem="wqk-FV-kLW" firstAttribute="top" secondItem="U5M-V1-6aO" secondAttribute="bottom" constant="-35" id="O6H-tC-8V4"/>
+                            <constraint firstItem="8Mm-rM-xha" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="Rdb-PA-wod"/>
+                            <constraint firstItem="kSL-5B-qwT" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="SX6-LY-a7v"/>
+                            <constraint firstItem="2cf-xt-1PO" firstAttribute="top" secondItem="7S0-tM-aZW" secondAttribute="bottom" constant="-10" id="Ssd-AP-fJM"/>
+                            <constraint firstItem="7pG-5G-Efn" firstAttribute="top" secondItem="Bqe-0H-HZP" secondAttribute="top" constant="10" id="Ta5-NU-WgN"/>
+                            <constraint firstItem="2cf-xt-1PO" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="Wie-aZ-F9j"/>
+                            <constraint firstItem="yDT-Um-2Eh" firstAttribute="top" secondItem="Dji-J1-Un5" secondAttribute="bottom" constant="10" id="YFw-MJ-XWO"/>
+                            <constraint firstItem="8Mm-rM-xha" firstAttribute="top" secondItem="2cf-xt-1PO" secondAttribute="bottom" constant="-88" id="a4G-2m-V4J"/>
+                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="7S0-tM-aZW" secondAttribute="trailing" constant="20" id="bc0-md-6Of"/>
+                            <constraint firstItem="0mw-SO-FMK" firstAttribute="top" secondItem="wqk-FV-kLW" secondAttribute="bottom" constant="-88" id="cUT-3o-tlO"/>
+                            <constraint firstItem="U5M-V1-6aO" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="fGE-3l-wcw"/>
+                            <constraint firstItem="U5M-V1-6aO" firstAttribute="top" secondItem="7pG-5G-Efn" secondAttribute="bottom" constant="-25" id="hHO-O5-gEI"/>
+                            <constraint firstItem="9Tz-Vm-BlQ" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="hnE-ee-pwZ"/>
+                            <constraint firstItem="yDT-Um-2Eh" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="ia1-O7-hl9"/>
+                            <constraint firstItem="7pG-5G-Efn" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="kwf-tV-Jf7"/>
+                            <constraint firstItem="7S0-tM-aZW" firstAttribute="top" secondItem="kSL-5B-qwT" secondAttribute="bottom" constant="10" id="lgF-00-dGP"/>
+                            <constraint firstItem="2cf-xt-1PO" firstAttribute="top" secondItem="kSL-5B-qwT" secondAttribute="bottom" constant="170" id="m04-wo-lbR"/>
+                            <constraint firstItem="kSL-5B-qwT" firstAttribute="top" secondItem="0mw-SO-FMK" secondAttribute="bottom" constant="30" id="nIf-fj-dYZ"/>
+                            <constraint firstItem="wqk-FV-kLW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="rw0-vR-FMz"/>
+                            <constraint firstItem="Dji-J1-Un5" firstAttribute="top" secondItem="8Mm-rM-xha" secondAttribute="bottom" constant="30" id="vSW-bT-Xj9"/>
+                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="yDT-Um-2Eh" secondAttribute="trailing" constant="20" id="w7a-To-ajE"/>
+                            <constraint firstItem="0mw-SO-FMK" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="wCO-SV-TyR"/>
+                            <constraint firstItem="9Tz-Vm-BlQ" firstAttribute="top" secondItem="7pG-5G-Efn" secondAttribute="bottom" constant="-78" id="x6F-Zc-dzQ"/>
+                            <constraint firstItem="7S0-tM-aZW" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="20" id="xCa-w2-7Jf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bqe-0H-HZP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeV-UN-WSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="85.714285714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g2y-6L-eJw">
+            <objects>
+                <viewController id="OmJ-xg-nRD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OlH-px-Lbe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UyZ-7Z-nO5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAU-ix-WHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Banner - Blue" width="251.5" height="51.5"/>
+        <image name="Banner - Purple" width="228.5" height="50"/>
+        <image name="Banner - Yellow" width="228.5" height="50"/>
+        <image name="Line" width="450" height="75"/>
+    </resources>
+</document>
