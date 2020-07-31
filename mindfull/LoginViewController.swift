@@ -9,16 +9,25 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
-    var username: String = ""
 
+    var username = ""
+    
+    @IBOutlet weak var enterName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
     @IBAction func nextButton(_ sender: Any) {
+        username = enterName.text ?? ""
+        
         self.performSegue(withIdentifier: "toWelcome", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! OnboardingWelcomeViewController
+        vc.tempUsername = username
+    }
+    
 }

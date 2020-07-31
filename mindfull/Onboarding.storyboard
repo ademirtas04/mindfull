@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="CvS-y0-aCw">
-                                <rect key="frame" x="7" y="216" width="400" height="90"/>
+                                <rect key="frame" x="7" y="176" width="400" height="90"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2Df-2g-7vy"/>
@@ -33,7 +33,7 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="j6N-tH-rLd">
-                                <rect key="frame" x="7" y="486" width="400" height="90"/>
+                                <rect key="frame" x="7" y="446" width="400" height="90"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="sIQ-MK-Bmy"/>
@@ -41,24 +41,25 @@
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert brief intro to mindful here  ... ... ... ... ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgD-eu-3uF">
-                                <rect key="frame" x="32" y="286" width="350" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgD-eu-3uF">
+                                <rect key="frame" x="19.5" y="246" width="375" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2Q2-gF-NQ8"/>
-                                    <constraint firstAttribute="width" constant="350" id="nDw-pv-q7R"/>
+                                    <constraint firstAttribute="height" constant="220" id="2Q2-gF-NQ8"/>
+                                    <constraint firstAttribute="width" constant="375" id="nDw-pv-q7R"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <string key="text">Welcome to mindfull! This game is meant to assist players in becoming more mindful in their day to day lives by teaching them a number of mindfulness techniques as well as helping users become more productive. We hope you enjoy this game and use it as a tool to live a happier and more mindful life!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before we get started,  let's take a quick questionnaire  to see how mindfull you are!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lN-W1-qcC">
-                                <rect key="frame" x="37" y="576" width="340" height="90"/>
+                                <rect key="frame" x="37" y="516" width="340" height="90"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-pe-C4W">
-                                <rect key="frame" x="57" y="696" width="300" height="50"/>
+                                <rect key="frame" x="57" y="636" width="300" height="50"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="73p-Ep-AC0"/>
@@ -77,15 +78,15 @@
                         <constraints>
                             <constraint firstItem="M98-Ny-XhL" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="5Rv-mE-iPI"/>
                             <constraint firstItem="M98-Ny-XhL" firstAttribute="top" secondItem="Rav-vA-Ogo" secondAttribute="top" constant="20" id="EWu-j4-8A7"/>
-                            <constraint firstItem="2lN-W1-qcC" firstAttribute="top" secondItem="j6N-tH-rLd" secondAttribute="bottom" id="G22-YG-K8u"/>
+                            <constraint firstItem="2lN-W1-qcC" firstAttribute="top" secondItem="j6N-tH-rLd" secondAttribute="bottom" constant="-20" id="G22-YG-K8u"/>
                             <constraint firstItem="sgD-eu-3uF" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="PHQ-OG-5xd"/>
                             <constraint firstItem="j6N-tH-rLd" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="QkK-B8-B7a"/>
-                            <constraint firstItem="j6N-tH-rLd" firstAttribute="top" secondItem="sgD-eu-3uF" secondAttribute="bottom" id="SkA-5R-oO7"/>
+                            <constraint firstItem="j6N-tH-rLd" firstAttribute="top" secondItem="sgD-eu-3uF" secondAttribute="bottom" constant="-20" id="SkA-5R-oO7"/>
                             <constraint firstItem="3Ta-pe-C4W" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="bwh-pk-7L1"/>
                             <constraint firstItem="2lN-W1-qcC" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="fOM-r0-p0b"/>
                             <constraint firstItem="sgD-eu-3uF" firstAttribute="top" secondItem="CvS-y0-aCw" secondAttribute="bottom" constant="-20" id="ft8-dM-Jku"/>
                             <constraint firstItem="CvS-y0-aCw" firstAttribute="centerX" secondItem="ZlJ-fo-LUL" secondAttribute="centerX" id="gL2-Fs-Epi"/>
-                            <constraint firstItem="CvS-y0-aCw" firstAttribute="top" secondItem="M98-Ny-XhL" secondAttribute="bottom" constant="-20" id="pdq-Ia-PD1"/>
+                            <constraint firstItem="CvS-y0-aCw" firstAttribute="top" secondItem="M98-Ny-XhL" secondAttribute="bottom" constant="-60" id="pdq-Ia-PD1"/>
                             <constraint firstItem="3Ta-pe-C4W" firstAttribute="top" secondItem="2lN-W1-qcC" secondAttribute="bottom" constant="30" id="xjF-Hk-mvY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rav-vA-Ogo"/>
@@ -135,7 +136,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="enterName:" destination="PkI-hD-Mlg" eventType="editingDidEnd" id="YgA-kn-ADO"/>
+                                            <action selector="enterName:" destination="PkI-hD-Mlg" eventType="editingDidEnd" id="8Ww-eQ-YLC"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl0-4t-eJp">
@@ -193,6 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Yc5-9G-apt"/>
                     <connections>
+                        <outlet property="enterName" destination="vye-DJ-Drq" id="t2t-c8-S1K"/>
                         <segue destination="Zqe-or-KKU" kind="show" identifier="toWelcome" id="qVa-eC-1V6"/>
                     </connections>
                 </viewController>
@@ -252,7 +254,7 @@
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Question 2 ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-z7-U5Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2 ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-z7-U5Z">
                                 <rect key="frame" x="20" y="200" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="LZa-B8-PWp"/>
@@ -268,6 +270,7 @@
                             <constraint firstItem="8k1-Qw-5Dl" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="8UQ-9x-bpS"/>
                             <constraint firstItem="FaM-FF-ku4" firstAttribute="top" secondItem="w2a-AV-jG0" secondAttribute="bottom" constant="-20" id="8pd-kH-8lZ"/>
                             <constraint firstItem="5YZ-Gw-yzW" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="EXA-F8-5Mo"/>
+                            <constraint firstItem="JVE-z7-U5Z" firstAttribute="leading" secondItem="FaM-FF-ku4" secondAttribute="leading" id="FEZ-nz-PPS"/>
                             <constraint firstItem="JVE-z7-U5Z" firstAttribute="top" secondItem="FaM-FF-ku4" secondAttribute="bottom" constant="10" id="L5i-hE-dLY"/>
                             <constraint firstItem="FaM-FF-ku4" firstAttribute="centerX" secondItem="dj5-P2-L7r" secondAttribute="centerX" id="T6g-JL-r1D"/>
                             <constraint firstItem="w2a-AV-jG0" firstAttribute="top" secondItem="8k1-Qw-5Dl" secondAttribute="bottom" constant="-20" id="U19-6h-1OK"/>
@@ -278,10 +281,23 @@
                         <viewLayoutGuide key="safeArea" id="kyM-58-wh2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mindfulness Quiz" id="QMA-mL-8JY"/>
+                    <connections>
+                        <segue destination="o0U-7i-1ya" kind="show" identifier="goToMain" id="viH-ie-HI1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHA-rT-Vqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="308.69565217391306" y="-1023.2142857142857"/>
+        </scene>
+        <!--mainVC-->
+        <scene sceneID="qYf-7i-A8P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="mainVC" id="o0U-7i-1ya" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ncd-79-PoN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fZ-c9-yJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="-1023"/>
         </scene>
     </scenes>
     <resources>

@@ -9,6 +9,8 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    
+    var tempUsername2 = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +18,13 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func continueButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC")
-        self.present(mainVC, animated: true, completion: nil)
+    @IBAction func continueButton (_ sender: Any) {
+         self.performSegue(withIdentifier: "goToMain", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! TitleScreenViewController
+        vc.username = self.tempUsername2
     }
 }
+
