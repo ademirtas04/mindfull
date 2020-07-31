@@ -94,55 +94,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7S0-tM-aZW">
-                                <rect key="frame" x="20" y="325" width="374" height="170"/>
+                                <rect key="frame" x="30" y="325" width="354" height="170"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-k9-Oqh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-k9-Oqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                         <state key="normal" title="Weekly Goal 1"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzX-3k-vZl">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzX-3k-vZl">
+                                        <rect key="frame" x="0.0" y="60" width="354" height="50"/>
                                         <state key="normal" title="Weekly Goal 2"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6e-RC-W8B">
-                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6e-RC-W8B">
+                                        <rect key="frame" x="0.0" y="120" width="354" height="50"/>
                                         <state key="normal" title="Weekly Goal 3"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="5gX-9K-LD8"/>
+                                    <constraint firstAttribute="width" constant="354" id="5gX-9K-LD8"/>
                                     <constraint firstAttribute="height" constant="170" id="xT9-4X-iPR"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-Um-2Eh">
-                                <rect key="frame" x="20" y="642" width="374" height="170"/>
+                                <rect key="frame" x="30" y="642" width="354" height="170"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwT-1e-Z2w">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwT-1e-Z2w">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                         <state key="normal" title="Daily Goal 1"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-wh-IFd">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-wh-IFd">
+                                        <rect key="frame" x="0.0" y="60" width="354" height="50"/>
                                         <state key="normal" title="Daily Goal 2"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypy-eT-Rqh">
-                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypy-eT-Rqh">
+                                        <rect key="frame" x="0.0" y="120" width="354" height="50"/>
                                         <state key="normal" title="Daily Goal 3"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="IQv-Lv-1Lw"/>
+                                    <constraint firstAttribute="width" constant="354" id="IQv-Lv-1Lw"/>
                                     <constraint firstAttribute="height" constant="170" id="IZk-xJ-Zt7"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="170" id="R2a-PX-yxY"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
                             <constraint firstItem="7S0-tM-aZW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="4nW-tZ-QqO"/>
                             <constraint firstItem="Bqe-0H-HZP" firstAttribute="bottom" secondItem="yDT-Um-2Eh" secondAttribute="bottom" constant="50" id="5f7-P3-fLz"/>
                             <constraint firstItem="Dji-J1-Un5" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="GGp-7k-Fc3"/>
-                            <constraint firstItem="yDT-Um-2Eh" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="20" id="HcH-fh-qM6"/>
+                            <constraint firstItem="yDT-Um-2Eh" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="30" id="HcH-fh-qM6"/>
                             <constraint firstItem="wqk-FV-kLW" firstAttribute="top" secondItem="U5M-V1-6aO" secondAttribute="bottom" constant="-35" id="O6H-tC-8V4"/>
                             <constraint firstItem="8Mm-rM-xha" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="Rdb-PA-wod"/>
                             <constraint firstItem="kSL-5B-qwT" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="SX6-LY-a7v"/>
@@ -151,7 +151,7 @@
                             <constraint firstItem="2cf-xt-1PO" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="Wie-aZ-F9j"/>
                             <constraint firstItem="yDT-Um-2Eh" firstAttribute="top" secondItem="Dji-J1-Un5" secondAttribute="bottom" constant="10" id="YFw-MJ-XWO"/>
                             <constraint firstItem="8Mm-rM-xha" firstAttribute="top" secondItem="2cf-xt-1PO" secondAttribute="bottom" constant="-88" id="a4G-2m-V4J"/>
-                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="7S0-tM-aZW" secondAttribute="trailing" constant="20" id="bc0-md-6Of"/>
+                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="7S0-tM-aZW" secondAttribute="trailing" constant="30" id="bc0-md-6Of"/>
                             <constraint firstItem="0mw-SO-FMK" firstAttribute="top" secondItem="wqk-FV-kLW" secondAttribute="bottom" constant="-88" id="cUT-3o-tlO"/>
                             <constraint firstItem="U5M-V1-6aO" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="fGE-3l-wcw"/>
                             <constraint firstItem="U5M-V1-6aO" firstAttribute="top" secondItem="7pG-5G-Efn" secondAttribute="bottom" constant="-25" id="hHO-O5-gEI"/>
@@ -163,10 +163,10 @@
                             <constraint firstItem="kSL-5B-qwT" firstAttribute="top" secondItem="0mw-SO-FMK" secondAttribute="bottom" constant="30" id="nIf-fj-dYZ"/>
                             <constraint firstItem="wqk-FV-kLW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="rw0-vR-FMz"/>
                             <constraint firstItem="Dji-J1-Un5" firstAttribute="top" secondItem="8Mm-rM-xha" secondAttribute="bottom" constant="30" id="vSW-bT-Xj9"/>
-                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="yDT-Um-2Eh" secondAttribute="trailing" constant="20" id="w7a-To-ajE"/>
+                            <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="yDT-Um-2Eh" secondAttribute="trailing" constant="30" id="w7a-To-ajE"/>
                             <constraint firstItem="0mw-SO-FMK" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="wCO-SV-TyR"/>
                             <constraint firstItem="9Tz-Vm-BlQ" firstAttribute="top" secondItem="7pG-5G-Efn" secondAttribute="bottom" constant="-78" id="x6F-Zc-dzQ"/>
-                            <constraint firstItem="7S0-tM-aZW" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="20" id="xCa-w2-7Jf"/>
+                            <constraint firstItem="7S0-tM-aZW" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="30" id="xCa-w2-7Jf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bqe-0H-HZP"/>
                     </view>
@@ -182,7 +182,7 @@
                     <view key="view" contentMode="scaleToFill" id="OlH-px-Lbe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <viewLayoutGuide key="safeArea" id="UyZ-7Z-nO5"/>
                     </view>
                 </viewController>
