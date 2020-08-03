@@ -12,6 +12,7 @@ class GardenController: UIViewController {
     var screenTimer: Timer?
     @IBOutlet weak var bgImage: UIImageView!
     static var coins: Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -43,13 +44,13 @@ class GardenController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */	
+    */    
     
     @IBAction func goToCustomizable(_ sender: Any) {
         self.performSegue(withIdentifier: "toCustomize", sender: self)
     }
+    
     static func addCoins(c: Int){
         coins = coins + c
     }
-
 }

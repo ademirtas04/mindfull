@@ -150,4 +150,11 @@ class JourneyController: UIViewController {
     }
     
     
+    @IBAction func toDWG(_ sender: Any) {
+        self.performSegue(withIdentifier: "toDWG", sender: self)
+    }
+    
+    @IBAction func toPG(_ sender: Any) {
+        self.performSegue(withIdentifier: "toPG", sender: self)
+    }
 }
