@@ -1,23 +1,22 @@
 //
-//  GardenController.swift
+//  DWGGoalViewViewController.swift
 //  mindfull
 //
-//  Created by Alp Demirtas on 7/26/20.
+//  Created by Tyler Turek on 8/3/20.
 //  Copyright © 2020 Alp Demirtas. All rights reserved.
 //
 
 import UIKit
 
-class GardenController: UIViewController {
-    
-    static var coins: Int = 0
+class DWGGoalViewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    	
+    
+
     /*
     // MARK: - Navigation
 
@@ -27,12 +26,5 @@ class GardenController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    @IBAction func goToCustomizable(_ sender: Any) {
-        self.performSegue(withIdentifier: "toCustomize", sender: self)
-    }
-    
-    static func addCoins(c: Int){
-        coins = coins + c
-    }
+
 }

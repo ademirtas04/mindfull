@@ -226,7 +226,7 @@
         <!--Journey-->
         <scene sceneID="gjT-4p-mYK">
             <objects>
-                <viewController id="Bn4-oq-gQe" customClass="JourneyController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JourneyVC" id="Bn4-oq-gQe" customClass="JourneyController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-dw-6z9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

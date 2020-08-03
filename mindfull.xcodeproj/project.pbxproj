@@ -10,13 +10,15 @@
 		02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02445FE624C9E79900B61AA5 /* AppDelegate.swift */; };
 		02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02445FE824C9E79900B61AA5 /* ViewController.swift */; };
 		02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02445FEA24C9E79900B61AA5 /* Main.storyboard */; };
-		02445FF124C9E79D00B61AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02445FEF24C9E79D00B61AA5 /* LaunchScreen.storyboard */; };
 		02445FFC24C9E79E00B61AA5 /* mindfullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02445FFB24C9E79E00B61AA5 /* mindfullTests.swift */; };
 		0244600724C9E79E00B61AA5 /* mindfullUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244600624C9E79E00B61AA5 /* mindfullUITests.swift */; };
 		0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601424CA088100B61AA5 /* JourneyStop.swift */; };
 		0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601624CA0C5200B61AA5 /* JourneyController.swift */; };
 		02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0140F24D47A9C00911EFA /* CustomizeController.swift */; };
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
+		C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */; };
+		C13133BC24D885B900551841 /* DWGGoalViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133BB24D885B900551841 /* DWGGoalViewViewController.swift */; };
+		C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */; };
 		C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D624D4BC01002BD945 /* MyParticle.sks */; };
 		C15F58D924D4BC01002BD945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D724D4BC01002BD945 /* Assets.xcassets */; };
 		C15F58DB24D4BD76002BD945 /* red.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58DA24D4BD76002BD945 /* red.sks */; };
@@ -51,7 +53,6 @@
 		02445FE624C9E79900B61AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02445FE824C9E79900B61AA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02445FEB24C9E79900B61AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02445FF024C9E79D00B61AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02445FF224C9E79D00B61AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02445FF724C9E79E00B61AA5 /* mindfullTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mindfullTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02445FFB24C9E79E00B61AA5 /* mindfullTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mindfullTests.swift; sourceTree = "<group>"; };
@@ -63,6 +64,9 @@
 		0244601624CA0C5200B61AA5 /* JourneyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyController.swift; sourceTree = "<group>"; };
 		02B0140F24D47A9C00911EFA /* CustomizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
 		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
+		C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGHomeScreenViewController.swift; sourceTree = "<group>"; };
+		C13133BB24D885B900551841 /* DWGGoalViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGGoalViewViewController.swift; sourceTree = "<group>"; };
+		C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGHomeScreenViewController.swift; sourceTree = "<group>"; };
 		C15F58D624D4BC01002BD945 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		C15F58D724D4BC01002BD945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15F58DA24D4BD76002BD945 /* red.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = red.sks; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		02445FE524C9E79900B61AA5 /* mindfull */ = {
 			isa = PBXGroup;
 			children = (
+				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
 				02445FE624C9E79900B61AA5 /* AppDelegate.swift */,
 				0244601424CA088100B61AA5 /* JourneyStop.swift */,
 				02B0140F24D47A9C00911EFA /* CustomizeController.swift */,
@@ -130,18 +135,19 @@
 				0244601624CA0C5200B61AA5 /* JourneyController.swift */,
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
 				C1E773F724D36CA700612765 /* TitleScreenViewController.swift */,
-				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
+				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
 				C1BE161424D21B6400410194 /* LoginViewController.swift */,
 				C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */,
 				C1BE161224D2114D00410194 /* QuizViewController.swift */,
-				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
-				02445FEF24C9E79D00B61AA5 /* LaunchScreen.storyboard */,
-				02445FF224C9E79D00B61AA5 /* Info.plist */,
-				C15F58D624D4BC01002BD945 /* MyParticle.sks */,
-				C15F58D724D4BC01002BD945 /* Assets.xcassets */,
-				C15F58DA24D4BD76002BD945 /* red.sks */,
 				C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */,
+				C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */,
+				C13133BB24D885B900551841 /* DWGGoalViewViewController.swift */,
 				C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */,
+				C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */,
+				02445FF224C9E79D00B61AA5 /* Info.plist */,
+				C15F58D724D4BC01002BD945 /* Assets.xcassets */,
+				C15F58D624D4BC01002BD945 /* MyParticle.sks */,
+				C15F58DA24D4BD76002BD945 /* red.sks */,
 			);
 			path = mindfull;
 			sourceTree = "<group>";
@@ -268,7 +274,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02445FF124C9E79D00B61AA5 /* LaunchScreen.storyboard in Resources */,
 				C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */,
 				02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */,
 				C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */,
@@ -300,6 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */,
+				C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */,
 				C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */,
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
@@ -308,6 +315,7 @@
 				02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */,
 				C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
+				C13133BC24D885B900551841 /* DWGGoalViewViewController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,
 			);
@@ -351,14 +359,6 @@
 				02445FEB24C9E79900B61AA5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		02445FEF24C9E79D00B61AA5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02445FF024C9E79D00B61AA5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

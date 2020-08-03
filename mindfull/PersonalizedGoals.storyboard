@@ -15,13 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="vkc-1W-IZe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8D-Kf-0NI">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0049994285219999999" green="0.5289283991" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2Z0-ij-Pbk"/>
+                                    <constraint firstAttribute="height" constant="50" id="UZa-lR-3D1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back to Journey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toJourney:" destination="o3u-Ta-TAY" eventType="touchUpInside" id="UJM-wl-nNS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W8D-Kf-0NI" firstAttribute="centerY" secondItem="vkc-1W-IZe" secondAttribute="centerY" id="NjH-8f-twx"/>
+                            <constraint firstItem="W8D-Kf-0NI" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="ZDX-yY-2Gd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gog-Ul-MYN"/>
                     </view>
+                    <connections>
+                        <segue destination="xZs-pc-4xs" kind="show" id="mLB-tL-YR7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuh-30-vE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="o3u-Ta-TAY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="104" y="117"/>
+        </scene>
+        <!--JourneyVC-->
+        <scene sceneID="3ix-Ur-kuJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="JourneyVC" id="xZs-pc-4xs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Aei-M4-ukG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRa-dh-eyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="528"/>
         </scene>
     </scenes>
 </document>
