@@ -79,29 +79,90 @@ class DWGHomeScreenViewController: UIViewController {
         self.performSegue(withIdentifier: "toJourney", sender: self)
     }
     
-    //Switching to Goal View
+    //Switching to Goal View (Daily)
     @IBAction func toGoalViewDG1(_ sender: Any) {
-        self.performSegue(withIdentifier: "toGoalView", sender: self)
+        var index = 1 //Here we will find the status value for chosen daily goal 1
+        
+        if (index == 1) {
+            self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
+        }
+        else if (index == 2) {
+            self.performSegue(withIdentifier: "toDailyGoalViewOngoing", sender: self)
+        }
+        else if (index == 3 || index == 4) {
+            self.performSegue(withIdentifier: "toDailyGoalViewFinish", sender: self)
+        }
     }
     
     @IBAction func toGoalViewDG2(_ sender: Any) {
-        self.performSegue(withIdentifier: "toGoalView", sender: self)
+        var index = 2 //Here we will find the status value for chosen daily goal 2
+        
+        if (index == 1) {
+            self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
+        }
+        else if (index == 2) {
+            self.performSegue(withIdentifier: "toDailyGoalViewOngoing", sender: self)
+        }
+        else if (index == 3 || index == 4) {
+            self.performSegue(withIdentifier: "toDailyGoalViewFinish", sender: self)
+        }
     }
     
     @IBAction func toGoalViewDG3(_ sender: Any) {
-        self.performSegue(withIdentifier: "toGoalView", sender: self)
+        var index = 3 //Here we will find the status value for chosen daily goal 3
+        
+        if (index == 1) {
+            self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
+        }
+        else if (index == 2) {
+            self.performSegue(withIdentifier: "toDailyGoalViewOngoing", sender: self)
+        }
+        else if (index == 3 || index == 4) {
+            self.performSegue(withIdentifier: "toDailyGoalViewFinish", sender: self)
+        }
     }
     
+    //Switching to Goal View (Weekly)
     @IBAction func toGoalViewWG1(_ sender: Any) {
-        self.performSegue(withIdentifier: "toGoalView", sender: self)
+        var index = 1 //Here we will find the status value for chosen weekly goal 1
+        
+        if (index == 1) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
+        }
+        else if (index == 2) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewOngoing", sender: self)
+        }
+        else if (index == 3 || index == 4) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewFinish", sender: self)
+        }
     }
     
     @IBAction func toGoalViewWG2(_ sender: Any) {
-        self.performSegue(withIdentifier: "toGoalView", sender: self)
+        var index = 2 //Here we will find the status value for chosen weekly goal 1
+        
+        if (index == 1) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
+        }
+        else if (index == 2) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewOngoing", sender: self)
+        }
+        else if (index == 3 || index == 4) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewFinish", sender: self)
+        }
     }
     
     @IBAction func toGoalViewWG3(_ sender: Any) {
-        self.performSegue(withIdentifier: "toGoalView", sender: self)
+        var index = 3 //Here we will find the status value for chosen weekly goal 1
+        
+        if (index == 1) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
+        }
+        else if (index == 2) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewOngoing", sender: self)
+        }
+        else if (index == 3 || index == 4) {
+            self.performSegue(withIdentifier: "toWeeklyGoalViewFinish", sender: self)
+        }
     }
 }
 
@@ -114,7 +175,7 @@ class Goal {
     
     var xpPoints = 0
     
-    //Variable status is a way of representing the status of a certain goal, with 0 meaning the goal isn't chosen, 1 meaning it is one of the chosen goals, 2 meaning it is a ongoing chosen goal, 3 meaning it is a discarded ongoing goal and 4 meaning it is a finished ongoing goal.
+    //Variable status is a way of representing the status of a certain goal, with 0 meaning the goal isn't chosen, 1 meaning it is one of the chosen goals, 2 meaning it is a ongoing chosen goal, 3 meaning it is a discarded chosen goal and 4 meaning it is a finished chosen goal.
     var status = 0
     
     

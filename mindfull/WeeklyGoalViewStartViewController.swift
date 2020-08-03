@@ -1,5 +1,5 @@
 //
-//  PGHomeScreenViewController.swift
+//  WeeklyGoalViewStartViewController.swift
 //  mindfull
 //
 //  Created by Tyler Turek on 8/3/20.
@@ -8,14 +8,16 @@
 
 import UIKit
 
-class PGHomeScreenViewController: UIViewController {
-    //Starting
+class WeeklyGoalViewStartViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func toJourney(_ sender: Any) {
-        self.performSegue(withIdentifier: "toJourney", sender: self)
+    
+    //Switching to DWG home
+    @IBAction func toDWGHomeScreen(_ sender: Any) {
+        self.performSegue(withIdentifier: "toDWGHome", sender: self)
     }
 }
