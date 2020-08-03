@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WgM-pW-5T3">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WgM-pW-5T3">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,11 +122,11 @@
             <objects>
                 <viewController id="4fj-eV-wQT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hig-fh-qaB" userLabel="OverallView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1046"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-h4-JrU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5V2-Kg-evd">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -228,11 +230,11 @@
             <objects>
                 <viewController storyboardIdentifier="JourneyVC" id="Bn4-oq-gQe" customClass="JourneyController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-dw-6z9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-hb-V5c" userLabel="Settings">
-                                <rect key="frame" x="354" y="10" width="50" height="50"/>
+                                <rect key="frame" x="354" y="54" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CJg-73-SRA"/>
                                     <constraint firstAttribute="width" constant="50" id="N3J-mJ-a2A"/>
@@ -387,7 +389,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOw-O7-Jwg">
-                                <rect key="frame" x="10" y="60" width="225" height="40"/>
+                                <rect key="frame" x="10" y="104" width="225" height="40"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="8fD-FP-oH5"/>
@@ -402,7 +404,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder for XP bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl5-3t-C9J">
-                                <rect key="frame" x="10" y="10" width="250" height="50"/>
+                                <rect key="frame" x="10" y="54" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="cYb-0y-aNA"/>
                                     <constraint firstAttribute="height" constant="50" id="cnh-4Q-jbz"/>
@@ -412,7 +414,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb2-hl-jtn">
-                                <rect key="frame" x="10" y="110" width="225" height="40"/>
+                                <rect key="frame" x="10" y="154" width="225" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7x2-l5-vfk"/>
@@ -473,11 +475,11 @@
             <objects>
                 <viewController id="fjg-sW-ScX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bow-JQ-qQg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QER-BS-20Q">
-                                <rect key="frame" x="354" y="10" width="50" height="50"/>
+                                <rect key="frame" x="354" y="54" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Vj0-Rx-oXc"/>
                                     <constraint firstAttribute="width" constant="50" id="zCc-dv-epW"/>
@@ -507,19 +509,23 @@
             <objects>
                 <viewController id="vce-aH-bqn" customClass="GardenController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdl-gV-0at" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lake" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-eG-QPO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fue-15-zD8">
-                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                <rect key="frame" x="15" y="59" width="50" height="50"/>
                                 <state key="normal" image="customizable"/>
                                 <connections>
                                     <action selector="goToCustomizable:" destination="vce-aH-bqn" eventType="touchUpInside" id="ema-za-kaf"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u72-e3-bYx">
+                                <rect key="frame" x="53" y="170" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -535,6 +541,7 @@
                     <tabBarItem key="tabBarItem" title="" image="icons8-garden-50" id="qiY-zl-M6K"/>
                     <navigationItem key="navigationItem" title="Garden" id="C5r-iF-1h7"/>
                     <connections>
+                        <outlet property="bgImage" destination="u72-e3-bYx" id="t77-Jz-GT8"/>
                         <segue destination="5ck-HQ-SZ7" kind="showDetail" identifier="toCustomize" id="lr5-dZ-HCb"/>
                     </connections>
                 </viewController>
@@ -632,13 +639,13 @@
                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visual Particles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOh-cW-Ajm">
-                                <rect key="frame" x="133.66666666666669" y="154.66666666666666" width="146.66666666666669" height="30.333333333333343"/>
+                                <rect key="frame" x="133.66666666666669" y="198.66666666666666" width="146.66666666666669" height="30.333333333333343"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cf-4F-t12">
-                                <rect key="frame" x="110.66666666666669" y="50" width="193" height="54.666666666666657"/>
+                                <rect key="frame" x="110.66666666666669" y="94" width="193" height="54.666666666666657"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -651,7 +658,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DED-OJ-ugy">
-                                <rect key="frame" x="65" y="188" width="31" height="24"/>
+                                <rect key="frame" x="65" y="232" width="31" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -769,19 +776,19 @@
             <point key="canvasLocation" x="1769.5652173913045" y="743.97321428571422"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="lgD-GR-JYS"/>
-        <segue reference="75E-t5-DXL"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow" width="30" height="30"/>
         <image name="customizable" width="50" height="50"/>
-        <image name="download" width="765" height="765"/>
+        <image name="download" width="550.79998779296875" height="550.79998779296875"/>
         <image name="icons8-garden-50" width="29" height="29"/>
         <image name="icons8-home-50" width="29" height="29"/>
         <image name="icons8-path-50" width="29" height="29"/>
         <image name="lake" width="640" height="1136"/>
-        <image name="mindfull Logo" width="320" height="240"/>
+        <image name="mindfull Logo" width="960" height="720"/>
         <image name="uncompleted" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lgD-GR-JYS"/>
+        <segue reference="75E-t5-DXL"/>
+    </inferredMetricsTieBreakers>
 </document>

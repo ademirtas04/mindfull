@@ -10,9 +10,9 @@ import UIKit
 
 class GardenController: UIViewController {
     var screenTimer: Timer?
+
     @IBOutlet weak var bgImage: UIImageView!
     static var coins: Int = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
