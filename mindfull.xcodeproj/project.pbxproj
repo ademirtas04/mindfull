@@ -15,6 +15,8 @@
 		0244600724C9E79E00B61AA5 /* mindfullUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244600624C9E79E00B61AA5 /* mindfullUITests.swift */; };
 		0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601424CA088100B61AA5 /* JourneyStop.swift */; };
 		0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601624CA0C5200B61AA5 /* JourneyController.swift */; };
+		02858BA224D8B7660034D39A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02858BA124D8B7660034D39A /* AudioPlayer.swift */; };
+		02858BA424D8C5780034D39A /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02858BA324D8C5770034D39A /* backgroundMusic.mp3 */; };
 		02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0140F24D47A9C00911EFA /* CustomizeController.swift */; };
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
 		C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D624D4BC01002BD945 /* MyParticle.sks */; };
@@ -59,6 +61,8 @@
 		0244600824C9E79E00B61AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0244601424CA088100B61AA5 /* JourneyStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStop.swift; sourceTree = "<group>"; };
 		0244601624CA0C5200B61AA5 /* JourneyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyController.swift; sourceTree = "<group>"; };
+		02858BA124D8B7660034D39A /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		02858BA324D8C5770034D39A /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		02B0140F24D47A9C00911EFA /* CustomizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
 		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
 		C15F58D624D4BC01002BD945 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
@@ -123,8 +127,10 @@
 				0244601424CA088100B61AA5 /* JourneyStop.swift */,
 				02B0140F24D47A9C00911EFA /* CustomizeController.swift */,
 				02445FE824C9E79900B61AA5 /* ViewController.swift */,
+				02858BA324D8C5770034D39A /* backgroundMusic.mp3 */,
 				0244601624CA0C5200B61AA5 /* JourneyController.swift */,
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
+				02858BA124D8B7660034D39A /* AudioPlayer.swift */,
 				C1E773F724D36CA700612765 /* TitleScreenViewController.swift */,
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
 				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02445FF124C9E79D00B61AA5 /* LaunchScreen.storyboard in Resources */,
+				02858BA424D8C5780034D39A /* backgroundMusic.mp3 in Resources */,
 				02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */,
 				C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */,
 				C15F58DB24D4BD76002BD945 /* red.sks in Resources */,
@@ -294,6 +301,7 @@
 			files = (
 				C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */,
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
+				02858BA224D8B7660034D39A /* AudioPlayer.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
 				C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */,
