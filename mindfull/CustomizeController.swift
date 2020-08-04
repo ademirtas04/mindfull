@@ -9,6 +9,8 @@
 import UIKit
 
 class CustomizeController: UIViewController {
+    
+    var responseList: [String] = []
 
     @IBOutlet weak var RedSwitch: UISwitch!
     @IBOutlet weak var BlueSwitch: UISwitch!
@@ -128,5 +130,15 @@ class CustomizeController: UIViewController {
     }
     func getLeavesUnlocked() -> Bool{
         return leavesUnlocked
+    }
+    
+    func addResponses(responses: [String]){
+        for response in responses{
+            responseList.insert(response, at: 0)
+        }
+    }
+    
+    func addResponse(response: String){
+        responseList.insert(response, at: 0)
     }
 }

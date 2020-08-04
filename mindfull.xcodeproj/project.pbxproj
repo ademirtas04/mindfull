@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0215100724D9A6D100162F02 /* AudioProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215100624D9A6D100162F02 /* AudioProgressController.swift */; };
 		02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02445FE624C9E79900B61AA5 /* AppDelegate.swift */; };
 		02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02445FE824C9E79900B61AA5 /* ViewController.swift */; };
 		02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02445FEA24C9E79900B61AA5 /* Main.storyboard */; };
@@ -18,6 +19,9 @@
 		0278749424D8D17500A3DF7F /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0278749324D8D17500A3DF7F /* backgroundMusic.mp3 */; };
 		02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0140F24D47A9C00911EFA /* CustomizeController.swift */; };
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
+		02FF573624D9E2EB006AE94F /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573524D9E2EB006AE94F /* JournalController.swift */; };
+		02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573724D9E334006AE94F /* LongPromptController.swift */; };
+		02FF573A24D9E392006AE94F /* ShortPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573924D9E392006AE94F /* ShortPromptController.swift */; };
 		C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */; };
 		C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */; };
 		C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D624D4BC01002BD945 /* MyParticle.sks */; };
@@ -50,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0215100624D9A6D100162F02 /* AudioProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProgressController.swift; sourceTree = "<group>"; };
 		02445FE324C9E79900B61AA5 /* mindfull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02445FE624C9E79900B61AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02445FE824C9E79900B61AA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +74,9 @@
 		02858BA324D8C5770034D39A /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		02B0140F24D47A9C00911EFA /* CustomizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
 		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
+		02FF573524D9E2EB006AE94F /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
+		02FF573724D9E334006AE94F /* LongPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPromptController.swift; sourceTree = "<group>"; };
+		02FF573924D9E392006AE94F /* ShortPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortPromptController.swift; sourceTree = "<group>"; };
 		C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGHomeScreenViewController.swift; sourceTree = "<group>"; };
 		C13133BB24D885B900551841 /* DWGGoalViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGGoalViewViewController.swift; sourceTree = "<group>"; };
 		C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGHomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +148,11 @@
 			isa = PBXGroup;
 			children = (
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
+				02FF573524D9E2EB006AE94F /* JournalController.swift */,
+				02FF573724D9E334006AE94F /* LongPromptController.swift */,
+				02FF573924D9E392006AE94F /* ShortPromptController.swift */,
 				0273812624D8D5E800DFD0BD /* AudioPlayer.swift */,
+				0215100624D9A6D100162F02 /* AudioProgressController.swift */,
 				02445FE624C9E79900B61AA5 /* AppDelegate.swift */,
 				0244601424CA088100B61AA5 /* JourneyStop.swift */,
 				02B0140F24D47A9C00911EFA /* CustomizeController.swift */,
@@ -338,6 +350,7 @@
 				C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */,
 				C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */,
 				C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */,
+				02FF573A24D9E392006AE94F /* ShortPromptController.swift in Sources */,
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
@@ -346,8 +359,11 @@
 				C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
+				02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,
 				0273812724D8D5E800DFD0BD /* AudioPlayer.swift in Sources */,
+				02FF573624D9E2EB006AE94F /* JournalController.swift in Sources */,
+				0215100724D9A6D100162F02 /* AudioProgressController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
