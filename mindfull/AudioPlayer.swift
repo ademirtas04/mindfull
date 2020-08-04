@@ -18,8 +18,24 @@ class AudioPlayer {
             }
     }
     
+    func startBackgroundMusic(forResource: String, ofType: String) {
+        let path = Bundle.main.path(forResource: forResource, ofType: ofType)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+            //audioPlayer?.numberOfLoops = -1
+            //audioPlayer?.prepareToPlay()
+            audioPlayer?.play()
+        } catch {
+            print(error)
+        }
+    }
+    
     func stopBackgroundMusic() {
 
         audioPlayer?.stop()
+    }
+    
+    func isPlaying() -> Bool {
+        return (audioPlayer?.isPlaying)!
     }
 }
