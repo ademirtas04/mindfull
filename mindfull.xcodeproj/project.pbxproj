@@ -20,6 +20,12 @@
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
 		C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */; };
 		C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */; };
+		C146582424D9C82100F04AA0 /* DailyGoalViewStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582324D9C82100F04AA0 /* DailyGoalViewStartViewController.swift */; };
+		C146582624D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582524D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift */; };
+		C146582824D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582724D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift */; };
+		C146582A24D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582924D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift */; };
+		C146582C24D9C95600F04AA0 /* WeeklyGoalViewOngoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582B24D9C95600F04AA0 /* WeeklyGoalViewOngoingViewController.swift */; };
+		C146582E24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582D24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift */; };
 		C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D624D4BC01002BD945 /* MyParticle.sks */; };
 		C15F58D924D4BC01002BD945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15F58D724D4BC01002BD945 /* Assets.xcassets */; };
 		C15F58DB24D4BD76002BD945 /* red.sks in Resources */ = {isa = PBXBuildFile; fileRef = C15F58DA24D4BD76002BD945 /* red.sks */; };
@@ -72,6 +78,12 @@
 		C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGHomeScreenViewController.swift; sourceTree = "<group>"; };
 		C13133BB24D885B900551841 /* DWGGoalViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGGoalViewViewController.swift; sourceTree = "<group>"; };
 		C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGHomeScreenViewController.swift; sourceTree = "<group>"; };
+		C146582324D9C82100F04AA0 /* DailyGoalViewStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewStartViewController.swift; sourceTree = "<group>"; };
+		C146582524D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewOngoingViewController.swift; sourceTree = "<group>"; };
+		C146582724D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewFinishViewController.swift; sourceTree = "<group>"; };
+		C146582924D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyGoalViewStartViewController.swift; sourceTree = "<group>"; };
+		C146582B24D9C95600F04AA0 /* WeeklyGoalViewOngoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyGoalViewOngoingViewController.swift; sourceTree = "<group>"; };
+		C146582D24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyGoalViewFinishViewController.swift; sourceTree = "<group>"; };
 		C15F58D624D4BC01002BD945 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		C15F58D724D4BC01002BD945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15F58DA24D4BD76002BD945 /* red.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = red.sks; sourceTree = "<group>"; };
@@ -80,12 +92,6 @@
 		C1BE161424D21B6400410194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcomeViewController.swift; sourceTree = "<group>"; };
 		C1E773F724D36CA700612765 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
-		C1F8AAE424D8C6AA00882E8C /* DailyGoalViewOngoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewOngoingViewController.swift; sourceTree = "<group>"; };
-		C1F8AAE624D8C6BF00882E8C /* DailyGoalViewFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewFinishViewController.swift; sourceTree = "<group>"; };
-		C1F8AAE824D8C6D800882E8C /* WeeklyGoalViewStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyGoalViewStartViewController.swift; sourceTree = "<group>"; };
-		C1F8AAEA24D8C6EB00882E8C /* WeeklyGoalViewOngoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyGoalViewOngoingViewController.swift; sourceTree = "<group>"; };
-		C1F8AAEC24D8C6FA00882E8C /* WeeklyGoalViewFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyGoalViewFinishViewController.swift; sourceTree = "<group>"; };
-		C1F8AAEE24D8C7F400882E8C /* DailyGoalViewStartViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalViewStartViewControllerViewController.swift; sourceTree = "<group>"; };
 		C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyAndWeeklyGoals.storyboard; sourceTree = "<group>"; };
 		C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedGoals.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,12 +161,12 @@
 				C1BE161224D2114D00410194 /* QuizViewController.swift */,
 				C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */,
 				C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */,
-				C1F8AAEE24D8C7F400882E8C /* DailyGoalViewStartViewControllerViewController.swift */,
-				C1F8AAE424D8C6AA00882E8C /* DailyGoalViewOngoingViewController.swift */,
-				C1F8AAE624D8C6BF00882E8C /* DailyGoalViewFinishViewController.swift */,
-				C1F8AAE824D8C6D800882E8C /* WeeklyGoalViewStartViewController.swift */,
-				C1F8AAEA24D8C6EB00882E8C /* WeeklyGoalViewOngoingViewController.swift */,
-				C1F8AAEC24D8C6FA00882E8C /* WeeklyGoalViewFinishViewController.swift */,
+				C146582324D9C82100F04AA0 /* DailyGoalViewStartViewController.swift */,
+				C146582524D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift */,
+				C146582724D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift */,
+				C146582924D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift */,
+				C146582B24D9C95600F04AA0 /* WeeklyGoalViewOngoingViewController.swift */,
+				C146582D24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift */,
 				C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */,
 				C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */,
 				02445FF224C9E79D00B61AA5 /* Info.plist */,
@@ -338,16 +344,22 @@
 				C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */,
 				C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */,
 				C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */,
+				C146582824D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift in Sources */,
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
+				C146582C24D9C95600F04AA0 /* WeeklyGoalViewOngoingViewController.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
 				C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */,
 				02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */,
 				C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */,
+				C146582424D9C82100F04AA0 /* DailyGoalViewStartViewController.swift in Sources */,
+				C146582624D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift in Sources */,
+				C146582A24D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,
 				0273812724D8D5E800DFD0BD /* AudioPlayer.swift in Sources */,
+				C146582E24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

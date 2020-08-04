@@ -156,13 +156,13 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqp-Rp-9Y5">
-                                <rect key="frame" x="107" y="768" width="200" height="50"/>
+                                <rect key="frame" x="82" y="768" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0049994285219999999" green="0.5289283991" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="G7K-tI-l7v"/>
+                                    <constraint firstAttribute="width" constant="250" id="G7K-tI-l7v"/>
                                     <constraint firstAttribute="height" constant="50" id="r0V-Kk-Vm2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Back to Journey">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -388,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="183" y="524"/>
         </scene>
-        <!--Daily Goal View Start View Controller View Controller-->
+        <!--Daily Goal View Start View Controller-->
         <scene sceneID="g2y-6L-eJw">
             <objects>
-                <viewController id="OmJ-xg-nRD" customClass="DailyGoalViewStartViewControllerViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OmJ-xg-nRD" customClass="DailyGoalViewStartViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OlH-px-Lbe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -502,8 +502,7 @@
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toDWGHomeScreen:" destination="OmJ-xg-nRD" eventType="touchUpInside" id="5kf-3e-ELE"/>
-                                    <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="eqL-3U-X9m"/>
+                                    <action selector="toDWGHomeScreen:" destination="OmJ-xg-nRD" eventType="touchUpInside" id="YqS-Je-01B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -543,7 +542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAU-ix-WHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="86"/>
+            <point key="canvasLocation" x="1060.8695652173915" y="85.714285714285708"/>
         </scene>
         <!--Daily Goal View Ongoing View Controller-->
         <scene sceneID="h92-1P-rwP">
@@ -671,8 +670,7 @@
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toDWGHomeScreen:" destination="dh3-I7-hd2" eventType="touchUpInside" id="zzO-cz-6vR"/>
-                                    <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="tRJ-a9-reW"/>
+                                    <action selector="toDWGHomeScreen:" destination="dh3-I7-hd2" eventType="touchUpInside" id="oCt-hq-ooy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -818,7 +816,8 @@
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toDWGHomeScreen:" destination="byL-MQ-RTA" eventType="touchUpInside" id="Z7C-pK-vKC"/>
+                                    <action selector="toDWGHomeScreen:" destination="MKb-kK-mMP" eventType="touchUpInside" id="B9U-SV-2fN"/>
+                                    <action selector="toDWGHomeScreen:" destination="byL-MQ-RTA" eventType="touchUpInside" id="lVx-9j-QoC"/>
                                     <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="GXN-kQ-bzi"/>
                                 </connections>
                             </button>
@@ -856,6 +855,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktQ-P5-cOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MKb-kK-mMP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1061" y="1528"/>
         </scene>
@@ -1332,7 +1332,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a5n-Jk-O4v"/>
+        <segue reference="LPV-rC-BYD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>

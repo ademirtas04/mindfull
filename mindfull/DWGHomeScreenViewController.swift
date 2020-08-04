@@ -14,7 +14,8 @@ class DWGHomeScreenViewController: UIViewController {
         super.viewDidLoad()
 
         initGoals()
-        chooseGoals()
+        chooseDailyGoals()
+        chooseWeeklyGoals()
         setUpScreen()
     }
     
@@ -23,6 +24,7 @@ class DWGHomeScreenViewController: UIViewController {
         super.viewWillAppear(animated)
         
         updateScreen()
+        
     }
     
     //Instance Variables
@@ -59,8 +61,13 @@ class DWGHomeScreenViewController: UIViewController {
         weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
     }
     
-    //Choosing the goals
-    func chooseGoals() {
+    //Choosing the daily goals
+    func chooseDailyGoals() {
+        
+    }
+    
+    //Choosing the weekly goals
+    func chooseWeeklyGoals() {
         
     }
     

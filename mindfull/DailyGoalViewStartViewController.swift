@@ -1,14 +1,14 @@
 //
-//  DailyGoalViewStartViewControllerViewController.swift
+//  DailyGoalViewStartViewController.swift
 //  mindfull
 //
-//  Created by Tyler Turek on 8/3/20.
+//  Created by Tyler Turek on 8/4/20.
 //  Copyright © 2020 Alp Demirtas. All rights reserved.
 //
 
 import UIKit
 
-class DailyGoalViewStartViewControllerViewController: UIViewController {
+class DailyGoalViewStartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class DailyGoalViewStartViewControllerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //Switching to DWG home
+    //Return to DWG Home
     @IBAction func toDWGHomeScreen(_ sender: Any) {
         self.performSegue(withIdentifier: "toDWGHome", sender: self)
     }
