@@ -14,8 +14,6 @@ class DWGHomeScreenViewController: UIViewController {
         super.viewDidLoad()
 
         initGoals()
-        chooseDailyGoals()
-        chooseWeeklyGoals()
         setUpScreen()
     }
     
@@ -23,17 +21,20 @@ class DWGHomeScreenViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        updateScreen()
-        
+        if (checkDay()) {
+            chooseDailyGoals()
+            if (checkWeek()) {
+                chooseWeeklyGoals()
+            }
+        }
+        setUpScreen()
     }
     
     //Instance Variables
     var dailyGoals: [Goal] = []
-    
     var currentDailyGoals: [Goal] = []
     
     var weeklyGoals: [Goal] = []
-    
     var currentWeeklyGoals: [Goal] = []
     
     @IBOutlet weak var DG1Title: UILabel!
@@ -52,33 +53,263 @@ class DWGHomeScreenViewController: UIViewController {
     @IBOutlet weak var WG2xp: UILabel!
     @IBOutlet weak var WG3xp: UILabel!
     
+    @IBOutlet weak var DG1Button: UIButton!
+    @IBOutlet weak var DG2Button: UIButton!
+    @IBOutlet weak var DG3Button: UIButton!
+    
+    @IBOutlet weak var WG1Button: UIButton!
+    @IBOutlet weak var WG2Button: UIButton!
+    @IBOutlet weak var WG3Button: UIButton!
+    
+    @IBOutlet weak var DGTimeLeft: UILabel!
+    @IBOutlet weak var WGTimeLeft: UILabel!
+    
+    let calendar = Calendar.current
+    
+    var previousDayDate = Date()
+    
+    
     //Initializing the goals
     func initGoals() {
-        //Initializing the daily goals
+        //Initializing the daily goals (still need to persoanlize info)
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
         dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
         
-        //Initializing the weekly goals
+        //Initializing the weekly goals (still need to persoanlize info)
         weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        
+        chooseDailyGoals()
+        chooseWeeklyGoals()
     }
     
     //Choosing the daily goals
     func chooseDailyGoals() {
+        currentDailyGoals.removeAll()
         
+        //We get a random integer from 1-30 then subtract 1 since arrays start at 0, meaning that the last element (goal 30) has an index of 29
+        let random1 = Int.random(in: 1..<31) - 1
+        let random2 = Int.random(in: 1..<31) - 1
+        let random3 = Int.random(in: 1..<31) - 1
+        
+        let dailyGoal1 = dailyGoals[random1]
+        let dailyGoal2 = dailyGoals[random2]
+        let dailyGoal3 = dailyGoals[random3]
+        
+        dailyGoal1.changeStatus(newStatus: 1)
+        dailyGoal2.changeStatus(newStatus: 1)
+        dailyGoal3.changeStatus(newStatus: 1)
+
+        currentDailyGoals.append(dailyGoal1)
+        currentDailyGoals.append(dailyGoal2)
+        currentDailyGoals.append(dailyGoal3)
     }
     
     //Choosing the weekly goals
     func chooseWeeklyGoals() {
+        currentWeeklyGoals.removeAll()
         
+        //We get a random integer from 1-15 then subtract 1 since arrays start at 0, meaning that the last element (goal 15) has an index of 14
+        let random1 = Int.random(in: 1..<16) - 1
+        let random2 = Int.random(in: 1..<16) - 1
+        let random3 = Int.random(in: 1..<16) - 1
+        
+        let weeklyGoal1 = weeklyGoals[random1]
+        let weeklyGoal2 = weeklyGoals[random2]
+        let weeklyGoal3 = weeklyGoals[random3]
+        
+        
+        weeklyGoal1.changeStatus(newStatus: 1)
+        weeklyGoal2.changeStatus(newStatus: 1)
+        weeklyGoal3.changeStatus(newStatus: 1)
+        
+        currentWeeklyGoals.append(weeklyGoal1)
+        currentWeeklyGoals.append(weeklyGoal2)
+        currentWeeklyGoals.append(weeklyGoal3)
     }
     
-    //Setup the buttons
+    //Setup the buttons and labels
     func setUpScreen() {
+        DG1Title.text = currentDailyGoals[0].getTitle()
+        DG1xp.text = String(currentDailyGoals[0].getxpPoints())
+        if (currentDailyGoals[0].getStatus() == 1) {
+            DG1Button.backgroundColor = UIColor.darkGray
+        }
+        else if (currentDailyGoals[0].getStatus() == 2) {
+            DG1Button.backgroundColor = UIColor.yellow
+        }
+        else if (currentDailyGoals[0].getStatus() == 3) {
+            DG1Button.backgroundColor = UIColor.red
+        }
+        else if (currentDailyGoals[0].getStatus() == 4) {
+            DG1Button.backgroundColor = UIColor.green
+        }
         
+        DG2Title.text = currentDailyGoals[1].getTitle()
+        DG2xp.text = String(currentDailyGoals[1].getxpPoints())
+        if (currentDailyGoals[1].getStatus() == 1) {
+            DG2Button.backgroundColor = UIColor.darkGray
+        }
+        else if (currentDailyGoals[1].getStatus() == 2) {
+            DG2Button.backgroundColor = UIColor.yellow
+        }
+        else if (currentDailyGoals[1].getStatus() == 3) {
+            DG2Button.backgroundColor = UIColor.red
+        }
+        else if (currentDailyGoals[1].getStatus() == 4) {
+            DG2Button.backgroundColor = UIColor.green
+        }
+        
+        DG3Title.text = currentDailyGoals[2].getTitle()
+        DG3xp.text = String(currentDailyGoals[2].getxpPoints())
+        if (currentDailyGoals[2].getStatus() == 1) {
+            DG3Button.backgroundColor = UIColor.darkGray
+        }
+        else if (currentDailyGoals[2].getStatus() == 2) {
+            DG3Button.backgroundColor = UIColor.yellow
+        }
+        else if (currentDailyGoals[2].getStatus() == 3) {
+            DG3Button.backgroundColor = UIColor.red
+        }
+        else if (currentDailyGoals[2].getStatus() == 4) {
+            DG3Button.backgroundColor = UIColor.green
+        }
+        
+        WG1Title.text = currentWeeklyGoals[0].getTitle()
+        WG1xp.text = String(currentWeeklyGoals[0].getxpPoints())
+        if (currentWeeklyGoals[0].getStatus() == 1) {
+            WG1Button.backgroundColor = UIColor.darkGray
+        }
+        else if (currentWeeklyGoals[0].getStatus() == 2) {
+            WG1Button.backgroundColor = UIColor.yellow
+        }
+        else if (currentWeeklyGoals[0].getStatus() == 3) {
+            WG1Button.backgroundColor = UIColor.red
+        }
+        else if (currentWeeklyGoals[0].getStatus() == 4) {
+            WG1Button.backgroundColor = UIColor.green
+        }
+        
+        WG2Title.text = currentWeeklyGoals[1].getTitle()
+        WG2xp.text = String(currentWeeklyGoals[1].getxpPoints())
+        if (currentWeeklyGoals[1].getStatus() == 1) {
+            WG2Button.backgroundColor = UIColor.darkGray
+        }
+        else if (currentWeeklyGoals[1].getStatus() == 2) {
+            WG2Button.backgroundColor = UIColor.yellow
+        }
+        else if (currentWeeklyGoals[1].getStatus() == 3) {
+            WG2Button.backgroundColor = UIColor.red
+        }
+        else if (currentWeeklyGoals[1].getStatus() == 4) {
+            WG2Button.backgroundColor = UIColor.green
+        }
+        
+        WG3Title.text = currentWeeklyGoals[2].getTitle()
+        WG3xp.text = String(currentWeeklyGoals[2].getxpPoints())
+        if (currentWeeklyGoals[2].getStatus() == 1) {
+            WG3Button.backgroundColor = UIColor.darkGray
+        }
+        else if (currentWeeklyGoals[2].getStatus() == 2) {
+            WG3Button.backgroundColor = UIColor.yellow
+        }
+        else if (currentWeeklyGoals[2].getStatus() == 3) {
+            WG3Button.backgroundColor = UIColor.red
+        }
+        else if (currentWeeklyGoals[2].getStatus() == 4) {
+            WG3Button.backgroundColor = UIColor.green
+        }
+        
+        let rightNow = Date()
+        let nowDay = calendar.dateComponents([.weekday], from: rightNow).weekday!
+        let nowHour = calendar.dateComponents([.hour], from: rightNow).hour!
+        let nowMinute = calendar.dateComponents([.minute], from: rightNow).minute!
+        
+        let daysLeft = 7 - nowDay
+        var hoursLeft = 24 - nowHour - 1
+        var minutesLeft = 60 - nowMinute
+        if minutesLeft == 60 {
+            hoursLeft = hoursLeft + 1
+            minutesLeft = 0
+        }
+        
+        DGTimeLeft.text = "Daily Goals Change in \(hoursLeft) Hours \(minutesLeft) Minutes"
+        WGTimeLeft.text = "Weekly Goals Change in \(daysLeft) Days \(hoursLeft) Hours \(minutesLeft) minutes"
     }
     
-    //Update the screen when users come back from Goal View
-    func updateScreen() {
-        
+    //Determine whether or not a day has past and if new daily goals are needed
+    func checkDay() -> Bool {
+        let rightNow = Date()
+        let rightNowWeekDay = calendar.dateComponents([.weekday], from: rightNow)
+        let previousWeekDay = calendar.dateComponents([.weekday], from: previousDayDate)
+        if (rightNowWeekDay != previousWeekDay) {
+            previousDayDate = rightNow
+            return true
+        }
+        else {
+            let rightNowWeek = calendar.dateComponents([.weekOfYear], from: rightNow)
+            let previousWeek = calendar.dateComponents([.weekOfYear], from: previousDayDate)
+            if (rightNowWeek != previousWeek)  {
+                previousDayDate = rightNow
+                return true
+            }
+        }
+        previousDayDate = rightNow
+        return false
+    }
+
+    //Determine whether or not a week has past and if new weekly goals are needed
+    func checkWeek() -> Bool {
+        let rightNow = Date()
+        let rightNowWeek = calendar.dateComponents([.weekOfYear], from: rightNow)
+        let previousWeek = calendar.dateComponents([.weekOfYear], from: previousDayDate)
+        if (rightNowWeek != previousWeek) {
+            previousDayDate = rightNow
+            return true
+        }
+        previousDayDate = rightNow
+        return false
     }
     
     //Switching to Journey
@@ -88,7 +319,7 @@ class DWGHomeScreenViewController: UIViewController {
     
     //Switching to Goal View (Daily)
     @IBAction func toGoalViewDG1(_ sender: Any) {
-        var index = 1 //Here we will find the status value for chosen daily goal 1
+        let index = currentDailyGoals[1].getStatus()
         
         if (index == 1) {
             self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
@@ -102,7 +333,7 @@ class DWGHomeScreenViewController: UIViewController {
     }
     
     @IBAction func toGoalViewDG2(_ sender: Any) {
-        var index = 2 //Here we will find the status value for chosen daily goal 2
+        let index = currentDailyGoals[2].getStatus()
         
         if (index == 1) {
             self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
@@ -116,7 +347,7 @@ class DWGHomeScreenViewController: UIViewController {
     }
     
     @IBAction func toGoalViewDG3(_ sender: Any) {
-        var index = 3 //Here we will find the status value for chosen daily goal 3
+        let index = currentDailyGoals[3].getStatus()
         
         if (index == 1) {
             self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
@@ -131,7 +362,7 @@ class DWGHomeScreenViewController: UIViewController {
     
     //Switching to Goal View (Weekly)
     @IBAction func toGoalViewWG1(_ sender: Any) {
-        var index = 1 //Here we will find the status value for chosen weekly goal 1
+        let index = currentWeeklyGoals[1].getStatus()
         
         if (index == 1) {
             self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
@@ -145,7 +376,7 @@ class DWGHomeScreenViewController: UIViewController {
     }
     
     @IBAction func toGoalViewWG2(_ sender: Any) {
-        var index = 2 //Here we will find the status value for chosen weekly goal 1
+        let index = currentWeeklyGoals[2].getStatus()
         
         if (index == 1) {
             self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
@@ -159,7 +390,7 @@ class DWGHomeScreenViewController: UIViewController {
     }
     
     @IBAction func toGoalViewWG3(_ sender: Any) {
-        var index = 3 //Here we will find the status value for chosen weekly goal 1
+        let index = currentWeeklyGoals[3].getStatus()
         
         if (index == 1) {
             self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
