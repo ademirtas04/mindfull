@@ -9,6 +9,7 @@
 import UIKit
 
 class DWGHomeScreenViewController: UIViewController {
+    
     //Starting - Only first ever time this is loaded
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,11 @@ class DWGHomeScreenViewController: UIViewController {
     
     var weeklyGoals: [Goal] = []
     var currentWeeklyGoals: [Goal] = []
+    
+    var selectedGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
+    
+    //This variable is to show which goal view will be switched to, with 0 for daily start, 1 for daily ongoing, 2 for daily finished, 3 for weekly start, 4 for weekly ongoing and 5 for weekly finished
+    var indexOfMove = 0
     
     @IBOutlet weak var DG1Title: UILabel!
     @IBOutlet weak var DG2Title: UILabel!
@@ -172,7 +178,7 @@ class DWGHomeScreenViewController: UIViewController {
     //Setup the buttons and labels
     func setUpScreen() {
         DG1Title.text = currentDailyGoals[0].getTitle()
-        DG1xp.text = String(currentDailyGoals[0].getxpPoints())
+        DG1xp.text = "+\(String(currentDailyGoals[0].getxpPoints()))xp"
         if (currentDailyGoals[0].getStatus() == 1) {
             DG1Button.backgroundColor = UIColor.darkGray
         }
@@ -187,7 +193,7 @@ class DWGHomeScreenViewController: UIViewController {
         }
         
         DG2Title.text = currentDailyGoals[1].getTitle()
-        DG2xp.text = String(currentDailyGoals[1].getxpPoints())
+        DG2xp.text = "+\(String(currentDailyGoals[1].getxpPoints()))xp"
         if (currentDailyGoals[1].getStatus() == 1) {
             DG2Button.backgroundColor = UIColor.darkGray
         }
@@ -202,7 +208,7 @@ class DWGHomeScreenViewController: UIViewController {
         }
         
         DG3Title.text = currentDailyGoals[2].getTitle()
-        DG3xp.text = String(currentDailyGoals[2].getxpPoints())
+        DG3xp.text = "+\(String(currentDailyGoals[2].getxpPoints()))xp"
         if (currentDailyGoals[2].getStatus() == 1) {
             DG3Button.backgroundColor = UIColor.darkGray
         }
@@ -217,7 +223,7 @@ class DWGHomeScreenViewController: UIViewController {
         }
         
         WG1Title.text = currentWeeklyGoals[0].getTitle()
-        WG1xp.text = String(currentWeeklyGoals[0].getxpPoints())
+        WG1xp.text = "+\(String(currentWeeklyGoals[0].getxpPoints()))xp"
         if (currentWeeklyGoals[0].getStatus() == 1) {
             WG1Button.backgroundColor = UIColor.darkGray
         }
@@ -232,7 +238,7 @@ class DWGHomeScreenViewController: UIViewController {
         }
         
         WG2Title.text = currentWeeklyGoals[1].getTitle()
-        WG2xp.text = String(currentWeeklyGoals[1].getxpPoints())
+        WG2xp.text = "+\(String(currentWeeklyGoals[1].getxpPoints()))xp"
         if (currentWeeklyGoals[1].getStatus() == 1) {
             WG2Button.backgroundColor = UIColor.darkGray
         }
@@ -247,7 +253,7 @@ class DWGHomeScreenViewController: UIViewController {
         }
         
         WG3Title.text = currentWeeklyGoals[2].getTitle()
-        WG3xp.text = String(currentWeeklyGoals[2].getxpPoints())
+        WG3xp.text = "+\(String(currentWeeklyGoals[2].getxpPoints()))xp"
         if (currentWeeklyGoals[2].getStatus() == 1) {
             WG3Button.backgroundColor = UIColor.darkGray
         }
@@ -314,92 +320,145 @@ class DWGHomeScreenViewController: UIViewController {
     
     //Switching to Journey
     @IBAction func toJourney(_ sender: Any) {
+        indexOfMove = 10
         self.performSegue(withIdentifier: "toJourney", sender: self)
     }
     
     //Switching to Goal View (Daily)
     @IBAction func toGoalViewDG1(_ sender: Any) {
-        let index = currentDailyGoals[1].getStatus()
+        selectedGoal = currentDailyGoals[0]
+        let index = 1//currentDailyGoals[0].getStatus()
         
         if (index == 1) {
+            indexOfMove = 0
             self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
         }
         else if (index == 2) {
+            indexOfMove = 1
             self.performSegue(withIdentifier: "toDailyGoalViewOngoing", sender: self)
         }
         else if (index == 3 || index == 4) {
+            indexOfMove = 2
             self.performSegue(withIdentifier: "toDailyGoalViewFinish", sender: self)
         }
     }
     
     @IBAction func toGoalViewDG2(_ sender: Any) {
-        let index = currentDailyGoals[2].getStatus()
+        selectedGoal = currentDailyGoals[1]
+        let index = 2//currentDailyGoals[1].getStatus()
         
         if (index == 1) {
+            indexOfMove = 0
             self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
         }
         else if (index == 2) {
+            indexOfMove = 1
             self.performSegue(withIdentifier: "toDailyGoalViewOngoing", sender: self)
         }
         else if (index == 3 || index == 4) {
+            indexOfMove = 2
             self.performSegue(withIdentifier: "toDailyGoalViewFinish", sender: self)
         }
     }
     
     @IBAction func toGoalViewDG3(_ sender: Any) {
-        let index = currentDailyGoals[3].getStatus()
+        selectedGoal = currentDailyGoals[2]
+        let index = 3//currentDailyGoals[2].getStatus()
         
         if (index == 1) {
+            indexOfMove = 0
             self.performSegue(withIdentifier: "toDailyGoalViewStart", sender: self)
         }
         else if (index == 2) {
+            indexOfMove = 1
             self.performSegue(withIdentifier: "toDailyGoalViewOngoing", sender: self)
         }
         else if (index == 3 || index == 4) {
+            indexOfMove = 2
             self.performSegue(withIdentifier: "toDailyGoalViewFinish", sender: self)
         }
     }
     
     //Switching to Goal View (Weekly)
     @IBAction func toGoalViewWG1(_ sender: Any) {
-        let index = currentWeeklyGoals[1].getStatus()
+        selectedGoal = currentWeeklyGoals[0]
+        let index = 1//currentWeeklyGoals[0].getStatus()
         
         if (index == 1) {
+            indexOfMove = 3
             self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
         }
         else if (index == 2) {
+            indexOfMove = 4
             self.performSegue(withIdentifier: "toWeeklyGoalViewOngoing", sender: self)
         }
         else if (index == 3 || index == 4) {
+            indexOfMove = 5
             self.performSegue(withIdentifier: "toWeeklyGoalViewFinish", sender: self)
         }
     }
     
     @IBAction func toGoalViewWG2(_ sender: Any) {
-        let index = currentWeeklyGoals[2].getStatus()
+        selectedGoal = currentWeeklyGoals[0]
+        let index = 2//currentWeeklyGoals[1].getStatus()
         
         if (index == 1) {
+            indexOfMove = 3
             self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
         }
         else if (index == 2) {
+            indexOfMove = 4
             self.performSegue(withIdentifier: "toWeeklyGoalViewOngoing", sender: self)
         }
         else if (index == 3 || index == 4) {
+            indexOfMove = 5
             self.performSegue(withIdentifier: "toWeeklyGoalViewFinish", sender: self)
         }
     }
     
     @IBAction func toGoalViewWG3(_ sender: Any) {
-        let index = currentWeeklyGoals[3].getStatus()
+        selectedGoal = currentWeeklyGoals[0]
+        let index = 3//currentWeeklyGoals[2].getStatus()
         
         if (index == 1) {
+            indexOfMove = 3
             self.performSegue(withIdentifier: "toWeeklyGoalViewStart", sender: self)
         }
         else if (index == 2) {
+            indexOfMove = 4
             self.performSegue(withIdentifier: "toWeeklyGoalViewOngoing", sender: self)
         }
         else if (index == 3 || index == 4) {
+            indexOfMove = 5
             self.performSegue(withIdentifier: "toWeeklyGoalViewFinish", sender: self)
+        }
+    }
+    
+    //To pass the goal
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if indexOfMove == 0 {
+            let vc = segue.destination as! DailyGoalViewStartViewController
+            vc.thisGoal = selectedGoal
+        }
+        else if indexOfMove == 1 {
+            let vc = segue.destination as! DailyGoalViewOngoingViewController
+            vc.thisGoal = selectedGoal
+        }
+        else if indexOfMove == 2 {
+            let vc = segue.destination as! DailyGoalViewFinishViewController
+            vc.thisGoal = selectedGoal
+        }
+        else if indexOfMove == 3 {
+            let vc = segue.destination as! WeeklyGoalViewStartViewController
+            vc.thisGoal = selectedGoal
+        }
+        else if indexOfMove == 4 {
+            let vc = segue.destination as! WeeklyGoalViewOngoingViewController
+            vc.thisGoal = selectedGoal
+        }
+        else if indexOfMove == 5 {
+            let vc = segue.destination as! WeeklyGoalViewFinishViewController
+            vc.thisGoal = selectedGoal
         }
     }
 }
