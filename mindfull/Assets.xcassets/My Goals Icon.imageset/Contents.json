@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-home-50.png",
+      "filename" : "My Goals Icon (2)-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "My Goals Icon (2)-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "My Goals Icon (2).png",
       "idiom" : "universal",
       "scale" : "3x"
     }

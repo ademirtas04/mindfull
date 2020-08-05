@@ -29,7 +29,7 @@
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toJourney:" destination="xeY-xr-Azh" eventType="touchUpInside" id="djS-1Y-lTa"/>
+                                    <action selector="toMyGoals:" destination="xeY-xr-Azh" eventType="touchUpInside" id="WPE-i4-kep"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,17 +41,17 @@
                         <viewLayoutGuide key="safeArea" id="gog-Ul-MYN"/>
                     </view>
                     <connections>
-                        <segue destination="xZs-pc-4xs" kind="show" identifier="toJourney" id="mLB-tL-YR7"/>
+                        <segue destination="xZs-pc-4xs" kind="show" identifier="toMyGoals" id="mLB-tL-YR7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuh-30-vE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104" y="117"/>
         </scene>
-        <!--DWGVC-->
+        <!--MyGoalsVC-->
         <scene sceneID="3ix-Ur-kuJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="DWGVC" id="xZs-pc-4xs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MyGoalsVC" id="xZs-pc-4xs" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Aei-M4-ukG"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRa-dh-eyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

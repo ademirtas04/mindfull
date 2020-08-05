@@ -15,7 +15,8 @@ class PGHomeScreenViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func toJourney(_ sender: Any) {
-        self.performSegue(withIdentifier: "toJourney", sender: self)
+    
+    @IBAction func toMyGoals(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMyGoals", sender: self)
     }
 }

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-home-50.png",
+      "filename" : "Banner - Green (Curved).png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Banner - Green (Curved)-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Banner - Green (Curved)-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

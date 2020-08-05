@@ -334,16 +334,11 @@ class DWGHomeScreenViewController: UIViewController {
         return false
     }
     
-    //Switching to Personalized Goals
-    @IBAction func toPG(_ sender: Any) {
+    //Back to My Goals Home Scree
+    @IBAction func toMyGoals(_ sender: Any) {
         indexOfGoal = 10
         indexOfMove = 10
-        self.performSegue(withIdentifier: "toPG", sender: self)
-    }
-    @IBAction func toJourney(_ sender: Any) {
-        indexOfGoal = 10
-        indexOfMove = 10
-        self.performSegue(withIdentifier: "toJourney", sender: self)
+        self.performSegue(withIdentifier: "toMyGoals", sender: self)
     }
     
     //Switching to Goal View (Daily)

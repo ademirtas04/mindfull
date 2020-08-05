@@ -275,45 +275,29 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ap-gY-xGH">
-                                <rect key="frame" x="32" y="714" width="350" height="50"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9Fx-TZ-qbA"/>
-                                    <constraint firstAttribute="width" constant="350" id="VYd-VI-UPl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Create Your Own Personalized Goals">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="toPG:" destination="XNt-iw-51x" eventType="touchUpInside" id="kkz-Sl-NTm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tze-1C-vAr">
-                                <rect key="frame" x="107" y="774" width="200" height="50"/>
+                                <rect key="frame" x="107" y="729" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.51605272290000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="fjk-kb-Jvc"/>
                                     <constraint firstAttribute="height" constant="50" id="tbk-Ys-8nM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Back Home">
+                                <state key="normal" title="Back to My Goals">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="KYq-KY-OqB"/>
+                                    <action selector="toMyGoals:" destination="XNt-iw-51x" eventType="touchUpInside" id="ECe-Zc-5ve"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ppH-jq-CgU" firstAttribute="top" secondItem="yDT-Um-2Eh" secondAttribute="bottom" constant="-160" id="0h7-F9-OqN"/>
+                            <constraint firstItem="Tze-1C-vAr" firstAttribute="top" secondItem="yDT-Um-2Eh" secondAttribute="bottom" constant="25" id="2NZ-YN-Plu"/>
                             <constraint firstItem="LjM-dU-xJq" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="35" id="4dd-ml-2G9"/>
                             <constraint firstItem="7S0-tM-aZW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="4nW-tZ-QqO"/>
-                            <constraint firstItem="3ap-gY-xGH" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="5h4-UY-VtI"/>
                             <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="Q4t-pn-WID" secondAttribute="trailing" constant="35" id="9dr-86-0PT"/>
                             <constraint firstItem="zfg-ks-Uw3" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="35" id="C7D-j7-0k8"/>
                             <constraint firstItem="QRZ-Vx-sXC" firstAttribute="top" secondItem="7S0-tM-aZW" secondAttribute="bottom" constant="-160" id="CbY-Tf-tPl"/>
@@ -322,7 +306,6 @@
                             <constraint firstItem="Dji-J1-Un5" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="GGp-7k-Fc3"/>
                             <constraint firstItem="yDT-Um-2Eh" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="30" id="HcH-fh-qM6"/>
                             <constraint firstItem="8Fl-jH-s7v" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="35" id="Lb7-9f-gqb"/>
-                            <constraint firstItem="3ap-gY-xGH" firstAttribute="top" secondItem="yDT-Um-2Eh" secondAttribute="bottom" constant="10" id="Nz1-Ek-ClN"/>
                             <constraint firstItem="wqk-FV-kLW" firstAttribute="top" secondItem="U5M-V1-6aO" secondAttribute="bottom" constant="-50" id="O6H-tC-8V4"/>
                             <constraint firstItem="8Mm-rM-xha" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="Rdb-PA-wod"/>
                             <constraint firstItem="I4H-eN-bIj" firstAttribute="leading" secondItem="Bqe-0H-HZP" secondAttribute="leading" constant="35" id="SGI-1c-vvd"/>
@@ -356,7 +339,6 @@
                             <constraint firstItem="kSL-5B-qwT" firstAttribute="top" secondItem="0mw-SO-FMK" secondAttribute="bottom" constant="30" id="nIf-fj-dYZ"/>
                             <constraint firstItem="Tze-1C-vAr" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="ra9-5o-Y4q"/>
                             <constraint firstItem="wqk-FV-kLW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="rw0-vR-FMz"/>
-                            <constraint firstItem="Tze-1C-vAr" firstAttribute="top" secondItem="3ap-gY-xGH" secondAttribute="bottom" constant="10" id="uWM-8v-iGH"/>
                             <constraint firstItem="Dji-J1-Un5" firstAttribute="top" secondItem="8Mm-rM-xha" secondAttribute="bottom" constant="30" id="vSW-bT-Xj9"/>
                             <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="yDT-Um-2Eh" secondAttribute="trailing" constant="30" id="w7a-To-ajE"/>
                             <constraint firstItem="0mw-SO-FMK" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="wCO-SV-TyR"/>
@@ -395,8 +377,7 @@
                         <segue destination="djU-ul-k6M" kind="show" identifier="toWeeklyGoalViewStart" id="VOv-Du-t4I"/>
                         <segue destination="bfI-Nd-eAY" kind="show" identifier="toWeeklyGoalViewOngoing" id="ec5-yp-eDW"/>
                         <segue destination="dPn-Vd-tWL" kind="show" identifier="toWeeklyGoalViewFinish" id="yRe-Xf-4FM"/>
-                        <segue destination="dIc-Ly-Btp" kind="show" identifier="toPG" id="bbt-5H-vyC"/>
-                        <segue destination="ndj-cx-op5" kind="show" identifier="toJourney" id="FWk-2x-cKL"/>
+                        <segue destination="ndj-cx-op5" kind="show" identifier="toMyGoals" id="FWk-2x-cKL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeV-UN-WSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1313,20 +1294,10 @@
             </objects>
             <point key="canvasLocation" x="-688" y="815"/>
         </scene>
-        <!--PGVC-->
-        <scene sceneID="gMU-pH-lvV">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PersonalizedGoals" referencedIdentifier="PGVC" id="dIc-Ly-Btp" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="DFf-3g-qch"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfs-JR-XzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="436" y="536"/>
-        </scene>
-        <!--TabVC-->
+        <!--MyGoalsVC-->
         <scene sceneID="smw-rz-KR8">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabVC" id="ndj-cx-op5" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MyGoalsVC" id="ndj-cx-op5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="07m-aa-xAR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSd-Tc-56E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
