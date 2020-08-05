@@ -10,6 +10,31 @@ import UIKit
 
 class GardenController: UIViewController {
     var screenTimer: Timer?
+    var ResponseList: [String] = []
+    
+    var isRed:Bool = false
+    var isBlue:Bool = true
+    var isGreen: Bool = false
+    var isOrange: Bool = false
+    var isPurple: Bool = true
+    
+    var isBird: Bool = false
+    var isBreeze: Bool = true
+    var isWater: Bool = false
+    var isWaves: Bool = false
+    var isLeaves: Bool = true
+    
+    var redUnlocked: Bool = false
+    var blueUnlocked: Bool = true
+    var greenUnlocked: Bool = false
+    var orangeUnlocked: Bool = false
+    var purpleUnlocked: Bool = false
+    
+    var birdUnlocked: Bool = false
+    var breezeUnlocked: Bool = true
+    var waterUnlocked: Bool = true
+    var wavesUnlocked: Bool = false
+    var leavesUnlocked: Bool = false
 
     @IBOutlet weak var bgImage: UIImageView!
     static var coins: Int = 0
@@ -19,6 +44,21 @@ class GardenController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if(isBird){
+            AudioPlayer.shared.addBirds()
+        }
+        if(isBreeze){
+            AudioPlayer.shared.addBreeze()
+        }
+        if(isWater){
+            AudioPlayer.shared.addWater()
+        }
+        if(isWaves){
+            AudioPlayer.shared.addWaves()
+        }
+        if(isLeaves){
+            AudioPlayer.shared.addLeaves()
+        }
         AudioPlayer.shared.startBackgroundMusic()
         screenTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(popUp), userInfo: nil, repeats: true)
     }
@@ -50,6 +90,33 @@ class GardenController: UIViewController {
         self.performSegue(withIdentifier: "toCustomize", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.identifier == "toCustomize"){
+            let customizeVC = segue.destination as! CustomizeController
+            customizeVC.redUnlocked = redUnlocked
+            customizeVC.blueUnlocked = blueUnlocked
+            customizeVC.greenUnlocked = greenUnlocked
+            customizeVC.orangeUnlocked = orangeUnlocked
+            customizeVC.purpleUnlocked = purpleUnlocked
+            customizeVC.birdUnlocked = birdUnlocked
+            customizeVC.breezeUnlocked = breezeUnlocked
+            customizeVC.wavesUnlocked = wavesUnlocked
+            customizeVC.leavesUnlocked = leavesUnlocked
+            customizeVC.waterUnlocked = waterUnlocked
+            customizeVC.usingRed = isRed
+            customizeVC.usingBlue = isBlue
+            customizeVC.usingGreen = isGreen
+            customizeVC.usingOrange = isOrange
+            customizeVC.usingPurple = isPurple
+            customizeVC.usingBird = isBird
+            customizeVC.usingBreeze = isBreeze
+            customizeVC.usingWater = isWater
+            customizeVC.usingWaves = isWaves
+            customizeVC.usingLeaves = isLeaves
+        }
+        
+    }
     static func addCoins(c: Int){
         coins = coins + c
     }

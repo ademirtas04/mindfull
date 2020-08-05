@@ -58,13 +58,27 @@ class ShortPromptController: UIViewController {
     
     
     @IBAction func goToGarden(_ sender: Any) {
+        let gardenVC: GardenController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "gardenVC") as! GardenController
+        gardenVC.ResponseList.insert(response1.text!, at: 0)
+        gardenVC.ResponseList.insert(response2.text!, at: 0)
+        gardenVC.ResponseList.insert(response3.text!, at: 0)
+        gardenVC.ResponseList.insert(response4.text!, at: 0)
+        gardenVC.ResponseList.insert(response5.text!, at: 0)
+        
         self.performSegue(withIdentifier: "toJournal", sender: self)
-        let customizeVC: CustomizeController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "customizeVC") as! CustomizeController
-        customizeVC.responseList.insert(response1.text!, at: 0)
-        customizeVC.responseList.insert(response2.text!, at: 0)
-        customizeVC.responseList.insert(response3.text!, at: 0)
-        customizeVC.responseList.insert(response4.text!, at: 0)
-        customizeVC.responseList.insert(response5.text!, at: 0)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toJournal"){
+            let journalVC = segue.destination as! JournalController
+            journalVC.addLine(line: promptTitle)
+            journalVC.addLine(line: response1.text!)
+            journalVC.addLine(line: response2.text!)
+            journalVC.addLine(line: response3.text!)
+            journalVC.addLine(line: response4.text!)
+            journalVC.addLine(line: response5.text!)
+        }
     }
     
 
