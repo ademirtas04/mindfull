@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="50" id="cqO-Et-dRO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Back to Journey">
+                                <state key="normal" title="Back to My Goals">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="104" y="117"/>
         </scene>
-        <!--JourneyVC-->
+        <!--DWGVC-->
         <scene sceneID="3ix-Ur-kuJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="JourneyVC" id="xZs-pc-4xs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="DWGVC" id="xZs-pc-4xs" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Aei-M4-ukG"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRa-dh-eyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
