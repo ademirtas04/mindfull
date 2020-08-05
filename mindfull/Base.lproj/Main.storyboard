@@ -622,16 +622,16 @@
             </objects>
             <point key="canvasLocation" x="1015.9420289855074" y="1384.8214285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Journal Controller-->
         <scene sceneID="vPQ-ID-9QU">
             <objects>
-                <viewController id="AhJ-ko-Fq6" sceneMemberID="viewController">
+                <viewController id="AhJ-ko-Fq6" customClass="JournalController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4c-mf-XYB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="br4-8V-BtJ">
-                                <rect key="frame" x="0.0" y="148" width="414" height="723"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="585"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -644,14 +644,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwm-8u-lSR">
+                                <rect key="frame" x="159" y="741" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="goToGarden:" destination="AhJ-ko-Fq6" eventType="touchUpInside" id="IxT-Zh-fJJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9Oi-uZ-0T6"/>
                     </view>
+                    <connections>
+                        <outlet property="journalField" destination="br4-8V-BtJ" id="uGv-Ie-Hjq"/>
+                        <segue destination="vce-aH-bqn" kind="showDetail" identifier="toGarden" id="NY7-vk-CfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwH-tz-sxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.826086956522" y="1406.9196428571429"/>
+            <point key="canvasLocation" x="1813.0434782608697" y="1384.8214285714284"/>
         </scene>
         <!--Long Prompt Controller-->
         <scene sceneID="PEx-L6-cV5">
@@ -999,7 +1012,7 @@
         <image name="uncompleted" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lgD-GR-JYS"/>
+        <segue reference="NY7-vk-CfM"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="75E-t5-DXL"/>
     </inferredMetricsTieBreakers>

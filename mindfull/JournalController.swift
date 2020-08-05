@@ -10,21 +10,33 @@ import UIKit
 
 class JournalController: UIViewController {
 
+    var journalText: String = ""
+    @IBOutlet weak var journalField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        journalField.text = journalText
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addLine(line: String){
+        journalText = journalText + "\n" + line
+        journalField.text = journalText
     }
-    */
+    
+    func addChunk(chunk: String) {
+        journalText = journalText + "\n" + chunk
+        journalField.text = journalText
+    }
+    
+    @IBAction func goToGarden(_ sender: Any) {
+        self.performSegue(withIdentifier: "toGarden", sender: self)
+    }
+    
+    
+    
+    
+    
 
 }
