@@ -47,10 +47,10 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goals Change in  XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-5B-qwT">
-                                <rect key="frame" x="82" y="216" width="250" height="45"/>
+                                <rect key="frame" x="122" y="216" width="170" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Kfx-6h-TNh"/>
-                                    <constraint firstAttribute="width" constant="250" id="SHL-aA-SsV"/>
+                                    <constraint firstAttribute="width" constant="170" id="SHL-aA-SsV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -84,9 +84,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goals Change in X Days XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-J1-Un5">
-                                <rect key="frame" x="82" y="533" width="250" height="45"/>
+                                <rect key="frame" x="94.5" y="533" width="225" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Ej4-nc-aJW"/>
+                                    <constraint firstAttribute="width" constant="225" id="Ej4-nc-aJW"/>
                                     <constraint firstAttribute="height" constant="45" id="aEW-7y-JQ1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -508,9 +508,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Daily Goal Will be Replaced in  XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwp-b1-fi7">
-                                <rect key="frame" x="57" y="117" width="300" height="45"/>
+                                <rect key="frame" x="74.5" y="117" width="265" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="6ug-z7-bvI"/>
+                                    <constraint firstAttribute="width" constant="265" id="6ug-z7-bvI"/>
                                     <constraint firstAttribute="height" constant="45" id="owF-vQ-oIo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -557,6 +557,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="u5N-im-6pR"/>
                     <connections>
+                        <outlet property="DG1Description" destination="BWz-jn-0Gw" id="geE-lT-6rC"/>
+                        <outlet property="DG1Reward" destination="Hnk-xP-YY8" id="RqL-LO-lyD"/>
+                        <outlet property="DG1Title" destination="RJF-s6-eci" id="x4d-X0-QUk"/>
+                        <outlet property="timer" destination="Uwp-b1-fi7" id="KJT-hT-wJB"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="tT8-hk-F77"/>
                     </connections>
                 </viewController>
@@ -688,9 +692,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Daily Goal Ends in  XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLr-oL-N1b">
-                                <rect key="frame" x="82" y="117" width="250" height="45"/>
+                                <rect key="frame" x="117" y="117" width="180" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="JDT-jF-9Mn"/>
+                                    <constraint firstAttribute="width" constant="180" id="JDT-jF-9Mn"/>
                                     <constraint firstAttribute="height" constant="45" id="K1a-an-oYI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -739,6 +743,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="W9p-OL-dNJ"/>
                     <connections>
+                        <outlet property="DG2Description" destination="3Ca-A0-NEe" id="Ixf-KM-AWB"/>
+                        <outlet property="DG2Reward" destination="XHz-H0-lTM" id="VQ3-QC-cvQ"/>
+                        <outlet property="DG2Title" destination="ggm-yG-cfH" id="5zh-Sc-YWP"/>
+                        <outlet property="timer" destination="zLr-oL-N1b" id="biZ-kd-cns"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="BcO-C3-lvN"/>
                     </connections>
                 </viewController>
@@ -829,8 +837,34 @@
                                     <constraint firstAttribute="width" constant="400" id="AtP-Na-t7a"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new Daily Goal will Appear in XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT2-gW-9yF">
+                                <rect key="frame" x="89.5" y="117" width="235" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9RA-LK-XcC"/>
+                                    <constraint firstAttribute="width" constant="235" id="u0a-DE-AkY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="DGa-tV-8p6">
+                                <rect key="frame" x="7" y="147" width="400" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="nNA-OP-9At"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already completed this goal!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFu-0w-iEs">
+                                <rect key="frame" x="7" y="712" width="400" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="QOx-LZ-m5Z"/>
+                                    <constraint firstAttribute="height" constant="40" id="Vv4-qk-FIi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDH-iD-nSb">
-                                <rect key="frame" x="82" y="712" width="250" height="50"/>
+                                <rect key="frame" x="82" y="762" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0049994285219999999" green="0.5289283991" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3Gh-1N-srR"/>
@@ -847,32 +881,19 @@
                                     <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="GXN-kQ-bzi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new Daily Goal will Appear in XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT2-gW-9yF">
-                                <rect key="frame" x="57" y="117" width="300" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="9RA-LK-XcC"/>
-                                    <constraint firstAttribute="width" constant="300" id="u0a-DE-AkY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="DGa-tV-8p6">
-                                <rect key="frame" x="7" y="147" width="400" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="nNA-OP-9At"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jFu-0w-iEs" firstAttribute="top" secondItem="J82-dd-rqb" secondAttribute="bottom" constant="-10" id="3Rb-mY-EVD"/>
                             <constraint firstItem="vRh-bT-PAU" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="4AM-WB-rtk"/>
                             <constraint firstItem="h7f-9x-kfq" firstAttribute="top" secondItem="DGa-tV-8p6" secondAttribute="bottom" constant="-20" id="5To-UL-Ne2"/>
                             <constraint firstItem="U3n-u4-J9z" firstAttribute="top" secondItem="3b8-EJ-Kej" secondAttribute="bottom" constant="-15" id="Csc-GA-K0K"/>
                             <constraint firstItem="sT2-gW-9yF" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="Dyu-TZ-PJc"/>
                             <constraint firstItem="J82-dd-rqb" firstAttribute="top" secondItem="U3n-u4-J9z" secondAttribute="bottom" constant="100" id="Dzo-MS-5FA"/>
                             <constraint firstItem="Zz9-7S-FDW" firstAttribute="top" secondItem="2ns-f4-1Nt" secondAttribute="bottom" constant="-15" id="I1S-z0-L2r"/>
+                            <constraint firstItem="CDH-iD-nSb" firstAttribute="top" secondItem="jFu-0w-iEs" secondAttribute="bottom" constant="10" id="ITk-Sf-0SH"/>
                             <constraint firstItem="2ns-f4-1Nt" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="IdJ-QR-2c6"/>
+                            <constraint firstItem="jFu-0w-iEs" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="J70-lp-D7s"/>
                             <constraint firstItem="CDH-iD-nSb" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="M2u-TM-OBQ"/>
                             <constraint firstItem="3b8-EJ-Kej" firstAttribute="top" secondItem="0Ja-Lk-GgW" secondAttribute="bottom" constant="-15" id="NhE-0h-dfY"/>
                             <constraint firstItem="vRh-bT-PAU" firstAttribute="top" secondItem="aHc-aK-mMM" secondAttribute="bottom" constant="-88" id="ObR-rV-6ha"/>
@@ -888,13 +909,16 @@
                             <constraint firstItem="U3n-u4-J9z" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="tBo-uH-FEU"/>
                             <constraint firstItem="0Ja-Lk-GgW" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="wjF-Eb-5pH"/>
                             <constraint firstItem="3b8-EJ-Kej" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="xKr-Vz-NCQ"/>
-                            <constraint firstItem="CDH-iD-nSb" firstAttribute="top" secondItem="J82-dd-rqb" secondAttribute="bottom" constant="-10" id="yH6-Ju-JcR"/>
                             <constraint firstItem="2ns-f4-1Nt" firstAttribute="top" secondItem="h7f-9x-kfq" secondAttribute="bottom" constant="-20" id="zcH-DW-Gwa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JbN-jD-99O"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mhd-J7-0UX"/>
                     <connections>
+                        <outlet property="DG3Description" destination="Zz9-7S-FDW" id="7R3-Gp-Hnw"/>
+                        <outlet property="DG3Reward" destination="0Ja-Lk-GgW" id="zZ0-xn-ea3"/>
+                        <outlet property="DG3Title" destination="h7f-9x-kfq" id="W62-wu-HDe"/>
+                        <outlet property="timer" destination="sT2-gW-9yF" id="NcM-2I-73d"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="LPV-rC-BYD"/>
                     </connections>
                 </viewController>
@@ -1016,10 +1040,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Weekly Goal Will be Replaced in X Days XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwe-1c-e1B">
-                                <rect key="frame" x="57" y="117" width="300" height="45"/>
+                                <rect key="frame" x="64.5" y="117" width="285" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="8pk-Eu-bfk"/>
-                                    <constraint firstAttribute="width" constant="300" id="m2y-VX-KQo"/>
+                                    <constraint firstAttribute="width" constant="285" id="m2y-VX-KQo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1065,6 +1089,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Y4l-hI-6nr"/>
                     <connections>
+                        <outlet property="WG1Description" destination="8Pu-xA-Egg" id="KZm-Rj-u9P"/>
+                        <outlet property="WG1Reward" destination="9lU-6Y-Z2N" id="KHy-fh-Q3w"/>
+                        <outlet property="WG1Title" destination="fvP-df-tj4" id="ff9-1f-k18"/>
+                        <outlet property="timer" destination="qwe-1c-e1B" id="1et-Bl-qok"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="Fj6-DH-ayx"/>
                     </connections>
                 </viewController>
@@ -1107,11 +1135,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Weekly Goal Ends in  X DaysXX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-u1-5H9">
-                                <rect key="frame" x="82" y="117" width="250" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Weekly Goal Ends in  X Days XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-u1-5H9">
+                                <rect key="frame" x="92" y="117" width="230" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6eR-NV-Bpe"/>
-                                    <constraint firstAttribute="width" constant="250" id="maC-vV-br5"/>
+                                    <constraint firstAttribute="width" constant="230" id="maC-vV-br5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1248,6 +1276,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="fRx-gO-qkQ"/>
                     <connections>
+                        <outlet property="WG2Description" destination="raG-nB-kxa" id="c3X-de-poF"/>
+                        <outlet property="WG2Reward" destination="UDD-do-UO0" id="FcE-Oi-F4o"/>
+                        <outlet property="WG2Title" destination="Q1h-bQ-55Y" id="o4i-FC-CbA"/>
+                        <outlet property="timer" destination="Gmn-u1-5H9" id="4s6-P1-RFi"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="YcZ-fX-yxW"/>
                     </connections>
                 </viewController>
@@ -1307,9 +1339,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new Weekly Goal will Appear in X Days XX Hours XX Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzp-aw-mIG">
-                                <rect key="frame" x="57" y="117" width="300" height="45"/>
+                                <rect key="frame" x="79.5" y="117" width="255" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="IFD-L1-9Qd"/>
+                                    <constraint firstAttribute="width" constant="255" id="IFD-L1-9Qd"/>
                                     <constraint firstAttribute="height" constant="45" id="skE-t2-diU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1348,8 +1380,24 @@
                                     <constraint firstAttribute="width" constant="400" id="lki-cT-6bk"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already completed this goal!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhQ-tW-wyO">
+                                <rect key="frame" x="7" y="712" width="400" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QJC-X1-U29"/>
+                                    <constraint firstAttribute="width" constant="400" id="euk-Uc-auz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="Ttt-q5-26Q">
+                                <rect key="frame" x="7" y="147" width="400" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="fE2-CR-TcJ"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7N-Cm-WaM">
-                                <rect key="frame" x="82" y="712" width="250" height="50"/>
+                                <rect key="frame" x="82" y="762" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0049994285219999999" green="0.5289283991" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="iBl-8R-OZx"/>
@@ -1365,12 +1413,6 @@
                                     <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="jic-Du-fsK"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="Ttt-q5-26Q">
-                                <rect key="frame" x="7" y="147" width="400" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="fE2-CR-TcJ"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1383,14 +1425,16 @@
                             <constraint firstItem="Ttt-q5-26Q" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="9Ok-O6-Kw9"/>
                             <constraint firstItem="jzp-aw-mIG" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="Agn-V4-Ri9"/>
                             <constraint firstItem="0Sg-eQ-w1i" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="BEt-jN-q35"/>
+                            <constraint firstItem="p7N-Cm-WaM" firstAttribute="top" secondItem="BhQ-tW-wyO" secondAttribute="bottom" constant="10" id="Dhv-yq-0HG"/>
                             <constraint firstItem="LRD-Pz-V8b" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="Dn9-Xi-2TE"/>
                             <constraint firstItem="4Bn-Mo-5Wt" firstAttribute="top" secondItem="Ygv-ef-R4T" secondAttribute="bottom" constant="-15" id="DwA-q9-Zp2"/>
+                            <constraint firstItem="BhQ-tW-wyO" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="Kyl-IO-OJF"/>
                             <constraint firstItem="4nC-Ci-vzR" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="P6W-he-Nsr"/>
                             <constraint firstItem="4nC-Ci-vzR" firstAttribute="top" secondItem="0Sg-eQ-w1i" secondAttribute="bottom" id="Vlc-bn-cKC"/>
                             <constraint firstItem="Ttt-q5-26Q" firstAttribute="top" secondItem="jzp-aw-mIG" secondAttribute="bottom" constant="-15" id="alS-CB-MsM"/>
+                            <constraint firstItem="BhQ-tW-wyO" firstAttribute="top" secondItem="gnV-Pz-4uD" secondAttribute="bottom" constant="-10" id="cNs-hx-JLf"/>
                             <constraint firstItem="Sar-6d-r5y" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="cga-Ye-LFL"/>
                             <constraint firstItem="gnV-Pz-4uD" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="dCf-ww-NCN"/>
-                            <constraint firstItem="p7N-Cm-WaM" firstAttribute="top" secondItem="gnV-Pz-4uD" secondAttribute="bottom" constant="-10" id="eXp-bQ-xYh"/>
                             <constraint firstItem="Sar-6d-r5y" firstAttribute="top" secondItem="itA-wc-tDh" secondAttribute="bottom" constant="-20" id="f8S-m9-F1n"/>
                             <constraint firstItem="8PU-ee-ULZ" firstAttribute="top" secondItem="WhG-mV-brI" secondAttribute="top" constant="10" id="fFy-yJ-cRE"/>
                             <constraint firstItem="0Sg-eQ-w1i" firstAttribute="top" secondItem="Sar-6d-r5y" secondAttribute="bottom" constant="-15" id="jdB-t8-Nxh"/>
@@ -1403,6 +1447,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="vBV-az-Bgu"/>
                     <connections>
+                        <outlet property="WG3Description" destination="0Sg-eQ-w1i" id="jlO-zF-f5S"/>
+                        <outlet property="WG3Reward" destination="4nC-Ci-vzR" id="CdK-4l-4yU"/>
+                        <outlet property="WG3Title" destination="itA-wc-tDh" id="5Zd-za-rDI"/>
+                        <outlet property="timer" destination="jzp-aw-mIG" id="6y0-mj-WdA"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="a5n-Jk-O4v"/>
                     </connections>
                 </viewController>
@@ -1412,7 +1460,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rXi-qh-azb"/>
         <segue reference="LPV-rC-BYD"/>
     </inferredMetricsTieBreakers>
     <resources>

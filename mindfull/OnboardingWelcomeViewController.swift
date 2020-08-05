@@ -26,5 +26,4 @@ class OnboardingWelcomeViewController: UIViewController {
         let vc = segue.destination as! QuizViewController
         vc.tempUsername2 = self.tempUsername
     }
-    
 }
