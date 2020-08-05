@@ -934,6 +934,7 @@
                         <outlet property="DG3Description" destination="Zz9-7S-FDW" id="7R3-Gp-Hnw"/>
                         <outlet property="DG3Reward" destination="0Ja-Lk-GgW" id="zZ0-xn-ea3"/>
                         <outlet property="DG3Title" destination="h7f-9x-kfq" id="W62-wu-HDe"/>
+                        <outlet property="completionNotice" destination="jFu-0w-iEs" id="A3H-p5-uB6"/>
                         <outlet property="timer" destination="sT2-gW-9yF" id="NcM-2I-73d"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="LPV-rC-BYD"/>
                     </connections>
@@ -1495,6 +1496,7 @@
                         <outlet property="WG3Description" destination="0Sg-eQ-w1i" id="jlO-zF-f5S"/>
                         <outlet property="WG3Reward" destination="4nC-Ci-vzR" id="CdK-4l-4yU"/>
                         <outlet property="WG3Title" destination="itA-wc-tDh" id="5Zd-za-rDI"/>
+                        <outlet property="completionNotice" destination="BhQ-tW-wyO" id="ILC-8J-ITE"/>
                         <outlet property="timer" destination="jzp-aw-mIG" id="6y0-mj-WdA"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="a5n-Jk-O4v"/>
                     </connections>
@@ -1505,8 +1507,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ec5-yp-eDW"/>
-        <segue reference="YcZ-fX-yxW"/>
+        <segue reference="LPV-rC-BYD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>

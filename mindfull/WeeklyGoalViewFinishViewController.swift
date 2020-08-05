@@ -39,6 +39,8 @@ class WeeklyGoalViewFinishViewController: UIViewController {
     
     @IBOutlet weak var timer: UILabel!
     
+    @IBOutlet weak var completionNotice: UILabel!
+    
     @IBOutlet weak var WG3Title: UILabel!
     @IBOutlet weak var WG3Description: UILabel!
     @IBOutlet weak var WG3Reward: UILabel!
@@ -47,6 +49,13 @@ class WeeklyGoalViewFinishViewController: UIViewController {
     
     //Setting up the screen
     func setUpScreen() {
+        if thisGoal.getStatus() == 3 {
+            completionNotice.text = "You have discarded this goal :("
+        }
+        else if (thisGoal.getStatus() == 4) {
+            completionNotice.text = "You have already completed this goal!"
+        }
+        
         WG3Title.text = thisGoal.getTitle()
         WG3Description.text = thisGoal.getDescription()
         WG3Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints()))xp"
