@@ -31,8 +31,25 @@ class AudioPlayer {
     }
     
     func stopBackgroundMusic() {
-
         audioPlayer?.stop()
+    }
+    
+    func addBirds(){
+        
+    }
+    
+    func addBreeze(){
+        
+    }
+    func addWater(){
+        
+    }
+    
+    func addWaves(){
+        
+    }
+    func addLeaves(){
+        
     }
     
     func isPlaying() -> Bool {
