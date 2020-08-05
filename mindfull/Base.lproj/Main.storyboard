@@ -97,7 +97,7 @@
         <!--Game-->
         <scene sceneID="HPd-Ts-yTx">
             <objects>
-                <tabBarController id="zZ9-FC-reX" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabVC" id="zZ9-FC-reX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Game" id="ZbJ-jv-gcu"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dhg-cM-aX2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>

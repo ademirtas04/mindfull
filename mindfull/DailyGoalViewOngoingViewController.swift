@@ -27,6 +27,16 @@ class DailyGoalViewOngoingViewController: UIViewController {
     //Instance Variables
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
     
+    var goalIndex = 10
+    
+    var dailyGoals: [Goal] = []
+    
+    var allDailyGoals: [Goal] = []
+    
+    var weeklyGoals: [Goal] = []
+    
+    var allWeeklyGoals: [Goal] = []
+    
     @IBOutlet weak var timer: UILabel!
     
     @IBOutlet weak var DG2Title: UILabel!
@@ -54,8 +64,47 @@ class DailyGoalViewOngoingViewController: UIViewController {
         timer.text = "This Daily Goal Ends in \(hoursLeft) Hours \(minutesLeft) Minutes"
     }
     
+    //Finishing the goal
+    @IBAction func finishGoal(_ sender: Any) {
+        thisGoal.changeStatus(newStatus: 4)
+        self.performSegue(withIdentifier: "toDWGHome", sender: self)
+    }
+    
+    //Discarding the goal
+    @IBAction func discardGoal(_ sender: Any) {
+        thisGoal.changeStatus(newStatus: 3)
+        self.performSegue(withIdentifier: "toDWGHome", sender: self)
+    }
+    
     //Return to DWG Home
     @IBAction func toDWGHomeScreen(_ sender: Any) {
         self.performSegue(withIdentifier: "toDWGHome", sender: self)
+    }
+    
+    //To pass information back to the home screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! DWGHomeScreenViewController
+        if (goalIndex == 0) {
+            dailyGoals[0] = thisGoal
+        }
+        else if (goalIndex == 1) {
+            dailyGoals[1] = thisGoal
+        }
+        else if (goalIndex == 2) {
+            dailyGoals[2] = thisGoal
+        }
+        else if (goalIndex == 3) {
+            weeklyGoals[0] = thisGoal
+        }
+        else if (goalIndex == 4) {
+            weeklyGoals[1] = thisGoal
+        }
+        else if (goalIndex == 5) {
+            weeklyGoals[2] = thisGoal
+        }
+        vc.currentDailyGoals = dailyGoals
+        vc.currentWeeklyGoals = weeklyGoals
+        vc.dailyGoals = allDailyGoals
+        vc.weeklyGoals = allWeeklyGoals
     }
 }

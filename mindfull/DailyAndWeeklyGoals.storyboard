@@ -162,7 +162,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NOC-9W-nDU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+XXxp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRZ-Vx-sXC">
@@ -172,7 +172,7 @@
                                     <constraint firstAttribute="height" constant="30" id="a0E-KH-nrF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+XXxp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3H-0c-E8l">
@@ -182,7 +182,7 @@
                                     <constraint firstAttribute="width" constant="70" id="g49-mu-RXa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+XXxp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-pn-WID">
@@ -192,7 +192,7 @@
                                     <constraint firstAttribute="height" constant="30" id="xiX-e8-0KS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+XXxp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppH-jq-CgU">
@@ -202,7 +202,7 @@
                                     <constraint firstAttribute="height" constant="30" id="h1B-Sg-wFn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+XXxp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URO-jA-RED">
@@ -212,7 +212,7 @@
                                     <constraint firstAttribute="width" constant="70" id="o26-LT-HeZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goal 1 Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4H-eN-bIj">
@@ -222,7 +222,7 @@
                                     <constraint firstAttribute="width" constant="260" id="X7r-QP-m5l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goal 2 Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjM-dU-xJq">
@@ -232,7 +232,7 @@
                                     <constraint firstAttribute="height" constant="30" id="8dv-KI-AD3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goal 2 Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfg-ks-Uw3">
@@ -242,7 +242,7 @@
                                     <constraint firstAttribute="width" constant="260" id="flk-Pl-yfC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Goal 3 Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oa-Jr-omC">
@@ -252,7 +252,7 @@
                                     <constraint firstAttribute="width" constant="260" id="tMn-xE-Aba"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goal 3 Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fl-jH-s7v">
@@ -262,7 +262,7 @@
                                     <constraint firstAttribute="height" constant="30" id="DFg-fu-rcH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+XXxp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcM-42-U4N">
@@ -272,7 +272,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Th7-rL-dJy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ap-gY-xGH">
@@ -288,8 +288,23 @@
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toDWGHomeScreen:" destination="OmJ-xg-nRD" eventType="touchUpInside" id="C5R-bN-Pun"/>
                                     <action selector="toPG:" destination="XNt-iw-51x" eventType="touchUpInside" id="kkz-Sl-NTm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tze-1C-vAr">
+                                <rect key="frame" x="107" y="774" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.51605272290000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fjk-kb-Jvc"/>
+                                    <constraint firstAttribute="height" constant="50" id="tbk-Ys-8nM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="KYq-KY-OqB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -339,7 +354,9 @@
                             <constraint firstItem="7S0-tM-aZW" firstAttribute="top" secondItem="kSL-5B-qwT" secondAttribute="bottom" constant="10" id="lgF-00-dGP"/>
                             <constraint firstItem="8oa-Jr-omC" firstAttribute="top" secondItem="7S0-tM-aZW" secondAttribute="bottom" constant="-40" id="mzU-oD-0Yv"/>
                             <constraint firstItem="kSL-5B-qwT" firstAttribute="top" secondItem="0mw-SO-FMK" secondAttribute="bottom" constant="30" id="nIf-fj-dYZ"/>
+                            <constraint firstItem="Tze-1C-vAr" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="ra9-5o-Y4q"/>
                             <constraint firstItem="wqk-FV-kLW" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="rw0-vR-FMz"/>
+                            <constraint firstItem="Tze-1C-vAr" firstAttribute="top" secondItem="3ap-gY-xGH" secondAttribute="bottom" constant="10" id="uWM-8v-iGH"/>
                             <constraint firstItem="Dji-J1-Un5" firstAttribute="top" secondItem="8Mm-rM-xha" secondAttribute="bottom" constant="30" id="vSW-bT-Xj9"/>
                             <constraint firstItem="Bqe-0H-HZP" firstAttribute="trailing" secondItem="yDT-Um-2Eh" secondAttribute="trailing" constant="30" id="w7a-To-ajE"/>
                             <constraint firstItem="0mw-SO-FMK" firstAttribute="centerX" secondItem="LpQ-Vn-nhf" secondAttribute="centerX" id="wCO-SV-TyR"/>
@@ -379,6 +396,7 @@
                         <segue destination="bfI-Nd-eAY" kind="show" identifier="toWeeklyGoalViewOngoing" id="ec5-yp-eDW"/>
                         <segue destination="dPn-Vd-tWL" kind="show" identifier="toWeeklyGoalViewFinish" id="yRe-Xf-4FM"/>
                         <segue destination="dIc-Ly-Btp" kind="show" identifier="toPG" id="bbt-5H-vyC"/>
+                        <segue destination="ndj-cx-op5" kind="show" identifier="toJourney" id="FWk-2x-cKL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeV-UN-WSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -479,6 +497,9 @@
                                 <state key="normal" title="Start the Goal">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGoal:" destination="OmJ-xg-nRD" eventType="touchUpInside" id="V5L-w5-rc0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc6-2K-Hsr">
                                 <rect key="frame" x="82" y="762" width="250" height="50"/>
@@ -651,6 +672,9 @@
                                 <state key="normal" title="Finished">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishGoal:" destination="dh3-I7-hd2" eventType="touchUpInside" id="wBb-Hu-YbR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esa-1R-lcd">
                                 <rect key="frame" x="217" y="702" width="150" height="50"/>
@@ -663,6 +687,9 @@
                                 <state key="normal" title="Discard">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="discardGoal:" destination="dh3-I7-hd2" eventType="touchUpInside" id="hJF-0u-MXK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH9-P4-PTG">
                                 <rect key="frame" x="82" y="762" width="250" height="50"/>
@@ -1010,6 +1037,9 @@
                                 <state key="normal" title="Start the Goal">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGoal:" destination="djU-ul-k6M" eventType="touchUpInside" id="oeW-eT-Fdz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssv-uv-19r">
                                 <rect key="frame" x="82" y="762" width="250" height="50"/>
@@ -1193,6 +1223,9 @@
                                 <state key="normal" title="Finished">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishGoal:" destination="bfI-Nd-eAY" eventType="touchUpInside" id="Zh7-xd-o0p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iA-WG-DtI">
                                 <rect key="frame" x="217" y="712" width="150" height="50"/>
@@ -1205,6 +1238,9 @@
                                 <state key="normal" title="Discard">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="discardGoal:" destination="bfI-Nd-eAY" eventType="touchUpInside" id="BPM-ha-Xro"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T43-Mn-9WE">
                                 <rect key="frame" x="82" y="772" width="250" height="50"/>
@@ -1284,7 +1320,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfs-JR-XzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="571"/>
+            <point key="canvasLocation" x="436" y="536"/>
+        </scene>
+        <!--TabVC-->
+        <scene sceneID="smw-rz-KR8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabVC" id="ndj-cx-op5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="07m-aa-xAR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSd-Tc-56E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="536"/>
         </scene>
         <!--Weekly Goal View Finish View Controller-->
         <scene sceneID="fZf-lu-JXy">
@@ -1459,8 +1505,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wX0-l7-cyl"/>
-        <segue reference="tT8-hk-F77"/>
+        <segue reference="ec5-yp-eDW"/>
+        <segue reference="YcZ-fX-yxW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>
