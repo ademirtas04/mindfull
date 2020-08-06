@@ -32,6 +32,9 @@
 		02FF573624D9E2EB006AE94F /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573524D9E2EB006AE94F /* JournalController.swift */; };
 		02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573724D9E334006AE94F /* LongPromptController.swift */; };
 		02FF573A24D9E392006AE94F /* ShortPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573924D9E392006AE94F /* ShortPromptController.swift */; };
+		C12E19E824DB6AB8003F462C /* PGGoalViewOngoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E19E724DB6AB8003F462C /* PGGoalViewOngoingViewController.swift */; };
+		C12E19EA24DB6AC8003F462C /* PGGoalViewFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E19E924DB6AC8003F462C /* PGGoalViewFinishViewController.swift */; };
+		C12E19EC24DB6B32003F462C /* PGNewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E19EB24DB6B32003F462C /* PGNewGoalViewController.swift */; };
 		C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */; };
 		C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */; };
 		C146582424D9C82100F04AA0 /* DailyGoalViewStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146582324D9C82100F04AA0 /* DailyGoalViewStartViewController.swift */; };
@@ -104,6 +107,9 @@
 		02FF573524D9E2EB006AE94F /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
 		02FF573724D9E334006AE94F /* LongPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPromptController.swift; sourceTree = "<group>"; };
 		02FF573924D9E392006AE94F /* ShortPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortPromptController.swift; sourceTree = "<group>"; };
+		C12E19E724DB6AB8003F462C /* PGGoalViewOngoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGGoalViewOngoingViewController.swift; sourceTree = "<group>"; };
+		C12E19E924DB6AC8003F462C /* PGGoalViewFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGGoalViewFinishViewController.swift; sourceTree = "<group>"; };
+		C12E19EB24DB6B32003F462C /* PGNewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGNewGoalViewController.swift; sourceTree = "<group>"; };
 		C13133B924D885A500551841 /* DWGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGHomeScreenViewController.swift; sourceTree = "<group>"; };
 		C13133BB24D885B900551841 /* DWGGoalViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWGGoalViewViewController.swift; sourceTree = "<group>"; };
 		C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGHomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +217,9 @@
 				C146582D24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift */,
 				C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */,
 				C13133BD24D8941000551841 /* PGHomeScreenViewController.swift */,
+				C12E19E724DB6AB8003F462C /* PGGoalViewOngoingViewController.swift */,
+				C12E19E924DB6AC8003F462C /* PGGoalViewFinishViewController.swift */,
+				C12E19EB24DB6B32003F462C /* PGNewGoalViewController.swift */,
 				02445FF224C9E79D00B61AA5 /* Info.plist */,
 				C15F58D724D4BC01002BD945 /* Assets.xcassets */,
 				C15F58D624D4BC01002BD945 /* MyParticle.sks */,
@@ -406,6 +415,7 @@
 			files = (
 				C13133BA24D885A500551841 /* DWGHomeScreenViewController.swift in Sources */,
 				C13133BE24D8941000551841 /* PGHomeScreenViewController.swift in Sources */,
+				C12E19E824DB6AB8003F462C /* PGGoalViewOngoingViewController.swift in Sources */,
 				C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */,
 				02FF573A24D9E392006AE94F /* ShortPromptController.swift in Sources */,
 				C146582824D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift in Sources */,
@@ -423,10 +433,12 @@
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
 				02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */,
+				C12E19EA24DB6AC8003F462C /* PGGoalViewFinishViewController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,
 				0273812724D8D5E800DFD0BD /* AudioPlayer.swift in Sources */,
 				02FF573624D9E2EB006AE94F /* JournalController.swift in Sources */,
 				0215100724D9A6D100162F02 /* AudioProgressController.swift in Sources */,
+				C12E19EC24DB6B32003F462C /* PGNewGoalViewController.swift in Sources */,
 				C146582E24D9C96600F04AA0 /* WeeklyGoalViewFinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

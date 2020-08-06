@@ -30,13 +30,13 @@
                                     <constraint firstAttribute="height" constant="130" id="Sxd-Qr-E4v"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vm-BlQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily and Weekly Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-Vm-BlQ">
                                 <rect key="frame" x="32" y="12" width="350" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="a31-Km-lLQ"/>
                                     <constraint firstAttribute="height" constant="40" id="e1z-1M-sqZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -382,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeV-UN-WSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="86"/>
+            <point key="canvasLocation" x="182.60869565217394" y="85.714285714285708"/>
         </scene>
         <!--Daily Goal View Start View Controller-->
         <scene sceneID="g2y-6L-eJw">
@@ -651,7 +651,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Finished">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="finishGoal:" destination="dh3-I7-hd2" eventType="touchUpInside" id="wBb-Hu-YbR"/>
@@ -659,14 +659,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esa-1R-lcd">
                                 <rect key="frame" x="217" y="702" width="150" height="50"/>
-                                <color key="backgroundColor" red="0.76631314766839376" green="0.18136713448233316" blue="0.14429115738473808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LR8-6n-7u0"/>
                                     <constraint firstAttribute="width" constant="150" id="mUd-Jh-YND"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Discard">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="discardGoal:" destination="dh3-I7-hd2" eventType="touchUpInside" id="hJF-0u-MXK"/>
@@ -1203,7 +1203,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Finished">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="finishGoal:" destination="bfI-Nd-eAY" eventType="touchUpInside" id="Zh7-xd-o0p"/>
@@ -1211,14 +1211,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iA-WG-DtI">
                                 <rect key="frame" x="217" y="712" width="150" height="50"/>
-                                <color key="backgroundColor" red="0.76631314770000003" green="0.1813671345" blue="0.14429115740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Rn-Mi-gnq"/>
                                     <constraint firstAttribute="width" constant="150" id="zdE-h4-Iec"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Discard">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="discardGoal:" destination="bfI-Nd-eAY" eventType="touchUpInside" id="BPM-ha-Xro"/>
@@ -1478,7 +1478,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LPV-rC-BYD"/>
+        <segue reference="a5n-Jk-O4v"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>
