@@ -11,6 +11,8 @@ class JournalController: UIViewController {
 
     var journalList = [Entry]()
     var currentDate: Date = Date()
+    var entries: Int = 0
+    var index: Int = 0
     
     @IBOutlet weak var dateTitle: UILabel!
     
@@ -33,7 +35,7 @@ class JournalController: UIViewController {
             let MM = calendar.component(.month, from: date)
             let yyyy = calendar.component(.year, from: date)
             dateTitle.text = "\(dd)/\(MM)/\(yyyy)"
-            
+            entries = 0
             for entry in journalList {
                 let d: Date = entry.date
                 let calendar = Calendar.current
@@ -44,17 +46,67 @@ class JournalController: UIViewController {
                     let min = calendar.component(.minute, from: date)
                     let hour = calendar.component(.hour, from: date)
                     journalField.text = journalField.text + "\n" + "\(hour):\(min)" + "\n" + entry.prompt + "\n" + entry.body
+                    entries = entries + 1
                 }
             }
         }
     }
     
     @IBAction func leftPressed(_ sender: Any) {
-        
+        if(index != 0){
+            index = index - 1
+            let date: Date = journalList[index].date
+            let calendar = Calendar.current
+            let dd = calendar.component(.day, from: date)
+            let MM = calendar.component(.month, from: date)
+            let yyyy = calendar.component(.year, from: date)
+            dateTitle.text = "\(dd)/\(MM)/\(yyyy)"
+            entries = 0
+            
+            for entry in journalList {
+                entries = 0
+                let d: Date = entry.date
+                let calendar = Calendar.current
+                let DD = calendar.component(.day, from: d)
+                let mm = calendar.component(.month, from: d)
+                let YYYY = calendar.component(.year, from: d)
+                if(dd == DD && MM == mm && yyyy == YYYY){
+                    let min = calendar.component(.minute, from: date)
+                    let hour = calendar.component(.hour, from: date)
+                    journalField.text = journalField.text + "\n" + "\(hour):\(min)" + "\n" + entry.prompt + "\n" + entry.body
+                    entries = entries + 1
+                }
+            }
+        }
     }
     
     
     @IBAction func rightPressed(_ sender: Any) {
+        if(index + entries < journalList.count){
+            index = index + entries
+            let date: Date = journalList[index].date
+            let calendar = Calendar.current
+            let dd = calendar.component(.day, from: date)
+            let MM = calendar.component(.month, from: date)
+            let yyyy = calendar.component(.year, from: date)
+            dateTitle.text = "\(dd)/\(MM)/\(yyyy)"
+            entries = 0
+            
+            for entry in journalList {
+                entries = 0
+                let d: Date = entry.date
+                let calendar = Calendar.current
+                let DD = calendar.component(.day, from: d)
+                let mm = calendar.component(.month, from: d)
+                let YYYY = calendar.component(.year, from: d)
+                if(dd == DD && MM == mm && yyyy == YYYY){
+                    let min = calendar.component(.minute, from: date)
+                    let hour = calendar.component(.hour, from: date)
+                    journalField.text = journalField.text + "\n" + "\(hour):\(min)" + "\n" + entry.prompt + "\n" + entry.body
+                    entries = entries + 1
+                }
+            }
+        }
         
     }
     
