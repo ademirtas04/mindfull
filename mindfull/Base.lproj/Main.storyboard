@@ -781,12 +781,12 @@
         <scene sceneID="dVk-9e-mIO">
             <objects>
                 <viewController storyboardIdentifier="gardenVC" id="vce-aH-bqn" customClass="GardenController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qdl-gV-0at" customClass="SKView">
+                    <view key="view" contentMode="scaleToFill" id="qdl-gV-0at">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lake" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-eG-QPO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fue-15-zD8">
                                 <rect key="frame" x="15" y="15" width="50" height="50"/>
@@ -799,6 +799,41 @@
                                 <rect key="frame" x="53" y="170" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh3-qe-Pml">
+                                <rect key="frame" x="107" y="394" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-Re-heS">
+                                <rect key="frame" x="107" y="423" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-fc-EN8">
+                                <rect key="frame" x="107" y="373" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="121-7J-d5p">
+                                <rect key="frame" x="107" y="344" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPL-Ye-73R">
+                                <rect key="frame" x="100" y="315" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -814,7 +849,13 @@
                     <tabBarItem key="tabBarItem" title="" image="icons8-garden-50" id="qiY-zl-M6K"/>
                     <navigationItem key="navigationItem" title="Garden" id="C5r-iF-1h7"/>
                     <connections>
+                        <outlet property="affirmation1" destination="MPL-Ye-73R" id="i40-PK-8TL"/>
+                        <outlet property="affirmation2" destination="121-7J-d5p" id="TBt-XA-gNy"/>
+                        <outlet property="affirmation3" destination="CAJ-fc-EN8" id="Bhr-CU-5Cy"/>
+                        <outlet property="affirmation4" destination="Gh3-qe-Pml" id="d8H-Qv-w5M"/>
+                        <outlet property="affirmation5" destination="nAK-Re-heS" id="0Rw-SL-wFt"/>
                         <outlet property="bgImage" destination="u72-e3-bYx" id="t77-Jz-GT8"/>
+                        <outlet property="uiview" destination="qdl-gV-0at" id="YwB-ls-ofg"/>
                         <segue destination="5ck-HQ-SZ7" kind="showDetail" identifier="toCustomize" id="lr5-dZ-HCb"/>
                     </connections>
                 </viewController>
@@ -1080,7 +1121,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fGu-eL-QTw"/>
+        <segue reference="NY7-vk-CfM"/>
         <segue reference="QZL-1s-D6g"/>
     </inferredMetricsTieBreakers>
     <resources>
