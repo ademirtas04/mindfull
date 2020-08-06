@@ -24,7 +24,13 @@ class PGGoalViewOngoingViewController: UIViewController {
     }
     
     //Instance Variables
-    var thisGoal = personalGoals(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
+    var personalGoals: [personalGoal] = []
+    
+    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
+    
+    var goalIndex = 10
+    
+    var goalsDoneToday = 0
     
     @IBOutlet weak var timer: UILabel!
     @IBOutlet weak var PGTitle: UILabel!
@@ -41,16 +47,34 @@ class PGGoalViewOngoingViewController: UIViewController {
     
     //Finishing the goal - Not Finished
     @IBAction func finishGoal(_ sender: Any) {
+        thisGoal.changeStatus(newStatus: 4)
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
     
     //Discarding the goal
     @IBAction func discardGoal(_ sender: Any) {
+        thisGoal.changeStatus(newStatus: 3)
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
     
     //Going to PG Home Screen
     @IBAction func toPGHomeScreen(_ sender: Any) {
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
+    }
+    
+    //To pass information back to the home screen
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PGHomeScreenViewController
+        if (goalIndex == 0) {
+            personalGoals[0] = thisGoal
+        }
+        else if (goalIndex == 1) {
+            personalGoals[1] = thisGoal
+        }
+        else if (goalIndex == 2) {
+            personalGoals[2] = thisGoal
+        }
+        vc.personalGoals = personalGoals
+        vc.goalsDoneToday = goalsDoneToday
     }
 }
