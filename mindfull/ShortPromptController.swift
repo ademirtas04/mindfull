@@ -72,12 +72,9 @@ class ShortPromptController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "toJournal"){
             let journalVC = segue.destination as! JournalController
-            journalVC.addLine(line: promptTitle)
-            journalVC.addLine(line: response1.text!)
-            journalVC.addLine(line: response2.text!)
-            journalVC.addLine(line: response3.text!)
-            journalVC.addLine(line: response4.text!)
-            journalVC.addLine(line: response5.text!)
+            let body: String = response1.text! + "\n" + response2.text! + "\n" + response3.text! + "\n" + response4.text! + "\n" + response5.text!
+            let e: Entry = Entry(prompt: promptTitle, body: body)
+            journalVC.journalList.insert(e, at: 0)
         }
     }
     

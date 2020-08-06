@@ -10,8 +10,23 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    @IBOutlet weak var slider1: UISlider!
+    
+    @IBOutlet weak var slider2: UISlider!
+    
+    @IBOutlet weak var slider3: UISlider!
+    
+    @IBOutlet weak var slider4: UISlider!
+    
+    @IBOutlet weak var slider5: UISlider!
+    
     var tempUsername2 = ""
 
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -52,9 +52,9 @@ class LongPromptController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "toJournal") {
             let journalVC = segue.destination as! JournalController
-            journalVC.addLine(line: promptTitle)
-            journalVC.addLine(line: responseShort.text!)
-            journalVC.addChunk(chunk: responseLong.text!)
+            let body: String = responseShort.text! + "\n" + responseLong.text!
+            let e: Entry = Entry(prompt: promptTitle, body: body)
+            journalVC.journalList.insert(e, at: 0)
         }
     }
     

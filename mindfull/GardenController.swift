@@ -50,11 +50,11 @@ class GardenController: UIViewController {
     static var coins: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        showWords()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        showWords()
         if(isBird){
             AudioPlayer.shared.addBirds()
         }
@@ -126,20 +126,87 @@ class GardenController: UIViewController {
     }
     
     func showWords(){
+        let screenWidth: Int = Int(Float(self.view!.bounds.width))
+        let screenHeight: Int = Int(Float(self.view!.bounds.height))
         if(!(ResponseList.count == 0)){
             if(ResponseList.count == 1){
-                
+                affirmation1.text = ResponseList[0]
+                affirmation2.text = ""
+                affirmation3.text = ""
+                affirmation4.text = ""
+                affirmation5.text = ""
             } else if (ResponseList.count == 2){
-                
+                affirmation1.text = ResponseList[0]
+                affirmation2.text = ResponseList[1]
+                affirmation3.text = ""
+                affirmation4.text = ""
+                affirmation5.text = ""
             } else if (ResponseList.count == 3){
-                
+                affirmation1.text = ResponseList[0]
+                affirmation2.text = ResponseList[1]
+                affirmation3.text = ResponseList[2]
+                affirmation4.text = ""
+                affirmation5.text = ""
             } else if (ResponseList.count == 4){
-                
+                affirmation1.text = ResponseList[0]
+                affirmation2.text = ResponseList[1]
+                affirmation3.text = ResponseList[2]
+                affirmation4.text = ResponseList[3]
+                affirmation5.text = ""
             } else {
-                
+                var temp = ResponseList
+                var random: Int = Int.random(in: 0...temp.count - 1)
+                affirmation1.text = temp[random]
+                temp.remove(at: random)
+                random = Int.random(in: 0...temp.count - 1)
+                affirmation2.text = temp[random]
+                temp.remove(at: random)
+                random = Int.random(in: 0...temp.count - 1)
+                affirmation3.text = temp[random]
+                temp.remove(at: random)
+                random = Int.random(in: 0...temp.count - 1)
+                affirmation4.text = temp[random]
+                temp.remove(at: random)
+                random = Int.random(in: 0...temp.count - 1)
+                affirmation5.text = temp[random]
+                temp.remove(at: random)
             }
-            
+        } else {
+            affirmation1.text = ""
+            affirmation2.text = ""
+            affirmation3.text = ""
+            affirmation4.text = ""
+            affirmation5.text = ""
         }
+        affirmation1.frame.origin.x = CGFloat(Int.random(in: 0...screenWidth))
+        affirmation1.frame.origin.y = CGFloat(Int.random(in: 0...screenHeight))
+        affirmation1.textColor = .white
+        affirmation1.font = UIFont(name: "Avenir Next",size: 25.0)
+        affirmation1.sizeToFit()
+        
+        affirmation2.frame.origin.x = CGFloat(Int.random(in: 0...screenWidth))
+        affirmation2.frame.origin.y = CGFloat(Int.random(in: 0...screenHeight))
+        affirmation2.textColor = .white
+        affirmation2.font = UIFont(name: "Avenir Next",size: 25.0)
+        affirmation2.sizeToFit()
+        
+        affirmation3.frame.origin.x = CGFloat(Int.random(in: 0...screenWidth))
+        affirmation3.frame.origin.y = CGFloat(Int.random(in: 0...screenHeight))
+        affirmation3.textColor = .white
+        affirmation3.font = UIFont(name: "Avenir Next",size: 25.0)
+        affirmation3.sizeToFit()
+        
+        affirmation4.frame.origin.x = CGFloat(Int.random(in: 0...screenWidth))
+        affirmation4.frame.origin.y = CGFloat(Int.random(in: 0...screenHeight))
+        affirmation4.textColor = .white
+        affirmation4.font = UIFont(name: "Avenir Next",size: 25.0)
+        affirmation4.sizeToFit()
+        
+        affirmation5.frame.origin.x = CGFloat(Int.random(in: 0...screenWidth))
+        affirmation5.frame.origin.y = CGFloat(Int.random(in: 0...screenHeight))
+        affirmation5.textColor = .white
+        affirmation5.font = UIFont(name: "Avenir Next",size: 25.0)
+        affirmation5.sizeToFit()
     }
     
     @IBAction func goToCustomizable(_ sender: Any) {

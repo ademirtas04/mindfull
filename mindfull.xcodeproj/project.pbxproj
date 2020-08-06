@@ -15,6 +15,8 @@
 		0244600724C9E79E00B61AA5 /* mindfullUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244600624C9E79E00B61AA5 /* mindfullUITests.swift */; };
 		0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601424CA088100B61AA5 /* JourneyStop.swift */; };
 		0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0244601624CA0C5200B61AA5 /* JourneyController.swift */; };
+		026A70EB24DC770E00BDF389 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A70EA24DC770E00BDF389 /* Entry.swift */; };
+		026A70EC24DC7CED00BDF389 /* Entry.swift in Resources */ = {isa = PBXBuildFile; fileRef = 026A70EA24DC770E00BDF389 /* Entry.swift */; };
 		026BF76324DB5511003BE29F /* blue.sks in Resources */ = {isa = PBXBuildFile; fileRef = 026BF76224DB5511003BE29F /* blue.sks */; };
 		026BF76524DB55E7003BE29F /* green.sks in Resources */ = {isa = PBXBuildFile; fileRef = 026BF76424DB55E7003BE29F /* green.sks */; };
 		026BF76724DB5637003BE29F /* orange.sks in Resources */ = {isa = PBXBuildFile; fileRef = 026BF76624DB5637003BE29F /* orange.sks */; };
@@ -88,6 +90,7 @@
 		0244600824C9E79E00B61AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0244601424CA088100B61AA5 /* JourneyStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStop.swift; sourceTree = "<group>"; };
 		0244601624CA0C5200B61AA5 /* JourneyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyController.swift; sourceTree = "<group>"; };
+		026A70EA24DC770E00BDF389 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		026BF76224DB5511003BE29F /* blue.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = blue.sks; sourceTree = "<group>"; };
 		026BF76424DB55E7003BE29F /* green.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = green.sks; sourceTree = "<group>"; };
 		026BF76624DB5637003BE29F /* orange.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = orange.sks; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
+				026A70EA24DC770E00BDF389 /* Entry.swift */,
 				02FF573524D9E2EB006AE94F /* JournalController.swift */,
 				02FF573724D9E334006AE94F /* LongPromptController.swift */,
 				02FF573924D9E392006AE94F /* ShortPromptController.swift */,
@@ -372,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026A70EC24DC7CED00BDF389 /* Entry.swift in Resources */,
 				02ADCBAD24DC5F7C00DCDB57 /* breeze.mp3 in Resources */,
 				C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */,
 				026BF76524DB55E7003BE29F /* green.sks in Resources */,
@@ -432,6 +437,7 @@
 				C146582A24D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
+				026A70EB24DC770E00BDF389 /* Entry.swift in Sources */,
 				02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */,
 				C12E19EA24DB6AC8003F462C /* PGGoalViewFinishViewController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,
