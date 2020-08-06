@@ -16,11 +16,28 @@ class PGGoalViewOngoingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //Starting - Everytime this view is loaded
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setUpScreen()
+    }
+    
     //Instance Variables
+    var thisGoal = personalGoals(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
+    
     @IBOutlet weak var timer: UILabel!
     @IBOutlet weak var PGTitle: UILabel!
     @IBOutlet weak var PGDescription: UILabel!
     @IBOutlet weak var PGReward: UILabel!
+        
+    //Setting up the screen
+    func setUpScreen() {
+        PGTitle.text = thisGoal.getTitle()
+        PGDescription.text = thisGoal.getDescription()
+        PGReward.text = "Goal Reward: +\(String(thisGoal.getxpPoints()))xp"
+        timer.text = PGHomeScreenViewController().getTimerLabel(goal: thisGoal)
+    }
     
     //Finishing the goal - Not Finished
     @IBAction func finishGoal(_ sender: Any) {
