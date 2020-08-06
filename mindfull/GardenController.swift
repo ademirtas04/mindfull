@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import SpriteKit
 
 class GardenController: UIViewController {
+        
+    @IBOutlet weak var uiview: UIView!
+    
+    @IBOutlet weak var affirmation1: UILabel!
+    @IBOutlet weak var affirmation2: UILabel!
+    @IBOutlet weak var affirmation3: UILabel!
+    @IBOutlet weak var affirmation4: UILabel!
+    @IBOutlet weak var affirmation5: UILabel!
+    
     var screenTimer: Timer?
-    var ResponseList: [String] = []
+    var ResponseList: [String] = ["compassion", "peace", "strength", "tranquility", "energy"]
     
     var isRed:Bool = false
     var isBlue:Bool = true
@@ -40,6 +50,7 @@ class GardenController: UIViewController {
     static var coins: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        showWords()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -72,19 +83,64 @@ class GardenController: UIViewController {
     @objc func popUp(){
         let screenWidth: Int = Int(Float(self.view!.bounds.width))
         let screenHeight: Int = Int(Float(self.view!.bounds.height))
+        let sk: SKView = SKView()
+        sk.frame = uiview.bounds
+        sk.backgroundColor = .clear
+        uiview.addSubview(sk)
+
+        let scene: SKScene = SKScene(size: uiview.bounds.size)
+        scene.scaleMode = .aspectFit
+        scene.backgroundColor = .clear
+        if(isRed){
+            let en1 = SKEmitterNode(fileNamed: "red.sks")
+            en1?.position = CGPoint(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight))
+            scene.addChild(en1!)
+        }
+        if(isBlue){
+            let en2 = SKEmitterNode(fileNamed: "blue.sks")
+            en2?.position = CGPoint(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight))
+            scene.addChild(en2!)
+        }
+        if(isGreen){
+            let en3 = SKEmitterNode(fileNamed: "green.sks")
+            en3?.position = CGPoint(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight))
+            scene.addChild(en3!)
+        }
+        if(isOrange){
+            let en4 = SKEmitterNode(fileNamed: "orange.sks")
+            en4?.position = CGPoint(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight))
+            scene.addChild(en4!)
+        }
+        if(isPurple){
+            let en5 = SKEmitterNode(fileNamed: "purple.sks")
+            en5?.position = CGPoint(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight))
+            scene.addChild(en5!)
+        }
+        
+        sk.presentScene(scene)
+        /*
         var img: UIImage? = UIImage(named: "tree5")
         self.bgImage.image = img
         self.bgImage.frame = CGRect(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight), width: Int(Float(img!.size.width)), height: Int(Float(img!.size.height)))
+        */
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func showWords(){
+        if(!(ResponseList.count == 0)){
+            if(ResponseList.count == 1){
+                
+            } else if (ResponseList.count == 2){
+                
+            } else if (ResponseList.count == 3){
+                
+            } else if (ResponseList.count == 4){
+                
+            } else {
+                
+            }
+            
+        }
     }
-    */    
     
     @IBAction func goToCustomizable(_ sender: Any) {
         self.performSegue(withIdentifier: "toCustomize", sender: self)
