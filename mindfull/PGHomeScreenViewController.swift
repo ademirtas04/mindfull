@@ -171,6 +171,7 @@ class PGHomeScreenViewController: UIViewController {
         dayTimer.text = "Day Ends in \(hoursLeft) Hours \(minutesLeft) Minutes"
     }
     
+    //Find time
     func getTimerLabel(goal: personalGoal) -> String {
         let rightNow = Date()
         let endTime = goal.getEndTime()
@@ -181,26 +182,27 @@ class PGHomeScreenViewController: UIViewController {
         let rightNowMinute = calendar.dateComponents([.minute], from: rightNow).minute!
         
         let endWeek = calendar.dateComponents([.weekOfYear], from: endTime).weekOfYear!
-        let endDay = calendar.dateComponents([.weekday], from: endTime).weekday!
-        let endHour = calendar.dateComponents([.hour], from: endTime).hour!
-        let endMinute = calendar.dateComponents([.minute], from: endTime).minute!
+        var endDay = calendar.dateComponents([.weekday], from: endTime).weekday!
+        var endHour = calendar.dateComponents([.hour], from: endTime).hour!
+        var endMinute = calendar.dateComponents([.minute], from: endTime).minute!
         
+        if rightNowMinute > endMinute {
+            endMinute = endMinute + 60
+            endHour = endHour - 1
+        }
+        
+        if rightNowHour > endHour {
+            endHour = endHour + 24
+            endDay = endDay - 1
+        }
+        
+        let minutesLeft = endMinute - rightNowMinute
+        let hoursLeft = endHour - rightNowHour
         var daysLeft = endDay - rightNowDay
-        var hoursLeft = endHour - rightNowHour
-        var minutesLeft = endMinute - rightNowMinute
         
         if rightNowWeek != endWeek {
             let weeksLeft = endWeek - rightNowWeek
             daysLeft = daysLeft + weeksLeft*7
-        }
-        
-        if hoursLeft < 0 {
-            daysLeft = daysLeft - 1
-            hoursLeft = 24 - hoursLeft
-        }
-        if minutesLeft < 0 {
-            hoursLeft = hoursLeft - 1
-            minutesLeft = 60 - minutesLeft
         }
         return "This Goal Ends in \(daysLeft) Days \(hoursLeft) Hours \(minutesLeft) Minutes"
     }

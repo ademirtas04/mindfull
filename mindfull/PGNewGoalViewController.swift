@@ -89,8 +89,8 @@ class PGNewGoalViewController: UIViewController {
     
     //To pass information back to the home screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PGHomeScreenViewController
         if (cancel == false) {
-            let vc = segue.destination as! PGHomeScreenViewController
             if (specialStatus == true) {
                 personalGoals.remove(at: specialStatusIndex)
                 personalGoals.insert(thisGoal, at: specialStatusIndex)
@@ -98,8 +98,8 @@ class PGNewGoalViewController: UIViewController {
             else {
                 personalGoals.append(thisGoal)
             }
-            vc.personalGoals = personalGoals
-            vc.goalsDoneToday = goalsDoneToday
         }
+        vc.personalGoals = personalGoals
+        vc.goalsDoneToday = goalsDoneToday
     }
 }

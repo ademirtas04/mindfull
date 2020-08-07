@@ -194,7 +194,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Yc5-9G-apt"/>
                     <connections>
-                        <outlet property="enterName" destination="vye-DJ-Drq" id="t2t-c8-S1K"/>
+                        <outlet property="enterName" destination="vye-DJ-Drq" id="Q6u-Do-MBS"/>
                         <segue destination="Zqe-or-KKU" kind="show" identifier="toWelcome" id="qVa-eC-1V6"/>
                     </connections>
                 </viewController>
