@@ -29,4 +29,9 @@ class TitleScreenViewController: UIViewController {
         let onboardingVC = storyboard.instantiateViewController(withIdentifier: "loginStoryBoard")
         self.present(onboardingVC, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func goToJournal(_ sender: Any) {
+        self.performSegue(withIdentifier: "toGarden", sender: self)
+    }
 }
