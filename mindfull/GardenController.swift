@@ -18,7 +18,6 @@ class GardenController: UIViewController {
     @IBOutlet weak var affirmation3: UILabel!
     @IBOutlet weak var affirmation4: UILabel!
     @IBOutlet weak var affirmation5: UILabel!
-    
     var screenTimer: Timer?
     var ResponseList: [String] = ["compassion", "peace", "strength", "tranquility", "energy"]
     
@@ -240,6 +239,12 @@ class GardenController: UIViewController {
         }
         
     }
+    
+    
+    @IBAction func goToGoals(_ sender: Any) {
+        self.performSegue(withIdentifier: "toGoals", sender: self)
+    }
+    
     static func addCoins(c: Int){
         coins = coins + c
     }
