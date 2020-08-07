@@ -20,6 +20,10 @@ class PGHomeScreenViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if fromLocalGroup == false {
+            getData()
+        }
+        
         if updateForTime() {
             if updateForTime() {
                 if updateForTime() {
@@ -49,6 +53,8 @@ class PGHomeScreenViewController: UIViewController {
     
     //Special status index tells the new goal controller where to put a new goal if there are already three goals in the array
     var specialStatusIndex = 10
+    
+    var fromLocalGroup = false
     
     @IBOutlet weak var goalsLeftCounter: UILabel!
     
@@ -275,6 +281,7 @@ class PGHomeScreenViewController: UIViewController {
     
     //Switching to My Goals Home Screen
     @IBAction func toMyGoals(_ sender: Any) {
+        saveData()
         indexOfGoal = 10
         indexOfMove = 10
         self.performSegue(withIdentifier: "toMyGoals", sender: self)
@@ -395,6 +402,45 @@ class PGHomeScreenViewController: UIViewController {
             vc.goalsDoneToday = goalsDoneToday
         }
     }
+    
+    //Saving the data
+    func saveData() {
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(personalGoals)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "personalGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+        
+        UserDefaults.standard.set(goalsDoneToday, forKey: "goalsDoneToday")
+    }
+    
+    //Getting the data
+    func getData() {
+        do {
+            if (UserDefaults.standard.object(forKey: "personalGoals") == nil) {
+                
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "personalGoals") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let thePersonalGoals: [personalGoal] = try jsonDecoder.decode([personalGoal].self, from: jsonData)
+                personalGoals = thePersonalGoals
+            }
+        } catch {
+            print("Error")
+        }
+        
+        if let goalsDone = UserDefaults.standard.object(forKey: "goalsDoneToday") as? Int {
+            goalsDoneToday = goalsDone
+        }
+    }
 }
 
 //Personal Goal class
@@ -404,6 +450,10 @@ class personalGoal: Goal {
     init(title: String, description: String, xpPoints: Int, status: Int, endTime: Date) {
         super.init(title: title, description: description, xpPoints: xpPoints, status: status)
         self.endTime = endTime
+    }
+    
+    required init(from decoder: Decoder) throws {
+        try super.init(from: decoder)
     }
     
     func getEndTime() -> Date {

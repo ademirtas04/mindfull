@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func nextButton(_ sender: Any) {
         username = enterName.text ?? ""
+        UserDefaults.standard.set(username, forKey: "username")
         
         self.performSegue(withIdentifier: "toWelcome", sender: self)
     }

@@ -10,27 +10,51 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
-    @IBOutlet weak var slider1: UISlider!
-    
-    @IBOutlet weak var slider2: UISlider!
-    
-    @IBOutlet weak var slider3: UISlider!
-    
-    @IBOutlet weak var slider4: UISlider!
-    
-    @IBOutlet weak var slider5: UISlider!
-    
-    var tempUsername2 = ""
-
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBOutlet weak var slider1: UISlider!
+    @IBOutlet weak var slider2: UISlider!
+    @IBOutlet weak var slider3: UISlider!
+    @IBOutlet weak var slider4: UISlider!
+    @IBOutlet weak var slider5: UISlider!
+    
+    @IBOutlet weak var slider1Label: UILabel!
+    @IBOutlet weak var slider2Label: UILabel!
+    @IBOutlet weak var slider3Label: UILabel!
+    @IBOutlet weak var slider4Label: UILabel!
+    @IBOutlet weak var slider5Label: UILabel!
+    
+    var tempUsername2 = ""
+    
+    //The sliders
+    @IBAction func moveSlider1(_ sender: UISlider) {
+        let value = Int(sender.value)
+        slider1Label.text = String(value)
+    }
+    
+    @IBAction func moveSlider2(_ sender: UISlider) {
+        let value = Int(sender.value)
+        slider2Label.text = String(value)
+    }
+    
+    @IBAction func moveSlider3(_ sender: UISlider) {
+        let value = Int(sender.value)
+        slider3Label.text = String(value)
+    }
+    
+    @IBAction func moveSlider4(_ sender: UISlider) {
+        let value = Int(sender.value)
+        slider4Label.text = String(value)
+    }
+    
+    @IBAction func moveSlider5(_ sender: UISlider) {
+        let value = Int(sender.value)
+        slider5Label.text = String(value)
     }
     
     @IBAction func continueButton (_ sender: Any) {

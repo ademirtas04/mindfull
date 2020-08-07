@@ -102,5 +102,7 @@ class DailyGoalViewStartViewController: UIViewController {
         vc.currentWeeklyGoals = weeklyGoals
         vc.dailyGoals = allDailyGoals
         vc.weeklyGoals = allWeeklyGoals
+        vc.fromLocalGroup = true
+        vc.saveData()
     }
 }

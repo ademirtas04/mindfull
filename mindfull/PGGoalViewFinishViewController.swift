@@ -65,5 +65,7 @@ class PGGoalViewFinishViewController: UIViewController {
         }
         vc.personalGoals = personalGoals
         vc.goalsDoneToday = goalsDoneToday
+        vc.fromLocalGroup = true
+        vc.saveData()
     }
 }

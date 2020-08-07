@@ -23,6 +23,10 @@ class DWGHomeScreenViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if fromLocalGroup == false {
+            getData()
+        }
+        
         if (checkDay()) {
             chooseDailyGoals()
             if (checkWeek()) {
@@ -46,6 +50,8 @@ class DWGHomeScreenViewController: UIViewController {
     
     //This variable specifies which goal was passed to goal view, with 0 for daily goal 1, 1 for daily goal 2, 2 for daily goal 3, 3 for weekly goal 1, 4 for weekly goal 2 and 5 for weekly goal 5 and set to 10 as default
     var indexOfGoal = 10
+    
+    var fromLocalGroup = false
     
     @IBOutlet weak var DG1Title: UILabel!
     @IBOutlet weak var DG2Title: UILabel!
@@ -336,6 +342,7 @@ class DWGHomeScreenViewController: UIViewController {
     
     //Back to My Goals Home Scree
     @IBAction func toMyGoals(_ sender: Any) {
+        saveData()
         indexOfGoal = 10
         indexOfMove = 10
         self.performSegue(withIdentifier: "toMyGoals", sender: self)
@@ -514,10 +521,124 @@ class DWGHomeScreenViewController: UIViewController {
             vc.allWeeklyGoals = weeklyGoals
         }
     }
+    
+    //Save data
+    func saveData() {
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(dailyGoals)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "dailyGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(currentDailyGoals)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "currentDailyGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(weeklyGoals)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "weeklyGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(currentWeeklyGoals)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "currentWeeklyGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+    }
+    
+    //Getting the data
+    func getData() {
+        do {
+            if (UserDefaults.standard.object(forKey: "dailyGoals") == nil) {
+                
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "dailyGoals") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let theDailyGoals: [Goal] = try jsonDecoder.decode([Goal].self, from: jsonData)
+                dailyGoals = theDailyGoals
+            }
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            if (UserDefaults.standard.object(forKey: "currentDailyGoals") == nil) {
+                return
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "currentDailyGoals") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let theCurrentDailyGoals: [Goal] = try jsonDecoder.decode([Goal].self, from: jsonData)
+                currentDailyGoals = theCurrentDailyGoals
+            }
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            if (UserDefaults.standard.object(forKey: "weeklyGoals") == nil) {
+                
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "weeklyGoals") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let theWeeklyGoals: [Goal] = try jsonDecoder.decode([Goal].self, from: jsonData)
+                weeklyGoals = theWeeklyGoals
+            }
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            if (UserDefaults.standard.object(forKey: "currentWeeklyGoals") == nil) {
+                
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "currentWeeklyGoals") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let theCurrentWeeklyGoals: [Goal] = try jsonDecoder.decode([Goal].self, from: jsonData)
+                currentWeeklyGoals = theCurrentWeeklyGoals
+            }
+        } catch {
+            print("Error")
+        }
+    }
 }
 
 //Goal class
-class Goal {
+class Goal: Codable {
     
     var title = ""
     

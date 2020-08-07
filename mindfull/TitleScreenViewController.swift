@@ -18,6 +18,9 @@ class TitleScreenViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        if let theUsername = UserDefaults.standard.object(forKey: "username") as? String {
+            username = theUsername
+        }
         checkUsername.text = "You are logged in as \(username)"
     }
     

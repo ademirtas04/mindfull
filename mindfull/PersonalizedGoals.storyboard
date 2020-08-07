@@ -153,6 +153,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-bR-h9q">
+                                <rect key="frame" x="35" y="364" width="20" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="UwK-Mg-aFq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUa-DA-go6">
+                                <rect key="frame" x="349" y="364" width="30" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="SZ1-iU-ddR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -167,6 +185,8 @@
                             <constraint firstItem="yDX-7N-nJn" firstAttribute="trailing" secondItem="z7k-r4-ZoD" secondAttribute="trailing" constant="35" id="DPI-2a-hir"/>
                             <constraint firstItem="CFg-62-dAo" firstAttribute="centerX" secondItem="ayb-JG-tQg" secondAttribute="centerX" constant="-85" id="Gnc-su-cQx"/>
                             <constraint firstItem="d1j-Xx-SQD" firstAttribute="centerX" secondItem="ayb-JG-tQg" secondAttribute="centerX" id="Iql-qh-inO"/>
+                            <constraint firstItem="Q7f-bR-h9q" firstAttribute="leading" secondItem="yDX-7N-nJn" secondAttribute="leading" constant="35" id="JlM-s4-CZo"/>
+                            <constraint firstItem="Q7f-bR-h9q" firstAttribute="top" secondItem="z7k-r4-ZoD" secondAttribute="bottom" constant="-10" id="K2D-41-b4Q"/>
                             <constraint firstItem="t5f-3f-pvl" firstAttribute="top" secondItem="ctX-7Q-Mf7" secondAttribute="bottom" constant="20" id="K8R-LG-7Nu"/>
                             <constraint firstItem="7Pc-eD-SAj" firstAttribute="top" secondItem="be9-un-RaU" secondAttribute="bottom" constant="20" id="LLd-Vk-ltC"/>
                             <constraint firstItem="GRv-Fx-y8a" firstAttribute="top" secondItem="sVx-lR-jmQ" secondAttribute="bottom" constant="-20" id="LNV-Sh-CaT"/>
@@ -174,6 +194,7 @@
                             <constraint firstItem="be9-un-RaU" firstAttribute="leading" secondItem="yDX-7N-nJn" secondAttribute="leading" constant="35" id="MaG-qe-r9V"/>
                             <constraint firstItem="RpK-0k-iDS" firstAttribute="top" secondItem="7Pc-eD-SAj" secondAttribute="bottom" constant="10" id="Mo7-5C-nXg"/>
                             <constraint firstItem="IUW-Ok-e6n" firstAttribute="centerX" secondItem="ayb-JG-tQg" secondAttribute="centerX" id="N40-aA-Z4n"/>
+                            <constraint firstItem="cUa-DA-go6" firstAttribute="top" secondItem="z7k-r4-ZoD" secondAttribute="bottom" constant="-10" id="Q7H-w7-sfK"/>
                             <constraint firstItem="yDX-7N-nJn" firstAttribute="trailing" secondItem="be9-un-RaU" secondAttribute="trailing" constant="35" id="T7v-oc-WJh"/>
                             <constraint firstItem="f9G-Rb-CgT" firstAttribute="top" secondItem="z7k-r4-ZoD" secondAttribute="bottom" constant="20" id="Whq-4b-JE2"/>
                             <constraint firstItem="z7k-r4-ZoD" firstAttribute="top" secondItem="Y0o-f9-auA" secondAttribute="bottom" constant="10" id="Xrs-k0-pL6"/>
@@ -187,6 +208,7 @@
                             <constraint firstItem="f9G-Rb-CgT" firstAttribute="leading" secondItem="yDX-7N-nJn" secondAttribute="leading" constant="35" id="mMK-UQ-oY4"/>
                             <constraint firstItem="7Pc-eD-SAj" firstAttribute="leading" secondItem="yDX-7N-nJn" secondAttribute="leading" constant="35" id="mQD-wJ-O9z"/>
                             <constraint firstItem="z7k-r4-ZoD" firstAttribute="leading" secondItem="yDX-7N-nJn" secondAttribute="leading" constant="35" id="mli-hT-rK5"/>
+                            <constraint firstItem="yDX-7N-nJn" firstAttribute="trailing" secondItem="cUa-DA-go6" secondAttribute="trailing" constant="35" id="pIY-LB-nMl"/>
                             <constraint firstItem="be9-un-RaU" firstAttribute="top" secondItem="f9G-Rb-CgT" secondAttribute="bottom" constant="10" id="t4w-2z-tv1"/>
                             <constraint firstItem="CFg-62-dAo" firstAttribute="top" secondItem="RpK-0k-iDS" secondAttribute="bottom" constant="40" id="vQR-g6-0gL"/>
                             <constraint firstItem="Exm-7I-i9a" firstAttribute="centerX" secondItem="ayb-JG-tQg" secondAttribute="centerX" constant="85" id="wNH-6L-mZ4"/>
@@ -850,7 +872,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xdx-Nw-OpO"/>
         <segue reference="bfP-Tz-Gmf"/>
     </inferredMetricsTieBreakers>
     <resources>
