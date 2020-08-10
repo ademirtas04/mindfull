@@ -11,6 +11,7 @@ import SpriteKit
 
 class GardenController: UIViewController {
         
+    @IBOutlet weak var customizeButton: UIButton!
     @IBOutlet weak var uiview: UIView!
     
     @IBOutlet weak var affirmation1: UILabel!
@@ -46,13 +47,13 @@ class GardenController: UIViewController {
     var leavesUnlocked: Bool = true
 
     @IBOutlet weak var bgImage: UIImageView!
-    static var coins: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        customizeButton.showsTouchWhenHighlighted = true
         if let x = UserDefaults.standard.object(forKey: "red")  as?  Bool {
             isRed = x
         }
@@ -168,13 +169,14 @@ class GardenController: UIViewController {
         let screenWidth: Int = Int(Float(self.view!.bounds.width))
         let screenHeight: Int = Int(Float(self.view!.bounds.height))
         let sk: SKView = SKView()
-        sk.frame = uiview.bounds
+        sk.frame = CGRect(x: 0, y: 65, width: self.view!.frame.width, height: self.view!.frame.height - 65 - 84)
         sk.backgroundColor = .clear
         uiview.addSubview(sk)
 
-        let scene: SKScene = SKScene(size: uiview.bounds.size)
+        let scene: SKScene = SKScene(size: CGSize(width: self.view!.frame.width, height: self.view!.frame.height - 65 - 84))
         scene.scaleMode = .aspectFit
         scene.backgroundColor = .clear
+        
         if(isRed){
             let en1 = SKEmitterNode(fileNamed: "red.sks")
             en1?.position = CGPoint(x: Int.random(in: 0...screenWidth), y: Int.random(in: 0...screenHeight))
