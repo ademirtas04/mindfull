@@ -26,7 +26,11 @@ class JournalController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
+        if let x = UserDefaults.standard.object(forKey: "journal") as? [Entry] {
+            journalList = x
+        }
         if(journalList.count != 0){
             let date: Date = journalList[0].date
             currentDate = date
@@ -111,6 +115,7 @@ class JournalController: UIViewController {
     }
     
     @IBAction func goToGarden(_ sender: Any) {
+        UserDefaults.standard.set(journalList, forKey: "journal")
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
     

@@ -57,31 +57,26 @@ class JourneyController: UIViewController {
         if(Header.text == "Your First Mindfulness Exercise" && completed == 0){
             stopOne.setImage(UIImage(named: "completed"), for: .normal)
             JourneyController.addCoins(c: 200)
-            GardenController.addCoins(c: 200)
             completed = completed + 1
         }
         if(Header.text == "Let's Do a Quick Body Scan" && completed == 1){
             stopTwo.setImage(UIImage(named: "completed"), for: .normal)
             JourneyController.addCoins(c: 200)
-            GardenController.addCoins(c: 200)
             completed = completed + 1
         }
         if(Header.text == "Let's Try Mindful Eating" && completed == 2){
             stopThree.setImage(UIImage(named: "completed"), for: .normal)
             JourneyController.addCoins(c: 200)
-            GardenController.addCoins(c: 200)
             completed = completed + 1
         }
         if(Header.text == "Let's Try Mindful Journaling" && completed == 3){
             stopFour.setImage(UIImage(named: "completed"), for: .normal)
             JourneyController.addCoins(c: 200)
-            GardenController.addCoins(c: 200)
             completed = completed + 1
         }
         if(Header.text == "Let's Go on a Mindful Walk" && completed == 4){
             stopFive.setImage(UIImage(named: "completed"), for: .normal)
             JourneyController.addCoins(c: 200)
-            GardenController.addCoins(c: 200)
             completed = completed + 1
         }
     }

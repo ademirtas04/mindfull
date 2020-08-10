@@ -59,12 +59,11 @@ class ShortPromptController: UIViewController {
     
     @IBAction func goToGarden(_ sender: Any) {
         let gardenVC: GardenController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "gardenVC") as! GardenController
-        gardenVC.ResponseList.insert(response1.text!, at: 0)
-        gardenVC.ResponseList.insert(response2.text!, at: 0)
-        gardenVC.ResponseList.insert(response3.text!, at: 0)
-        gardenVC.ResponseList.insert(response4.text!, at: 0)
-        gardenVC.ResponseList.insert(response5.text!, at: 0)
-        
+        gardenVC.addResponse(entry: response1.text!)
+        gardenVC.addResponse(entry: response2.text!)
+        gardenVC.addResponse(entry: response3.text!)
+        gardenVC.addResponse(entry: response4.text!)
+        gardenVC.addResponse(entry: response5.text!)
         self.performSegue(withIdentifier: "toJournal", sender: self)
         
     }

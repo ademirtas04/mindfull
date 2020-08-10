@@ -33,22 +33,86 @@ class GardenController: UIViewController {
     var isWaves: Bool = false
     var isLeaves: Bool = true
     
-    var redUnlocked: Bool = false
+    var redUnlocked: Bool = true
     var blueUnlocked: Bool = true
-    var greenUnlocked: Bool = false
-    var orangeUnlocked: Bool = false
-    var purpleUnlocked: Bool = false
+    var greenUnlocked: Bool = true
+    var orangeUnlocked: Bool = true
+    var purpleUnlocked: Bool = true
     
-    var birdUnlocked: Bool = false
+    var birdUnlocked: Bool = true
     var breezeUnlocked: Bool = true
     var waterUnlocked: Bool = true
-    var wavesUnlocked: Bool = false
-    var leavesUnlocked: Bool = false
+    var wavesUnlocked: Bool = true
+    var leavesUnlocked: Bool = true
 
     @IBOutlet weak var bgImage: UIImageView!
     static var coins: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let x = UserDefaults.standard.object(forKey: "red")  as?  Bool {
+            isRed = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "blue")  as?  Bool {
+            isBlue = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "green")  as?  Bool {
+            isGreen = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "orange")  as?  Bool {
+            isOrange = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "purple")  as?  Bool {
+            isPurple = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "bird")  as?  Bool {
+            isBird = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "breeze")  as?  Bool {
+            isBreeze = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "leaves")  as?  Bool {
+            isLeaves = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "waves")  as?  Bool {
+            isWaves = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "water")  as?  Bool {
+            isWater = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "redUnlocked")  as?  Bool {
+            redUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "blueUnlocked")  as?  Bool {
+            blueUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "greenUnlocked")  as?  Bool {
+            greenUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "purpleUnlocked")  as?  Bool {
+            purpleUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "orangeUnlocked")  as?  Bool {
+            orangeUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "birdUnlocked")  as?  Bool {
+            birdUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "waterUnlocked")  as?  Bool {
+            waterUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "breezeUnlocked")  as?  Bool {
+            breezeUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "wavesUnlocked")  as?  Bool {
+            wavesUnlocked = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "leavesUnlocked")  as?  Bool {
+            leavesUnlocked = x
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -74,6 +138,27 @@ class GardenController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        UserDefaults.standard.set(isRed, forKey: "red")
+        UserDefaults.standard.set(isBlue, forKey: "blue")
+        UserDefaults.standard.set(isGreen, forKey: "green")
+        UserDefaults.standard.set(isOrange, forKey: "orange")
+        UserDefaults.standard.set(isPurple, forKey: "purple")
+        UserDefaults.standard.set(isBird, forKey: "bird")
+        UserDefaults.standard.set(isBreeze, forKey: "breeze")
+        UserDefaults.standard.set(isWater, forKey: "water")
+        UserDefaults.standard.set(isWaves, forKey: "waves")
+        UserDefaults.standard.set(isLeaves, forKey: "leaves")
+        UserDefaults.standard.set(redUnlocked, forKey: "redUnlocked")
+        UserDefaults.standard.set(blueUnlocked, forKey: "blueUnlocked")
+        UserDefaults.standard.set(greenUnlocked, forKey: "greenUnlocked")
+        UserDefaults.standard.set(orangeUnlocked, forKey: "orangeUnlocked")
+        UserDefaults.standard.set(purpleUnlocked, forKey: "purpleUnlocked")
+        UserDefaults.standard.set(birdUnlocked, forKey: "birdUnlocked")
+        UserDefaults.standard.set(breezeUnlocked, forKey: "breezeUnlocked")
+        UserDefaults.standard.set(waterUnlocked, forKey: "waterUnlocked")
+        UserDefaults.standard.set(wavesUnlocked, forKey: "wavesUnlocked")
+        UserDefaults.standard.set(leavesUnlocked, forKey: "leavesUnlocked")
+        
         super.viewWillDisappear(animated)
         screenTimer?.invalidate()
         AudioPlayer.shared.stopBackgroundMusic()
@@ -237,15 +322,65 @@ class GardenController: UIViewController {
             customizeVC.usingWaves = isWaves
             customizeVC.usingLeaves = isLeaves
         }
-        
     }
-    
     
     @IBAction func goToGoals(_ sender: Any) {
         self.performSegue(withIdentifier: "toGoals", sender: self)
     }
     
-    static func addCoins(c: Int){
-        coins = coins + c
+    func addResponse(entry: String){
+        ResponseList.insert(entry, at: 0)
+        UserDefaults.standard.set(ResponseList, forKey: "responseList")
     }
+    
+    func setRed(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "red")
+        isRed = activated
+    }
+    
+    func setBlue(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "blue")
+        isBlue = activated
+    }
+    
+    func setGreen(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "green")
+        isGreen = activated
+    }
+    
+    func setOrange(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "orange")
+        isOrange = activated
+    }
+    
+    func setPurple(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "purple")
+        isPurple = activated
+    }
+    
+    func setBird(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "bird")
+        isBird = activated
+    }
+    
+    func setBreeze(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "breeze")
+        isBreeze = activated
+    }
+    
+    func setWaves(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "waves")
+        isWaves = activated
+    }
+    
+    func setWater(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "water")
+        isWater = activated
+    }
+    
+    func setLeaves(activated: Bool){
+        UserDefaults.standard.set(activated, forKey: "leaves")
+        isLeaves = activated
+    }
+    
 }

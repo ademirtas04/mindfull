@@ -176,16 +176,16 @@ class CustomizeController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "toGarden"){
             let gardenVC = segue.destination as! GardenController
-            gardenVC.isRed = RedSwitch.isOn
-            gardenVC.isBlue = BlueSwitch.isOn
-            gardenVC.isGreen = GreenSwitch.isOn
-            gardenVC.isOrange = OrangeSwitch.isOn
-            gardenVC.isPurple = PurpleSwitch.isOn
-            gardenVC.isBird = BirdSwitch.isOn
-            gardenVC.isBreeze = BreezeSwitch.isOn
-            gardenVC.isWater = WaterSwitch.isOn
-            gardenVC.isWaves = WavesSwitch.isOn
-            gardenVC.isLeaves = LeavesSwitch.isOn
+            gardenVC.setRed(activated: RedSwitch.isOn)
+            gardenVC.setBlue(activated: BlueSwitch.isOn)
+            gardenVC.setGreen(activated: GreenSwitch.isOn)
+            gardenVC.setOrange(activated: OrangeSwitch.isOn)
+            gardenVC.setPurple(activated: PurpleSwitch.isOn)
+            gardenVC.setBird(activated: BirdSwitch.isOn)
+            gardenVC.setBreeze(activated: BreezeSwitch.isOn)
+            gardenVC.setWater(activated: WaterSwitch.isOn)
+            gardenVC.setWaves(activated: WavesSwitch.isOn)
+            gardenVC.setLeaves(activated: LeavesSwitch.isOn)
         }
     }
 }
