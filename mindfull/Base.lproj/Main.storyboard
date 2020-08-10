@@ -198,6 +198,9 @@
                                 <rect key="frame" x="158" y="770" width="67" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="garden-house"/>
+                                <connections>
+                                    <action selector="toGarden:" destination="L91-Lo-VvC" eventType="touchUpInside" id="xSn-X4-ACw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-uD-Zeo">
                                 <rect key="frame" x="32" y="770" width="60" height="60"/>
@@ -247,6 +250,7 @@
                     <connections>
                         <segue destination="kcE-kD-e7n" kind="show" identifier="toDWG" id="Ibf-kh-W7k"/>
                         <segue destination="soA-xb-hGQ" kind="show" identifier="toPG" id="ALe-HE-MDJ"/>
+                        <segue destination="vce-aH-bqn" kind="show" identifier="toGarden" id="Dfz-Tk-bNt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BS8-Lg-8ni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -816,7 +820,7 @@
             <objects>
                 <viewController storyboardIdentifier="gardenVC" id="vce-aH-bqn" customClass="GardenController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdl-gV-0at">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V63-1i-OW0">
@@ -1185,8 +1189,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lr5-dZ-HCb"/>
-        <segue reference="lgD-GR-JYS"/>
+        <segue reference="Dfz-Tk-bNt"/>
         <segue reference="QZL-1s-D6g"/>
     </inferredMetricsTieBreakers>
     <resources>
