@@ -250,7 +250,7 @@ class PGHomeScreenViewController: UIViewController {
                 let endDay = calendar.dateComponents([.weekday], from: endTime).weekday!
                 let endHour = calendar.dateComponents([.hour], from: endTime).hour!
                 let endMinute = calendar.dateComponents([.minute], from: endTime).minute!
-            
+                
                 if (rightNowWeek > endWeek) {
                     remove = true
                 }
@@ -269,7 +269,7 @@ class PGHomeScreenViewController: UIViewController {
                         }
                     }
                 }
-            
+                
                 if (remove == true) {
                     personalGoals.remove(at: index-1)
                     return true
@@ -416,6 +416,7 @@ class PGHomeScreenViewController: UIViewController {
         }
         
         UserDefaults.standard.set(goalsDoneToday, forKey: "goalsDoneToday")
+        UserDefaults.standard.set(previousDayDate, forKey: "previousDayDate2")
     }
     
     //Getting the data
@@ -439,6 +440,10 @@ class PGHomeScreenViewController: UIViewController {
         
         if let goalsDone = UserDefaults.standard.object(forKey: "goalsDoneToday") as? Int {
             goalsDoneToday = goalsDone
+        }
+        
+        if let previousDay = UserDefaults.standard.object(forKey: "previousDayDat2e") as? Date {
+            previousDayDate = previousDay
         }
     }
 }

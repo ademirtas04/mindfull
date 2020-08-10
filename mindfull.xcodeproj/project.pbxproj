@@ -53,6 +53,8 @@
 		C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161224D2114D00410194 /* QuizViewController.swift */; };
 		C1BE161524D21B6400410194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161424D21B6400410194 /* LoginViewController.swift */; };
 		C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */; };
+		C1D64D1724E1AFD3006C18AE /* EIEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D64D1624E1AFD3006C18AE /* EIEntryViewController.swift */; };
+		C1D64D1924E1AFE4006C18AE /* EIJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D64D1824E1AFE4006C18AE /* EIJournalViewController.swift */; };
 		C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E773F724D36CA700612765 /* TitleScreenViewController.swift */; };
 		C1FDE7AB24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */; };
 		C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */; };
@@ -130,6 +132,8 @@
 		C1BE161224D2114D00410194 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C1BE161424D21B6400410194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1BE161624D21BD600410194 /* OnboardingWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcomeViewController.swift; sourceTree = "<group>"; };
+		C1D64D1624E1AFD3006C18AE /* EIEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIEntryViewController.swift; sourceTree = "<group>"; };
+		C1D64D1824E1AFE4006C18AE /* EIJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIJournalViewController.swift; sourceTree = "<group>"; };
 		C1E773F724D36CA700612765 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
 		C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyAndWeeklyGoals.storyboard; sourceTree = "<group>"; };
 		C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedGoals.storyboard; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 				02ADCBAC24DC5F7C00DCDB57 /* breeze.mp3 */,
 				02ADCBAA24DC5EFD00DCDB57 /* water.mp3 */,
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
+				C1D64D1624E1AFD3006C18AE /* EIEntryViewController.swift */,
+				C1D64D1824E1AFE4006C18AE /* EIJournalViewController.swift */,
 				C15F555424DB37EF00D6E26F /* MyGoalsViewController.swift */,
 				C1E773F724D36CA700612765 /* TitleScreenViewController.swift */,
 				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
@@ -426,6 +432,8 @@
 				C146582824D9C93A00F04AA0 /* DailyGoalViewFinishViewController.swift in Sources */,
 				02445FE924C9E79900B61AA5 /* ViewController.swift in Sources */,
 				C146582C24D9C95600F04AA0 /* WeeklyGoalViewOngoingViewController.swift in Sources */,
+				C1D64D1924E1AFE4006C18AE /* EIJournalViewController.swift in Sources */,
+				C1D64D1724E1AFD3006C18AE /* EIEntryViewController.swift in Sources */,
 				02445FE724C9E79900B61AA5 /* AppDelegate.swift in Sources */,
 				0244601724CA0C5200B61AA5 /* JourneyController.swift in Sources */,
 				C15F555524DB37EF00D6E26F /* MyGoalsViewController.swift in Sources */,

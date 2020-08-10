@@ -563,6 +563,8 @@ class DWGHomeScreenViewController: UIViewController {
         } catch {
             print("Error")
         }
+        
+        UserDefaults.standard.set(previousDayDate, forKey: "previousDayDate")
     }
     
     //Getting the data
@@ -633,6 +635,10 @@ class DWGHomeScreenViewController: UIViewController {
             }
         } catch {
             print("Error")
+        }
+        
+        if let previousDay = UserDefaults.standard.object(forKey: "previousDayDate") as? Date {
+            previousDayDate = previousDay
         }
     }
 }
