@@ -43,7 +43,7 @@ class LongPromptController: UIViewController {
     
     @IBAction func goToJournal(_ sender: Any) {
         let gardenVC: GardenController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "gardenVC") as! GardenController
-        gardenVC.ResponseList.insert(responseShort.text!, at: 0)
+        gardenVC.addResponse(entry: responseShort.text!)
         
         self.performSegue(withIdentifier: "toJournal", sender: self)
         
