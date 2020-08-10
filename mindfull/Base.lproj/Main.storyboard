@@ -209,6 +209,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="My Goals Icon"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86G-TV-g4f">
+                                <rect key="frame" x="32" y="688" width="350" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Temp Button to EI UX to test it"/>
+                                <connections>
+                                    <segue destination="SSR-Gg-ucn" kind="show" id="fpK-Q8-V2x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -227,6 +235,7 @@
                             <constraint firstItem="Xcx-B7-afz" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="PSh-R1-IC2"/>
                             <constraint firstItem="PPQ-we-xlA" firstAttribute="top" secondItem="iAJ-e0-SMF" secondAttribute="bottom" constant="-5" id="T1a-Xt-tgm"/>
                             <constraint firstItem="Q0z-yq-rkc" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="UvI-vu-V4f"/>
+                            <constraint firstItem="6dT-wx-aQ8" firstAttribute="trailing" secondItem="86G-TV-g4f" secondAttribute="trailing" constant="32" id="VEF-l4-BXk"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="leading" secondItem="6dT-wx-aQ8" secondAttribute="leading" id="Vz5-7F-vqy"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="top" secondItem="Xcx-B7-afz" secondAttribute="bottom" constant="78" id="dAc-h7-YYo"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="trailing" secondItem="6dT-wx-aQ8" secondAttribute="trailing" id="dbh-4S-EkZ"/>
@@ -236,7 +245,10 @@
                             <constraint firstItem="Xcx-B7-afz" firstAttribute="top" secondItem="Q0z-yq-rkc" secondAttribute="bottom" constant="30" id="kUY-7V-e7a"/>
                             <constraint firstAttribute="bottom" secondItem="0L8-RH-5Nw" secondAttribute="bottom" id="mQQ-nV-AXX"/>
                             <constraint firstItem="2Dy-Uv-wEa" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="nMz-pv-bSD"/>
+                            <constraint firstItem="86G-TV-g4f" firstAttribute="leading" secondItem="6dT-wx-aQ8" secondAttribute="leading" constant="32" id="pTR-hE-SRT"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="leading" secondItem="6dT-wx-aQ8" secondAttribute="leading" id="qcJ-sC-JJT"/>
+                            <constraint firstItem="86G-TV-g4f" firstAttribute="top" secondItem="Xcx-B7-afz" secondAttribute="bottom" constant="8" id="rJ9-VG-O82"/>
+                            <constraint firstItem="0L8-RH-5Nw" firstAttribute="top" secondItem="86G-TV-g4f" secondAttribute="bottom" constant="8" id="uog-B1-D4e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6dT-wx-aQ8"/>
                     </view>
@@ -1246,6 +1258,7 @@
                         <outlet property="affirmation4" destination="Gh3-qe-Pml" id="d8H-Qv-w5M"/>
                         <outlet property="affirmation5" destination="nAK-Re-heS" id="0Rw-SL-wFt"/>
                         <outlet property="bgImage" destination="u72-e3-bYx" id="t77-Jz-GT8"/>
+                        <outlet property="customizeButton" destination="fue-15-zD8" id="PEb-0Q-zeD"/>
                         <outlet property="uiview" destination="qdl-gV-0at" id="YwB-ls-ofg"/>
                         <segue destination="5ck-HQ-SZ7" kind="showDetail" identifier="toCustomize" id="lr5-dZ-HCb"/>
                         <segue destination="L91-Lo-VvC" kind="show" identifier="toGoals" id="cnT-rR-Xfx"/>
@@ -1513,8 +1526,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KEb-Nm-yiV"/>
         <segue reference="lgD-GR-JYS"/>
+        <segue reference="fpK-Q8-V2x"/>
         <segue reference="QZL-1s-D6g"/>
     </inferredMetricsTieBreakers>
     <resources>
