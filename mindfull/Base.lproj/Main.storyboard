@@ -366,7 +366,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9i-3X-GlE">
-                                <rect key="frame" x="0.0" y="756" width="414" height="84"/>
+                                <rect key="frame" x="0.0" y="762" width="414" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.6918114729" blue="0.63661162299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -374,7 +374,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEW-Up-W5n">
-                                <rect key="frame" x="290" y="764" width="91" height="60"/>
+                                <rect key="frame" x="290" y="770" width="91" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="My Goals Icon"/>
                                 <connections>
@@ -383,12 +383,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0Z-WK-dp7">
-                                <rect key="frame" x="33" y="764" width="60" height="60"/>
+                                <rect key="frame" x="33" y="770" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="path"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNj-f6-b3b">
-                                <rect key="frame" x="167" y="764" width="67" height="60"/>
+                                <rect key="frame" x="167" y="770" width="67" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="garden-house"/>
                                 <connections>
@@ -1453,8 +1453,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sjT-42-WjM"/>
-        <segue reference="fpK-Q8-V2x"/>
+        <segue reference="Xh3-6O-WhD"/>
+        <segue reference="KEb-Nm-yiV"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="d4C-h3-UC9"/>
         <segue reference="f3Q-oZ-4xk"/>

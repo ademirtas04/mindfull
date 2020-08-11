@@ -20,6 +20,8 @@ class JourneyController: UIViewController {
     
     @IBOutlet weak var progress: UIProgressView!
     
+    var r: Resources = Resources()
+    
     var audioList: [Goal] = []
     var assessList: [Goal] = []
     var writtenList: [Goal] = []
@@ -34,6 +36,10 @@ class JourneyController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        audioList = r.getAudioTrack()
+        assessList = r.getAssessmentList()
+        writtenList = r.getWrittenList()
+        environmentList = r.getEnvironmentList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +60,25 @@ class JourneyController: UIViewController {
     @IBAction func environmentPressed(_ sender: Any) {
     }
     
+    func audioCompleted() {
+        audioIndex += 1
+        UserDefaults.standard.set(audioIndex, forKey: "audioIndex")
+    }
+    
+    func assessmentCompleted() {
+        assessmentIndex += 1
+        UserDefaults.standard.set(assessmentIndex, forKey: "assessmentIndex")
+    }
+    
+    func writtenCompleted() {
+        writtenIndex += 1
+        UserDefaults.standard.set(writtenIndex, forKey: "writtenIndex")
+    }
+    
+    func environmentCompleted() {
+        environmentIndex += 1
+        UserDefaults.standard.set(environmentIndex, forKey: "environmentIndex")
+    }
     
     @IBAction func goToGarden(_ sender: Any) {
         self.performSegue(withIdentifier: "toGarden", sender: self)

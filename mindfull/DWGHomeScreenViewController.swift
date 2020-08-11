@@ -655,12 +655,28 @@ class Goal: Codable {
     //Variable status is a way of representing the status of a certain goal, with 0 meaning the goal isn't chosen, 1 meaning it is one of the chosen goals, 2 meaning it is a ongoing chosen goal, 3 meaning it is a discarded chosen goal and 4 meaning it is a finished chosen goal.
     var status = 0
     
+    var audioLink = ""
+    var titles: String = ""
+    var prompts: [String] = []
+    
     
     init(title: String, description: String, xpPoints: Int, status: Int) {
         self.title = title
         self.description = description
         self.xpPoints = xpPoints
         self.status = status
+    }
+    
+    func addAudio(link: String){
+        self.audioLink = link
+    }
+    
+    func addPromptTitle(title: String){
+        self.titles = title
+    }
+    
+    func addPrompts(prompts: [String]){
+        self.prompts = prompts
     }
     
     func getTitle() -> String {
