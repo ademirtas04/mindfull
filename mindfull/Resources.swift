@@ -32,23 +32,23 @@ class Resources {
     func getAudioTrack () -> [Goal] {
         audioList.removeAll()
         goal1 = Goal(title: "Your First Meditation", description: "Meditate for One Minute", xpPoints: 10, status: 0)
-        goal1.addAudio(link: "meditation1.mp3")
+        goal1.addAudio(link: "meditation1")
         audioList.insert(goal1, at: 0)
         
         goal2 = Goal(title: "Your Second Meditation", description: "Meditate for Three Minutes", xpPoints: 30, status: 0)
-        goal2.addAudio(link: "meditation2.mp3")
+        goal2.addAudio(link: "meditation2")
         audioList.insert(goal2, at: 1)
         
         goal3 = Goal(title: "Your Third Meditation", description: "Meditate for Five Minutes", xpPoints: 50, status: 0)
-        goal3.addAudio(link: "meditation3.mp3")
+        goal3.addAudio(link: "meditation3")
         audioList.insert(goal3, at: 2)
         
         goal4 = Goal(title: "Your Fourth Meditation", description: "Meditate for Seven Minutes", xpPoints: 70, status: 0)
-        goal4.addAudio(link: "meditation4.mp3")
+        goal4.addAudio(link: "meditation4")
         audioList.insert(goal4, at: 3)
         
         goal5 = Goal(title: "Your Fifth Meditation", description: "Meditate for Ten Minutes", xpPoints: 100, status: 0)
-        goal5.addAudio(link: "meditation5.mp3")
+        goal5.addAudio(link: "meditation5")
         audioList.insert(goal5, at: 4)
         return audioList
     }
@@ -56,23 +56,23 @@ class Resources {
     func getAssessmentList () -> [Goal] {
         assessmentList.removeAll()
         goal1 = Goal(title: "Mindful Eating", description: "Try Mindful Eating for 3 minutes", xpPoints: 10, status: 0)
-        goal1.addAudio(link: "meditation6.mp3")
+        goal1.addAudio(link: "meditation6")
         assessmentList.insert(goal1, at: 0)
         
         goal2 = Goal(title: "Body Scan Meditation", description: "Complete  the 9 minute body scan", xpPoints: 30, status: 0)
-        goal2.addAudio(link: "meditation7.mp3")
+        goal2.addAudio(link: "meditation7")
         assessmentList.insert(goal2, at: 1)
         
         goal3 = Goal(title: "Hopeful Meditation", description: "Meditate on the intention of Hope for 9 Minutes", xpPoints: 50, status: 0)
-        goal3.addAudio(link: "meditation8.mp3")
+        goal3.addAudio(link: "meditation8")
         assessmentList.insert(goal3, at: 2)
         
         goal4 = Goal(title: "Intention Meditation", description: "Meditate on your Intentions for 9 Minutes", xpPoints: 70, status: 0)
-        goal4.addAudio(link: "meditation9.mp3")
+        goal4.addAudio(link: "meditation9")
         assessmentList.insert(goal4, at: 3)
         
         goal5 = Goal(title: "Peaceful Meditation", description: "Meditate on the intention of Peace for 15 Minutes", xpPoints: 100, status: 0)
-        goal5.addAudio(link: "meditation10.mp3")
+        goal5.addAudio(link: "meditation10")
         assessmentList.insert(goal5, at: 4)
         return assessmentList
     }

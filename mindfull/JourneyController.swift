@@ -64,6 +64,15 @@ class JourneyController: UIViewController {
     }
     
     @IBAction func audioPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "toAudioProgress", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toAudioProgress"){
+            let audioVC = segue.destination as! AudioProgressController
+            audioVC.name = audioList[audioIndex].audioLink
+            audioVC.fromJournal = true
+        }
     }
     
     
