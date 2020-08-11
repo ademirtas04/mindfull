@@ -11,6 +11,7 @@ import UIKit
 class ShortPromptController: UIViewController {
     
     var timer = Timer()
+    var fromJournal: Bool = false
     
     @IBOutlet weak var done: UIButton!
     var promptTitle: String = ""

@@ -115,7 +115,15 @@ class JournalController: UIViewController {
     }
     
     @IBAction func goToGarden(_ sender: Any) {
-        UserDefaults.standard.set(journalList, forKey: "journal")
+        /*
+        do{
+            let encodedData = try NSKeyedArchiver.archivedData(withRootObject: journalList, requiringSecureCoding: false)
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(encodedData, forKey: "journal")
+        } catch {
+            print(error)
+        }
+        */
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
     
