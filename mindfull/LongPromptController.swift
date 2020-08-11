@@ -11,6 +11,7 @@ import UIKit
 class LongPromptController: UIViewController {
     var promptTitle: String = ""
     var timer = Timer()
+    var fromJournal: Bool = false
     @IBOutlet weak var Prompt: UILabel!
     @IBOutlet weak var responseShort: UITextField!
     @IBOutlet weak var responseLong: UITextField!

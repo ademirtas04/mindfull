@@ -27,6 +27,9 @@ class JourneyController: UIViewController {
     var writtenList: [Goal] = []
     var environmentList: [Goal] = []
     
+    var audioPressed: Bool = false
+    var assessmentPressed: Bool = false
+    
     
     var audioIndex: Int = 0
     var assessmentIndex: Int = 0
@@ -68,18 +71,39 @@ class JourneyController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "toAudioProgress"){
+        if(segue.identifier == "toAudioProgress" && audioPressed){
             let audioVC = segue.destination as! AudioProgressController
             audioVC.name = audioList[audioIndex].audioLink
             audioVC.fromJournal = true
+            audioPressed = false
+        } else if (segue.identifier == "toAudioProgress" && assessmentPressed == true){
+            let audioVC = segue.destination as! AudioProgressController
+            audioVC.name = assessList[assessmentIndex].audioLink
+            audioVC.fromJournal = true
+            assessmentPressed = false
+        } else if (segue.identifier == "toShortProgress"){
+            let shortVC = segue.destination as! ShortPromptController
+            shortVC.promptTitle = writtenList[writtenIndex].titles
+            shortVC.fromJournal = true
+        } else if (segue.identifier == "toLongProgress"){
+            let longVC = segue.destination as! LongPromptController
+            longVC.promptTitle = writtenList[writtenIndex].titles
+            longVC.fromJournal = true
         }
+        
     }
     
     
     @IBAction func assessmentPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "toAudioProgress", sender: self)
     }
     
     @IBAction func writtenPressed(_ sender: Any) {
+        if(writtenIndex % 2 == 0){
+            self.performSegue(withIdentifier: "toShortProgress", sender: self)
+        } else {
+            self.performSegue(withIdentifier: "toLongProgress", sender: self)
+        }
     }
     
     @IBAction func environmentPressed(_ sender: Any) {
