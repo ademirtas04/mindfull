@@ -409,6 +409,9 @@
                         <outlet property="writtenButton" destination="NkX-UB-4IW" id="fh9-AC-cuM"/>
                         <segue destination="vce-aH-bqn" kind="showDetail" identifier="toGarden" id="sjT-42-WjM"/>
                         <segue destination="L91-Lo-VvC" kind="showDetail" identifier="toGoals" id="f3Q-oZ-4xk"/>
+                        <segue destination="Hdc-es-loy" kind="showDetail" identifier="toAudioProgress" id="wpF-Do-VAq"/>
+                        <segue destination="Ge6-UD-sXn" kind="showDetail" identifier="toShortProgress" id="seG-6j-YKW"/>
+                        <segue destination="Nms-JA-Gd3" kind="showDetail" identifier="toLongProgress" id="jEa-Gn-HOM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFb-te-ngL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -420,7 +423,7 @@
             <objects>
                 <viewController id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yrh-rP-uJn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
@@ -453,7 +456,7 @@
             <objects>
                 <viewController id="Ge6-UD-sXn" customClass="ShortPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AfW-ER-HJ0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znV-ky-vvY">
@@ -526,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIJ-6F-bTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015.9420289855074" y="1384.8214285714284"/>
+            <point key="canvasLocation" x="1009" y="1387"/>
         </scene>
         <!--Journal Controller-->
         <scene sceneID="vPQ-ID-9QU">
@@ -1020,7 +1023,7 @@
             <objects>
                 <viewController id="Nms-JA-Gd3" customClass="LongPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHv-Ph-5qi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-Uz-268">
@@ -1453,7 +1456,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xh3-6O-WhD"/>
+        <segue reference="sjT-42-WjM"/>
         <segue reference="KEb-Nm-yiV"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="d4C-h3-UC9"/>
