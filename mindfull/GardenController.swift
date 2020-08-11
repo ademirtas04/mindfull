@@ -330,6 +330,11 @@ class GardenController: UIViewController {
         self.performSegue(withIdentifier: "toGoals", sender: self)
     }
     
+    @IBAction func goToJourney(_ sender: Any) {
+        self.performSegue(withIdentifier: "toJourney", sender: self)
+    }
+    
+    
     func addResponse(entry: String){
         ResponseList.insert(entry, at: 0)
         UserDefaults.standard.set(ResponseList, forKey: "responseList")

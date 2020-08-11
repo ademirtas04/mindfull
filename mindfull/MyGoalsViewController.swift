@@ -17,9 +17,16 @@ class MyGoalsViewController: UIViewController {
     }
     
     
+    
     @IBAction func toGarden(_ sender: Any) {
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
+    
+    
+    @IBAction func toJourney(_ sender: Any) {
+        self.performSegue(withIdentifier: "toJourney", sender: self)
+    }
+    
     
     @IBAction func toDWG(_ sender: Any) {
         self.performSegue(withIdentifier: "toDWG", sender: self)
