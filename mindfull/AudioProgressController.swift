@@ -16,6 +16,7 @@ class AudioProgressController: UIViewController {
     var timer = Timer()
     var totalTime: Float = 0
     var name: String = ""
+    var fromJournal: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -31,6 +31,17 @@
 		02ADCBAD24DC5F7C00DCDB57 /* breeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02ADCBAC24DC5F7C00DCDB57 /* breeze.mp3 */; };
 		02B0141024D47A9D00911EFA /* CustomizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B0140F24D47A9C00911EFA /* CustomizeController.swift */; };
 		02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEBBD324CDD3B9002C26A8 /* GardenController.swift */; };
+		02F67E3124E2EABF004A6B4C /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F67E3024E2EABF004A6B4C /* Resources.swift */; };
+		02F67E3724E2FA6F004A6B4C /* meditation3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3224E2FA6C004A6B4C /* meditation3.mp3 */; };
+		02F67E3824E2FA6F004A6B4C /* meditation5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3324E2FA6D004A6B4C /* meditation5.mp3 */; };
+		02F67E3924E2FA6F004A6B4C /* meditation2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3424E2FA6D004A6B4C /* meditation2.mp3 */; };
+		02F67E3A24E2FA6F004A6B4C /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3524E2FA6E004A6B4C /* meditation1.mp3 */; };
+		02F67E3B24E2FA6F004A6B4C /* meditation4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3624E2FA6F004A6B4C /* meditation4.mp3 */; };
+		02F67E4124E304BB004A6B4C /* meditation8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3C24E304B7004A6B4C /* meditation8.mp3 */; };
+		02F67E4224E304BB004A6B4C /* meditation10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3D24E304B8004A6B4C /* meditation10.mp3 */; };
+		02F67E4324E304BB004A6B4C /* meditation9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3E24E304B9004A6B4C /* meditation9.mp3 */; };
+		02F67E4424E304BB004A6B4C /* meditation7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E3F24E304BA004A6B4C /* meditation7.mp3 */; };
+		02F67E4524E304BB004A6B4C /* meditation6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02F67E4024E304BB004A6B4C /* meditation6.mp3 */; };
 		02FF573624D9E2EB006AE94F /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573524D9E2EB006AE94F /* JournalController.swift */; };
 		02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573724D9E334006AE94F /* LongPromptController.swift */; };
 		02FF573A24D9E392006AE94F /* ShortPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573924D9E392006AE94F /* ShortPromptController.swift */; };
@@ -110,6 +121,17 @@
 		02ADCBAC24DC5F7C00DCDB57 /* breeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = breeze.mp3; sourceTree = "<group>"; };
 		02B0140F24D47A9C00911EFA /* CustomizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeController.swift; sourceTree = "<group>"; };
 		02EEBBD324CDD3B9002C26A8 /* GardenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenController.swift; sourceTree = "<group>"; };
+		02F67E3024E2EABF004A6B4C /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		02F67E3224E2FA6C004A6B4C /* meditation3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation3.mp3; sourceTree = "<group>"; };
+		02F67E3324E2FA6D004A6B4C /* meditation5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation5.mp3; sourceTree = "<group>"; };
+		02F67E3424E2FA6D004A6B4C /* meditation2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation2.mp3; sourceTree = "<group>"; };
+		02F67E3524E2FA6E004A6B4C /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
+		02F67E3624E2FA6F004A6B4C /* meditation4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation4.mp3; sourceTree = "<group>"; };
+		02F67E3C24E304B7004A6B4C /* meditation8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation8.mp3; sourceTree = "<group>"; };
+		02F67E3D24E304B8004A6B4C /* meditation10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation10.mp3; sourceTree = "<group>"; };
+		02F67E3E24E304B9004A6B4C /* meditation9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation9.mp3; sourceTree = "<group>"; };
+		02F67E3F24E304BA004A6B4C /* meditation7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation7.mp3; sourceTree = "<group>"; };
+		02F67E4024E304BB004A6B4C /* meditation6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation6.mp3; sourceTree = "<group>"; };
 		02FF573524D9E2EB006AE94F /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
 		02FF573724D9E334006AE94F /* LongPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPromptController.swift; sourceTree = "<group>"; };
 		02FF573924D9E392006AE94F /* ShortPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortPromptController.swift; sourceTree = "<group>"; };
@@ -204,6 +226,17 @@
 				02B0140F24D47A9C00911EFA /* CustomizeController.swift */,
 				02445FE824C9E79900B61AA5 /* ViewController.swift */,
 				0244601624CA0C5200B61AA5 /* JourneyController.swift */,
+				02F67E3024E2EABF004A6B4C /* Resources.swift */,
+				02F67E3524E2FA6E004A6B4C /* meditation1.mp3 */,
+				02F67E3424E2FA6D004A6B4C /* meditation2.mp3 */,
+				02F67E3224E2FA6C004A6B4C /* meditation3.mp3 */,
+				02F67E3624E2FA6F004A6B4C /* meditation4.mp3 */,
+				02F67E3324E2FA6D004A6B4C /* meditation5.mp3 */,
+				02F67E4024E304BB004A6B4C /* meditation6.mp3 */,
+				02F67E3F24E304BA004A6B4C /* meditation7.mp3 */,
+				02F67E3C24E304B7004A6B4C /* meditation8.mp3 */,
+				02F67E3E24E304B9004A6B4C /* meditation9.mp3 */,
+				02F67E3D24E304B8004A6B4C /* meditation10.mp3 */,
 				0278749324D8D17500A3DF7F /* backgroundMusic.mp3 */,
 				02ADCBA424DC5D5200DCDB57 /* birds.mp3 */,
 				02ADCBA624DC5DE400DCDB57 /* leaves.mp3 */,
@@ -388,16 +421,26 @@
 				026A70EC24DC7CED00BDF389 /* Entry.swift in Resources */,
 				02ADCBAD24DC5F7C00DCDB57 /* breeze.mp3 in Resources */,
 				C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */,
+				02F67E4124E304BB004A6B4C /* meditation8.mp3 in Resources */,
+				02F67E4224E304BB004A6B4C /* meditation10.mp3 in Resources */,
+				02F67E3B24E2FA6F004A6B4C /* meditation4.mp3 in Resources */,
 				026BF76524DB55E7003BE29F /* green.sks in Resources */,
+				02F67E3824E2FA6F004A6B4C /* meditation5.mp3 in Resources */,
 				02ADCBA924DC5E3500DCDB57 /* waves.mp3 in Resources */,
+				02F67E4424E304BB004A6B4C /* meditation7.mp3 in Resources */,
 				02ADCBA524DC5D5200DCDB57 /* birds.mp3 in Resources */,
 				0278749424D8D17500A3DF7F /* backgroundMusic.mp3 in Resources */,
 				026BF76324DB5511003BE29F /* blue.sks in Resources */,
 				02445FEC24C9E79900B61AA5 /* Main.storyboard in Resources */,
+				02F67E3A24E2FA6F004A6B4C /* meditation1.mp3 in Resources */,
+				02F67E3724E2FA6F004A6B4C /* meditation3.mp3 in Resources */,
 				02ADCBA724DC5DE400DCDB57 /* leaves.mp3 in Resources */,
+				02F67E4524E304BB004A6B4C /* meditation6.mp3 in Resources */,
 				026BF76924DB566D003BE29F /* purple.sks in Resources */,
 				C1BE160F24D20FD300410194 /* Onboarding.storyboard in Resources */,
+				02F67E4324E304BB004A6B4C /* meditation9.mp3 in Resources */,
 				02ADCBAB24DC5EFD00DCDB57 /* water.mp3 in Resources */,
+				02F67E3924E2FA6F004A6B4C /* meditation2.mp3 in Resources */,
 				C15F58DB24D4BD76002BD945 /* red.sks in Resources */,
 				C15F58D824D4BC01002BD945 /* MyParticle.sks in Resources */,
 				C15F58D924D4BC01002BD945 /* Assets.xcassets in Resources */,
@@ -447,6 +490,7 @@
 				C146582624D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift in Sources */,
 				C146582A24D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
+				02F67E3124E2EABF004A6B4C /* Resources.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
 				026A70EB24DC770E00BDF389 /* Entry.swift in Sources */,
 				C1F63FFE24E2FDC7004D2966 /* ProductivityJournalViewController.swift in Sources */,
