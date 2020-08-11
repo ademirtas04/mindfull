@@ -44,6 +44,22 @@ class JourneyController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if let x = UserDefaults.standard.object(forKey: "audioIndex")  as?  Int {
+             audioIndex = x
+         }
+         if let x = UserDefaults.standard.object(forKey: "assessmentIndex")  as?  Int {
+             assessmentIndex = x
+         }
+         if let x = UserDefaults.standard.object(forKey: "writtenIndex")  as?  Int {
+             audioIndex = x
+         }
+         if let x = UserDefaults.standard.object(forKey: "environmentIndex")  as?  Int {
+             audioIndex = x
+         }
+         audioButton.setTitle(audioList[audioIndex].getTitle(), for: .normal)
+         selfButton.setTitle(assessList[assessmentIndex].getTitle(), for: .normal)
+         writtenButton.setTitle(writtenList[audioIndex].getTitle(), for: .normal)
+         environmentButton.setTitle("WORK IN PROGRESS", for: .normal)
         
     }
     
