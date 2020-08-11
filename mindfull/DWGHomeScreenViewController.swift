@@ -659,6 +659,9 @@ class Goal: Codable {
     var titles: String = ""
     var prompts: [String] = []
     
+    var endTime = Date()
+    var startTime = Date()
+    var finishedTime = Date()
     
     init(title: String, description: String, xpPoints: Int, status: Int) {
         self.title = title
