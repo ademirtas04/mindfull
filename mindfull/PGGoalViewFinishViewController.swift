@@ -26,7 +26,7 @@ class PGGoalViewFinishViewController: UIViewController {
     //Instance Variables
     var personalGoals: [personalGoal] = []
     
-    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
+    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date(), startTime: Date(), finishedTime: Date())
     
     var goalIndex = 10
     

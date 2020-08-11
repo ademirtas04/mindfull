@@ -20,8 +20,8 @@ class PGNewGoalViewController: UIViewController {
     //Instance Variables
     var personalGoals: [personalGoal] = []
     
-    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
-    
+    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date(), startTime: Date(), finishedTime: Date())
+        
     var goalIndex = 0
     
     var goalsDoneToday = 0
@@ -76,8 +76,9 @@ class PGNewGoalViewController: UIViewController {
         thisGoal.changeXPPoints(newXPPoints: Int(PGReward.value))
         thisGoal.changeEndTime(newEndTime: datePicker.date)
         thisGoal.changeStatus(newStatus: 2)
+        thisGoal.changeStartTime(newStartTime: Date())
         goalsDoneToday = goalsDoneToday + 1
-        
+                
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
     

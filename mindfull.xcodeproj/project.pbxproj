@@ -56,6 +56,7 @@
 		C1D64D1724E1AFD3006C18AE /* EIEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D64D1624E1AFD3006C18AE /* EIEntryViewController.swift */; };
 		C1D64D1924E1AFE4006C18AE /* EIJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D64D1824E1AFE4006C18AE /* EIJournalViewController.swift */; };
 		C1E773F824D36CA700612765 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E773F724D36CA700612765 /* TitleScreenViewController.swift */; };
+		C1F63FFE24E2FDC7004D2966 /* ProductivityJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F63FFD24E2FDC7004D2966 /* ProductivityJournalViewController.swift */; };
 		C1FDE7AB24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */; };
 		C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */; };
 /* End PBXBuildFile section */
@@ -135,6 +136,7 @@
 		C1D64D1624E1AFD3006C18AE /* EIEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIEntryViewController.swift; sourceTree = "<group>"; };
 		C1D64D1824E1AFE4006C18AE /* EIJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIJournalViewController.swift; sourceTree = "<group>"; };
 		C1E773F724D36CA700612765 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
+		C1F63FFD24E2FDC7004D2966 /* ProductivityJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityJournalViewController.swift; sourceTree = "<group>"; };
 		C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyAndWeeklyGoals.storyboard; sourceTree = "<group>"; };
 		C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedGoals.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,9 +211,10 @@
 				02ADCBAC24DC5F7C00DCDB57 /* breeze.mp3 */,
 				02ADCBAA24DC5EFD00DCDB57 /* water.mp3 */,
 				02EEBBD324CDD3B9002C26A8 /* GardenController.swift */,
+				C15F555424DB37EF00D6E26F /* MyGoalsViewController.swift */,
 				C1D64D1624E1AFD3006C18AE /* EIEntryViewController.swift */,
 				C1D64D1824E1AFE4006C18AE /* EIJournalViewController.swift */,
-				C15F555424DB37EF00D6E26F /* MyGoalsViewController.swift */,
+				C1F63FFD24E2FDC7004D2966 /* ProductivityJournalViewController.swift */,
 				C1E773F724D36CA700612765 /* TitleScreenViewController.swift */,
 				C1BE160E24D20FD300410194 /* Onboarding.storyboard */,
 				C1BE161424D21B6400410194 /* LoginViewController.swift */,
@@ -446,6 +449,7 @@
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				C1BE161724D21BD600410194 /* OnboardingWelcomeViewController.swift in Sources */,
 				026A70EB24DC770E00BDF389 /* Entry.swift in Sources */,
+				C1F63FFE24E2FDC7004D2966 /* ProductivityJournalViewController.swift in Sources */,
 				02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */,
 				C12E19EA24DB6AC8003F462C /* PGGoalViewFinishViewController.swift in Sources */,
 				0244601524CA088100B61AA5 /* JourneyStop.swift in Sources */,

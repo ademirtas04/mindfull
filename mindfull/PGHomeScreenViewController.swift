@@ -38,8 +38,10 @@ class PGHomeScreenViewController: UIViewController {
      //Instance Variables
     var personalGoals: [personalGoal] = []
     
-    var selectedGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
+    var selectedGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date(), startTime: Date(), finishedTime: Date())
     
+    var productivityJournal: [personalGoal] = []
+        
     var goalsDoneToday = 0
     
     //Index of move tells where we are switching to, with 0 meaning swicthing to new goal, 1 meaning swicthing to ongoing and 2 swicthing to finished and 10 as the deafault
@@ -393,6 +395,7 @@ class PGHomeScreenViewController: UIViewController {
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
             vc.goalsDoneToday = goalsDoneToday
+            vc.productivityJournal = productivityJournal
         }
         else if indexOfMove == 2 {
             let vc = segue.destination as! PGGoalViewFinishViewController
@@ -410,6 +413,16 @@ class PGHomeScreenViewController: UIViewController {
             let jsonData = try jsonEncoder.encode(personalGoals)
             let json = String(data: jsonData, encoding: .utf8) ?? "{}"
             UserDefaults.standard.set(json, forKey: "personalGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(productivityJournal)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "productivityJournal")
             UserDefaults.standard.synchronize()
         } catch {
             print("Error")
@@ -438,11 +451,28 @@ class PGHomeScreenViewController: UIViewController {
             print("Error")
         }
         
+        do {
+            if (UserDefaults.standard.object(forKey: "productivityJournal") == nil) {
+                
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "productivityJournal") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let theProductivityJournal: [personalGoal] = try jsonDecoder.decode([personalGoal].self, from: jsonData)
+                productivityJournal = theProductivityJournal
+            }
+        } catch {
+            print("Error")
+        }
+        
         if let goalsDone = UserDefaults.standard.object(forKey: "goalsDoneToday") as? Int {
             goalsDoneToday = goalsDone
         }
         
-        if let previousDay = UserDefaults.standard.object(forKey: "previousDayDat2e") as? Date {
+        if let previousDay = UserDefaults.standard.object(forKey: "previousDayDate2") as? Date {
             previousDayDate = previousDay
         }
     }
@@ -451,10 +481,14 @@ class PGHomeScreenViewController: UIViewController {
 //Personal Goal class
 class personalGoal: Goal {
     var endTime = Date()
+    var startTime = Date()
+    var finishedTime = Date()
     
-    init(title: String, description: String, xpPoints: Int, status: Int, endTime: Date) {
+    init(title: String, description: String, xpPoints: Int, status: Int, endTime: Date, startTime: Date, finishedTime: Date) {
         super.init(title: title, description: description, xpPoints: xpPoints, status: status)
         self.endTime = endTime
+        self.startTime = startTime
+        self.finishedTime = finishedTime
     }
     
     required init(from decoder: Decoder) throws {
@@ -465,7 +499,23 @@ class personalGoal: Goal {
         return endTime
     }
     
+    func getStartTime() -> Date {
+        return startTime
+    }
+    
+    func getFinishedTime() -> Date {
+        return finishedTime
+    }
+    
     func changeEndTime(newEndTime: Date) {
         self.endTime = newEndTime
+    }
+    
+    func changeStartTime(newStartTime: Date) {
+        startTime = newStartTime
+    }
+    
+    func changeFinishedTime(newFinishedTime: Date) {
+        finishedTime = newFinishedTime
     }
 }

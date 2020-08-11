@@ -26,7 +26,9 @@ class PGGoalViewOngoingViewController: UIViewController {
     //Instance Variables
     var personalGoals: [personalGoal] = []
     
-    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date())
+    var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date(), startTime: Date(), finishedTime: Date())
+    
+    var productivityJournal: [personalGoal] = []
     
     var goalIndex = 10
     
@@ -48,12 +50,16 @@ class PGGoalViewOngoingViewController: UIViewController {
     //Finishing the goal - Not Finished
     @IBAction func finishGoal(_ sender: Any) {
         thisGoal.changeStatus(newStatus: 4)
+        thisGoal.changeFinishedTime(newFinishedTime: Date())
+        productivityJournal.append(thisGoal)
+        print(productivityJournal)
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
     
     //Discarding the goal
     @IBAction func discardGoal(_ sender: Any) {
         thisGoal.changeStatus(newStatus: 3)
+        thisGoal.changeFinishedTime(newFinishedTime: Date())
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
     
@@ -77,6 +83,7 @@ class PGGoalViewOngoingViewController: UIViewController {
         vc.personalGoals = personalGoals
         vc.goalsDoneToday = goalsDoneToday
         vc.fromLocalGroup = true
+        vc.productivityJournal = productivityJournal
         vc.saveData()
     }
 }
