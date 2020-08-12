@@ -31,13 +31,15 @@ class AudioProgressController: UIViewController {
         super.viewWillAppear(animated)
         doneButton.isHidden = true
         AudioPlayer.shared.stopBackgroundMusic()
+        totalTime = AudioPlayer.shared.musicLength(name: name, ofType: "mp3")
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(update), userInfo: nil, repeats: true)
     }
 
     @IBAction func playPressed(_ sender: Any) {
         if(isPaused){
             let pausedImage: UIImage? = UIImage(named: "pause")
             playButton.setImage(pausedImage, for: .normal)
-            timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+            AudioPlayer.shared.startBackgroundMusic(forResource: name, ofType: "mp3")
             isPaused = false
         } else {
             let playImage: UIImage? = UIImage(named: "play")
@@ -49,17 +51,17 @@ class AudioProgressController: UIViewController {
     }
     
     @objc func update() {
-        if(!AudioPlayer.shared.isPlaying()){
-            AudioPlayer.shared.startBackgroundMusic(forResource: name, ofType: "mp3")
+        if(AudioPlayer.shared.isPlaying()){
+            progress.progress += 0.5/totalTime
         }  else {
-            timer.invalidate()
-            doneButton.isHidden = false
+            
         }
-        var increment = 0.5 / totalTime
-        progress.progress += increment
+
     }
     
     @IBAction func donePressed(_ sender: Any) {
+        let journeyVC: JourneyController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "journeyVC") as! JourneyController
+        journeyVC.audioCompleted()
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
     

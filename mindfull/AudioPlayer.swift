@@ -119,4 +119,12 @@ class AudioPlayer {
     func isPlaying() -> Bool {
         return (audioPlayer?.isPlaying)!
     }
+    
+    func musicLength(name: String, ofType: String) -> Float {
+        let path = Bundle.main.path(forResource: name, ofType: ofType)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+        } catch {}
+        return Float((audioPlayer?.duration)!)
+    }
 }

@@ -433,10 +433,10 @@
             <objects>
                 <viewController id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yrh-rP-uJn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
                                 <rect key="frame" x="132" y="447" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
@@ -1651,7 +1651,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sjT-42-WjM"/>
+        <segue reference="QIW-K1-e7I"/>
         <segue reference="fpK-Q8-V2x"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="d4C-h3-UC9"/>
