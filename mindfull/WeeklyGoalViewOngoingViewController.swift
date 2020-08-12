@@ -108,6 +108,10 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     
     //Clicked on additional resources 1
     @IBAction func WG2ClickedAdditionalResources1(_ sender: Any) {
+        if thisGoal.getTypeOfGoal() == 4 {
+            sentTo = 4
+            self.performSegue(withIdentifier: "toEIEntryVC", sender: self)
+        }
     }
     
     //Clicked on additional resources 2
@@ -116,8 +120,8 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     
     //To pass information back to the home screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! DWGHomeScreenViewController
         if sentTo == 0 {
+            let vc = segue.destination as! DWGHomeScreenViewController
             if (goalIndex == 0) {
                 dailyGoals[0] = thisGoal
             }
@@ -140,11 +144,18 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
             vc.currentWeeklyGoals = weeklyGoals
             vc.dailyGoals = allDailyGoals
             vc.weeklyGoals = allWeeklyGoals
+            vc.saveData()
         }
-        else if sentTo == 4 {
+        
+        if sentTo == 4 {
             let newVc = segue.destination as! EIEntryViewController
-            newVc.fromDWG = 5
+            newVc.origin = 5
+            newVc.dailyGoals = dailyGoals
+            newVc.weeklyGoals = weeklyGoals
+            newVc.allDailyGoals = allDailyGoals
+            newVc.allWeeklyGoals = allWeeklyGoals
+            newVc.thisGoal = thisGoal
         }
-        vc.saveData()
     }
 }
+

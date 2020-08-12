@@ -92,7 +92,6 @@ class DailyGoalViewStartViewController: UIViewController {
     //Return to DWG Home
     @IBAction func toDWGHomeScreen(_ sender: Any) {
         sentTo = 0
-        
         self.performSegue(withIdentifier: "toDWGHome", sender: self)
     }
     
@@ -102,7 +101,6 @@ class DailyGoalViewStartViewController: UIViewController {
             sentTo = 4
             self.performSegue(withIdentifier: "toEIEntryVC", sender: self)
         }
-    
     }
     
     //Clicked on additional resources 2
@@ -111,8 +109,8 @@ class DailyGoalViewStartViewController: UIViewController {
     
     //To pass information back to the home screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! DWGHomeScreenViewController
         if sentTo == 0 {
+            let vc = segue.destination as! DWGHomeScreenViewController
             if (goalIndex == 0) {
                 dailyGoals[0] = thisGoal
             }
@@ -135,11 +133,17 @@ class DailyGoalViewStartViewController: UIViewController {
             vc.currentWeeklyGoals = weeklyGoals
             vc.dailyGoals = allDailyGoals
             vc.weeklyGoals = allWeeklyGoals
+            vc.saveData()
         }
-        else if sentTo == 4 {
+        
+        if sentTo == 4 {
             let newVc = segue.destination as! EIEntryViewController
-            newVc.fromDWG = 1
+            newVc.origin = 1
+            newVc.dailyGoals = dailyGoals
+            newVc.weeklyGoals = weeklyGoals
+            newVc.allDailyGoals = allDailyGoals
+            newVc.allWeeklyGoals = allWeeklyGoals
+            newVc.thisGoal = thisGoal
         }
-        vc.saveData()
     }
 }

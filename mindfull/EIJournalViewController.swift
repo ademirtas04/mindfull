@@ -29,6 +29,16 @@ class EIJournalViewController: UIViewController {
     //Instance variables
     var EIJournal: [EIEntry] = []
     
+    var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
+    
+    var dailyGoals: [Goal] = []
+    
+    var allDailyGoals: [Goal] = []
+    
+    var weeklyGoals: [Goal] = []
+    
+    var allWeeklyGoals: [Goal] = []
+    
     var currentEntryIndex = 0
     
     @IBOutlet weak var dateLabel: UILabel!
@@ -38,6 +48,11 @@ class EIJournalViewController: UIViewController {
     
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    
+    //Origin tells us where we are coming from, 0 from the journal, 1 from DGStart, 2 from DGOngoing, 3 from DGFinish, 4 from WGStart, 5 from WGOngoing and 6 from WGFinish
+    var origin = 0
+    
+    var journal = false
     
     //Setting up the screen for when this view first loads or when the user clicks to see a different entry
     func setUpScreen() {
@@ -81,8 +96,7 @@ class EIJournalViewController: UIViewController {
     //When the player is done looking at the journal
     @IBAction func done(_ sender: Any) {
         saveData()
-        
-        //Switch back to the enviormental goal screen which is not ready cause of Benny
+        whereToGo()
     }
     
     //When the player goes to the previous entry
@@ -101,9 +115,95 @@ class EIJournalViewController: UIViewController {
         }
     }
     
-    
     @IBAction func newEntry(_ sender: Any) {
+        journal = true
         self.performSegue(withIdentifier: "toNewEntry", sender: self)
+    }
+    
+    //Determine where to go
+    func whereToGo() {
+        if journal == true {
+            self.performSegue(withIdentifier: "toEIJournal", sender: self)
+        }
+        else if origin == 1 {
+            self.performSegue(withIdentifier: "toDG1", sender: self)
+        }
+        else if origin == 2 {
+            self.performSegue(withIdentifier: "toDG2", sender: self)
+        }
+        else if origin == 3 {
+            self.performSegue(withIdentifier: "toDG3", sender: self)
+        }
+        else if origin == 4 {
+            self.performSegue(withIdentifier: "toWG1", sender: self)
+        }
+        else if origin == 5 {
+            self.performSegue(withIdentifier: "toWG2", sender: self)
+        }
+        else if origin == 6 {
+            self.performSegue(withIdentifier: "toWG3", sender: self)
+        }
+    }
+    
+    //To pass information back to where we came from
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if journal == true {
+            let vc = segue.destination as! EIEntryViewController
+            vc.origin = origin
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
+        else if origin == 1 {
+            let vc = segue.destination as! DailyGoalViewStartViewController
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
+        else if origin == 2 {
+            let vc = segue.destination as! DailyGoalViewOngoingViewController
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
+        else if origin == 3 {
+            let vc = segue.destination as! DailyGoalViewFinishViewController
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
+        else if origin == 4 {
+            let vc = segue.destination as! WeeklyGoalViewStartViewController
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
+        else if origin == 5 {
+            let vc = segue.destination as! WeeklyGoalViewOngoingViewController
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
+        else if origin == 6 {
+            let vc = segue.destination as! WeeklyGoalViewFinishViewController
+            vc.dailyGoals = dailyGoals
+            vc.weeklyGoals = weeklyGoals
+            vc.allDailyGoals = allDailyGoals
+            vc.allWeeklyGoals = allWeeklyGoals
+            vc.thisGoal = thisGoal
+        }
     }
     
     //Saving the data

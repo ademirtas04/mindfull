@@ -215,15 +215,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="My Goals Icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86G-TV-g4f">
-                                <rect key="frame" x="32" y="660" width="350" height="90"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Temp Button to EI UX to test it"/>
-                                <connections>
-                                    <segue destination="SSR-Gg-ucn" kind="show" id="fpK-Q8-V2x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLZ-b8-4MB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLZ-b8-4MB">
                                 <rect key="frame" x="50.666666666666657" y="725" width="313" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Temp Button to productivity to test it"/>
@@ -240,7 +232,6 @@
                             <constraint firstItem="cMD-6j-Xaj" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="360-5J-Jnb"/>
                             <constraint firstItem="BQn-sj-zpP" firstAttribute="top" secondItem="PPQ-we-xlA" secondAttribute="bottom" constant="-5" id="4Jo-De-MNS"/>
                             <constraint firstItem="cMD-6j-Xaj" firstAttribute="top" secondItem="Xcx-B7-afz" secondAttribute="bottom" constant="-78" id="7B1-ke-iAC"/>
-                            <constraint firstItem="aLZ-b8-4MB" firstAttribute="top" secondItem="86G-TV-g4f" secondAttribute="bottom" constant="-25" id="7O4-NL-y1N"/>
                             <constraint firstItem="iAJ-e0-SMF" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="86H-dV-EXV"/>
                             <constraint firstItem="Q0z-yq-rkc" firstAttribute="top" secondItem="OBG-Cg-Flq" secondAttribute="bottom" constant="-5" id="EHX-YA-hWv"/>
                             <constraint firstItem="s1n-kD-H6j" firstAttribute="top" secondItem="6dT-wx-aQ8" secondAttribute="top" constant="57" id="Ik6-Pv-UAs"/>
@@ -251,7 +242,6 @@
                             <constraint firstItem="Xcx-B7-afz" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="PSh-R1-IC2"/>
                             <constraint firstItem="PPQ-we-xlA" firstAttribute="top" secondItem="iAJ-e0-SMF" secondAttribute="bottom" constant="-5" id="T1a-Xt-tgm"/>
                             <constraint firstItem="Q0z-yq-rkc" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="UvI-vu-V4f"/>
-                            <constraint firstItem="6dT-wx-aQ8" firstAttribute="trailing" secondItem="86G-TV-g4f" secondAttribute="trailing" constant="32" id="VEF-l4-BXk"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="leading" secondItem="6dT-wx-aQ8" secondAttribute="leading" id="Vz5-7F-vqy"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="top" secondItem="Xcx-B7-afz" secondAttribute="bottom" constant="78" id="dAc-h7-YYo"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="trailing" secondItem="6dT-wx-aQ8" secondAttribute="trailing" id="dbh-4S-EkZ"/>
@@ -261,10 +251,7 @@
                             <constraint firstItem="Xcx-B7-afz" firstAttribute="top" secondItem="Q0z-yq-rkc" secondAttribute="bottom" constant="30" id="kUY-7V-e7a"/>
                             <constraint firstAttribute="bottom" secondItem="0L8-RH-5Nw" secondAttribute="bottom" id="mQQ-nV-AXX"/>
                             <constraint firstItem="2Dy-Uv-wEa" firstAttribute="centerX" secondItem="Y2t-6T-vui" secondAttribute="centerX" id="nMz-pv-bSD"/>
-                            <constraint firstItem="86G-TV-g4f" firstAttribute="leading" secondItem="6dT-wx-aQ8" secondAttribute="leading" constant="32" id="pTR-hE-SRT"/>
                             <constraint firstItem="0L8-RH-5Nw" firstAttribute="leading" secondItem="6dT-wx-aQ8" secondAttribute="leading" id="qcJ-sC-JJT"/>
-                            <constraint firstItem="86G-TV-g4f" firstAttribute="top" secondItem="Xcx-B7-afz" secondAttribute="bottom" constant="-20" id="rJ9-VG-O82"/>
-                            <constraint firstItem="0L8-RH-5Nw" firstAttribute="top" secondItem="86G-TV-g4f" secondAttribute="bottom" constant="8" id="uog-B1-D4e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6dT-wx-aQ8"/>
                     </view>
@@ -878,6 +865,12 @@
                         <outlet property="timeTextField" destination="LGH-jQ-PDY" id="ojT-WV-xuF"/>
                         <outlet property="touchTextField" destination="QPV-8v-MtJ" id="0jK-cD-mia"/>
                         <segue destination="S5g-xF-lUH" kind="show" identifier="toEIJournal" id="yLb-gy-pdn"/>
+                        <segue destination="oV4-5t-Ph3" kind="show" identifier="toDG1" id="jzV-LG-ucw"/>
+                        <segue destination="9rA-ZJ-aw4" kind="show" identifier="toDG2" id="XBy-Kf-G2U"/>
+                        <segue destination="Emd-Zj-0Eq" kind="show" identifier="toDG3" id="RpG-b0-ybU"/>
+                        <segue destination="ujq-nP-7br" kind="show" identifier="toWG1" id="IaC-LR-am3"/>
+                        <segue destination="634-zA-L7V" kind="show" identifier="toWG2" id="EaA-he-cmH"/>
+                        <segue destination="o3R-bH-aAI" kind="show" identifier="toWG3" id="dN8-R4-FfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dS-KC-Mcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -889,7 +882,7 @@
             <objects>
                 <viewController id="S5g-xF-lUH" customClass="EIJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAk-dI-2zY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environmental Interaction Journal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-cK-Po4">
@@ -1033,11 +1026,27 @@
                         <outlet property="nextButton" destination="sBR-tX-xke" id="boZ-ex-tbp"/>
                         <outlet property="previousButton" destination="qOc-c8-MfF" id="GOQ-Ie-B9h"/>
                         <segue destination="SSR-Gg-ucn" kind="show" identifier="toNewEntry" id="KEb-Nm-yiV"/>
+                        <segue destination="oV4-5t-Ph3" kind="show" identifier="toDG1" id="Hae-MA-TGa"/>
+                        <segue destination="9rA-ZJ-aw4" kind="show" identifier="toDG2" id="SEf-RF-yae"/>
+                        <segue destination="Emd-Zj-0Eq" kind="show" identifier="toDG3" id="iTe-zY-fon"/>
+                        <segue destination="ujq-nP-7br" kind="show" identifier="toWG1" id="aT1-o0-oDn"/>
+                        <segue destination="634-zA-L7V" kind="show" identifier="toWG2" id="uAb-Fo-ekI"/>
+                        <segue destination="o3R-bH-aAI" kind="show" identifier="toWG3" id="ehQ-8k-4xj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axi-fR-a1B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4000" y="2117"/>
+        </scene>
+        <!--DG2VC-->
+        <scene sceneID="9lk-Zc-iEm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="DG2VC" id="9rA-ZJ-aw4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NXc-zr-fNe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aye-Kn-EQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3581" y="2543"/>
         </scene>
         <!--Long Prompt Controller-->
         <scene sceneID="PEx-L6-cV5">
@@ -1647,14 +1656,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNY-ey-sHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4000" y="2843"/>
+            <point key="canvasLocation" x="4000" y="1454"/>
+        </scene>
+        <!--DG3VC-->
+        <scene sceneID="2CW-dv-PrO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="DG3VC" id="Emd-Zj-0Eq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="r3P-cD-2AZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JcT-Hp-I1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3754" y="2543"/>
+        </scene>
+        <!--WG3VC-->
+        <scene sceneID="WQs-Xd-lHy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="WG3VC" id="o3R-bH-aAI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EeC-Mm-tSB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fl0-it-vyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3754" y="2644"/>
+        </scene>
+        <!--DG1VC-->
+        <scene sceneID="pJg-SN-M0F">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="DG1VC" id="oV4-5t-Ph3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W2p-aR-840"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGk-z6-1sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3412" y="2543"/>
+        </scene>
+        <!--WG1VC-->
+        <scene sceneID="PxF-ez-s5d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="WG1VC" id="ujq-nP-7br" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ACx-SR-au9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8N-r9-82n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3412" y="2644"/>
+        </scene>
+        <!--WG2VC-->
+        <scene sceneID="4ua-IC-hhQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DailyAndWeeklyGoals" referencedIdentifier="WG2VC" id="634-zA-L7V" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wuj-sq-Rts"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTF-eN-5wo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3581" y="2644"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sjT-42-WjM"/>
-        <segue reference="fpK-Q8-V2x"/>
+        <segue reference="KEb-Nm-yiV"/>
+        <segue reference="uAb-Fo-ekI"/>
+        <segue reference="aT1-o0-oDn"/>
+        <segue reference="Hae-MA-TGa"/>
+        <segue reference="ehQ-8k-4xj"/>
+        <segue reference="iTe-zY-fon"/>
+        <segue reference="y7v-G5-y1x"/>
+        <segue reference="SEf-RF-yae"/>
         <segue reference="QZL-1s-D6g"/>
-        <segue reference="d4C-h3-UC9"/>
+        <segue reference="cLc-3e-0Mv"/>
         <segue reference="uFY-2f-15j"/>
         <segue reference="f3Q-oZ-4xk"/>
     </inferredMetricsTieBreakers>
