@@ -31,13 +31,9 @@ class EIEntryViewController: UIViewController {
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
     
     var dailyGoals: [Goal] = []
-    
-    var allDailyGoals: [Goal] = []
-    
+        
     var weeklyGoals: [Goal] = []
-    
-    var allWeeklyGoals: [Goal] = []
-    
+        
     @IBOutlet weak var exerciseTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var seeTextField: UITextField!
@@ -121,56 +117,36 @@ class EIEntryViewController: UIViewController {
             vc.origin = origin
             vc.dailyGoals = dailyGoals
             vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 1 {
             let vc = segue.destination as! DailyGoalViewStartViewController
             vc.dailyGoals = dailyGoals
-            vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 2 {
             let vc = segue.destination as! DailyGoalViewOngoingViewController
             vc.dailyGoals = dailyGoals
-            vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 3 {
             let vc = segue.destination as! DailyGoalViewFinishViewController
             vc.dailyGoals = dailyGoals
-            vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 4 {
             let vc = segue.destination as! WeeklyGoalViewStartViewController
-            vc.dailyGoals = dailyGoals
-            vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
+            vc.weeklyGoals = dailyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 5 {
             let vc = segue.destination as! WeeklyGoalViewOngoingViewController
-            vc.dailyGoals = dailyGoals
             vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 6 {
             let vc = segue.destination as! WeeklyGoalViewFinishViewController
-            vc.dailyGoals = dailyGoals
             vc.weeklyGoals = weeklyGoals
-            vc.allDailyGoals = allDailyGoals
-            vc.allWeeklyGoals = allWeeklyGoals
             vc.thisGoal = thisGoal
         }
     }

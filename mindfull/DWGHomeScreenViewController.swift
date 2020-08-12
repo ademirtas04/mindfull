@@ -27,9 +27,9 @@ class DWGHomeScreenViewController: UIViewController {
         
         if (checkDay()) {
             chooseDailyGoals()
-            if (checkWeek()) {
-                chooseWeeklyGoals()
-            }
+        }
+        if (checkWeek()) {
+            chooseWeeklyGoals()
         }
         setUpScreen()
     }
@@ -476,57 +476,33 @@ class DWGHomeScreenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if indexOfMove == 0 {
             let vc = segue.destination as! DailyGoalViewStartViewController
-            vc.dailyGoals = currentDailyGoals
-            vc.weeklyGoals = currentWeeklyGoals
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
-            vc.allDailyGoals = dailyGoals
-            vc.allWeeklyGoals = weeklyGoals
         }
         else if indexOfMove == 1 {
             let vc = segue.destination as! DailyGoalViewOngoingViewController
-            vc.dailyGoals = currentDailyGoals
-            vc.weeklyGoals = currentWeeklyGoals
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
-            vc.allDailyGoals = dailyGoals
-            vc.allWeeklyGoals = weeklyGoals
         }
         else if indexOfMove == 2 {
             let vc = segue.destination as! DailyGoalViewFinishViewController
-            vc.dailyGoals = currentDailyGoals
-            vc.weeklyGoals = currentWeeklyGoals
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
-            vc.allDailyGoals = dailyGoals
-            vc.allWeeklyGoals = weeklyGoals
         }
         else if indexOfMove == 3 {
             let vc = segue.destination as! WeeklyGoalViewStartViewController
-            vc.dailyGoals = currentDailyGoals
-            vc.weeklyGoals = currentWeeklyGoals
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
-            vc.allDailyGoals = dailyGoals
-            vc.allWeeklyGoals = weeklyGoals
         }
         else if indexOfMove == 4 {
             let vc = segue.destination as! WeeklyGoalViewOngoingViewController
-            vc.dailyGoals = currentDailyGoals
-            vc.weeklyGoals = currentWeeklyGoals
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
-            vc.allDailyGoals = dailyGoals
-            vc.allWeeklyGoals = weeklyGoals
         }
         else if indexOfMove == 5 {
             let vc = segue.destination as! WeeklyGoalViewFinishViewController
-            vc.dailyGoals = currentDailyGoals
-            vc.weeklyGoals = currentWeeklyGoals
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
-            vc.allDailyGoals = dailyGoals
-            vc.allWeeklyGoals = weeklyGoals
         }
         saveData()
     }

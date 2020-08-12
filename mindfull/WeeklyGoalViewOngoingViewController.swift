@@ -21,6 +21,7 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        getData()
         setUpScreen()
     }
     
@@ -28,15 +29,9 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
     
     var goalIndex = 10
-    
-    var dailyGoals: [Goal] = []
-    
-    var allDailyGoals: [Goal] = []
-    
+            
     var weeklyGoals: [Goal] = []
-    
-    var allWeeklyGoals: [Goal] = []
-    
+        
     //This variable specifies where the view will be switching to, with 0 for staying in the local group, 1 for Auditory/Meditation, 2 for Written, 3 for Productivity, 4 for Enviornmental Interaction and 5 for Self Assesment, with 10 as nothing
     var sentTo = 10
     
@@ -122,16 +117,7 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if sentTo == 0 {
             let vc = segue.destination as! DWGHomeScreenViewController
-            if (goalIndex == 0) {
-                dailyGoals[0] = thisGoal
-            }
-            else if (goalIndex == 1) {
-                dailyGoals[1] = thisGoal
-            }
-            else if (goalIndex == 2) {
-                dailyGoals[2] = thisGoal
-            }
-            else if (goalIndex == 3) {
+            if (goalIndex == 3) {
                 weeklyGoals[0] = thisGoal
             }
             else if (goalIndex == 4) {
@@ -140,21 +126,48 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
             else if (goalIndex == 5) {
                 weeklyGoals[2] = thisGoal
             }
-            vc.currentDailyGoals = dailyGoals
             vc.currentWeeklyGoals = weeklyGoals
-            vc.dailyGoals = allDailyGoals
-            vc.weeklyGoals = allWeeklyGoals
-            vc.saveData()
         }
         
         if sentTo == 4 {
             let newVc = segue.destination as! EIEntryViewController
             newVc.origin = 5
-            newVc.dailyGoals = dailyGoals
             newVc.weeklyGoals = weeklyGoals
-            newVc.allDailyGoals = allDailyGoals
-            newVc.allWeeklyGoals = allWeeklyGoals
             newVc.thisGoal = thisGoal
+        }
+        saveData()
+    }
+    
+    //Save data
+    func saveData() {
+        do {
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(weeklyGoals)
+            let json = String(data: jsonData, encoding: .utf8) ?? "{}"
+            UserDefaults.standard.set(json, forKey: "currentWeeklyGoals")
+            UserDefaults.standard.synchronize()
+        } catch {
+            print("Error")
+        }
+    }
+    
+    //Getting the data
+    func getData() {
+        do {
+            if (UserDefaults.standard.object(forKey: "currentWeeklyGoals") == nil) {
+                
+            }
+            else {
+                let json = UserDefaults.standard.string(forKey: "currentWeeklyGoals") ?? "{}"
+                let jsonDecoder = JSONDecoder()
+                guard let jsonData = json.data(using: .utf8) else {
+                    return
+                }
+                let theWeeklyGoals: [Goal] = try jsonDecoder.decode([Goal].self, from: jsonData)
+                weeklyGoals = theWeeklyGoals
+            }
+        } catch {
+            print("Error")
         }
     }
 }
