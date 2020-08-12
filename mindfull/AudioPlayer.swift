@@ -79,14 +79,16 @@ class AudioPlayer {
     
     func startBackgroundMusic(forResource: String, ofType: String) {
         let path = Bundle.main.path(forResource: forResource, ofType: ofType)
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
-            //audioPlayer?.numberOfLoops = -1
-            //audioPlayer?.prepareToPlay()
-            audioPlayer?.play()
-        } catch {
-            print(error)
+        if(audioPlayer?.currentTime == 0){
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+                //audioPlayer?.numberOfLoops = -1
+                //audioPlayer?.prepareToPlay()
+            } catch {
+                print(error)
+            }
         }
+            audioPlayer?.play()
     }
     
     func stopBackgroundMusic() {
@@ -118,5 +120,13 @@ class AudioPlayer {
     
     func isPlaying() -> Bool {
         return (audioPlayer?.isPlaying)!
+    }
+    
+    func musicLength(name: String, ofType: String) -> Float {
+        let path = Bundle.main.path(forResource: name, ofType: ofType)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+        } catch {}
+        return Float((audioPlayer?.duration)!)
     }
 }
