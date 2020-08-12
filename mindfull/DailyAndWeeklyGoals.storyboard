@@ -1302,7 +1302,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSd-Tc-56E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-47" y="536"/>
+            <point key="canvasLocation" x="183" y="548"/>
         </scene>
         <!--Weekly Goal View Finish View Controller-->
         <scene sceneID="fZf-lu-JXy">
@@ -1478,7 +1478,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a5n-Jk-O4v"/>
+        <segue reference="BcO-C3-lvN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>

@@ -24,13 +24,10 @@ class PGHomeScreenViewController: UIViewController {
             getData()
         }
         
-        if updateForTime() {
-            if updateForTime() {
-                if updateForTime() {
-                    
-                }
-            }
-        }
+        updateForTime()
+        updateForTime()
+        updateForTime()
+        
         updateDay()
         setUpScreen()
     }
@@ -236,7 +233,7 @@ class PGHomeScreenViewController: UIViewController {
     }
     
     //Check to see if any goal's end time has passed and if so remove the goal
-    func updateForTime() -> Bool {
+    func updateForTime() {
         let rightNow = Date()
         
         let rightNowWeek = calendar.dateComponents([.weekOfYear], from: rightNow).weekOfYear!
@@ -271,14 +268,13 @@ class PGHomeScreenViewController: UIViewController {
                         }
                     }
                 }
-                
                 if (remove == true) {
                     personalGoals.remove(at: index-1)
-                    return true
+                    return
                 }
             }
         }
-        return false
+        return
     }
     
     //Switching to My Goals Home Screen
@@ -480,15 +476,12 @@ class PGHomeScreenViewController: UIViewController {
 
 //Personal Goal class
 class personalGoal: Goal {
-    var endTime = Date()
-    var startTime = Date()
-    var finishedTime = Date()
     
     init(title: String, description: String, xpPoints: Int, status: Int, endTime: Date, startTime: Date, finishedTime: Date) {
         super.init(title: title, description: description, xpPoints: xpPoints, status: status)
-        self.endTime = endTime
-        self.startTime = startTime
-        self.finishedTime = finishedTime
+        super.endTime = endTime
+        super.startTime = startTime
+        super.finishedTime = finishedTime
     }
     
     required init(from decoder: Decoder) throws {
@@ -496,26 +489,26 @@ class personalGoal: Goal {
     }
     
     func getEndTime() -> Date {
-        return endTime
+        return super.endTime
     }
     
     func getStartTime() -> Date {
-        return startTime
+        return super.startTime
     }
     
     func getFinishedTime() -> Date {
-        return finishedTime
+        return super.finishedTime
     }
     
     func changeEndTime(newEndTime: Date) {
-        self.endTime = newEndTime
+        super.endTime = newEndTime
     }
     
     func changeStartTime(newStartTime: Date) {
-        startTime = newStartTime
+        super.startTime = newStartTime
     }
     
     func changeFinishedTime(newFinishedTime: Date) {
-        finishedTime = newFinishedTime
+        super.finishedTime = newFinishedTime
     }
 }
