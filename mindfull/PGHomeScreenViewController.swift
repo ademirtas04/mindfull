@@ -293,6 +293,14 @@ class PGHomeScreenViewController: UIViewController {
         self.performSegue(withIdentifier: "toMyGoals", sender: self)
     }
     
+    //Switching to the personalized goal journal
+    @IBAction func toGoalJournal(_ sender: Any) {
+        saveData()
+        indexOfGoal = 10
+        indexOfMove = 10
+        self.performSegue(withIdentifier: "toProductivityVC", sender: self)
+    }
+    
     //Switching to New Goal
     @IBAction func toNewGoal(_ sender: Any) {
         var count = 0

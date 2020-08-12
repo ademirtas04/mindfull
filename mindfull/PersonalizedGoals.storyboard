@@ -439,10 +439,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-L6-a8g">
-                                <rect key="frame" x="107" y="700" width="200" height="50"/>
+                                <rect key="frame" x="24.5" y="700" width="175" height="50"/>
                                 <color key="backgroundColor" red="0.0049994285219999999" green="0.5289283991" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="El7-cp-gSJ"/>
+                                    <constraint firstAttribute="width" constant="175" id="El7-cp-gSJ"/>
                                     <constraint firstAttribute="height" constant="50" id="cqO-Et-dRO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -465,6 +465,23 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6j-a2-dKD">
+                                <rect key="frame" x="214.5" y="700" width="175" height="50"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="BdK-8Z-3b8"/>
+                                    <constraint firstAttribute="height" constant="50" id="cVu-lY-Jrs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Goal Journal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toGoalJournal:" destination="xeY-xr-Azh" eventType="touchUpInside" id="VLw-64-r2D"/>
+                                    <action selector="toMyGoals:" destination="xeY-xr-Azh" eventType="touchUpInside" id="MOw-5X-Q2Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -475,10 +492,11 @@
                             <constraint firstItem="fIQ-Yo-IiY" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="4bb-Y4-ukX"/>
                             <constraint firstItem="Ekp-sG-9y5" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="-155" id="6Oj-ME-ecm"/>
                             <constraint firstItem="lvl-LO-DFP" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="-240" id="7f9-6f-G6E"/>
+                            <constraint firstItem="O6j-a2-dKD" firstAttribute="top" secondItem="Sfh-nH-Fs6" secondAttribute="bottom" constant="15" id="9Ld-5F-0U4"/>
                             <constraint firstItem="hwM-l3-Y4h" firstAttribute="leading" secondItem="gog-Ul-MYN" secondAttribute="leading" constant="35" id="ALZ-Do-LHP"/>
                             <constraint firstItem="IVp-gM-fGd" firstAttribute="top" secondItem="4bd-eV-hHv" secondAttribute="bottom" constant="-5" id="Ap3-Ic-XrX"/>
                             <constraint firstItem="hwM-l3-Y4h" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="-240" id="Deu-dF-Cai"/>
-                            <constraint firstItem="aJp-L6-a8g" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="ETD-LO-XzE"/>
+                            <constraint firstItem="aJp-L6-a8g" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" constant="-95" id="ETD-LO-XzE"/>
                             <constraint firstItem="1JM-Bl-Cw9" firstAttribute="leading" secondItem="gog-Ul-MYN" secondAttribute="leading" constant="35" id="Eek-Db-rT9"/>
                             <constraint firstItem="cFd-Gm-gev" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="G5S-JT-c82"/>
                             <constraint firstItem="4bd-eV-hHv" firstAttribute="top" secondItem="fIQ-Yo-IiY" secondAttribute="bottom" constant="-15" id="HAg-L2-zdL"/>
@@ -509,6 +527,7 @@
                             <constraint firstItem="gog-Ul-MYN" firstAttribute="trailing" secondItem="c2V-uL-kPU" secondAttribute="trailing" constant="35" id="fse-cL-4LA"/>
                             <constraint firstItem="sK8-pl-7xH" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="-125" id="glE-FO-ecA"/>
                             <constraint firstItem="a6c-QA-ceJ" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="h7L-pq-ooJ"/>
+                            <constraint firstItem="O6j-a2-dKD" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" constant="95" id="hck-tl-AF5"/>
                             <constraint firstItem="Qle-6A-fxD" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="iTc-du-hDg"/>
                             <constraint firstItem="a6c-QA-ceJ" firstAttribute="top" secondItem="IVp-gM-fGd" secondAttribute="bottom" constant="-5" id="itO-bX-IN1"/>
                             <constraint firstItem="c2V-uL-kPU" firstAttribute="leading" secondItem="vkc-1W-IZe" secondAttribute="leading" constant="35" id="ktG-OX-ctD"/>
@@ -544,6 +563,7 @@
                         <segue destination="sdl-jI-ldu" kind="show" identifier="toPGNewGoal" id="xdx-Nw-OpO"/>
                         <segue destination="f1r-gI-nnk" kind="show" identifier="toPGGoalViewOngoing" id="g4L-wY-fWU"/>
                         <segue destination="Ru0-9p-keY" kind="show" identifier="toPGGoalViewFinish" id="yn4-r4-o8J"/>
+                        <segue destination="pVA-jj-bvH" kind="show" identifier="toProductivityVC" id="Zwu-wl-uSf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuh-30-vE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -731,7 +751,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRa-dh-eyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="528"/>
+            <point key="canvasLocation" x="-125" y="551"/>
+        </scene>
+        <!--productivityVC-->
+        <scene sceneID="qjR-KS-ECr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="productivityVC" id="pVA-jj-bvH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="o1J-If-jXb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrg-cL-mJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="551"/>
         </scene>
         <!--Goal View Finish View Controller-->
         <scene sceneID="bcd-fO-VTA">
