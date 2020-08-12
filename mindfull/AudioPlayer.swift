@@ -77,8 +77,8 @@ class AudioPlayer {
         }
     }
     
-    func startBackgroundMusic(forResource: String, ofType: String) {
-        let path = Bundle.main.path(forResource: forResource, ofType: ofType)
+    func startBackgroundMusic(name: String, ofType: String) {
+        let path = Bundle.main.path(forResource: name, ofType: ofType)
         if(audioPlayer?.currentTime == 0){
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))

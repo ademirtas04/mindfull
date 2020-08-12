@@ -39,7 +39,7 @@ class AudioProgressController: UIViewController {
         if(isPaused){
             let pausedImage: UIImage? = UIImage(named: "pause")
             playButton.setImage(pausedImage, for: .normal)
-            AudioPlayer.shared.startBackgroundMusic(forResource: name, ofType: "mp3")
+            AudioPlayer.shared.startBackgroundMusic(name: name, ofType: "mp3")
             isPaused = false
         } else {
             let playImage: UIImage? = UIImage(named: "play")
@@ -60,7 +60,9 @@ class AudioProgressController: UIViewController {
     
     @IBAction func donePressed(_ sender: Any) {
         let journeyVC: JourneyController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "JourneyVC") as! JourneyController
-        journeyVC.audioCompleted()
+        if(fromJournal == true){
+            journeyVC.audioCompleted()
+        }
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
     

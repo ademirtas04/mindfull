@@ -62,16 +62,17 @@ class JourneyController: UIViewController {
          audioButton.setTitle(audioList[audioIndex].getTitle(), for: .normal)
          selfButton.setTitle(assessList[assessmentIndex].getTitle(), for: .normal)
          writtenButton.setTitle(writtenList[audioIndex].getTitle(), for: .normal)
-         environmentButton.setTitle("WORK IN PROGRESS", for: .normal)
+        environmentButton.setTitle(environmentList[environmentIndex].getTitle(), for: .normal)
         
     }
     
     @IBAction func audioPressed(_ sender: Any) {
+        audioPressed = true
         self.performSegue(withIdentifier: "toAudioProgress", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "toAudioProgress" && audioPressed){
+        if(segue.identifier == "toAudioProgress" && audioPressed == true){
             let audioVC = segue.destination as! AudioProgressController
             audioVC.name = audioList[audioIndex].audioLink
             audioVC.fromJournal = true
@@ -89,12 +90,16 @@ class JourneyController: UIViewController {
             let longVC = segue.destination as! LongPromptController
             longVC.promptTitle = writtenList[writtenIndex].titles
             longVC.fromJournal = true
+        } else if (segue.identifier == "toEnvironmentProgress"){
+            let environmentVC = segue.destination as! EIEntryViewController
+            environmentVC.fromJournal = true
         }
         
     }
     
     
     @IBAction func assessmentPressed(_ sender: Any) {
+        assessmentPressed = true
         self.performSegue(withIdentifier: "toAudioProgress", sender: self)
     }
     
@@ -107,6 +112,7 @@ class JourneyController: UIViewController {
     }
     
     @IBAction func environmentPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "toEnvironmentProgress", sender: self)
     }
     
     func audioCompleted() {

@@ -29,6 +29,7 @@ class EIEntryViewController: UIViewController {
     var thisEntry = EIEntry(date: "", exercise: "", time: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "")
     
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
+    var fromJournal: Bool = false
     
     var goalIndex = 10
      

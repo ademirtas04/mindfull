@@ -409,6 +409,7 @@
                         <segue destination="Ge6-UD-sXn" kind="showDetail" identifier="toShortProgress" id="t3U-Z9-4c0"/>
                         <segue destination="Nms-JA-Gd3" kind="showDetail" identifier="toLongProgress" id="kUo-m0-xtj"/>
                         <segue destination="Hdc-es-loy" kind="showDetail" identifier="toAudioProgress" id="ljC-H8-A3m"/>
+                        <segue destination="SSR-Gg-ucn" kind="showDetail" identifier="toEnvironmentProgress" id="d1J-dI-Ymu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFb-te-ngL" userLabel="First Responder" sceneMemberID="firstResponder"/>
