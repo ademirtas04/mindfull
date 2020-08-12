@@ -62,7 +62,7 @@ class JourneyController: UIViewController {
          audioButton.setTitle(audioList[audioIndex].getTitle(), for: .normal)
          selfButton.setTitle(assessList[assessmentIndex].getTitle(), for: .normal)
          writtenButton.setTitle(writtenList[audioIndex].getTitle(), for: .normal)
-         environmentButton.setTitle("WORK IN PROGRESS", for: .normal)
+        environmentButton.setTitle(environmentList[environmentIndex].getTitle(), for: .normal)
         
     }
     

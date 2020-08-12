@@ -60,7 +60,9 @@ class AudioProgressController: UIViewController {
     
     @IBAction func donePressed(_ sender: Any) {
         let journeyVC: JourneyController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "JourneyVC") as! JourneyController
-        journeyVC.audioCompleted()
+        if(fromJournal == true){
+            journeyVC.audioCompleted()
+        }
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
     

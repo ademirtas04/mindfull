@@ -102,6 +102,27 @@ class Resources {
     }
     
     func getEnvironmentList () -> [Goal] {
+        environmentList.removeAll()
+        goal3 = Goal(title: "5-4-3-2-1 Exercise", description: "Reflect on 5 things you see, 4 things you touch, 3 things you hear, 2 things you smell, and 1 thing you taste", xpPoints: 10, status: 0)
+        goal3.addPromptTitle(title: "Reflect on 5 things you see, 4 things you touch, 3 things you hear, 2 things you smell, and 1 thing you taste")
+        environmentList.insert(goal3, at: 0)
+        
+        goal1 = Goal(title: "Mindful Walk", description: "Go on a 15 minute walk and try to identify your environment using your five senses", xpPoints: 30, status: 0)
+        goal1.addPromptTitle(title: "Go on a 15 minute walk and try to identify your environment using your five senses")
+        environmentList.insert(goal1, at: 1)
+        
+        goal2 = Goal(title: "Mindful Jog Journaling", description: "Go on a 10 minute jog and try to identify your environment using your five senses", xpPoints: 50, status: 0)
+        goal2.addPromptTitle(title: "Go on a 10 minute jog and try to identify your environment using your five senses")
+        environmentList.insert(goal2, at: 2)
+        
+        goal4 = Goal(title: "Mindful Exercise", description: "Complete an exercise set of your choice and try to identify your environment using your five senses", xpPoints: 70, status: 0)
+        goal4.addPromptTitle(title: "Complete an exercise set of your choice and try to identify your environment using your five senses")
+        environmentList.insert(goal4, at: 3)
+        
+        goal5 = Goal(title: "Forest Walk", description: "Walk into a Forest and describe all of the different textures of the plants you encounter. Make sure they aren't poisonous!", xpPoints: 100, status: 0)
+        goal5.addPromptTitle(title: "Walk into a Forest and describe all of the different textures of the plants you encounter. Make sure they aren't poisonous!")
+        environmentList.insert(goal5, at: 4)
+        
         return environmentList
     }
     
