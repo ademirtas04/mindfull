@@ -20,7 +20,7 @@ class GardenController: UIViewController {
     @IBOutlet weak var affirmation4: UILabel!
     @IBOutlet weak var affirmation5: UILabel!
     var screenTimer: Timer?
-    var ResponseList: [String] = ["compassion", "peace", "strength", "tranquility", "energy"]
+    var ResponseList: [String] = []
     
     var isRed:Bool = false
     var isBlue:Bool = true
@@ -54,6 +54,9 @@ class GardenController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         customizeButton.showsTouchWhenHighlighted = true
+        if let x = UserDefaults.standard.object(forKey: "responseList") as? [String]{
+            ResponseList = x
+        }
         if let x = UserDefaults.standard.object(forKey: "red")  as?  Bool {
             isRed = x
         }
