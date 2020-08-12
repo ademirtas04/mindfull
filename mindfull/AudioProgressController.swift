@@ -45,7 +45,6 @@ class AudioProgressController: UIViewController {
             let playImage: UIImage? = UIImage(named: "play")
             playButton.setImage(playImage, for: .normal)
             AudioPlayer.shared.stopBackgroundMusic()
-            timer.invalidate()
             isPaused = true
         }
     }
@@ -53,14 +52,14 @@ class AudioProgressController: UIViewController {
     @objc func update() {
         if(AudioPlayer.shared.isPlaying()){
             progress.progress += 0.5/totalTime
-        }  else {
-            
         }
-
+        if(progress.progress == 1) {
+            doneButton.isHidden = false
+        }
     }
     
     @IBAction func donePressed(_ sender: Any) {
-        let journeyVC: JourneyController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "journeyVC") as! JourneyController
+        let journeyVC: JourneyController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "JourneyVC") as! JourneyController
         journeyVC.audioCompleted()
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
