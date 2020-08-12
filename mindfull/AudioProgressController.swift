@@ -12,6 +12,9 @@ class AudioProgressController: UIViewController {
     
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var playButton: UIButton!
+    
+    @IBOutlet weak var doneButton: UIButton!
+    
     var isPaused: Bool = true
     var timer = Timer()
     var totalTime: Float = 0
@@ -24,6 +27,11 @@ class AudioProgressController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        doneButton.isHidden = true
+        AudioPlayer.shared.stopBackgroundMusic()
+    }
 
     @IBAction func playPressed(_ sender: Any) {
         if(isPaused){
@@ -45,10 +53,14 @@ class AudioProgressController: UIViewController {
             AudioPlayer.shared.startBackgroundMusic(forResource: name, ofType: "mp3")
         }  else {
             timer.invalidate()
+            doneButton.isHidden = false
         }
         var increment = 0.5 / totalTime
         progress.progress += increment
     }
     
-
+    @IBAction func donePressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "toGarden", sender: self)
+    }
+    
 }
