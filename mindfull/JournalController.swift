@@ -28,9 +28,8 @@ class JournalController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        if let x = UserDefaults.standard.object(forKey: "journal") as? [Entry] {
-            journalList = x
-        }
+        super.viewWillAppear(animated)
+        decodeArray()
         if(journalList.count != 0){
             let date: Date = journalList[0].date
             currentDate = date
@@ -54,6 +53,10 @@ class JournalController: UIViewController {
                 }
             }
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     @IBAction func leftPressed(_ sender: Any) {
@@ -115,17 +118,47 @@ class JournalController: UIViewController {
     }
     
     @IBAction func goToGarden(_ sender: Any) {
-        /*
-        do{
-            let encodedData = try NSKeyedArchiver.archivedData(withRootObject: journalList, requiringSecureCoding: false)
-            let userDefaults = UserDefaults.standard
-            userDefaults.set(encodedData, forKey: "journal")
-        } catch {
-            print(error)
-        }
-        */
+        encodeArray()
         self.performSegue(withIdentifier: "toGarden", sender: self)
     }
+    
+    func decodeArray(){
+        var count: Int = 0
+        var body: String = ""
+        var prompt: String = ""
+        var date: Date = Date()
+        if let x = UserDefaults.standard.object(forKey: "count") as? Int{
+            count = x
+        }
+        if count != 0 {
+            for n in 0 ... count - 1 {
+                if let x = UserDefaults.standard.object(forKey: "body\(n)") as? String{
+                    body = x
+                }
+                if let x = UserDefaults.standard.object(forKey: "prompt\(n)") as? String{
+                    prompt = x
+                }
+                if let x = UserDefaults.standard.object(forKey: "date\(n)") as? Date{
+                    date = x
+                }
+                let e: Entry = Entry(prompt: prompt, body: body, date: date)
+                journalList.append(e)
+                
+            }
+        }
+    }
+    
+    func encodeArray(){
+        for n in 0...journalList.count - 1 {
+            let e: Entry = journalList[n]
+            UserDefaults.standard.set(e.body, forKey: "body\(n)")
+            UserDefaults.standard.set(e.prompt, forKey: "prompt\(n)")
+            UserDefaults.standard.set(e.date, forKey: "date\(n)")
+        }
+        UserDefaults.standard.set(journalList.count, forKey: "count")
+    }
+    
+    
     
     
     

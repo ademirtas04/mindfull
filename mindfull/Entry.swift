@@ -19,6 +19,12 @@ class Entry {
         self.body = body
     }
     
+    init(prompt: String, body: String, date: Date){
+        self.date = date
+        self.prompt = prompt
+        self.body = body
+    }
+    
     func getDate() -> Date {
         return self.date
     }
