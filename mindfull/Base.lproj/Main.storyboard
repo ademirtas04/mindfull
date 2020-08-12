@@ -419,6 +419,9 @@
                         <outlet property="writtenButton" destination="NkX-UB-4IW" id="fh9-AC-cuM"/>
                         <segue destination="vce-aH-bqn" kind="showDetail" identifier="toGarden" id="sjT-42-WjM"/>
                         <segue destination="L91-Lo-VvC" kind="showDetail" identifier="toGoals" id="f3Q-oZ-4xk"/>
+                        <segue destination="Ge6-UD-sXn" kind="showDetail" identifier="toShortProgress" id="t3U-Z9-4c0"/>
+                        <segue destination="Nms-JA-Gd3" kind="showDetail" identifier="toLongProgress" id="kUo-m0-xtj"/>
+                        <segue destination="Hdc-es-loy" kind="showDetail" identifier="toAudioProgress" id="ljC-H8-A3m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFb-te-ngL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -430,7 +433,7 @@
             <objects>
                 <viewController id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yrh-rP-uJn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
@@ -474,7 +477,7 @@
             <objects>
                 <viewController id="Ge6-UD-sXn" customClass="ShortPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AfW-ER-HJ0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znV-ky-vvY">
@@ -1041,7 +1044,7 @@
             <objects>
                 <viewController id="Nms-JA-Gd3" customClass="LongPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHv-Ph-5qi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-Uz-268">
@@ -1648,10 +1651,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QIW-K1-e7I"/>
+        <segue reference="sjT-42-WjM"/>
         <segue reference="fpK-Q8-V2x"/>
         <segue reference="QZL-1s-D6g"/>
-        <segue reference="cLc-3e-0Mv"/>
+        <segue reference="d4C-h3-UC9"/>
         <segue reference="ALe-HE-MDJ"/>
         <segue reference="f3Q-oZ-4xk"/>
     </inferredMetricsTieBreakers>
