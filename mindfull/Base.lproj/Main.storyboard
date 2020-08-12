@@ -623,7 +623,7 @@
         <!--Entry View Controller-->
         <scene sceneID="tH1-XN-zTi">
             <objects>
-                <viewController id="SSR-Gg-ucn" customClass="EIEntryViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EIEntryVC" id="SSR-Gg-ucn" customClass="EIEntryViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9g-6j-x0E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1478,7 +1478,7 @@
         <!--Productivity Journal View Controller-->
         <scene sceneID="mmr-XE-3GT">
             <objects>
-                <viewController id="Tu0-KG-HbI" customClass="ProductivityJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="productivityVC" id="Tu0-KG-HbI" customClass="ProductivityJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9XX-Tf-Mt8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1655,7 +1655,7 @@
         <segue reference="fpK-Q8-V2x"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="d4C-h3-UC9"/>
-        <segue reference="ALe-HE-MDJ"/>
+        <segue reference="uFY-2f-15j"/>
         <segue reference="f3Q-oZ-4xk"/>
     </inferredMetricsTieBreakers>
     <resources>

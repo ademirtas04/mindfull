@@ -23,9 +23,7 @@ class DWGHomeScreenViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if fromLocalGroup == false {
-            getData()
-        }
+        getData()
         
         if (checkDay()) {
             chooseDailyGoals()
@@ -50,9 +48,7 @@ class DWGHomeScreenViewController: UIViewController {
     
     //This variable specifies which goal was passed to goal view, with 0 for daily goal 1, 1 for daily goal 2, 2 for daily goal 3, 3 for weekly goal 1, 4 for weekly goal 2 and 5 for weekly goal 5 and set to 10 as default
     var indexOfGoal = 10
-    
-    var fromLocalGroup = false
-    
+        
     @IBOutlet weak var DG1Title: UILabel!
     @IBOutlet weak var DG2Title: UILabel!
     @IBOutlet weak var DG3Title: UILabel!
@@ -112,12 +108,20 @@ class DWGHomeScreenViewController: UIViewController {
         dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
         dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
         dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        dailyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        //The enviormental interaction goals
+        let DGEIGoal1 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        DGEIGoal1.changeTypeOfGoal(newTypeOfGoal: 4)
+        let DGEIGoal2 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        DGEIGoal2.changeTypeOfGoal(newTypeOfGoal: 4)
+        let DGEIGoal3 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        DGEIGoal3.changeTypeOfGoal(newTypeOfGoal: 4)
+        let DGEIGoal4 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        DGEIGoal4.changeTypeOfGoal(newTypeOfGoal: 4)
+        let DGEIGoal5 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        DGEIGoal5.changeTypeOfGoal(newTypeOfGoal: 4)
+        let DGEIGoal6 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        DGEIGoal6.changeTypeOfGoal(newTypeOfGoal: 4)
+        dailyGoals.append(contentsOf: [DGEIGoal1, DGEIGoal2, DGEIGoal3, DGEIGoal4, DGEIGoal5, DGEIGoal6])
         
         //Initializing the weekly goals (still need to persoanlize info)
         weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
@@ -132,9 +136,14 @@ class DWGHomeScreenViewController: UIViewController {
         weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
         weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
         weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
-        weeklyGoals.append(Goal(title: "Title", description: "Description", xpPoints: 10, status: 0))
+        //The enviormental interaction goals
+        let WGEIGoal1 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        WGEIGoal1.changeTypeOfGoal(newTypeOfGoal: 4)
+        let WGEIGoal2 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        WGEIGoal2.changeTypeOfGoal(newTypeOfGoal: 4)
+        let WGEIGoal3 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
+        WGEIGoal3.changeTypeOfGoal(newTypeOfGoal: 4)
+        weeklyGoals.append(contentsOf: [WGEIGoal1, WGEIGoal2, WGEIGoal3])
         
         chooseDailyGoals()
         chooseWeeklyGoals()
@@ -342,7 +351,6 @@ class DWGHomeScreenViewController: UIViewController {
     
     //Back to My Goals Home Scree
     @IBAction func toMyGoals(_ sender: Any) {
-        saveData()
         indexOfGoal = 10
         indexOfMove = 10
         self.performSegue(withIdentifier: "toMyGoals", sender: self)
@@ -520,6 +528,7 @@ class DWGHomeScreenViewController: UIViewController {
             vc.allDailyGoals = dailyGoals
             vc.allWeeklyGoals = weeklyGoals
         }
+        saveData()
     }
     
     //Save data
@@ -655,13 +664,20 @@ class Goal: Codable {
     //Variable status is a way of representing the status of a certain goal, with 0 meaning the goal isn't chosen, 1 meaning it is one of the chosen goals, 2 meaning it is a ongoing chosen goal, 3 meaning it is a discarded chosen goal and 4 meaning it is a finished chosen goal.
     var status = 0
     
+    var endTime = Date()
+    
+    var startTime = Date()
+    
+    var finishedTime = Date()
+    
+    
+    //This variable specifies what type of goal (classification) a certain goal is. 1 for Auditory/Meditation, 2 for Written, 3 for Productivity, 4 for Enviornmental Interaction and 5 for Self Assesment, with 10 as default
+    var typeOfGoal = 10
+    
     var audioLink = ""
     var titles: String = ""
     var prompts: [String] = []
     
-    var endTime = Date()
-    var startTime = Date()
-    var finishedTime = Date()
     
     init(title: String, description: String, xpPoints: Int, status: Int) {
         self.title = title
@@ -698,6 +714,10 @@ class Goal: Codable {
         return status
     }
     
+    func getTypeOfGoal() -> Int {
+        return typeOfGoal
+    }
+    
     func changeTitle(newTitle: String) {
         self.title = newTitle
     }
@@ -712,5 +732,9 @@ class Goal: Codable {
     
     func changeStatus(newStatus: Int) {
         self.status = newStatus
+    }
+    
+    func changeTypeOfGoal(newTypeOfGoal: Int) {
+        self.typeOfGoal = newTypeOfGoal
     }
 }

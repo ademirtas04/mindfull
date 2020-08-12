@@ -36,6 +36,9 @@ class EIEntryViewController: UIViewController {
     @IBOutlet weak var smellTextField: UITextField!
     @IBOutlet weak var feelTextField: UITextField!
     
+    //0 if it is not coming from DWG, 1 from DGStart, 2 from DGOngoing, 3 from DGFinish, 4 from WGStart, 5 from WGOngoing and 6 from WGFinish
+    var fromDWG = 0
+    
     let calendar = Calendar.current
     
     //Switching to EIJournal
@@ -66,14 +69,33 @@ class EIEntryViewController: UIViewController {
         
         saveData()
         
-        self.performSegue(withIdentifier: "toEIJournal", sender: self)
-        //Switch back to the enviormental goal screen which is not ready cause of Benny
+        if fromDWG == 0 {
+            //Switch back to the enviromental journey home screen
+        }
+        else if fromDWG == 1 {
+            
+        }
+        else if fromDWG == 2 {
+            
+        }
+        else if fromDWG == 3 {
+            
+        }
+        else if fromDWG == 4 {
+            
+        }
+        else if fromDWG == 5 {
+            
+        }
+        else if fromDWG == 6 {
+            
+        }
     }
     
     //When the player cancels creating a new entry
     @IBAction func cancel(_ sender: Any) {
         
-        //Switch back to the enviormental goal screen which is not ready cause of Benny
+        //Switch back to the enviromental journey home screen
     }
     
     //Saving the data

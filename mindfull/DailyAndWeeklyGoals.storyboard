@@ -514,18 +514,52 @@
                                     <constraint firstAttribute="width" constant="400" id="8pd-8L-Ptz"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yW-ln-trh">
+                                <rect key="frame" x="35" y="547" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eFi-q4-WVb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DG1ClickedAdditionalResources1:" destination="OmJ-xg-nRD" eventType="touchUpInside" id="Rgi-uR-EYV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcv-Ao-elU">
+                                <rect key="frame" x="35" y="607" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FoL-I3-uMw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DG1ClickedAdditionalResources2:" destination="OmJ-xg-nRD" eventType="touchUpInside" id="Xuy-Y5-qb7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Uwp-b1-fi7" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="5kG-0K-ysL"/>
                             <constraint firstItem="Hnk-xP-YY8" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="66L-6j-aXI"/>
+                            <constraint firstItem="Rcv-Ao-elU" firstAttribute="top" secondItem="3yW-ln-trh" secondAttribute="bottom" constant="10" id="6v1-Ck-UY3"/>
                             <constraint firstItem="Rnc-dl-m0u" firstAttribute="top" secondItem="Mvm-qK-hph" secondAttribute="bottom" constant="100" id="7u9-zf-ojb"/>
                             <constraint firstItem="NZc-Kg-7Cc" firstAttribute="top" secondItem="wot-ZK-oT2" secondAttribute="bottom" constant="-88" id="8FI-sw-WbW"/>
                             <constraint firstItem="gzf-Q9-C0T" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="CTq-UX-RY8"/>
                             <constraint firstItem="Mvm-qK-hph" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="DDj-fE-Nh0"/>
+                            <constraint firstItem="3yW-ln-trh" firstAttribute="leading" secondItem="UyZ-7Z-nO5" secondAttribute="leading" constant="35" id="F3r-eP-xDj"/>
                             <constraint firstItem="gzf-Q9-C0T" firstAttribute="top" secondItem="Hnk-xP-YY8" secondAttribute="bottom" constant="-15" id="FGh-8F-E9r"/>
                             <constraint firstItem="BWz-jn-0Gw" firstAttribute="top" secondItem="SWJ-h7-F2N" secondAttribute="bottom" constant="-15" id="GF5-Ao-Njp"/>
+                            <constraint firstItem="UyZ-7Z-nO5" firstAttribute="trailing" secondItem="3yW-ln-trh" secondAttribute="trailing" constant="35" id="HPM-RW-Cic"/>
+                            <constraint firstItem="3yW-ln-trh" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="IwR-Yc-A3V"/>
+                            <constraint firstItem="UyZ-7Z-nO5" firstAttribute="trailing" secondItem="Rcv-Ao-elU" secondAttribute="trailing" constant="35" id="Jit-sb-ity"/>
                             <constraint firstItem="RJF-s6-eci" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="KMQ-KI-how"/>
+                            <constraint firstItem="Rcv-Ao-elU" firstAttribute="leading" secondItem="UyZ-7Z-nO5" secondAttribute="leading" constant="35" id="KQq-I6-wLD"/>
                             <constraint firstItem="WFl-yb-yiz" firstAttribute="top" secondItem="Rnc-dl-m0u" secondAttribute="bottom" constant="-10" id="QxX-jI-oSw"/>
                             <constraint firstItem="jc6-2K-Hsr" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="RAW-6I-eAI"/>
                             <constraint firstItem="Hnk-xP-YY8" firstAttribute="top" secondItem="BWz-jn-0Gw" secondAttribute="bottom" id="REF-4w-fhF"/>
@@ -534,6 +568,7 @@
                             <constraint firstItem="w1n-h2-4HQ" firstAttribute="top" secondItem="Uwp-b1-fi7" secondAttribute="bottom" constant="-25" id="ZF3-xl-0GH"/>
                             <constraint firstItem="BWz-jn-0Gw" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="b7z-xT-ikd"/>
                             <constraint firstItem="w1n-h2-4HQ" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="bNs-EG-YOw"/>
+                            <constraint firstItem="3yW-ln-trh" firstAttribute="top" secondItem="Mvm-qK-hph" secondAttribute="bottom" constant="10" id="fQs-yF-REf"/>
                             <constraint firstItem="wot-ZK-oT2" firstAttribute="top" secondItem="UyZ-7Z-nO5" secondAttribute="top" constant="10" id="gNl-KZ-4G9"/>
                             <constraint firstItem="WFl-yb-yiz" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="jzB-Xg-d2d"/>
                             <constraint firstItem="SWJ-h7-F2N" firstAttribute="centerX" secondItem="OlH-px-Lbe" secondAttribute="centerX" id="mvw-Ns-Xqk"/>
@@ -548,11 +583,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="u5N-im-6pR"/>
                     <connections>
+                        <outlet property="DG1AdditionalResources1" destination="3yW-ln-trh" id="WRJ-4f-cjq"/>
+                        <outlet property="DG1AdditionalResources2" destination="Rcv-Ao-elU" id="A2h-3L-qsH"/>
                         <outlet property="DG1Description" destination="BWz-jn-0Gw" id="geE-lT-6rC"/>
                         <outlet property="DG1Reward" destination="Hnk-xP-YY8" id="RqL-LO-lyD"/>
                         <outlet property="DG1Title" destination="RJF-s6-eci" id="x4d-X0-QUk"/>
                         <outlet property="timer" destination="Uwp-b1-fi7" id="KJT-hT-wJB"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="tT8-hk-F77"/>
+                        <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="ehg-zB-n8a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAU-ix-WHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -704,15 +742,51 @@
                                     <constraint firstAttribute="width" constant="400" id="JEb-4Z-91F"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WK-87-KFJ">
+                                <rect key="frame" x="35" y="612" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="IFc-dL-DmJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZH6-gX-ccU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DG2ClickedAdditionalResources2:" destination="dh3-I7-hd2" eventType="touchUpInside" id="ZFQ-NY-ahl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOI-jH-j02">
+                                <rect key="frame" x="35" y="552" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JxN-hw-r7h"/>
+                                    <constraint firstAttribute="width" constant="344" id="ZGw-8F-1j6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DG2ClickedAdditionalResources1:" destination="dh3-I7-hd2" eventType="touchUpInside" id="CQF-eE-2vn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IOQ-Xk-gy1" firstAttribute="top" secondItem="ggm-yG-cfH" secondAttribute="bottom" constant="-20" id="2Hb-PB-hE0"/>
+                            <constraint firstItem="uOI-jH-j02" firstAttribute="top" secondItem="F9X-p0-LhV" secondAttribute="bottom" constant="15" id="3rB-vg-lg5"/>
                             <constraint firstItem="vBh-F3-LJl" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="48s-Vu-cKb"/>
                             <constraint firstItem="EH9-P4-PTG" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="5Bu-xI-GpJ"/>
+                            <constraint firstItem="uOI-jH-j02" firstAttribute="leading" secondItem="ALz-9t-JQY" secondAttribute="leading" constant="35" id="5xN-y2-cbb"/>
+                            <constraint firstItem="0WK-87-KFJ" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="8qg-VZ-b3r"/>
                             <constraint firstItem="vBh-F3-LJl" firstAttribute="top" secondItem="XHz-H0-lTM" secondAttribute="bottom" constant="-15" id="CQD-rH-sBQ"/>
                             <constraint firstItem="F9X-p0-LhV" firstAttribute="top" secondItem="vBh-F3-LJl" secondAttribute="bottom" constant="-15" id="FnR-QT-mTB"/>
                             <constraint firstItem="zLr-oL-N1b" firstAttribute="top" secondItem="fdZ-yq-SuG" secondAttribute="bottom" constant="35" id="Fov-f2-Uo5"/>
+                            <constraint firstItem="ALz-9t-JQY" firstAttribute="trailing" secondItem="uOI-jH-j02" secondAttribute="trailing" constant="35" id="Fxr-Sf-R1A"/>
+                            <constraint firstItem="0WK-87-KFJ" firstAttribute="leading" secondItem="ALz-9t-JQY" secondAttribute="leading" constant="35" id="H2b-Ck-HI7"/>
+                            <constraint firstItem="0WK-87-KFJ" firstAttribute="top" secondItem="uOI-jH-j02" secondAttribute="bottom" constant="10" id="HEB-Rb-Eyi"/>
                             <constraint firstItem="fdZ-yq-SuG" firstAttribute="top" secondItem="bbp-Uf-Wmz" secondAttribute="bottom" constant="-88" id="Jd9-n2-fCf"/>
                             <constraint firstItem="fdZ-yq-SuG" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="JoN-W7-eB9"/>
                             <constraint firstItem="bbp-Uf-Wmz" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="NfX-aB-Cxb"/>
@@ -726,9 +800,11 @@
                             <constraint firstItem="F9X-p0-LhV" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="iPA-wr-MHc"/>
                             <constraint firstItem="3Ca-A0-NEe" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="kLU-t9-0WV"/>
                             <constraint firstItem="0zg-Wd-Gyi" firstAttribute="top" secondItem="0sX-hI-peu" secondAttribute="bottom" constant="-10" id="kRs-BD-CXG"/>
+                            <constraint firstItem="ALz-9t-JQY" firstAttribute="trailing" secondItem="0WK-87-KFJ" secondAttribute="trailing" constant="35" id="mM5-rz-El9"/>
                             <constraint firstItem="zLr-oL-N1b" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="niC-yu-JBu"/>
                             <constraint firstItem="XHz-H0-lTM" firstAttribute="top" secondItem="3Ca-A0-NEe" secondAttribute="bottom" id="ntK-Kg-8fM"/>
                             <constraint firstItem="0sX-hI-peu" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="px5-Dn-IkD"/>
+                            <constraint firstItem="uOI-jH-j02" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" id="q1m-dE-VXm"/>
                             <constraint firstItem="EH9-P4-PTG" firstAttribute="top" secondItem="0zg-Wd-Gyi" secondAttribute="bottom" constant="10" id="scs-01-vB9"/>
                             <constraint firstItem="Esa-1R-lcd" firstAttribute="centerX" secondItem="Y24-Kp-9oi" secondAttribute="centerX" constant="85" id="tAO-OQ-SgB"/>
                             <constraint firstItem="0sX-hI-peu" firstAttribute="top" secondItem="F9X-p0-LhV" secondAttribute="bottom" constant="100" id="v1R-1n-0Tj"/>
@@ -740,16 +816,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="W9p-OL-dNJ"/>
                     <connections>
+                        <outlet property="DG2AdditionalResources1" destination="uOI-jH-j02" id="eXM-j3-s3m"/>
+                        <outlet property="DG2AdditionalResources2" destination="0WK-87-KFJ" id="vdp-ik-R80"/>
                         <outlet property="DG2Description" destination="3Ca-A0-NEe" id="Ixf-KM-AWB"/>
                         <outlet property="DG2Reward" destination="XHz-H0-lTM" id="VQ3-QC-cvQ"/>
                         <outlet property="DG2Title" destination="ggm-yG-cfH" id="5zh-Sc-YWP"/>
                         <outlet property="timer" destination="zLr-oL-N1b" id="biZ-kd-cns"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="BcO-C3-lvN"/>
+                        <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="E5k-ci-nJ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFB-h9-tyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1061" y="815"/>
+        </scene>
+        <!--EIEntryVC-->
+        <scene sceneID="9fu-HZ-mLJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="EIEntryVC" id="gsP-Zt-poC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hgP-pZ-yWb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6x-eC-TMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="697"/>
         </scene>
         <!--Daily Goal View Finish View Controller-->
         <scene sceneID="KGb-rO-NaK">
@@ -878,9 +967,46 @@
                                     <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="GXN-kQ-bzi"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="H26-3E-ZBt">
+                                <rect key="frame" x="-20" y="648" width="400" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="0GF-8Y-el7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCT-xQ-ZJJ">
+                                <rect key="frame" x="35" y="557" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="P0W-P8-iDl"/>
+                                    <constraint firstAttribute="height" constant="50" id="cZd-fc-WQD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DG3ClickedAdditionalResources1:" destination="byL-MQ-RTA" eventType="touchUpInside" id="oH2-Kx-f3f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCN-fH-rj8">
+                                <rect key="frame" x="35" y="617" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2uq-wO-NTB"/>
+                                    <constraint firstAttribute="width" constant="344" id="RRR-zs-lFG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DG3ClickedAdditionalResources2:" destination="byL-MQ-RTA" eventType="touchUpInside" id="RAb-kF-MIn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JbN-jD-99O" firstAttribute="trailing" secondItem="XCT-xQ-ZJJ" secondAttribute="trailing" constant="35" id="1FJ-pP-KXB"/>
                             <constraint firstItem="jFu-0w-iEs" firstAttribute="top" secondItem="J82-dd-rqb" secondAttribute="bottom" constant="-10" id="3Rb-mY-EVD"/>
                             <constraint firstItem="vRh-bT-PAU" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="4AM-WB-rtk"/>
                             <constraint firstItem="h7f-9x-kfq" firstAttribute="top" secondItem="DGa-tV-8p6" secondAttribute="bottom" constant="-20" id="5To-UL-Ne2"/>
@@ -891,33 +1017,43 @@
                             <constraint firstItem="CDH-iD-nSb" firstAttribute="top" secondItem="jFu-0w-iEs" secondAttribute="bottom" constant="10" id="ITk-Sf-0SH"/>
                             <constraint firstItem="2ns-f4-1Nt" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="IdJ-QR-2c6"/>
                             <constraint firstItem="jFu-0w-iEs" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="J70-lp-D7s"/>
+                            <constraint firstItem="XCT-xQ-ZJJ" firstAttribute="top" secondItem="U3n-u4-J9z" secondAttribute="bottom" constant="10" id="LOI-0s-Poy"/>
                             <constraint firstItem="CDH-iD-nSb" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="M2u-TM-OBQ"/>
                             <constraint firstItem="3b8-EJ-Kej" firstAttribute="top" secondItem="0Ja-Lk-GgW" secondAttribute="bottom" constant="-15" id="NhE-0h-dfY"/>
                             <constraint firstItem="vRh-bT-PAU" firstAttribute="top" secondItem="aHc-aK-mMM" secondAttribute="bottom" constant="-88" id="ObR-rV-6ha"/>
                             <constraint firstItem="DGa-tV-8p6" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="Owk-Ie-LYa"/>
+                            <constraint firstItem="OCN-fH-rj8" firstAttribute="top" secondItem="XCT-xQ-ZJJ" secondAttribute="bottom" constant="10" id="RZw-sV-m7l"/>
                             <constraint firstItem="aHc-aK-mMM" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="Rju-Wv-6Aj"/>
+                            <constraint firstItem="JbN-jD-99O" firstAttribute="trailing" secondItem="OCN-fH-rj8" secondAttribute="trailing" constant="35" id="SXf-HM-dj9"/>
                             <constraint firstItem="DGa-tV-8p6" firstAttribute="top" secondItem="sT2-gW-9yF" secondAttribute="bottom" constant="-15" id="VS9-0K-bwx"/>
                             <constraint firstItem="aHc-aK-mMM" firstAttribute="top" secondItem="JbN-jD-99O" secondAttribute="top" constant="10" id="W8y-tm-UOi"/>
                             <constraint firstItem="J82-dd-rqb" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="WG7-BI-dQS"/>
                             <constraint firstItem="h7f-9x-kfq" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="X34-SH-ALp"/>
                             <constraint firstItem="Zz9-7S-FDW" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="Y1K-8M-cJJ"/>
+                            <constraint firstItem="OCN-fH-rj8" firstAttribute="leading" secondItem="JbN-jD-99O" secondAttribute="leading" constant="35" id="YLv-oj-5y4"/>
                             <constraint firstItem="0Ja-Lk-GgW" firstAttribute="top" secondItem="Zz9-7S-FDW" secondAttribute="bottom" id="c7m-O2-YbT"/>
+                            <constraint firstItem="XCT-xQ-ZJJ" firstAttribute="leading" secondItem="JbN-jD-99O" secondAttribute="leading" constant="35" id="gr2-LN-K3t"/>
                             <constraint firstItem="sT2-gW-9yF" firstAttribute="top" secondItem="vRh-bT-PAU" secondAttribute="bottom" constant="35" id="k2W-ki-atY"/>
+                            <constraint firstItem="OCN-fH-rj8" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="kaN-8m-GYS"/>
                             <constraint firstItem="U3n-u4-J9z" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="tBo-uH-FEU"/>
                             <constraint firstItem="0Ja-Lk-GgW" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="wjF-Eb-5pH"/>
                             <constraint firstItem="3b8-EJ-Kej" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="xKr-Vz-NCQ"/>
+                            <constraint firstItem="XCT-xQ-ZJJ" firstAttribute="centerX" secondItem="AWP-ny-AcZ" secondAttribute="centerX" id="yRG-WK-5oO"/>
                             <constraint firstItem="2ns-f4-1Nt" firstAttribute="top" secondItem="h7f-9x-kfq" secondAttribute="bottom" constant="-20" id="zcH-DW-Gwa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JbN-jD-99O"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mhd-J7-0UX"/>
                     <connections>
+                        <outlet property="DG3AdditionalResources1" destination="XCT-xQ-ZJJ" id="Wx8-g4-7Bg"/>
+                        <outlet property="DG3AdditionalResources2" destination="OCN-fH-rj8" id="b1I-Sz-WJA"/>
                         <outlet property="DG3Description" destination="Zz9-7S-FDW" id="7R3-Gp-Hnw"/>
                         <outlet property="DG3Reward" destination="0Ja-Lk-GgW" id="zZ0-xn-ea3"/>
                         <outlet property="DG3Title" destination="h7f-9x-kfq" id="W62-wu-HDe"/>
                         <outlet property="completionNotice" destination="jFu-0w-iEs" id="A3H-p5-uB6"/>
                         <outlet property="timer" destination="sT2-gW-9yF" id="NcM-2I-73d"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="LPV-rC-BYD"/>
+                        <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="rLp-Iy-IZu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktQ-P5-cOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1056,11 +1192,42 @@
                                     <constraint firstAttribute="width" constant="400" id="Jn1-Sl-eVb"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8v-h8-yJn">
+                                <rect key="frame" x="35" y="547" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="37e-Wl-zG8"/>
+                                    <constraint firstAttribute="width" constant="344" id="QrQ-aB-QAV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WG1ClickedAdditionalResources1:" destination="djU-ul-k6M" eventType="touchUpInside" id="CUQ-Yf-vZp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13N-7G-TUK">
+                                <rect key="frame" x="35" y="607" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lcn-Tg-T4B"/>
+                                    <constraint firstAttribute="width" constant="344" id="u8Y-oH-L6F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WG1ClickedAdditionalResources2:" destination="djU-ul-k6M" eventType="touchUpInside" id="2mq-0n-ZQL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bhS-VH-vl9" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="08d-35-uuf"/>
                             <constraint firstItem="VTr-Sh-K1i" firstAttribute="top" secondItem="W6S-o6-Ayr" secondAttribute="bottom" constant="-88" id="3LJ-q9-2z2"/>
+                            <constraint firstItem="8nC-ea-nZC" firstAttribute="trailing" secondItem="13N-7G-TUK" secondAttribute="trailing" constant="35" id="Bce-BD-b37"/>
                             <constraint firstItem="W6S-o6-Ayr" firstAttribute="top" secondItem="8nC-ea-nZC" secondAttribute="top" constant="10" id="Cbv-L0-xqh"/>
                             <constraint firstItem="fvP-df-tj4" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="Djc-a9-wcl"/>
                             <constraint firstItem="71Y-nX-xOs" firstAttribute="top" secondItem="VPz-j3-dT1" secondAttribute="bottom" constant="100" id="E2q-oy-640"/>
@@ -1069,20 +1236,27 @@
                             <constraint firstItem="U1X-L1-Qg5" firstAttribute="top" secondItem="qwe-1c-e1B" secondAttribute="bottom" constant="-25" id="NvP-ZJ-bQX"/>
                             <constraint firstItem="VPz-j3-dT1" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="O5c-Nf-HKA"/>
                             <constraint firstItem="71Y-nX-xOs" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="Rti-Bf-tzP"/>
+                            <constraint firstItem="13N-7G-TUK" firstAttribute="leading" secondItem="8nC-ea-nZC" secondAttribute="leading" constant="35" id="TRJ-EM-ZHb"/>
+                            <constraint firstItem="13N-7G-TUK" firstAttribute="top" secondItem="I8v-h8-yJn" secondAttribute="bottom" constant="10" id="U5L-mM-dRu"/>
                             <constraint firstItem="VPz-j3-dT1" firstAttribute="top" secondItem="HGb-DS-8Fi" secondAttribute="bottom" constant="-15" id="UTs-8f-Htp"/>
+                            <constraint firstItem="13N-7G-TUK" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="VhQ-NV-0qt"/>
+                            <constraint firstItem="8nC-ea-nZC" firstAttribute="trailing" secondItem="I8v-h8-yJn" secondAttribute="trailing" constant="35" id="WM8-UJ-jka"/>
                             <constraint firstItem="ssv-uv-19r" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="YKY-28-9UM"/>
                             <constraint firstItem="8Pu-xA-Egg" firstAttribute="top" secondItem="S3r-L2-l0f" secondAttribute="bottom" constant="-15" id="bQu-xx-ty0"/>
                             <constraint firstItem="8Pu-xA-Egg" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="dyf-uO-QWf"/>
                             <constraint firstItem="qwe-1c-e1B" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="e0o-E4-pYN"/>
                             <constraint firstItem="HGb-DS-8Fi" firstAttribute="top" secondItem="9lU-6Y-Z2N" secondAttribute="bottom" constant="-15" id="jN7-FU-OCF"/>
+                            <constraint firstItem="I8v-h8-yJn" firstAttribute="leading" secondItem="8nC-ea-nZC" secondAttribute="leading" constant="35" id="jXK-UA-CJg"/>
                             <constraint firstItem="W6S-o6-Ayr" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="kR6-eg-NmO"/>
                             <constraint firstItem="9lU-6Y-Z2N" firstAttribute="top" secondItem="8Pu-xA-Egg" secondAttribute="bottom" id="mVq-PU-mrm"/>
                             <constraint firstItem="fvP-df-tj4" firstAttribute="top" secondItem="U1X-L1-Qg5" secondAttribute="bottom" constant="-20" id="nMl-QG-oEW"/>
+                            <constraint firstItem="I8v-h8-yJn" firstAttribute="top" secondItem="VPz-j3-dT1" secondAttribute="bottom" constant="10" id="oB5-18-DKh"/>
                             <constraint firstItem="VTr-Sh-K1i" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="oZg-WJ-rdS"/>
                             <constraint firstItem="bhS-VH-vl9" firstAttribute="top" secondItem="71Y-nX-xOs" secondAttribute="bottom" constant="-10" id="p7H-Kt-Kdu"/>
                             <constraint firstItem="U1X-L1-Qg5" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="ppV-rs-Zot"/>
                             <constraint firstItem="9lU-6Y-Z2N" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="tGL-YG-tY7"/>
                             <constraint firstItem="qwe-1c-e1B" firstAttribute="top" secondItem="VTr-Sh-K1i" secondAttribute="bottom" constant="35" id="uFu-bZ-gGF"/>
+                            <constraint firstItem="I8v-h8-yJn" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="uIY-LJ-czQ"/>
                             <constraint firstItem="S3r-L2-l0f" firstAttribute="centerX" secondItem="b3H-Hd-C2p" secondAttribute="centerX" id="vXe-qE-ODm"/>
                             <constraint firstItem="S3r-L2-l0f" firstAttribute="top" secondItem="fvP-df-tj4" secondAttribute="bottom" constant="-20" id="xlW-Ey-69I"/>
                         </constraints>
@@ -1090,11 +1264,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Y4l-hI-6nr"/>
                     <connections>
+                        <outlet property="WG1AdditionalResources1" destination="I8v-h8-yJn" id="7zY-Ok-vAu"/>
+                        <outlet property="WG1AdditionalResources2" destination="13N-7G-TUK" id="FP3-iX-155"/>
                         <outlet property="WG1Description" destination="8Pu-xA-Egg" id="KZm-Rj-u9P"/>
                         <outlet property="WG1Reward" destination="9lU-6Y-Z2N" id="KHy-fh-Q3w"/>
                         <outlet property="WG1Title" destination="fvP-df-tj4" id="ff9-1f-k18"/>
                         <outlet property="timer" destination="qwe-1c-e1B" id="1et-Bl-qok"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="Fj6-DH-ayx"/>
+                        <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="Vdo-ua-IgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaT-nN-EMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1247,13 +1424,45 @@
                                     <constraint firstAttribute="width" constant="400" id="LxZ-OG-ekg"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-1c-hsw">
+                                <rect key="frame" x="35" y="557" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="RNq-89-LJz"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ulm-Cr-kbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WG2ClickedAdditionalResources1:" destination="bfI-Nd-eAY" eventType="touchUpInside" id="kNB-7J-L5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07W-nX-YLJ">
+                                <rect key="frame" x="35" y="617" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2w9-lb-da3"/>
+                                    <constraint firstAttribute="width" constant="344" id="Hv3-gE-XCB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WG2ClickedAdditionalResources2:" destination="bfI-Nd-eAY" eventType="touchUpInside" id="7dc-Pj-gfc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="07W-nX-YLJ" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="0iw-hu-h8x"/>
                             <constraint firstItem="Q1h-bQ-55Y" firstAttribute="top" secondItem="Fcn-BD-qxs" secondAttribute="bottom" constant="-20" id="2rq-SA-9bj"/>
                             <constraint firstItem="Gmn-u1-5H9" firstAttribute="top" secondItem="KWt-RX-cJp" secondAttribute="bottom" constant="35" id="3rX-Wo-ha0"/>
                             <constraint firstItem="Fcn-BD-qxs" firstAttribute="top" secondItem="Gmn-u1-5H9" secondAttribute="bottom" constant="-15" id="6Ma-NA-Wry"/>
                             <constraint firstItem="O2g-Pi-oNk" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="Afj-cN-zAG"/>
+                            <constraint firstItem="07W-nX-YLJ" firstAttribute="leading" secondItem="gcY-fS-aIo" secondAttribute="leading" constant="35" id="Bk9-46-f5W"/>
                             <constraint firstItem="Fcn-BD-qxs" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="Dfx-zV-kW9"/>
                             <constraint firstItem="zcE-Xe-h23" firstAttribute="top" secondItem="O2g-Pi-oNk" secondAttribute="bottom" constant="-15" id="GOy-Nt-lea"/>
                             <constraint firstItem="T43-Mn-9WE" firstAttribute="top" secondItem="fMO-PX-pWI" secondAttribute="bottom" constant="10" id="GPL-Nu-XaR"/>
@@ -1262,6 +1471,7 @@
                             <constraint firstItem="zcE-Xe-h23" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="Jf7-nT-rSV"/>
                             <constraint firstItem="v3k-Hs-HbR" firstAttribute="top" secondItem="gcY-fS-aIo" secondAttribute="top" constant="10" id="KVS-o1-WcW"/>
                             <constraint firstItem="Q1h-bQ-55Y" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="Qd2-7E-wME"/>
+                            <constraint firstItem="Tn8-1c-hsw" firstAttribute="leading" secondItem="gcY-fS-aIo" secondAttribute="leading" constant="35" id="RhO-O4-bFP"/>
                             <constraint firstItem="fMO-PX-pWI" firstAttribute="top" secondItem="4xP-Ff-MiP" secondAttribute="bottom" constant="-10" id="TIg-Oc-pMu"/>
                             <constraint firstItem="raG-nB-kxa" firstAttribute="top" secondItem="RSS-RX-WxL" secondAttribute="bottom" constant="-15" id="UF4-1a-ahC"/>
                             <constraint firstItem="T43-Mn-9WE" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="UNi-QE-ceC"/>
@@ -1269,13 +1479,18 @@
                             <constraint firstItem="O2g-Pi-oNk" firstAttribute="top" secondItem="UDD-do-UO0" secondAttribute="bottom" constant="-15" id="YeN-6o-EWa"/>
                             <constraint firstItem="RSS-RX-WxL" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="fAY-Wz-aMJ"/>
                             <constraint firstItem="raG-nB-kxa" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="fPW-0g-tXn"/>
+                            <constraint firstItem="gcY-fS-aIo" firstAttribute="trailing" secondItem="Tn8-1c-hsw" secondAttribute="trailing" constant="35" id="fX3-xU-cpC"/>
                             <constraint firstItem="UDD-do-UO0" firstAttribute="top" secondItem="raG-nB-kxa" secondAttribute="bottom" id="jXN-rg-pWX"/>
                             <constraint firstItem="KWt-RX-cJp" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="lUE-pe-VNV"/>
+                            <constraint firstItem="Tn8-1c-hsw" firstAttribute="top" secondItem="zcE-Xe-h23" secondAttribute="bottom" constant="10" id="oKJ-xL-rY3"/>
                             <constraint firstItem="9iA-WG-DtI" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" constant="85" id="pvO-UG-KRX"/>
                             <constraint firstItem="4xP-Ff-MiP" firstAttribute="top" secondItem="zcE-Xe-h23" secondAttribute="bottom" constant="100" id="rfj-Jt-KgX"/>
+                            <constraint firstItem="Tn8-1c-hsw" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="sGR-zN-247"/>
+                            <constraint firstItem="gcY-fS-aIo" firstAttribute="trailing" secondItem="07W-nX-YLJ" secondAttribute="trailing" constant="35" id="vBq-yY-0pL"/>
                             <constraint firstItem="9iA-WG-DtI" firstAttribute="top" secondItem="4xP-Ff-MiP" secondAttribute="bottom" constant="-10" id="vbV-WJ-RlH"/>
                             <constraint firstItem="Gmn-u1-5H9" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="wb7-31-mWI"/>
                             <constraint firstItem="v3k-Hs-HbR" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" id="xoW-3r-40A"/>
+                            <constraint firstItem="07W-nX-YLJ" firstAttribute="top" secondItem="Tn8-1c-hsw" secondAttribute="bottom" constant="10" id="yFI-NO-fjd"/>
                             <constraint firstItem="fMO-PX-pWI" firstAttribute="centerX" secondItem="KuN-xQ-9Qd" secondAttribute="centerX" constant="-85" id="yxH-02-o8m"/>
                             <constraint firstItem="RSS-RX-WxL" firstAttribute="top" secondItem="Q1h-bQ-55Y" secondAttribute="bottom" constant="-20" id="zJM-9E-lyW"/>
                         </constraints>
@@ -1283,11 +1498,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="fRx-gO-qkQ"/>
                     <connections>
+                        <outlet property="WG2AdditionalResources1" destination="Tn8-1c-hsw" id="9b2-ez-Wkq"/>
+                        <outlet property="WG2AdditionalResources2" destination="07W-nX-YLJ" id="s85-Lf-Dcw"/>
                         <outlet property="WG2Description" destination="raG-nB-kxa" id="c3X-de-poF"/>
                         <outlet property="WG2Reward" destination="UDD-do-UO0" id="FcE-Oi-F4o"/>
                         <outlet property="WG2Title" destination="Q1h-bQ-55Y" id="o4i-FC-CbA"/>
                         <outlet property="timer" destination="Gmn-u1-5H9" id="4s6-P1-RFi"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="YcZ-fX-yxW"/>
+                        <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="nv5-C2-XyK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62W-ze-M8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1430,12 +1648,46 @@
                                     <action selector="toJourney:" destination="XNt-iw-51x" eventType="touchUpInside" id="jic-Du-fsK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQx-5y-PYS">
+                                <rect key="frame" x="35" y="557" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NeF-DZ-AzK"/>
+                                    <constraint firstAttribute="width" constant="344" id="clN-N7-Iwo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WG3ClickedAdditionalResources1:" destination="dPn-Vd-tWL" eventType="touchUpInside" id="6Fj-id-X4f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ox-k8-zEM">
+                                <rect key="frame" x="35" y="617" width="344" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="Zgh-en-Icn"/>
+                                    <constraint firstAttribute="height" constant="50" id="eGz-PM-g1P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Additional Resource 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WG3ClickedAdditionalResources2:" destination="dPn-Vd-tWL" eventType="touchUpInside" id="eDV-Sa-YrB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gnV-Pz-4uD" firstAttribute="top" secondItem="4Bn-Mo-5Wt" secondAttribute="bottom" constant="100" id="1oT-yz-PcM"/>
                             <constraint firstItem="8PU-ee-ULZ" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="1qO-Qc-Qrp"/>
+                            <constraint firstItem="bQx-5y-PYS" firstAttribute="top" secondItem="4Bn-Mo-5Wt" secondAttribute="bottom" constant="10" id="3mq-e9-0P8"/>
+                            <constraint firstItem="bQx-5y-PYS" firstAttribute="leading" secondItem="gJp-6w-UD2" secondAttribute="leading" constant="35" id="4AO-Hw-yLE"/>
+                            <constraint firstItem="8ox-k8-zEM" firstAttribute="leading" secondItem="gJp-6w-UD2" secondAttribute="leading" constant="35" id="4W3-Tz-yjU"/>
                             <constraint firstItem="jzp-aw-mIG" firstAttribute="top" secondItem="LRD-Pz-V8b" secondAttribute="bottom" constant="35" id="5M6-jZ-Kzg"/>
+                            <constraint firstItem="8ox-k8-zEM" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="5uQ-ni-k3B"/>
                             <constraint firstItem="p7N-Cm-WaM" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="7eZ-GS-4aS"/>
                             <constraint firstItem="Ygv-ef-R4T" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="8v7-uL-yF7"/>
                             <constraint firstItem="LRD-Pz-V8b" firstAttribute="top" secondItem="8PU-ee-ULZ" secondAttribute="bottom" constant="-88" id="8vo-Ws-cdf"/>
@@ -1445,6 +1697,7 @@
                             <constraint firstItem="p7N-Cm-WaM" firstAttribute="top" secondItem="BhQ-tW-wyO" secondAttribute="bottom" constant="10" id="Dhv-yq-0HG"/>
                             <constraint firstItem="LRD-Pz-V8b" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="Dn9-Xi-2TE"/>
                             <constraint firstItem="4Bn-Mo-5Wt" firstAttribute="top" secondItem="Ygv-ef-R4T" secondAttribute="bottom" constant="-15" id="DwA-q9-Zp2"/>
+                            <constraint firstItem="bQx-5y-PYS" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="HCQ-59-c5w"/>
                             <constraint firstItem="BhQ-tW-wyO" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="Kyl-IO-OJF"/>
                             <constraint firstItem="4nC-Ci-vzR" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="P6W-he-Nsr"/>
                             <constraint firstItem="4nC-Ci-vzR" firstAttribute="top" secondItem="0Sg-eQ-w1i" secondAttribute="bottom" id="Vlc-bn-cKC"/>
@@ -1454,8 +1707,11 @@
                             <constraint firstItem="gnV-Pz-4uD" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="dCf-ww-NCN"/>
                             <constraint firstItem="Sar-6d-r5y" firstAttribute="top" secondItem="itA-wc-tDh" secondAttribute="bottom" constant="-20" id="f8S-m9-F1n"/>
                             <constraint firstItem="8PU-ee-ULZ" firstAttribute="top" secondItem="WhG-mV-brI" secondAttribute="top" constant="10" id="fFy-yJ-cRE"/>
+                            <constraint firstItem="8ox-k8-zEM" firstAttribute="top" secondItem="bQx-5y-PYS" secondAttribute="bottom" constant="10" id="hze-qg-pO8"/>
                             <constraint firstItem="0Sg-eQ-w1i" firstAttribute="top" secondItem="Sar-6d-r5y" secondAttribute="bottom" constant="-15" id="jdB-t8-Nxh"/>
                             <constraint firstItem="4Bn-Mo-5Wt" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="nbW-zo-uaG"/>
+                            <constraint firstItem="WhG-mV-brI" firstAttribute="trailing" secondItem="8ox-k8-zEM" secondAttribute="trailing" constant="35" id="rVU-fF-BCH"/>
+                            <constraint firstItem="WhG-mV-brI" firstAttribute="trailing" secondItem="bQx-5y-PYS" secondAttribute="trailing" constant="35" id="tXq-PH-Bnl"/>
                             <constraint firstItem="Ygv-ef-R4T" firstAttribute="top" secondItem="4nC-Ci-vzR" secondAttribute="bottom" constant="-15" id="tg2-LQ-Jn9"/>
                             <constraint firstItem="itA-wc-tDh" firstAttribute="top" secondItem="Ttt-q5-26Q" secondAttribute="bottom" constant="-20" id="wly-lx-AJT"/>
                             <constraint firstItem="itA-wc-tDh" firstAttribute="centerX" secondItem="gJp-6w-UD2" secondAttribute="centerX" id="zAF-A5-vff"/>
@@ -1464,12 +1720,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="vBV-az-Bgu"/>
                     <connections>
+                        <outlet property="WG3AdditionalResources1" destination="bQx-5y-PYS" id="NgT-v9-Am0"/>
+                        <outlet property="WG3AdditionalResources2" destination="8ox-k8-zEM" id="b4B-DC-cfd"/>
                         <outlet property="WG3Description" destination="0Sg-eQ-w1i" id="jlO-zF-f5S"/>
                         <outlet property="WG3Reward" destination="4nC-Ci-vzR" id="CdK-4l-4yU"/>
                         <outlet property="WG3Title" destination="itA-wc-tDh" id="5Zd-za-rDI"/>
                         <outlet property="completionNotice" destination="BhQ-tW-wyO" id="ILC-8J-ITE"/>
                         <outlet property="timer" destination="jzp-aw-mIG" id="6y0-mj-WdA"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="a5n-Jk-O4v"/>
+                        <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="nGB-P2-G2s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pj-y8-7qL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1478,7 +1737,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BcO-C3-lvN"/>
+        <segue reference="nv5-C2-XyK"/>
+        <segue reference="Fj6-DH-ayx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>
