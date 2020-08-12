@@ -76,6 +76,11 @@ class PGHomeScreenViewController: UIViewController {
     @IBOutlet weak var PG3Timer: UILabel!
     
     @IBOutlet weak var newButton: UIButton!
+    
+    @IBOutlet weak var replacmentLabel: UILabel!
+    
+    var numberReplaced = 0
+    
     let calendar = Calendar.current
     
     var previousDayDate = Date()
@@ -174,6 +179,8 @@ class PGHomeScreenViewController: UIViewController {
             minutesLeft = 0
         }
         dayTimer.text = "Day Ends in \(hoursLeft) Hours \(minutesLeft) Minutes"
+        
+        replacmentLabel.text = "\(numberReplaced) ongoing, discarded or completed tasks have been replaced since you last viewed this screen because the end time for that goal has already passed."
     }
     
     //Find time
@@ -270,6 +277,7 @@ class PGHomeScreenViewController: UIViewController {
                 }
                 if (remove == true) {
                     personalGoals.remove(at: index-1)
+                    numberReplaced = numberReplaced + 1
                     return
                 }
             }
@@ -384,6 +392,7 @@ class PGHomeScreenViewController: UIViewController {
             vc.goalsDoneToday = goalsDoneToday
             vc.specialStatus = specialStatus
             vc.specialStatusIndex = specialStatusIndex
+            vc.productivityJournal = productivityJournal
         }
         else if indexOfMove == 1 {
             let vc = segue.destination as! PGGoalViewOngoingViewController
@@ -399,6 +408,7 @@ class PGHomeScreenViewController: UIViewController {
             vc.thisGoal = selectedGoal
             vc.goalIndex = indexOfGoal
             vc.goalsDoneToday = goalsDoneToday
+            vc.productivityJournal = productivityJournal
         }
     }
     
