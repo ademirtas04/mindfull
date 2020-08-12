@@ -28,6 +28,8 @@ class EIEntryViewController: UIViewController {
     
     var thisEntry = EIEntry(date: "", exercise: "", time: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "")
     
+    var fromJournal: Bool = false
+    
     @IBOutlet weak var exerciseTextField: UITextField!
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var seeTextField: UITextField!

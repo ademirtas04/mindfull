@@ -100,7 +100,7 @@
             <objects>
                 <viewController storyboardIdentifier="MyGoalsVC" id="L91-Lo-VvC" customClass="MyGoalsViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2t-6T-vui">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-RH-5Nw">
@@ -309,7 +309,7 @@
             <objects>
                 <viewController storyboardIdentifier="JourneyVC" id="Bn4-oq-gQe" customClass="JourneyController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-dw-6z9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Journey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-xm-OpX">
@@ -422,6 +422,7 @@
                         <segue destination="Ge6-UD-sXn" kind="showDetail" identifier="toShortProgress" id="t3U-Z9-4c0"/>
                         <segue destination="Nms-JA-Gd3" kind="showDetail" identifier="toLongProgress" id="kUo-m0-xtj"/>
                         <segue destination="Hdc-es-loy" kind="showDetail" identifier="toAudioProgress" id="ljC-H8-A3m"/>
+                        <segue destination="SSR-Gg-ucn" kind="showDetail" identifier="toEnvironmentProgress" id="d1J-dI-Ymu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFb-te-ngL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1651,11 +1652,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y7v-G5-y1x"/>
+        <segue reference="sjT-42-WjM"/>
         <segue reference="fpK-Q8-V2x"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="cLc-3e-0Mv"/>
-        <segue reference="ALe-HE-MDJ"/>
+        <segue reference="uFY-2f-15j"/>
         <segue reference="f3Q-oZ-4xk"/>
     </inferredMetricsTieBreakers>
     <resources>

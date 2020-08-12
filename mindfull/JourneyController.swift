@@ -90,6 +90,9 @@ class JourneyController: UIViewController {
             let longVC = segue.destination as! LongPromptController
             longVC.promptTitle = writtenList[writtenIndex].titles
             longVC.fromJournal = true
+        } else if (segue.identifier == "toEnvironmentProgress"){
+            let environmentVC = segue.destination as! EIEntryViewController
+            environmentVC.fromJournal = true
         }
         
     }
@@ -109,6 +112,7 @@ class JourneyController: UIViewController {
     }
     
     @IBAction func environmentPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "toEnvironmentProgress", sender: self)
     }
     
     func audioCompleted() {
