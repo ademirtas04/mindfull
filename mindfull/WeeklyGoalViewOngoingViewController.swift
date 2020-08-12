@@ -53,7 +53,7 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
         WG2Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints()))xp"
         
         WG2AdditionalResources1.backgroundColor = UIColor.lightGray
-        WG2AdditionalResources1.setTitle("", for: .normal)
+        WG2AdditionalResources1.setTitle("None", for: .normal)
         WG2AdditionalResources2.backgroundColor = UIColor.lightGray
         WG2AdditionalResources2.setTitle("", for: .normal)
         
@@ -116,7 +116,6 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     //To pass information back to the home screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if sentTo == 0 {
-            let vc = segue.destination as! DWGHomeScreenViewController
             if (goalIndex == 3) {
                 weeklyGoals[0] = thisGoal
             }
@@ -126,14 +125,13 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
             else if (goalIndex == 5) {
                 weeklyGoals[2] = thisGoal
             }
-            vc.currentWeeklyGoals = weeklyGoals
         }
         
         if sentTo == 4 {
             let newVc = segue.destination as! EIEntryViewController
             newVc.origin = 5
-            newVc.weeklyGoals = weeklyGoals
             newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
         }
         saveData()
     }

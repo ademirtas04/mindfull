@@ -53,7 +53,7 @@ class DailyGoalViewStartViewController: UIViewController {
         DG1Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints()))xp"
         
         DG1AdditionalResources1.backgroundColor = UIColor.lightGray
-        DG1AdditionalResources1.setTitle("", for: .normal)
+        DG1AdditionalResources1.setTitle("None", for: .normal)
         DG1AdditionalResources2.backgroundColor = UIColor.lightGray
         DG1AdditionalResources2.setTitle("", for: .normal)
         
@@ -105,7 +105,6 @@ class DailyGoalViewStartViewController: UIViewController {
     //To pass information back to the home screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if sentTo == 0 {
-            let vc = segue.destination as! DWGHomeScreenViewController
             if (goalIndex == 0) {
                 dailyGoals[0] = thisGoal
             }
@@ -120,8 +119,8 @@ class DailyGoalViewStartViewController: UIViewController {
         if sentTo == 4 {
             let newVc = segue.destination as! EIEntryViewController
             newVc.origin = 1
-            newVc.dailyGoals = dailyGoals
             newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
         }
         saveData()
     }

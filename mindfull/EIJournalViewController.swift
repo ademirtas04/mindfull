@@ -31,9 +31,7 @@ class EIJournalViewController: UIViewController {
     
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
     
-    var dailyGoals: [Goal] = []
-        
-    var weeklyGoals: [Goal] = []
+    var goalIndex = 10
         
     var currentEntryIndex = 0
     
@@ -145,39 +143,38 @@ class EIJournalViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if journal == true {
             let vc = segue.destination as! EIEntryViewController
+            vc.goalIndex = goalIndex
             vc.origin = origin
-            vc.dailyGoals = dailyGoals
-            vc.weeklyGoals = weeklyGoals
             vc.thisGoal = thisGoal
         }
         else if origin == 1 {
             let vc = segue.destination as! DailyGoalViewStartViewController
-            vc.dailyGoals = dailyGoals
+            vc.goalIndex = goalIndex
             vc.thisGoal = thisGoal
         }
         else if origin == 2 {
             let vc = segue.destination as! DailyGoalViewOngoingViewController
-            vc.dailyGoals = dailyGoals
+            vc.goalIndex = goalIndex
             vc.thisGoal = thisGoal
         }
         else if origin == 3 {
             let vc = segue.destination as! DailyGoalViewFinishViewController
-            vc.dailyGoals = dailyGoals
+            vc.goalIndex = goalIndex
             vc.thisGoal = thisGoal
         }
         else if origin == 4 {
             let vc = segue.destination as! WeeklyGoalViewStartViewController
-            vc.weeklyGoals = weeklyGoals
+            vc.goalIndex = goalIndex
             vc.thisGoal = thisGoal
         }
         else if origin == 5 {
             let vc = segue.destination as! WeeklyGoalViewOngoingViewController
-            vc.weeklyGoals = weeklyGoals
+            vc.goalIndex = goalIndex
             vc.thisGoal = thisGoal
         }
         else if origin == 6 {
             let vc = segue.destination as! WeeklyGoalViewFinishViewController
-            vc.weeklyGoals = weeklyGoals
+            vc.goalIndex = goalIndex
             vc.thisGoal = thisGoal
         }
     }
