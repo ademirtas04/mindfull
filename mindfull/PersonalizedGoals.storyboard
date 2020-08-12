@@ -454,6 +454,17 @@
                                     <action selector="toMyGoals:" destination="xeY-xr-Azh" eventType="touchUpInside" id="WPE-i4-kep"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-kS-Uvv">
+                                <rect key="frame" x="19.5" y="770" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7s3-p5-7eM"/>
+                                    <constraint firstAttribute="height" constant="30" id="NFJ-TU-J1l"/>
+                                </constraints>
+                                <string key="text">X ongoing, discarded or completed tasks have been replaced since you last viewed this screen because the end time for that goal has already passed.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -475,6 +486,7 @@
                             <constraint firstItem="1JM-Bl-Cw9" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="-70" id="Hie-RA-j4E"/>
                             <constraint firstItem="Qq8-ew-T8B" firstAttribute="leading" secondItem="gog-Ul-MYN" secondAttribute="leading" constant="35" id="K98-6l-gne"/>
                             <constraint firstItem="wMG-lA-bQv" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="KFm-1j-7wn"/>
+                            <constraint firstItem="pcF-kS-Uvv" firstAttribute="top" secondItem="aJp-L6-a8g" secondAttribute="bottom" constant="20" id="KHB-7u-Vhu"/>
                             <constraint firstItem="gog-Ul-MYN" firstAttribute="trailing" secondItem="qF4-9Y-2xk" secondAttribute="trailing" constant="35" id="MKe-UW-A2m"/>
                             <constraint firstItem="S6k-Rq-UaT" firstAttribute="top" secondItem="IVp-gM-fGd" secondAttribute="bottom" constant="2" id="N36-R4-ATE"/>
                             <constraint firstItem="Sfh-nH-Fs6" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="30" id="NYS-Ef-cfR"/>
@@ -503,7 +515,9 @@
                             <constraint firstItem="aJp-L6-a8g" firstAttribute="top" secondItem="Sfh-nH-Fs6" secondAttribute="bottom" constant="15" id="nBF-hv-pUO"/>
                             <constraint firstItem="sK8-pl-7xH" firstAttribute="leading" secondItem="gog-Ul-MYN" secondAttribute="leading" constant="35" id="nWt-Fn-UG6"/>
                             <constraint firstItem="Ekp-sG-9y5" firstAttribute="leading" secondItem="vkc-1W-IZe" secondAttribute="leading" constant="35" id="qdo-pg-tWw"/>
+                            <constraint firstItem="gog-Ul-MYN" firstAttribute="bottom" secondItem="pcF-kS-Uvv" secondAttribute="bottom" constant="8" id="u4l-Av-7n1"/>
                             <constraint firstItem="gog-Ul-MYN" firstAttribute="trailing" secondItem="Sfh-nH-Fs6" secondAttribute="trailing" constant="35" id="x2X-dH-Nby"/>
+                            <constraint firstItem="pcF-kS-Uvv" firstAttribute="centerX" secondItem="vkc-1W-IZe" secondAttribute="centerX" id="x3M-gi-58q"/>
                             <constraint firstItem="7Uq-eo-WZ4" firstAttribute="top" secondItem="cFd-Gm-gev" secondAttribute="bottom" constant="-155" id="zok-ay-2ft"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gog-Ul-MYN"/>
@@ -525,6 +539,7 @@
                         <outlet property="dayTimer" destination="S6k-Rq-UaT" id="4r2-sy-tcp"/>
                         <outlet property="goalsLeftCounter" destination="IVp-gM-fGd" id="iL2-Qc-Cx9"/>
                         <outlet property="newButton" destination="Sfh-nH-Fs6" id="NuD-8P-CQl"/>
+                        <outlet property="replacmentLabel" destination="pcF-kS-Uvv" id="Ve4-QZ-4ei"/>
                         <segue destination="xZs-pc-4xs" kind="show" identifier="toMyGoals" id="mLB-tL-YR7"/>
                         <segue destination="sdl-jI-ldu" kind="show" identifier="toPGNewGoal" id="xdx-Nw-OpO"/>
                         <segue destination="f1r-gI-nnk" kind="show" identifier="toPGGoalViewOngoing" id="g4L-wY-fWU"/>
@@ -872,6 +887,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="yn4-r4-o8J"/>
         <segue reference="KDd-pB-KjQ"/>
     </inferredMetricsTieBreakers>
     <resources>

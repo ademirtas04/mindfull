@@ -41,18 +41,33 @@ class EIJournalViewController: UIViewController {
     
     //Setting up the screen for when this view first loads or when the user clicks to see a different entry
     func setUpScreen() {
-        if currentEntryIndex >= 0 && EIJournal.count > 0 {
+        if EIJournal.count == 0 {
+            previousButton.setTitle("", for: .normal)
+            nextButton.setTitle("", for: .normal)
+            dateLabel.text = ""
+            infoLabel.text = ""
+            interactionLabel.text = "Hmm, it seems that you have no entries for this journal"
+            feelingLabel.text = ""
+            previousButton.backgroundColor = UIColor.white
+            nextButton.backgroundColor = UIColor.white
+        }
+            
+        else if currentEntryIndex >= 0 && EIJournal.count > 0 {
             if currentEntryIndex >= 1 {
                 previousButton.setTitle("Previous", for: .normal)
+                previousButton.backgroundColor = UIColor.lightGray
             }
             else {
                 previousButton.setTitle("", for: .normal)
+                previousButton.backgroundColor = UIColor.white
             }
             if currentEntryIndex < EIJournal.count - 1 {
                 nextButton.setTitle("Next", for: .normal)
+                nextButton.backgroundColor = UIColor.lightGray
             }
             else {
                 nextButton.setTitle("", for: .normal)
+                nextButton.backgroundColor = UIColor.white
             }
     
             let theEntry = EIJournal[currentEntryIndex]

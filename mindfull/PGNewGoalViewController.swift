@@ -22,6 +22,8 @@ class PGNewGoalViewController: UIViewController {
     
     var thisGoal = personalGoal(title: "", description: "", xpPoints: 0, status: 0, endTime: Date(), startTime: Date(), finishedTime: Date())
         
+    var productivityJournal: [personalGoal] = []
+    
     var goalIndex = 0
     
     var goalsDoneToday = 0
@@ -103,6 +105,7 @@ class PGNewGoalViewController: UIViewController {
         vc.personalGoals = personalGoals
         vc.goalsDoneToday = goalsDoneToday
         vc.fromLocalGroup = true
+        vc.productivityJournal = productivityJournal
         vc.saveData()
     }
 }
