@@ -410,9 +410,9 @@
         <!--Audio Progress Controller-->
         <scene sceneID="csP-em-w5U">
             <objects>
-                <viewController id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SoundVC" id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yrh-rP-uJn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
@@ -445,6 +445,12 @@
                         <outlet property="playButton" destination="cT6-6j-fZt" id="e1E-Zi-in2"/>
                         <outlet property="progress" destination="efj-oL-tRf" id="LAn-9H-xlm"/>
                         <segue destination="vce-aH-bqn" kind="showDetail" identifier="toGarden" id="QIW-K1-e7I"/>
+                        <segue destination="oV4-5t-Ph3" kind="show" identifier="toDG1" id="0rQ-W0-OCu"/>
+                        <segue destination="9rA-ZJ-aw4" kind="show" identifier="toDG2" id="ENS-Hn-Ybz"/>
+                        <segue destination="Emd-Zj-0Eq" kind="show" identifier="toDG3" id="Xqb-Nv-tBe"/>
+                        <segue destination="ujq-nP-7br" kind="show" identifier="toWG1" id="h47-3w-5Fy"/>
+                        <segue destination="634-zA-L7V" kind="show" identifier="toWG2" id="hLo-hw-6hc"/>
+                        <segue destination="o3R-bH-aAI" kind="show" identifier="toWG3" id="gYc-kl-HXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBJ-RY-r8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -895,7 +901,7 @@
             <objects>
                 <viewController id="S5g-xF-lUH" customClass="EIJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAk-dI-2zY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environmental Interaction Journal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-cK-Po4">
@@ -1739,13 +1745,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iAf-e5-4hK"/>
-        <segue reference="kF7-SS-0hA"/>
-        <segue reference="d6N-Mx-Jeh"/>
-        <segue reference="tkO-ar-Pxn"/>
-        <segue reference="dUm-lo-zNc"/>
-        <segue reference="NY7-vk-CfM"/>
-        <segue reference="x1m-IP-EH1"/>
+        <segue reference="hLo-hw-6hc"/>
+        <segue reference="h47-3w-5Fy"/>
+        <segue reference="0rQ-W0-OCu"/>
+        <segue reference="gYc-kl-HXv"/>
+        <segue reference="Xqb-Nv-tBe"/>
+        <segue reference="QIW-K1-e7I"/>
+        <segue reference="ENS-Hn-Ybz"/>
         <segue reference="KEb-Nm-yiV"/>
         <segue reference="IjQ-O9-ZyJ"/>
         <segue reference="cLc-3e-0Mv"/>

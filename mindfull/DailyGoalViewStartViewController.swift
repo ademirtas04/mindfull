@@ -72,7 +72,11 @@ class DailyGoalViewStartViewController: UIViewController {
         
         timer.text = "This Daily Goal Will be Replaced in \(hoursLeft) Hours \(minutesLeft) Minutes"
         
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 1 {
+            DG1AdditionalResources1.backgroundColor = UIColor.darkGray
+            DG1AdditionalResources1.setTitle("Calming Noises", for: .normal)
+        }
+        else if thisGoal.getTypeOfGoal() == 2 {
             DG1AdditionalResources1.backgroundColor = UIColor.darkGray
             DG1AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
             DG1AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -106,7 +110,11 @@ class DailyGoalViewStartViewController: UIViewController {
     
     //Clicked on additional resources 1
     @IBAction func DG1ClickedAdditionalResources1(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 1 {
+            sentTo = 1
+            self.performSegue(withIdentifier: "toSound", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 2 {
             sentTo = 2
             buttonNumber = 1
             self.performSegue(withIdentifier: "toJournalEntry", sender: self)
@@ -150,7 +158,13 @@ class DailyGoalViewStartViewController: UIViewController {
             }
         }
         
-        if sentTo == 2 && buttonNumber == 1 {
+        if sentTo == 1 {
+            let newVc = segue.destination as! AudioProgressController
+            newVc.origin = 1
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 2 && buttonNumber == 1 {
             let newVc = segue.destination as! LongPromptController
             newVc.origin = 1
             newVc.thisGoal = thisGoal
