@@ -52,7 +52,7 @@ class XPBar {
         UserDefaults.standard.set(assessmentXP, forKey: "assessmentXP")
     }
     
-    func unlockedAudo() -> Int {
+    func unlockedAudio() -> Int {
         if let x = UserDefaults.standard.object(forKey: "audioXP") as? Int {
             audioXP = x
         }
