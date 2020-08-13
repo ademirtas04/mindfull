@@ -167,12 +167,14 @@ class WeeklyGoalViewFinishViewController: UIViewController {
             newVc.origin = 6
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
+            newVc.name = thisGoal.getAudio()
         }
         else if sentTo == 2 && buttonNumber == 1 {
             let newVc = segue.destination as! LongPromptController
             newVc.origin = 6
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
+            newVc.promptTitle = thisGoal.getPrompts()
         }
         else if sentTo == 2 && buttonNumber == 2 {
             let newVc = segue.destination as! JournalController
@@ -191,6 +193,7 @@ class WeeklyGoalViewFinishViewController: UIViewController {
             newVc.origin = 6
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
+            newVc.promptTitle = thisGoal.getPrompts()
         }
         saveData()
     }

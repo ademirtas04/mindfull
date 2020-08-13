@@ -81,7 +81,7 @@ class EIJournalViewController: UIViewController {
     
             let theEntry = EIJournal[currentEntryIndex]
             dateLabel.text = "-- \(theEntry.getDate()) --"
-            infoLabel.text = "On \(theEntry.getDate()) I went on a \(theEntry.getExercise()) for \(theEntry.getTime()) and interacted with the environment"
+            infoLabel.text = "On \(theEntry.getDate()) I \(theEntry.getPrompt())"
             interactionLabel.text = "During this time I saw \(theEntry.getWhatTheySaw()), touched \(theEntry.getWhatTheyTouched()) and heard \(theEntry.getWhatTheyHeard()). Additiaonlly, I also smelled \(theEntry.getWhatTheySmelled())."
             feelingLabel.text = "By the end I felt \(theEntry.getEmotions())."
         }

@@ -9,7 +9,7 @@
 import UIKit
 
 class EIEntryViewController: UIViewController {
-    var promptTitle: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         prompt.numberOfLines = 0
@@ -25,15 +25,17 @@ class EIEntryViewController: UIViewController {
     
     //Instance Variables
     var EIJournal: [EIEntry] = []
+    
+    var promptTitle: String = "Write about your environmental interaction"
 
-    var thisEntry = EIEntry(date: "", exercise: "", time: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "")
+    var thisEntry = EIEntry(date: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "")
     
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
+    
     var fromJournal: Bool = false
     
     var goalIndex = 10
      
-    
     @IBOutlet weak var prompt: UILabel!
     @IBOutlet weak var seeTextField: UITextField!
     @IBOutlet weak var touchTextField: UITextField!
@@ -74,6 +76,7 @@ class EIEntryViewController: UIViewController {
         thisEntry.setWhatTheyHeard(newWhatTheyHeard: hearTextField.text ?? "")
         thisEntry.setWhatTheySmelled(newWhatTheySmelled: smellTextField.text ?? "")
         thisEntry.setEmotions(newEmotions: feelTextField.text ?? "")
+        thisEntry.setPrompt(newPrompt: promptTitle)
         
         EIJournal.append(thisEntry)
         
@@ -228,18 +231,15 @@ class EIEntryViewController: UIViewController {
 
 class EIEntry: Codable {
     var creationDate = ""
-    var exercise = ""
-    var time = ""
     var whatTheySaw = ""
     var whatTheyTouched = ""
     var whatTheyHeard = ""
     var whatTheySmelled = ""
     var emotions = ""
+    var prompt = ""
     
-    init(date: String, exercise: String, time: String, whatTheySaw: String, whatTheyTouched: String, whatTheyHeard: String, whatTheySmelled: String, emotions: String) {
+    init(date: String, whatTheySaw: String, whatTheyTouched: String, whatTheyHeard: String, whatTheySmelled: String, emotions: String, promt: String) {
         self.creationDate = date
-        self.exercise = exercise
-        self.time = time
         self.whatTheySaw = whatTheySaw
         self.whatTheyTouched = whatTheyTouched
         self.whatTheyHeard = whatTheyHeard
@@ -248,14 +248,6 @@ class EIEntry: Codable {
     
     func getDate() -> String {
         return creationDate
-    }
-    
-    func getExercise() -> String {
-        return exercise
-    }
-    
-    func getTime() -> String {
-        return time
     }
     
     func getWhatTheySaw() -> String {
@@ -278,18 +270,14 @@ class EIEntry: Codable {
         return emotions
     }
     
+    func getPrompt() -> String {
+        return prompt
+    }
+    
     func setDate(newDate: String) {
         creationDate = newDate
     }
-    
-    func setExercise(newExercise: String) {
-        exercise = newExercise
-    }
-    
-    func setTime(newTime: String) {
-        time = newTime
-    }
-    
+
     func setWhatTheySaw(newWhatTheySaw: String) {
         whatTheySaw = newWhatTheySaw
     }
@@ -310,5 +298,7 @@ class EIEntry: Codable {
         emotions = newEmotions
     }
     
-
+    func setPrompt(newPrompt: String) {
+        prompt = newPrompt
+    }
 }

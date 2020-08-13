@@ -412,7 +412,7 @@
             <objects>
                 <viewController id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yrh-rP-uJn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
@@ -866,7 +866,7 @@
             <objects>
                 <viewController id="S5g-xF-lUH" customClass="EIJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAk-dI-2zY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environmental Interaction Journal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-cK-Po4">
@@ -951,7 +951,7 @@
                                     <action selector="done:" destination="S5g-xF-lUH" eventType="touchUpInside" id="JRj-eA-PL7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On [Date] I went on a [exercise] for [time] and interacted with the environment" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-Bd-M79">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On [Date] I [the prompt]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-Bd-M79">
                                 <rect key="frame" x="30" y="170" width="354" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="s11-cW-J5W"/>
@@ -1710,13 +1710,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iAf-e5-4hK"/>
-        <segue reference="kF7-SS-0hA"/>
-        <segue reference="d6N-Mx-Jeh"/>
-        <segue reference="tkO-ar-Pxn"/>
-        <segue reference="dUm-lo-zNc"/>
+        <segue reference="uAb-Fo-ekI"/>
+        <segue reference="aT1-o0-oDn"/>
+        <segue reference="Hae-MA-TGa"/>
+        <segue reference="ehQ-8k-4xj"/>
+        <segue reference="iTe-zY-fon"/>
         <segue reference="QIW-K1-e7I"/>
-        <segue reference="x1m-IP-EH1"/>
+        <segue reference="SEf-RF-yae"/>
         <segue reference="KEb-Nm-yiV"/>
         <segue reference="IjQ-O9-ZyJ"/>
         <segue reference="cLc-3e-0Mv"/>

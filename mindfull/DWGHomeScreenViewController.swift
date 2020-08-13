@@ -87,31 +87,43 @@ class DWGHomeScreenViewController: UIViewController {
         //The meditation goals
         let DGMGoal1 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         DGMGoal1.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal1.addAudio(link: "Link")
         let DGMGoal2 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         DGMGoal2.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal2.addAudio(link: "Link")
         let DGMGoal3 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         DGMGoal3.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal3.addAudio(link: "Link")
         let DGMGoal4 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         DGMGoal4.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal4.addAudio(link: "Link")
         let DGMGoal5 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         DGMGoal5.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal5.addAudio(link: "Link")
         let DGMGoal6 = Goal(title: "titleM", description: "Description", xpPoints: 10, status: 0)
         DGMGoal6.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal6.addAudio(link: "Link")
         dailyGoals.append(contentsOf: [DGMGoal1, DGMGoal2, DGMGoal3, DGMGoal4, DGMGoal5, DGMGoal6])
         
         //The written goals
         let DGOGoal1 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal1.changeTypeOfGoal(newTypeOfGoal: 2)
+        DGOGoal1.addPrompts(prompts: ["Prompt"])
         let DGOGoal2 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal2.changeTypeOfGoal(newTypeOfGoal: 2)
+        DGOGoal2.addPrompts(prompts: ["Prompt"])
         let DGOGoal3 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal3.changeTypeOfGoal(newTypeOfGoal: 2)
+        DGOGoal3.addPrompts(prompts: ["Prompt"])
         let DGOGoal4 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal4.changeTypeOfGoal(newTypeOfGoal: 2)
+        DGOGoal4.addPrompts(prompts: ["Prompt"])
         let DGOGoal5 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal5.changeTypeOfGoal(newTypeOfGoal: 2)
+        DGOGoal5.addPrompts(prompts: ["Prompt"])
         let DGOGoal6 = Goal(title: "titleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal6.changeTypeOfGoal(newTypeOfGoal: 2)
+        DGOGoal6.addPrompts(prompts: ["Prompt"])
         dailyGoals.append(contentsOf: [DGOGoal1, DGOGoal2, DGOGoal3, DGOGoal4, DGOGoal5, DGOGoal6])
         
         //The productivity goals
@@ -132,50 +144,68 @@ class DWGHomeScreenViewController: UIViewController {
         //The enviormental interaction goals
         let DGEIGoal1 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         DGEIGoal1.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal1.addPrompts(prompts: ["Prompt"])
         let DGEIGoal2 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         DGEIGoal2.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal2.addPrompts(prompts: ["Prompt"])
         let DGEIGoal3 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         DGEIGoal3.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal3.addPrompts(prompts: ["Prompt"])
         let DGEIGoal4 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         DGEIGoal4.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal4.addPrompts(prompts: ["Prompt"])
         let DGEIGoal5 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         DGEIGoal5.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal5.addPrompts(prompts: ["Prompt"])
         let DGEIGoal6 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         DGEIGoal6.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal6.addPrompts(prompts: ["Prompt"])
         dailyGoals.append(contentsOf: [DGEIGoal1, DGEIGoal2, DGEIGoal3, DGEIGoal4, DGEIGoal5, DGEIGoal6])
         
         //The self-assesment goals
         let DGSGoal1 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         DGSGoal1.changeTypeOfGoal(newTypeOfGoal: 5)
+        DGSGoal1.addPrompts(prompts: ["Prompt"])
         let DGSGoal2 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         DGSGoal2.changeTypeOfGoal(newTypeOfGoal: 5)
+        DGSGoal2.addPrompts(prompts: ["Prompt"])
         let DGSGoal3 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         DGSGoal3.changeTypeOfGoal(newTypeOfGoal: 5)
+        DGSGoal3.addPrompts(prompts: ["Prompt"])
         let DGSGoal4 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         DGSGoal4.changeTypeOfGoal(newTypeOfGoal: 5)
+        DGSGoal4.addPrompts(prompts: ["Prompt"])
         let DGSGoal5 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         DGSGoal5.changeTypeOfGoal(newTypeOfGoal: 5)
+        DGSGoal5.addPrompts(prompts: ["Prompt"])
         let DGSGoal6 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         DGSGoal6.changeTypeOfGoal(newTypeOfGoal: 5)
+        DGSGoal6.addPrompts(prompts: ["Prompt"])
         dailyGoals.append(contentsOf: [DGSGoal1, DGSGoal2, DGSGoal3, DGSGoal4, DGSGoal5, DGSGoal6])
         
         //Weekly Goals
         //The meditation goals
         let WGMGoal1 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         WGMGoal1.changeTypeOfGoal(newTypeOfGoal: 1)
+        WGMGoal1.addAudio(link: "Link")
         let WGMGoal2 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         WGMGoal2.changeTypeOfGoal(newTypeOfGoal: 1)
+        WGMGoal2.addAudio(link: "Link")
         let WGMGoal3 = Goal(title: "TitleM", description: "Description", xpPoints: 10, status: 0)
         WGMGoal3.changeTypeOfGoal(newTypeOfGoal: 1)
+        WGMGoal3.addAudio(link: "Link")
         weeklyGoals.append(contentsOf: [WGMGoal1, WGMGoal2, WGMGoal3])
         
         //The ongoing goals
         let WGOGoal1 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         WGOGoal1.changeTypeOfGoal(newTypeOfGoal: 2)
+        WGOGoal1.addPrompts(prompts: ["Prompt"])
         let WGOGoal2 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         WGOGoal2.changeTypeOfGoal(newTypeOfGoal: 2)
+        WGOGoal2.addPrompts(prompts: ["Prompt"])
         let WGOGoal3 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         WGOGoal3.changeTypeOfGoal(newTypeOfGoal: 2)
+        WGOGoal3.addPrompts(prompts: ["Prompt"])
         weeklyGoals.append(contentsOf: [WGOGoal1, WGOGoal2, WGOGoal3])
         
         //The productivity goals
@@ -190,19 +220,25 @@ class DWGHomeScreenViewController: UIViewController {
         //The enviormental interaction goals
         let WGEIGoal1 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         WGEIGoal1.changeTypeOfGoal(newTypeOfGoal: 4)
+        DGEIGoal1.addPrompts(prompts: ["Prompt"])
         let WGEIGoal2 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         WGEIGoal2.changeTypeOfGoal(newTypeOfGoal: 4)
+        WGEIGoal2.addPrompts(prompts: ["Prompt"])
         let WGEIGoal3 = Goal(title: "TitleEI", description: "Description", xpPoints: 10, status: 0)
         WGEIGoal3.changeTypeOfGoal(newTypeOfGoal: 4)
+        WGEIGoal3.addPrompts(prompts: ["Prompt"])
         weeklyGoals.append(contentsOf: [WGEIGoal1, WGEIGoal2, WGEIGoal3])
         
         //The self-assesment goals
         let WGSGoal1 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         WGSGoal1.changeTypeOfGoal(newTypeOfGoal: 5)
+        WGSGoal1.addPrompts(prompts: ["Prompt"])
         let WGSGoal2 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         WGSGoal2.changeTypeOfGoal(newTypeOfGoal: 5)
+        WGSGoal2.addPrompts(prompts: ["Prompt"])
         let WGSGoal3 = Goal(title: "TitleS", description: "Description", xpPoints: 10, status: 0)
         WGSGoal3.changeTypeOfGoal(newTypeOfGoal: 5)
+        WGSGoal3.addPrompts(prompts: ["Prompt"])
         weeklyGoals.append(contentsOf: [WGSGoal1, WGSGoal2, WGSGoal3])
         
         chooseDailyGoals()
@@ -732,6 +768,14 @@ class Goal: Codable {
     
     func addPrompts(prompts: [String]){
         self.prompts = prompts
+    }
+    
+    func getPrompts() -> [String] {
+        return self.prompts
+    }
+    
+    func getAudio() -> String {
+        return self.audioLink
     }
     
     func getTitle() -> String {

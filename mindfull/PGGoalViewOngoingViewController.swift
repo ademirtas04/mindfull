@@ -52,22 +52,8 @@ class PGGoalViewOngoingViewController: UIViewController {
         thisGoal.changeStatus(newStatus: 4)
         thisGoal.changeFinishedTime(newFinishedTime: Date())
         productivityJournal.append(thisGoal)
-        
-        if thisGoal.getTypeOfGoal() == 1 {
-            addAudioXP(xp: thisGoal.getxpPoints())
-        }
-        else if thisGoal.getTypeOfGoal() == 2 {
-            addWrittenXP(xp: thisGoal.getxpPoints())
-        }
-        else if thisGoal.getTypeOfGoal() == 3 {
-            addProductivityXP(xp: thisGoal.getxpPoints())
-        }
-        else if thisGoal.getTypeOfGoal() == 4 {
-            addEnviornmentXP(xp: thisGoal.getxpPoints())
-        }
-        else if thisGoal.getTypeOfGoal() == 5 {
-            addAssesmentXP(xp: thisGoal.getxpPoints())
-        }
+    
+        addProductivityXP(xp: thisGoal.getxpPoints())
         
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
