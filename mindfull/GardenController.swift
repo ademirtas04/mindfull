@@ -87,35 +87,80 @@ class GardenController: UIViewController {
         if let x = UserDefaults.standard.object(forKey: "water")  as?  Bool {
             isWater = x
         }
-        if let x = UserDefaults.standard.object(forKey: "redUnlocked")  as?  Bool {
-            redUnlocked = x
+        if(XPBar.shared.unlockedAudio() == 0) {
+            birdUnlocked = false
+            breezeUnlocked = false
+            waterUnlocked = false
+            wavesUnlocked = false
+            leavesUnlocked = false
+        } else if(XPBar.shared.unlockedAudio() == 1) {
+            birdUnlocked = true
+            breezeUnlocked = false
+            waterUnlocked = false
+            wavesUnlocked = false
+            leavesUnlocked = false
+        }  else if(XPBar.shared.unlockedAudio() == 2) {
+            birdUnlocked = true
+            breezeUnlocked = true
+            waterUnlocked = false
+            wavesUnlocked = false
+            leavesUnlocked = false
+        } else if(XPBar.shared.unlockedAudio() == 3) {
+            birdUnlocked = true
+            breezeUnlocked = true
+            waterUnlocked = true
+            wavesUnlocked = false
+            leavesUnlocked = false
+        } else if(XPBar.shared.unlockedAudio() == 4) {
+            birdUnlocked = true
+            breezeUnlocked = true
+            waterUnlocked = true
+            wavesUnlocked = true
+            leavesUnlocked = false
+        } else if(XPBar.shared.unlockedAudio() == 5) {
+            birdUnlocked = true
+            breezeUnlocked = true
+            waterUnlocked = true
+            wavesUnlocked = true
+            leavesUnlocked = true
         }
-        if let x = UserDefaults.standard.object(forKey: "blueUnlocked")  as?  Bool {
-            blueUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "greenUnlocked")  as?  Bool {
-            greenUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "purpleUnlocked")  as?  Bool {
-            purpleUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "orangeUnlocked")  as?  Bool {
-            orangeUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "birdUnlocked")  as?  Bool {
-            birdUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "waterUnlocked")  as?  Bool {
-            waterUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "breezeUnlocked")  as?  Bool {
-            breezeUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "wavesUnlocked")  as?  Bool {
-            wavesUnlocked = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "leavesUnlocked")  as?  Bool {
-            leavesUnlocked = x
+        
+        if(XPBar.shared.unlockedAssessment() == 0) {
+            redUnlocked = false
+            blueUnlocked = false
+            greenUnlocked = false
+            orangeUnlocked = false
+            purpleUnlocked = false
+        } else if(XPBar.shared.unlockedAssessment() == 1) {
+            redUnlocked = true
+            blueUnlocked = false
+            greenUnlocked = false
+            orangeUnlocked = false
+            purpleUnlocked = false
+        }  else if(XPBar.shared.unlockedAssessment() == 2) {
+            redUnlocked = true
+            blueUnlocked = true
+            greenUnlocked = false
+            orangeUnlocked = false
+            purpleUnlocked = false
+        } else if(XPBar.shared.unlockedAssessment() == 3) {
+            redUnlocked = true
+            blueUnlocked = true
+            greenUnlocked = true
+            orangeUnlocked = false
+            purpleUnlocked = false
+        } else if(XPBar.shared.unlockedAssessment() == 4) {
+            redUnlocked = true
+            blueUnlocked = true
+            greenUnlocked = true
+            orangeUnlocked = true
+            purpleUnlocked = false
+        } else if(XPBar.shared.unlockedAssessment() == 5) {
+            redUnlocked = true
+            blueUnlocked = true
+            greenUnlocked = true
+            orangeUnlocked = true
+            purpleUnlocked = true
         }
     }
     
