@@ -149,8 +149,6 @@ class ProductivityJournalViewController: UIViewController {
         else if origin == 6 {
             self.performSegue(withIdentifier: "toWG3", sender: self)
         }
-        
-        //Switch back to the journal home screen
     }
     
     //Switch to the personalized goals home screen

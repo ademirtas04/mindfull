@@ -8,6 +8,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--JournalEntryVC-->
+        <scene sceneID="iXo-mF-S4H">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="JournalEntryVC" id="aho-Co-yxN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wH1-Zf-bmp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5GP-ly-xQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="680"/>
+        </scene>
+        <!--JournalVC-->
+        <scene sceneID="Tkd-C5-x1d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="JournalVC" id="WB7-1I-btL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kRz-hQ-2gA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iE3-ZU-Pia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="772"/>
+        </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="VYd-PK-Ig7">
             <objects>
@@ -593,6 +613,8 @@
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="ehg-zB-n8a"/>
                         <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="TQ0-d8-iyr"/>
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="Iaq-ya-2g3"/>
+                        <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="ZNX-f2-gkQ"/>
+                        <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="sbY-hz-l1t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAU-ix-WHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -828,6 +850,8 @@
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="E5k-ci-nJ5"/>
                         <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="pB4-xe-ufg"/>
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="UA9-JP-q8a"/>
+                        <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="92h-KS-4Hi"/>
+                        <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="tNB-ne-Jig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFB-h9-tyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -842,7 +866,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6x-eC-TMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="942"/>
+            <point key="canvasLocation" x="182" y="1456"/>
         </scene>
         <!--PGVC-->
         <scene sceneID="dDY-3O-2ej">
@@ -852,7 +876,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVN-W9-LQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="670"/>
+            <point key="canvasLocation" x="182" y="997"/>
         </scene>
         <!--productivityVC-->
         <scene sceneID="OI1-39-THt">
@@ -862,7 +886,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niQ-AE-VfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="801"/>
+            <point key="canvasLocation" x="183" y="1127"/>
         </scene>
         <!--Daily Goal View Finish View Controller-->
         <scene sceneID="KGb-rO-NaK">
@@ -1080,6 +1104,8 @@
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="rLp-Iy-IZu"/>
                         <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="O3s-Qq-hFa"/>
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="BtO-aV-70q"/>
+                        <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="eDm-Af-uFj"/>
+                        <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="zmw-jI-LvT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktQ-P5-cOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1300,6 +1326,8 @@
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="Vdo-ua-IgT"/>
                         <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="TdJ-Zh-5OB"/>
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="kO7-64-gdA"/>
+                        <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="MzL-xe-xLF"/>
+                        <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="xqS-eW-ROo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaT-nN-EMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1536,6 +1564,8 @@
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="nv5-C2-XyK"/>
                         <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="ys7-cc-8y2"/>
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="8VZ-45-o7o"/>
+                        <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="YV1-xl-7GL"/>
+                        <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="lEY-nU-q5d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62W-ze-M8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1761,6 +1791,8 @@
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="nGB-P2-G2s"/>
                         <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="Q93-ec-0zL"/>
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="DLa-6e-Ha8"/>
+                        <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="14f-8g-1QA"/>
+                        <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="kGm-BO-z1F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pj-y8-7qL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1770,9 +1802,11 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="DLa-6e-Ha8"/>
-        <segue reference="O3s-Qq-hFa"/>
+        <segue reference="Q93-ec-0zL"/>
         <segue reference="nGB-P2-G2s"/>
         <segue reference="a5n-Jk-O4v"/>
+        <segue reference="kGm-BO-z1F"/>
+        <segue reference="14f-8g-1QA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Banner - Blue" width="251.5" height="51.5"/>

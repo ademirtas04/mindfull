@@ -99,7 +99,7 @@ class DWGHomeScreenViewController: UIViewController {
         DGMGoal6.changeTypeOfGoal(newTypeOfGoal: 1)
         dailyGoals.append(contentsOf: [DGMGoal1, DGMGoal2, DGMGoal3, DGMGoal4, DGMGoal5, DGMGoal6])
         
-        //The ongoing goals
+        //The written goals
         let DGOGoal1 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)
         DGOGoal1.changeTypeOfGoal(newTypeOfGoal: 2)
         let DGOGoal2 = Goal(title: "TitleO", description: "Description", xpPoints: 10, status: 0)

@@ -74,7 +74,13 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
         
         timer.text = "This Weekly Goal Ends in \(daysLeft) Days \(hoursLeft) Hours \(minutesLeft) minutes"
         
-        if thisGoal.getTypeOfGoal() == 3 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            WG2AdditionalResources1.backgroundColor = UIColor.darkGray
+            WG2AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
+            WG2AdditionalResources2.backgroundColor = UIColor.darkGray
+            WG2AdditionalResources2.setTitle("My Journal", for: .normal)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
             WG2AdditionalResources1.backgroundColor = UIColor.darkGray
             WG2AdditionalResources1.setTitle("Create a Personalized Goal", for: .normal)
             WG2AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -111,7 +117,12 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     
     //Clicked on additional resources 1
     @IBAction func WG2ClickedAdditionalResources1(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 3 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            sentTo = 2
+            buttonNumber = 1
+            self.performSegue(withIdentifier: "toJournalEntry", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
             sentTo = 3
             buttonNumber = 1
             self.performSegue(withIdentifier: "toPG", sender: self)
@@ -124,7 +135,12 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func WG2ClickedAdditionalResources2(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 3 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            sentTo = 2
+            buttonNumber = 2
+            self.performSegue(withIdentifier: "toJournal", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
             sentTo = 3
             buttonNumber = 2
             self.performSegue(withIdentifier: "toProductivityVC", sender: self)
@@ -145,7 +161,19 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
             }
         }
         
-        if sentTo == 3 && buttonNumber == 2 {
+        if sentTo == 2 && buttonNumber == 1 {
+            let newVc = segue.destination as! LongPromptController
+            newVc.origin = 5
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 2 && buttonNumber == 2 {
+            let newVc = segue.destination as! JournalController
+            newVc.origin = 5
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 3 && buttonNumber == 2 {
             let newVc = segue.destination as! ProductivityJournalViewController
             newVc.origin = 5
             newVc.thisGoal = thisGoal

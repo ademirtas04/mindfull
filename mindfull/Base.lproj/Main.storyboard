@@ -565,7 +565,7 @@
         <!--Journal Controller-->
         <scene sceneID="vPQ-ID-9QU">
             <objects>
-                <viewController id="AhJ-ko-Fq6" customClass="JournalController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JournalVC" id="AhJ-ko-Fq6" customClass="JournalController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4c-mf-XYB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -624,6 +624,12 @@
                         <outlet property="dateTitle" destination="50Z-tF-lMN" id="6ob-Ch-oaq"/>
                         <outlet property="journalField" destination="br4-8V-BtJ" id="uGv-Ie-Hjq"/>
                         <segue destination="vce-aH-bqn" kind="showDetail" identifier="toGarden" id="NY7-vk-CfM"/>
+                        <segue destination="oV4-5t-Ph3" kind="show" identifier="toDG1" id="aPA-VX-Z8t"/>
+                        <segue destination="9rA-ZJ-aw4" kind="show" identifier="toDG2" id="uOn-iY-ZmN"/>
+                        <segue destination="Emd-Zj-0Eq" kind="show" identifier="toDG3" id="mx7-6Z-ZKC"/>
+                        <segue destination="ujq-nP-7br" kind="show" identifier="toWG1" id="2kV-DE-oo3"/>
+                        <segue destination="634-zA-L7V" kind="show" identifier="toWG2" id="pV2-9g-fM5"/>
+                        <segue destination="o3R-bH-aAI" kind="show" identifier="toWG3" id="Bdq-Lq-qBi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwH-tz-sxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1069,14 +1075,14 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aye-Kn-EQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3581" y="2543"/>
+            <point key="canvasLocation" x="2599" y="2644"/>
         </scene>
         <!--Long Prompt Controller-->
         <scene sceneID="PEx-L6-cV5">
             <objects>
-                <viewController id="Nms-JA-Gd3" customClass="LongPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JournalEntryVC" id="Nms-JA-Gd3" customClass="LongPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHv-Ph-5qi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQK-DT-WVn">
@@ -1146,6 +1152,12 @@
                         <outlet property="responseShort" destination="v8d-ld-ZbJ" id="FvY-aT-QaC"/>
                         <outlet property="scrollView" destination="lQK-DT-WVn" id="SDo-rs-rJn"/>
                         <segue destination="AhJ-ko-Fq6" kind="showDetail" identifier="toJournal" id="IjQ-O9-ZyJ"/>
+                        <segue destination="oV4-5t-Ph3" kind="show" identifier="toDG1" id="d6N-Mx-Jeh"/>
+                        <segue destination="9rA-ZJ-aw4" kind="show" identifier="toDG2" id="x1m-IP-EH1"/>
+                        <segue destination="Emd-Zj-0Eq" kind="show" identifier="toDG3" id="dUm-lo-zNc"/>
+                        <segue destination="ujq-nP-7br" kind="show" identifier="toWG1" id="kF7-SS-0hA"/>
+                        <segue destination="634-zA-L7V" kind="show" identifier="toWG2" id="iAf-e5-4hK"/>
+                        <segue destination="o3R-bH-aAI" kind="show" identifier="toWG3" id="tkO-ar-Pxn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYk-QM-BYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1157,7 +1169,7 @@
             <objects>
                 <viewController storyboardIdentifier="gardenVC" id="vce-aH-bqn" customClass="GardenController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdl-gV-0at">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V63-1i-OW0">
@@ -1717,7 +1729,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcT-Hp-I1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3754" y="2543"/>
+            <point key="canvasLocation" x="2917" y="2644"/>
         </scene>
         <!--WG3VC-->
         <scene sceneID="WQs-Xd-lHy">
@@ -1727,7 +1739,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fl0-it-vyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3754" y="2644"/>
+            <point key="canvasLocation" x="2918" y="2754"/>
         </scene>
         <!--DG1VC-->
         <scene sceneID="pJg-SN-M0F">
@@ -1737,7 +1749,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGk-z6-1sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3412" y="2543"/>
+            <point key="canvasLocation" x="2286" y="2644"/>
         </scene>
         <!--WG1VC-->
         <scene sceneID="PxF-ez-s5d">
@@ -1747,7 +1759,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8N-r9-82n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3412" y="2644"/>
+            <point key="canvasLocation" x="2286" y="2754"/>
         </scene>
         <!--WG2VC-->
         <scene sceneID="4ua-IC-hhQ">
@@ -1757,17 +1769,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTF-eN-5wo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3581" y="2644"/>
+            <point key="canvasLocation" x="2600" y="2754"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4mn-g3-f20"/>
-        <segue reference="6r7-Q8-MDH"/>
-        <segue reference="YKO-rc-jNo"/>
-        <segue reference="8He-9E-PcD"/>
-        <segue reference="3u7-gK-HTR"/>
-        <segue reference="y7v-G5-y1x"/>
-        <segue reference="WZ2-je-HIs"/>
+        <segue reference="iAf-e5-4hK"/>
+        <segue reference="kF7-SS-0hA"/>
+        <segue reference="d6N-Mx-Jeh"/>
+        <segue reference="tkO-ar-Pxn"/>
+        <segue reference="dUm-lo-zNc"/>
+        <segue reference="NY7-vk-CfM"/>
+        <segue reference="x1m-IP-EH1"/>
         <segue reference="KEb-Nm-yiV"/>
         <segue reference="IjQ-O9-ZyJ"/>
         <segue reference="cLc-3e-0Mv"/>

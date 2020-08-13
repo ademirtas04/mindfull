@@ -81,7 +81,13 @@ class DailyGoalViewFinishViewController: UIViewController {
         
         timer.text = "A new Daily Goal will Appear in \(hoursLeft) Hours \(minutesLeft) Minutes"
         
-        if thisGoal.getTypeOfGoal() == 3 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            DG3AdditionalResources1.backgroundColor = UIColor.darkGray
+            DG3AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
+            DG3AdditionalResources2.backgroundColor = UIColor.darkGray
+            DG3AdditionalResources2.setTitle("My Journal", for: .normal)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
             DG3AdditionalResources1.backgroundColor = UIColor.darkGray
             DG3AdditionalResources1.setTitle("Create a Personalized Goal", for: .normal)
             DG3AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -102,7 +108,12 @@ class DailyGoalViewFinishViewController: UIViewController {
     
     //Clicked on additional resources 1
     @IBAction func DG3ClickedAdditionalResources1(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 3 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            sentTo = 2
+            buttonNumber = 1
+            self.performSegue(withIdentifier: "toJournalEntry", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
             sentTo = 3
             buttonNumber = 1
             self.performSegue(withIdentifier: "toPG", sender: self)
@@ -115,7 +126,12 @@ class DailyGoalViewFinishViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func DG3ClickedAdditionalResources2(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 3 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            sentTo = 2
+            buttonNumber = 2
+            self.performSegue(withIdentifier: "toJournal", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
             sentTo = 3
             buttonNumber = 2
             self.performSegue(withIdentifier: "toProductivityVC", sender: self)
@@ -136,7 +152,19 @@ class DailyGoalViewFinishViewController: UIViewController {
             }
         }
         
-        if sentTo == 3 && buttonNumber == 2 {
+        if sentTo == 2 && buttonNumber == 1 {
+            let newVc = segue.destination as! LongPromptController
+            newVc.origin = 3
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 2 && buttonNumber == 2 {
+            let newVc = segue.destination as! JournalController
+            newVc.origin = 3
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 3 && buttonNumber == 2 {
             let newVc = segue.destination as! ProductivityJournalViewController
             newVc.origin = 3
             newVc.thisGoal = thisGoal
