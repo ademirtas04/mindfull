@@ -9,9 +9,10 @@
 import UIKit
 
 class EIEntryViewController: UIViewController {
-
+    var promptTitle: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        prompt.numberOfLines = 0
 
         // Do any additional setup after loading the view.
     }
@@ -19,13 +20,13 @@ class EIEntryViewController: UIViewController {
     //Starting - Everytime this view is loaded
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.prompt.text = promptTitle
         getData()
     }
     
     //Instance Variables
     var EIJournal: [EIEntry] = []
-    
+
     var thisEntry = EIEntry(date: "", exercise: "", time: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "")
     
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
@@ -33,8 +34,8 @@ class EIEntryViewController: UIViewController {
     
     var goalIndex = 10
      
-    @IBOutlet weak var exerciseTextField: UITextField!
-    @IBOutlet weak var timeTextField: UITextField!
+    
+    @IBOutlet weak var prompt: UILabel!
     @IBOutlet weak var seeTextField: UITextField!
     @IBOutlet weak var touchTextField: UITextField!
     @IBOutlet weak var hearTextField: UITextField!
@@ -56,6 +57,10 @@ class EIEntryViewController: UIViewController {
         self.performSegue(withIdentifier: "toEIJournal", sender: self)
     }
     
+    func setPrompt(title: String){
+        self.promptTitle = title
+    }
+    
     //When the player is done doing an entry
     @IBAction func done(_ sender: Any) {
         let rightNow = Date()
@@ -65,8 +70,6 @@ class EIEntryViewController: UIViewController {
         let monthString = convertToMonth(month: rightNowMonth)
         let theDate = "\(monthString) \(rightNowDay), \(rightNowYear)"
         thisEntry.setDate(newDate: theDate)
-        thisEntry.setExercise(newExercise: exerciseTextField.text ?? "")
-        thisEntry.setTime(newTime: timeTextField.text ?? "")
         thisEntry.setWhatTheySaw(newWhatTheySaw: seeTextField.text ?? "")
         thisEntry.setWhatTheyTouched(newWhatTheyTouched: touchTextField.text ?? "")
         thisEntry.setWhatTheyHeard(newWhatTheyHeard: hearTextField.text ?? "")
@@ -307,4 +310,6 @@ class EIEntry: Codable {
     func setEmotions(newEmotions: String) {
         emotions = newEmotions
     }
+    
+
 }
