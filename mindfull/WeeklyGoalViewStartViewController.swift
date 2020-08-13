@@ -35,6 +35,8 @@ class WeeklyGoalViewStartViewController: UIViewController {
     //This variable specifies where the view will be switching to, with 0 for staying in the local group, 1 for Auditory/Meditation, 2 for Written, 3 for Productivity, 4 for Enviornmental Interaction and 5 for Self Assesment, with 10 as nothing
     var sentTo = 10
     
+    var buttonNumber = 0
+    
     @IBOutlet weak var timer: UILabel!
     
     @IBOutlet weak var WG1Title: UILabel!
@@ -72,7 +74,19 @@ class WeeklyGoalViewStartViewController: UIViewController {
         
         timer.text = "This Weekly Goal will bre Replaced in \(daysLeft) Days \(hoursLeft) Hours \(minutesLeft) minutes"
         
-        if thisGoal.getTypeOfGoal() == 4 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            WG1AdditionalResources1.backgroundColor = UIColor.darkGray
+            WG1AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
+            WG1AdditionalResources2.backgroundColor = UIColor.darkGray
+            WG1AdditionalResources2.setTitle("My Journal", for: .normal)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            WG1AdditionalResources1.backgroundColor = UIColor.darkGray
+            WG1AdditionalResources1.setTitle("Create a Personalized Goal", for: .normal)
+            WG1AdditionalResources2.backgroundColor = UIColor.darkGray
+            WG1AdditionalResources2.setTitle("Productivity Journal", for: .normal)
+        }
+        else if thisGoal.getTypeOfGoal() == 4 {
             WG1AdditionalResources1.backgroundColor = UIColor.darkGray
             WG1AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
         }
@@ -95,7 +109,17 @@ class WeeklyGoalViewStartViewController: UIViewController {
     
     //Clicked on additional resources 1
     @IBAction func WG1ClickedAdditionalResources1(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 4 {
+        if thisGoal.getTypeOfGoal() == 2 {
+            sentTo = 2
+            buttonNumber = 1
+            self.performSegue(withIdentifier: "toJournalEntry", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            sentTo = 3
+            buttonNumber = 1
+            self.performSegue(withIdentifier: "toPG", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 4 {
             sentTo = 4
             self.performSegue(withIdentifier: "toEIEntryVC", sender: self)
         }
@@ -103,6 +127,16 @@ class WeeklyGoalViewStartViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func WG1ClickedAdditionalResources2(_ sender: Any) {
+        if thisGoal.getTypeOfGoal() == 2 {
+            sentTo = 2
+            buttonNumber = 2
+            self.performSegue(withIdentifier: "toJournal", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            sentTo = 3
+            buttonNumber = 2
+            self.performSegue(withIdentifier: "toProductivityVC", sender: self)
+        }
     }
     
     //To pass information back to the home screen
@@ -119,7 +153,25 @@ class WeeklyGoalViewStartViewController: UIViewController {
             }
         }
         
-        if sentTo == 4 {
+        if sentTo == 2 && buttonNumber == 1 {
+            let newVc = segue.destination as! LongPromptController
+            newVc.origin = 4
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 2 && buttonNumber == 2 {
+            let newVc = segue.destination as! JournalController
+            newVc.origin = 4
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 3 && buttonNumber == 2 {
+            let newVc = segue.destination as! ProductivityJournalViewController
+            newVc.origin = 4
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 4 {
             let newVc = segue.destination as! EIEntryViewController
             newVc.origin = 4
             newVc.thisGoal = thisGoal
