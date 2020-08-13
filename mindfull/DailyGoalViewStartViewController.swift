@@ -32,7 +32,7 @@ class DailyGoalViewStartViewController: UIViewController {
     
     var dailyGoals: [Goal] = []
                 
-    //This variable specifies where the view will be switching to, with 0 for staying in the local group, 1 for Auditory/Meditation, 2 for Written, 3 for Productivity, 4 for Enviornmental Interaction and 5 for Self Assesment, with 10 as nothing
+    //This variable specifies where the view will be switching to, with 0 for staying in the local group, 1 for Auditory/Meditation, 2 for Written and self assemsnet, 3 for Productivity, 4 for Enviornmental Interaction, with 10 as nothing
     var sentTo = 10
     
     var buttonNumber = 0
@@ -76,7 +76,7 @@ class DailyGoalViewStartViewController: UIViewController {
             DG1AdditionalResources1.backgroundColor = UIColor.darkGray
             DG1AdditionalResources1.setTitle("Calming Noises", for: .normal)
         }
-        else if thisGoal.getTypeOfGoal() == 2 {
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             DG1AdditionalResources1.backgroundColor = UIColor.darkGray
             DG1AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
             DG1AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -114,7 +114,7 @@ class DailyGoalViewStartViewController: UIViewController {
             sentTo = 1
             self.performSegue(withIdentifier: "toSound", sender: self)
         }
-        else if thisGoal.getTypeOfGoal() == 2 {
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 1
             self.performSegue(withIdentifier: "toJournalEntry", sender: self)
@@ -132,7 +132,7 @@ class DailyGoalViewStartViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func DG1ClickedAdditionalResources2(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 2
             self.performSegue(withIdentifier: "toJournal", sender: self)

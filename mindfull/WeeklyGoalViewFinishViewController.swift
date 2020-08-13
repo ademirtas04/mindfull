@@ -87,7 +87,7 @@ class WeeklyGoalViewFinishViewController: UIViewController {
             WG3AdditionalResources1.backgroundColor = UIColor.darkGray
             WG3AdditionalResources1.setTitle("Calming Noises", for: .normal)
         }
-        else if thisGoal.getTypeOfGoal() == 2 {
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             WG3AdditionalResources1.backgroundColor = UIColor.darkGray
             WG3AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
             WG3AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -118,7 +118,7 @@ class WeeklyGoalViewFinishViewController: UIViewController {
             sentTo = 1
             self.performSegue(withIdentifier: "toSound", sender: self)
         }
-        else if thisGoal.getTypeOfGoal() == 2 {
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 1
             self.performSegue(withIdentifier: "toJournalEntry", sender: self)
@@ -136,7 +136,7 @@ class WeeklyGoalViewFinishViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func WG3ClickedAdditionalResources2(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 2
             self.performSegue(withIdentifier: "toJournal", sender: self)

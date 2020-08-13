@@ -76,7 +76,7 @@ class DailyGoalViewOngoingViewController: UIViewController {
             DG2AdditionalResources1.backgroundColor = UIColor.darkGray
             DG2AdditionalResources1.setTitle("Calming Noises", for: .normal)
         }
-        else if thisGoal.getTypeOfGoal() == 2 {
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             DG2AdditionalResources1.backgroundColor = UIColor.darkGray
             DG2AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
             DG2AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -123,7 +123,7 @@ class DailyGoalViewOngoingViewController: UIViewController {
             sentTo = 1
             self.performSegue(withIdentifier: "toSound", sender: self)
         }
-        else if thisGoal.getTypeOfGoal() == 2 {
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 1
             self.performSegue(withIdentifier: "toJournalEntry", sender: self)
@@ -141,7 +141,7 @@ class DailyGoalViewOngoingViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func DG2ClickedAdditionalResources2(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 2
             self.performSegue(withIdentifier: "toJournal", sender: self)
