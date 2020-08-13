@@ -911,7 +911,7 @@
             <objects>
                 <viewController id="S5g-xF-lUH" customClass="EIJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAk-dI-2zY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environmental Interaction Journal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-cK-Po4">
@@ -1082,7 +1082,7 @@
             <objects>
                 <viewController storyboardIdentifier="JournalEntryVC" id="Nms-JA-Gd3" customClass="LongPromptController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cHv-Ph-5qi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQK-DT-WVn">
@@ -1729,7 +1729,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcT-Hp-I1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2917" y="2644"/>
+            <point key="canvasLocation" x="3164" y="2644"/>
         </scene>
         <!--WG3VC-->
         <scene sceneID="WQs-Xd-lHy">
@@ -1739,7 +1739,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fl0-it-vyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2918" y="2754"/>
+            <point key="canvasLocation" x="3164" y="2912"/>
         </scene>
         <!--DG1VC-->
         <scene sceneID="pJg-SN-M0F">
@@ -1749,7 +1749,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGk-z6-1sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="2644"/>
+            <point key="canvasLocation" x="2038" y="2644"/>
         </scene>
         <!--WG1VC-->
         <scene sceneID="PxF-ez-s5d">
@@ -1759,7 +1759,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8N-r9-82n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="2754"/>
+            <point key="canvasLocation" x="2038" y="2912"/>
         </scene>
         <!--WG2VC-->
         <scene sceneID="4ua-IC-hhQ">
@@ -1769,7 +1769,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTF-eN-5wo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600" y="2754"/>
+            <point key="canvasLocation" x="2600" y="2912"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
