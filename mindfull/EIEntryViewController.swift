@@ -13,7 +13,6 @@ class EIEntryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prompt.numberOfLines = 0
-
         // Do any additional setup after loading the view.
     }
     
