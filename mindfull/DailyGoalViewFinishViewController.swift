@@ -81,7 +81,11 @@ class DailyGoalViewFinishViewController: UIViewController {
         
         timer.text = "A new Daily Goal will Appear in \(hoursLeft) Hours \(minutesLeft) Minutes"
         
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 1 {
+            DG3AdditionalResources1.backgroundColor = UIColor.darkGray
+            DG3AdditionalResources1.setTitle("Calming Noises", for: .normal)
+        }
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             DG3AdditionalResources1.backgroundColor = UIColor.darkGray
             DG3AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
             DG3AdditionalResources2.backgroundColor = UIColor.darkGray
@@ -108,7 +112,11 @@ class DailyGoalViewFinishViewController: UIViewController {
     
     //Clicked on additional resources 1
     @IBAction func DG3ClickedAdditionalResources1(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 1 {
+            sentTo = 1
+            self.performSegue(withIdentifier: "toSound", sender: self)
+        }
+        else if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 1
             self.performSegue(withIdentifier: "toJournalEntry", sender: self)
@@ -126,7 +134,7 @@ class DailyGoalViewFinishViewController: UIViewController {
     
     //Clicked on additional resources 2
     @IBAction func DG3ClickedAdditionalResources2(_ sender: Any) {
-        if thisGoal.getTypeOfGoal() == 2 {
+        if thisGoal.getTypeOfGoal() == 2 || thisGoal.getTypeOfGoal() == 5 {
             sentTo = 2
             buttonNumber = 2
             self.performSegue(withIdentifier: "toJournal", sender: self)
@@ -152,7 +160,13 @@ class DailyGoalViewFinishViewController: UIViewController {
             }
         }
         
-        if sentTo == 2 && buttonNumber == 1 {
+        if sentTo == 1 {
+            let newVc = segue.destination as! AudioProgressController
+            newVc.origin = 3
+            newVc.thisGoal = thisGoal
+            newVc.goalIndex = goalIndex
+        }
+        else if sentTo == 2 && buttonNumber == 1 {
             let newVc = segue.destination as! LongPromptController
             newVc.origin = 3
             newVc.thisGoal = thisGoal

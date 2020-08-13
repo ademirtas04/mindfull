@@ -16,7 +16,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GP-ly-xQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="680"/>
+            <point key="canvasLocation" x="183" y="815"/>
         </scene>
         <!--JournalVC-->
         <scene sceneID="Tkd-C5-x1d">
@@ -26,7 +26,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iE3-ZU-Pia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="772"/>
+            <point key="canvasLocation" x="180" y="912"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="VYd-PK-Ig7">
@@ -615,6 +615,7 @@
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="Iaq-ya-2g3"/>
                         <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="ZNX-f2-gkQ"/>
                         <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="sbY-hz-l1t"/>
+                        <segue destination="eb1-Bc-Uji" kind="show" identifier="toSound" id="ILC-D5-bdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAU-ix-WHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -852,6 +853,7 @@
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="UA9-JP-q8a"/>
                         <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="92h-KS-4Hi"/>
                         <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="tNB-ne-Jig"/>
+                        <segue destination="eb1-Bc-Uji" kind="show" identifier="toSound" id="mx0-5O-Cj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFB-h9-tyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -886,7 +888,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niQ-AE-VfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="1127"/>
+            <point key="canvasLocation" x="182" y="1106"/>
         </scene>
         <!--Daily Goal View Finish View Controller-->
         <scene sceneID="KGb-rO-NaK">
@@ -1106,6 +1108,7 @@
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="BtO-aV-70q"/>
                         <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="eDm-Af-uFj"/>
                         <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="zmw-jI-LvT"/>
+                        <segue destination="eb1-Bc-Uji" kind="show" identifier="toSound" id="eL5-MH-lhq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktQ-P5-cOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1328,6 +1331,7 @@
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="kO7-64-gdA"/>
                         <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="MzL-xe-xLF"/>
                         <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="xqS-eW-ROo"/>
+                        <segue destination="eb1-Bc-Uji" kind="show" identifier="toSound" id="grY-Nj-w8z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaT-nN-EMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1566,6 +1570,7 @@
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="8VZ-45-o7o"/>
                         <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="YV1-xl-7GL"/>
                         <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="lEY-nU-q5d"/>
+                        <segue destination="eb1-Bc-Uji" kind="show" identifier="toSound" id="Haj-z2-ube"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62W-ze-M8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1581,6 +1586,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSd-Tc-56E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="183" y="548"/>
+        </scene>
+        <!--SoundVC-->
+        <scene sceneID="YON-eb-JrI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SoundVC" id="eb1-Bc-Uji" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KtM-Ui-bPX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24L-Bm-UVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="713"/>
         </scene>
         <!--Weekly Goal View Finish View Controller-->
         <scene sceneID="fZf-lu-JXy">
@@ -1793,6 +1808,7 @@
                         <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="DLa-6e-Ha8"/>
                         <segue destination="aho-Co-yxN" kind="show" identifier="toJournalEntry" id="14f-8g-1QA"/>
                         <segue destination="WB7-1I-btL" kind="show" identifier="toJournal" id="kGm-BO-z1F"/>
+                        <segue destination="eb1-Bc-Uji" kind="show" identifier="toSound" id="hfn-hZ-QFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pj-y8-7qL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1801,6 +1817,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="eL5-MH-lhq"/>
         <segue reference="DLa-6e-Ha8"/>
         <segue reference="Q93-ec-0zL"/>
         <segue reference="nGB-P2-G2s"/>
