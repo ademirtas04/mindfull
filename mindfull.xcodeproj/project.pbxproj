@@ -45,6 +45,7 @@
 		02FF573624D9E2EB006AE94F /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573524D9E2EB006AE94F /* JournalController.swift */; };
 		02FF573824D9E335006AE94F /* LongPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573724D9E334006AE94F /* LongPromptController.swift */; };
 		02FF573A24D9E392006AE94F /* ShortPromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF573924D9E392006AE94F /* ShortPromptController.swift */; };
+		4C3A18C0FF8113F09EECB6D1 /* Pods_mindfull_mindfullUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52C5338BAAF2A4B15D60E9D /* Pods_mindfull_mindfullUITests.framework */; };
 		C12E19E824DB6AB8003F462C /* PGGoalViewOngoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E19E724DB6AB8003F462C /* PGGoalViewOngoingViewController.swift */; };
 		C12E19EA24DB6AC8003F462C /* PGGoalViewFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E19E924DB6AC8003F462C /* PGGoalViewFinishViewController.swift */; };
 		C12E19EC24DB6B32003F462C /* PGNewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E19EB24DB6B32003F462C /* PGNewGoalViewController.swift */; };
@@ -70,6 +71,8 @@
 		C1F63FFE24E2FDC7004D2966 /* ProductivityJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F63FFD24E2FDC7004D2966 /* ProductivityJournalViewController.swift */; };
 		C1FDE7AB24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */; };
 		C1FDE7AD24D4C65200CB8509 /* PersonalizedGoals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */; };
+		F1FE9026A770012F99D4FBE4 /* Pods_mindfullTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534D2BF6F735F000063D8D3 /* Pods_mindfullTests.framework */; };
+		F757957AAB91731BBA207CBE /* Pods_mindfull.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B950661FCEB35AE4978E01 /* Pods_mindfull.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		005CF7024E3259A40BBD8098 /* Pods-mindfull-mindfullUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mindfull-mindfullUITests.debug.xcconfig"; path = "Target Support Files/Pods-mindfull-mindfullUITests/Pods-mindfull-mindfullUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0215100624D9A6D100162F02 /* AudioProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProgressController.swift; sourceTree = "<group>"; };
 		02445FE324C9E79900B61AA5 /* mindfull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindfull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02445FE624C9E79900B61AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,12 @@
 		02FF573524D9E2EB006AE94F /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
 		02FF573724D9E334006AE94F /* LongPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPromptController.swift; sourceTree = "<group>"; };
 		02FF573924D9E392006AE94F /* ShortPromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortPromptController.swift; sourceTree = "<group>"; };
+		1534D2BF6F735F000063D8D3 /* Pods_mindfullTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mindfullTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F070585993FF47E1F4BCD34 /* Pods-mindfull-mindfullUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mindfull-mindfullUITests.release.xcconfig"; path = "Target Support Files/Pods-mindfull-mindfullUITests/Pods-mindfull-mindfullUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4424E8A84480BF1F4BB61586 /* Pods-mindfullTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mindfullTests.debug.xcconfig"; path = "Target Support Files/Pods-mindfullTests/Pods-mindfullTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57B950661FCEB35AE4978E01 /* Pods_mindfull.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mindfull.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE7BA78516D1AF0E5C8F575 /* Pods-mindfullTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mindfullTests.release.xcconfig"; path = "Target Support Files/Pods-mindfullTests/Pods-mindfullTests.release.xcconfig"; sourceTree = "<group>"; };
+		A52C5338BAAF2A4B15D60E9D /* Pods_mindfull_mindfullUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mindfull_mindfullUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12E19E724DB6AB8003F462C /* PGGoalViewOngoingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGGoalViewOngoingViewController.swift; sourceTree = "<group>"; };
 		C12E19E924DB6AC8003F462C /* PGGoalViewFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGGoalViewFinishViewController.swift; sourceTree = "<group>"; };
 		C12E19EB24DB6B32003F462C /* PGNewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGNewGoalViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +171,8 @@
 		C1F63FFD24E2FDC7004D2966 /* ProductivityJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductivityJournalViewController.swift; sourceTree = "<group>"; };
 		C1FDE7AA24D4C5D400CB8509 /* DailyAndWeeklyGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyAndWeeklyGoals.storyboard; sourceTree = "<group>"; };
 		C1FDE7AC24D4C65200CB8509 /* PersonalizedGoals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedGoals.storyboard; sourceTree = "<group>"; };
+		CD64C428F7CC55436491C624 /* Pods-mindfull.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mindfull.release.xcconfig"; path = "Target Support Files/Pods-mindfull/Pods-mindfull.release.xcconfig"; sourceTree = "<group>"; };
+		F7F60AEF443757761FA8A621 /* Pods-mindfull.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mindfull.debug.xcconfig"; path = "Target Support Files/Pods-mindfull/Pods-mindfull.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				026BF76C24DB64CD003BE29F /* SpriteKit.framework in Frameworks */,
+				F757957AAB91731BBA207CBE /* Pods_mindfull.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FE9026A770012F99D4FBE4 /* Pods_mindfullTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3A18C0FF8113F09EECB6D1 /* Pods_mindfull_mindfullUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +213,7 @@
 				02445FE424C9E79900B61AA5 /* Products */,
 				0278748E24D8CE6D00A3DF7F /* Recovered References */,
 				026BF76A24DB64CD003BE29F /* Frameworks */,
+				69DDD5CC0CA9D15885D0E1CF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +316,9 @@
 			isa = PBXGroup;
 			children = (
 				026BF76B24DB64CD003BE29F /* SpriteKit.framework */,
+				57B950661FCEB35AE4978E01 /* Pods_mindfull.framework */,
+				A52C5338BAAF2A4B15D60E9D /* Pods_mindfull_mindfullUITests.framework */,
+				1534D2BF6F735F000063D8D3 /* Pods_mindfullTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -314,6 +333,20 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		69DDD5CC0CA9D15885D0E1CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F60AEF443757761FA8A621 /* Pods-mindfull.debug.xcconfig */,
+				CD64C428F7CC55436491C624 /* Pods-mindfull.release.xcconfig */,
+				005CF7024E3259A40BBD8098 /* Pods-mindfull-mindfullUITests.debug.xcconfig */,
+				2F070585993FF47E1F4BCD34 /* Pods-mindfull-mindfullUITests.release.xcconfig */,
+				4424E8A84480BF1F4BB61586 /* Pods-mindfullTests.debug.xcconfig */,
+				5DE7BA78516D1AF0E5C8F575 /* Pods-mindfullTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0244600B24C9E79E00B61AA5 /* Build configuration list for PBXNativeTarget "mindfull" */;
 			buildPhases = (
+				D30E561843FBBF169AE155A1 /* [CP] Check Pods Manifest.lock */,
 				02445FDF24C9E79900B61AA5 /* Sources */,
 				02445FE024C9E79900B61AA5 /* Frameworks */,
 				02445FE124C9E79900B61AA5 /* Resources */,
+				6535B4534CC7854E24B96F04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +373,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0244600E24C9E79E00B61AA5 /* Build configuration list for PBXNativeTarget "mindfullTests" */;
 			buildPhases = (
+				E9DA4C6409F0E80972953E02 /* [CP] Check Pods Manifest.lock */,
 				02445FF324C9E79E00B61AA5 /* Sources */,
 				02445FF424C9E79E00B61AA5 /* Frameworks */,
 				02445FF524C9E79E00B61AA5 /* Resources */,
@@ -356,9 +392,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0244601124C9E79E00B61AA5 /* Build configuration list for PBXNativeTarget "mindfullUITests" */;
 			buildPhases = (
+				F861F8172065004511FBC8EC /* [CP] Check Pods Manifest.lock */,
 				02445FFE24C9E79E00B61AA5 /* Sources */,
 				02445FFF24C9E79E00B61AA5 /* Frameworks */,
 				0244600024C9E79E00B61AA5 /* Resources */,
+				D89A11F2D222EBC8A3B51D47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -464,6 +502,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6535B4534CC7854E24B96F04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mindfull/Pods-mindfull-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mindfull/Pods-mindfull-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mindfull/Pods-mindfull-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D30E561843FBBF169AE155A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mindfull-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89A11F2D222EBC8A3B51D47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mindfull-mindfullUITests/Pods-mindfull-mindfullUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mindfull-mindfullUITests/Pods-mindfull-mindfullUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mindfull-mindfullUITests/Pods-mindfull-mindfullUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DA4C6409F0E80972953E02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mindfullTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F861F8172065004511FBC8EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mindfull-mindfullUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02445FDF24C9E79900B61AA5 /* Sources */ = {
@@ -666,6 +807,7 @@
 		};
 		0244600C24C9E79E00B61AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F60AEF443757761FA8A621 /* Pods-mindfull.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -684,6 +826,7 @@
 		};
 		0244600D24C9E79E00B61AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD64C428F7CC55436491C624 /* Pods-mindfull.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -702,6 +845,7 @@
 		};
 		0244600F24C9E79E00B61AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4424E8A84480BF1F4BB61586 /* Pods-mindfullTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -722,6 +866,7 @@
 		};
 		0244601024C9E79E00B61AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE7BA78516D1AF0E5C8F575 /* Pods-mindfullTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -742,6 +887,7 @@
 		};
 		0244601224C9E79E00B61AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005CF7024E3259A40BBD8098 /* Pods-mindfull-mindfullUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -761,6 +907,7 @@
 		};
 		0244601324C9E79E00B61AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F070585993FF47E1F4BCD34 /* Pods-mindfull-mindfullUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

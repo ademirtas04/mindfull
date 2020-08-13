@@ -16,7 +16,6 @@ class ShortPromptController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var done: UIButton!
     var promptTitle: String = ""
     
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var prompt: UILabel!
     
     @IBOutlet weak var response1: UITextField!
@@ -80,26 +79,4 @@ class ShortPromptController: UIViewController, UITextFieldDelegate {
             journalVC.journalList.insert(e, at: 0)
         }
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        response1.resignFirstResponder()
-        response2.resignFirstResponder()
-        response3.resignFirstResponder()
-        response4.resignFirstResponder()
-        response5.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if(textField != response1){
-            scrollView.setContentOffset(CGPoint(x: 0,y: 250), animated: true)
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-    }
-
-    
-
 }
