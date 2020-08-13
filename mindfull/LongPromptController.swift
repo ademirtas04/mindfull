@@ -8,15 +8,14 @@
 
 import UIKit
 
-class LongPromptController: UIViewController, UITextFieldDelegate {
+class LongPromptController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     var promptTitle: String = ""
     var timer = Timer()
     var fromJournal: Bool = false
     @IBOutlet weak var Prompt: UILabel!
     @IBOutlet weak var responseShort: UITextField!
-    @IBOutlet weak var responseLong: UITextField!
     @IBOutlet weak var doneButton: UIButton!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var responseLong: UITextView!
     
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
        
@@ -116,23 +115,4 @@ class LongPromptController: UIViewController, UITextFieldDelegate {
             vc.thisGoal = thisGoal
         }
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        responseLong.resignFirstResponder()
-        responseShort.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if(textField != responseShort){
-            scrollView.setContentOffset(CGPoint(x: 0,y: 250), animated: true)
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-    }
-    
-    
-
 }

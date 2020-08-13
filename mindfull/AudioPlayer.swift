@@ -40,6 +40,7 @@ class AudioPlayer {
             do {
                aPlayer2 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
                aPlayer2?.numberOfLoops = -1
+                aPlayer2?.volume = 0.5
                aPlayer2?.play()
             } catch {
                print(error)
