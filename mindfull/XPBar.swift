@@ -14,6 +14,7 @@ class XPBar {
     
     var audioXP: Int = 0
     var writtenXP: Int = 0
+    var productivityXP = 0
     var environmentXP: Int = 0
     var assessmentXP: Int = 0
     
@@ -24,6 +25,11 @@ class XPBar {
         if let x = UserDefaults.standard.object(forKey: "writtenXP") as? Int {
             writtenXP = x
         }
+        
+        if let x = UserDefaults.standard.object(forKey: "productivityXP") as? Int {
+            writtenXP = x
+        }
+        
         if let x = UserDefaults.standard.object(forKey: "environmentXP") as? Int {
             environmentXP = x
         }
@@ -40,6 +46,11 @@ class XPBar {
     func addWrittenXP(xp: Int){
         writtenXP += xp
         UserDefaults.standard.set(writtenXP, forKey: "writtenXP")
+    }
+    
+    func addProductivityXP(xp: Int) {
+        productivityXP += xp
+        UserDefaults.standard.set(writtenXP, forKey: "productivityXP")
     }
     
     func addEnvironmentXP(xp: Int){
@@ -84,6 +95,25 @@ class XPBar {
         } else if(writtenXP > 350) {
             return 4
         } else if(writtenXP > 500) {
+            return 5
+        } else {
+            return 0
+        }
+    }
+    
+    func unlockedProductivity() -> Int {
+        if let x = UserDefaults.standard.object(forKey: "productivityXP") as? Int {
+            productivityXP = x
+        }
+        if(productivityXP > 50) {
+            return 1
+        } else if(productivityXP > 150) {
+            return 2
+        } else if(productivityXP > 250) {
+            return 3
+        } else if(productivityXP > 350) {
+            return 4
+        } else if(productivityXP > 500) {
             return 5
         } else {
             return 0

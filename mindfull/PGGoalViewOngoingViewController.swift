@@ -47,12 +47,28 @@ class PGGoalViewOngoingViewController: UIViewController {
         timer.text = PGHomeScreenViewController().getTimerLabel(goal: thisGoal)
     }
     
-    //Finishing the goal - Not Finished
+    //Finishing the goal
     @IBAction func finishGoal(_ sender: Any) {
         thisGoal.changeStatus(newStatus: 4)
         thisGoal.changeFinishedTime(newFinishedTime: Date())
         productivityJournal.append(thisGoal)
-        print(productivityJournal)
+        
+        if thisGoal.getTypeOfGoal() == 1 {
+            addAudioXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 2 {
+            addWrittenXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            addProductivityXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 4 {
+            addEnviornmentXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 5 {
+            addAssesmentXP(xp: thisGoal.getxpPoints())
+        }
+        
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }
     

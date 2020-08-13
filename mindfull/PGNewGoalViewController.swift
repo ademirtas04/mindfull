@@ -71,7 +71,7 @@ class PGNewGoalViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    //Finish creating new goal - Not Finished
+    //Finish creating new goal
     @IBAction func finishGoal(_ sender: Any) {
         thisGoal.changeTitle(newTitle: PGTitle.text ?? "")
         thisGoal.changeDescription(newDescription: PGDescription.text ?? "")

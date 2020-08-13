@@ -48,7 +48,7 @@ class PGGoalViewFinishViewController: UIViewController {
         timer.text = PGHomeScreenViewController().getTimerLabel(goal: thisGoal)
     }
     
-    //Going to PG Home Screen - Not Finished
+    //Going to PG Home Screen
     @IBAction func toPGHomeScreen(_ sender: Any) {
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }

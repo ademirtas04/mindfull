@@ -101,6 +101,22 @@ class WeeklyGoalViewOngoingViewController: UIViewController {
         thisGoal.changeStatus(newStatus: 4)
         sentTo = 0
         
+        if thisGoal.getTypeOfGoal() == 1 {
+            addAudioXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 2 {
+            addWrittenXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            addProductivityXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 4 {
+            addEnviornmentXP(xp: thisGoal.getxpPoints())
+        }
+        else if thisGoal.getTypeOfGoal() == 5 {
+            addAssesmentXP(xp: thisGoal.getxpPoints())
+        }
+        
         self.performSegue(withIdentifier: "toDWGHome", sender: self)
     }
     
