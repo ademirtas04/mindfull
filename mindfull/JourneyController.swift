@@ -57,7 +57,7 @@ class JourneyController: UIViewController {
              writtenIndex = x
          }
          if let x = UserDefaults.standard.object(forKey: "environmentIndex")  as?  Int {
-             audioIndex = x
+             environmentIndex = x
          }
          audioButton.setTitle(audioList[audioIndex].getTitle(), for: .normal)
          selfButton.setTitle(assessList[assessmentIndex].getTitle(), for: .normal)
@@ -93,6 +93,8 @@ class JourneyController: UIViewController {
         } else if (segue.identifier == "toEnvironmentProgress"){
             let environmentVC = segue.destination as! EIEntryViewController
             environmentVC.fromJournal = true
+            let s: String = environmentList[environmentIndex].getDescription()
+            environmentVC.setPrompt(title: s)
         }
         
     }
