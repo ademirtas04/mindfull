@@ -591,6 +591,8 @@
                         <outlet property="timer" destination="Uwp-b1-fi7" id="KJT-hT-wJB"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="tT8-hk-F77"/>
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="ehg-zB-n8a"/>
+                        <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="TQ0-d8-iyr"/>
+                        <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="Iaq-ya-2g3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAU-ix-WHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -824,6 +826,8 @@
                         <outlet property="timer" destination="zLr-oL-N1b" id="biZ-kd-cns"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="BcO-C3-lvN"/>
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="E5k-ci-nJ5"/>
+                        <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="pB4-xe-ufg"/>
+                        <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="UA9-JP-q8a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFB-h9-tyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -838,7 +842,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6x-eC-TMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182" y="697"/>
+            <point key="canvasLocation" x="183" y="942"/>
+        </scene>
+        <!--PGVC-->
+        <scene sceneID="dDY-3O-2ej">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PersonalizedGoals" referencedIdentifier="PGVC" id="AiB-tf-CXx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Myv-0k-ESw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVN-W9-LQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="670"/>
+        </scene>
+        <!--productivityVC-->
+        <scene sceneID="OI1-39-THt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="productivityVC" id="Vea-U4-5l5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Aba-bI-euL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="niQ-AE-VfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="801"/>
         </scene>
         <!--Daily Goal View Finish View Controller-->
         <scene sceneID="KGb-rO-NaK">
@@ -1054,6 +1078,8 @@
                         <outlet property="timer" destination="sT2-gW-9yF" id="NcM-2I-73d"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="LPV-rC-BYD"/>
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="rLp-Iy-IZu"/>
+                        <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="O3s-Qq-hFa"/>
+                        <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="BtO-aV-70q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktQ-P5-cOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1272,6 +1298,8 @@
                         <outlet property="timer" destination="qwe-1c-e1B" id="1et-Bl-qok"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="Fj6-DH-ayx"/>
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="Vdo-ua-IgT"/>
+                        <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="TdJ-Zh-5OB"/>
+                        <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="kO7-64-gdA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaT-nN-EMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1506,6 +1534,8 @@
                         <outlet property="timer" destination="Gmn-u1-5H9" id="4s6-P1-RFi"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="YcZ-fX-yxW"/>
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="nv5-C2-XyK"/>
+                        <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="ys7-cc-8y2"/>
+                        <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="8VZ-45-o7o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62W-ze-M8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1729,6 +1759,8 @@
                         <outlet property="timer" destination="jzp-aw-mIG" id="6y0-mj-WdA"/>
                         <segue destination="XNt-iw-51x" kind="show" identifier="toDWGHome" id="a5n-Jk-O4v"/>
                         <segue destination="gsP-Zt-poC" kind="show" identifier="toEIEntryVC" id="nGB-P2-G2s"/>
+                        <segue destination="AiB-tf-CXx" kind="show" identifier="toPG" id="Q93-ec-0zL"/>
+                        <segue destination="Vea-U4-5l5" kind="show" identifier="toProductivityVC" id="DLa-6e-Ha8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pj-y8-7qL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1737,6 +1769,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="DLa-6e-Ha8"/>
+        <segue reference="O3s-Qq-hFa"/>
         <segue reference="nGB-P2-G2s"/>
         <segue reference="a5n-Jk-O4v"/>
     </inferredMetricsTieBreakers>
