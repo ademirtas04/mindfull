@@ -118,21 +118,25 @@ class JourneyController: UIViewController {
     }
     
     func audioCompleted() {
+        XPBar.shared.addAudioXP(xp: audioList[audioIndex].getxpPoints())
         audioIndex += 1
         UserDefaults.standard.set(audioIndex, forKey: "audioIndex")
     }
     
     func assessmentCompleted() {
+        XPBar.shared.addAssessmentXP(xp: assessList[assessmentIndex].getxpPoints())
         assessmentIndex += 1
         UserDefaults.standard.set(assessmentIndex, forKey: "assessmentIndex")
     }
     
     func writtenCompleted() {
+        XPBar.shared.addWrittenXP(xp: writtenList[writtenIndex].getxpPoints())
         writtenIndex += 1
         UserDefaults.standard.set(writtenIndex, forKey: "writtenIndex")
     }
     
     func environmentCompleted() {
+        XPBar.shared.addEnvironmentXP(xp: environmentList[environmentIndex].getxpPoints())
         environmentIndex += 1
         UserDefaults.standard.set(environmentIndex, forKey: "environmentIndex")
     }

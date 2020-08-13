@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		026BF76C24DB64CD003BE29F /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026BF76B24DB64CD003BE29F /* SpriteKit.framework */; };
 		0273812724D8D5E800DFD0BD /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273812624D8D5E800DFD0BD /* AudioPlayer.swift */; };
 		0278749424D8D17500A3DF7F /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0278749324D8D17500A3DF7F /* backgroundMusic.mp3 */; };
+		029BD76C24E5DADF00941388 /* XPBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BD76B24E5DADF00941388 /* XPBar.swift */; };
 		02ADCBA524DC5D5200DCDB57 /* birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02ADCBA424DC5D5200DCDB57 /* birds.mp3 */; };
 		02ADCBA724DC5DE400DCDB57 /* leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02ADCBA624DC5DE400DCDB57 /* leaves.mp3 */; };
 		02ADCBA924DC5E3500DCDB57 /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02ADCBA824DC5E3500DCDB57 /* waves.mp3 */; };
@@ -118,6 +119,7 @@
 		0278749324D8D17500A3DF7F /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		02858BA124D8B7660034D39A /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		02858BA324D8C5770034D39A /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		029BD76B24E5DADF00941388 /* XPBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPBar.swift; sourceTree = "<group>"; };
 		02ADCBA424DC5D5200DCDB57 /* birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds.mp3; sourceTree = "<group>"; };
 		02ADCBA624DC5DE400DCDB57 /* leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leaves.mp3; sourceTree = "<group>"; };
 		02ADCBA824DC5E3500DCDB57 /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waves.mp3; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				02445FEA24C9E79900B61AA5 /* Main.storyboard */,
+				029BD76B24E5DADF00941388 /* XPBar.swift */,
 				026A70EA24DC770E00BDF389 /* Entry.swift */,
 				02FF573524D9E2EB006AE94F /* JournalController.swift */,
 				02FF573724D9E334006AE94F /* LongPromptController.swift */,
@@ -343,7 +346,6 @@
 				4424E8A84480BF1F4BB61586 /* Pods-mindfullTests.debug.xcconfig */,
 				5DE7BA78516D1AF0E5C8F575 /* Pods-mindfullTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -629,6 +631,7 @@
 				C1BE161324D2114D00410194 /* QuizViewController.swift in Sources */,
 				C146582424D9C82100F04AA0 /* DailyGoalViewStartViewController.swift in Sources */,
 				C146582624D9C92A00F04AA0 /* DailyGoalViewOngoingViewController.swift in Sources */,
+				029BD76C24E5DADF00941388 /* XPBar.swift in Sources */,
 				C146582A24D9C94800F04AA0 /* WeeklyGoalViewStartViewController.swift in Sources */,
 				02EEBBD424CDD3B9002C26A8 /* GardenController.swift in Sources */,
 				02F67E3124E2EABF004A6B4C /* Resources.swift in Sources */,
