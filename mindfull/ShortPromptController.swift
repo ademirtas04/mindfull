@@ -66,6 +66,8 @@ class ShortPromptController: UIViewController, UITextFieldDelegate {
         gardenVC.addResponse(entry: response3.text!)
         gardenVC.addResponse(entry: response4.text!)
         gardenVC.addResponse(entry: response5.text!)
+        let journeyVC: JourneyController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "JourneyVC") as! JourneyController
+        journeyVC.writtenCompleted()
         self.performSegue(withIdentifier: "toJournal", sender: self)
         
     }

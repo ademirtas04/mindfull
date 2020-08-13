@@ -8,17 +8,16 @@
 
 import UIKit
 
-class LongPromptController: UIViewController, UITextFieldDelegate {
+class LongPromptController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     var promptTitle: String = ""
     var timer = Timer()
     var fromJournal: Bool = false
     @IBOutlet weak var Prompt: UILabel!
     @IBOutlet weak var responseShort: UITextField!
-    @IBOutlet weak var responseLong: UITextField!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var responseLong: UITextView!
     
-  
     
     
     override func viewDidLoad() {
@@ -76,6 +75,14 @@ class LongPromptController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        scrollView.setContentOffset(CGPoint(x: 0,y: 250), animated: true)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
         scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
     }
     

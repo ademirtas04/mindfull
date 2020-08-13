@@ -54,7 +54,7 @@ class JourneyController: UIViewController {
              assessmentIndex = x
          }
          if let x = UserDefaults.standard.object(forKey: "writtenIndex")  as?  Int {
-             audioIndex = x
+             writtenIndex = x
          }
          if let x = UserDefaults.standard.object(forKey: "environmentIndex")  as?  Int {
              audioIndex = x
