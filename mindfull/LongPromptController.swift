@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LongPromptController: UIViewController {
+class LongPromptController: UIViewController, UITextFieldDelegate {
     var promptTitle: String = ""
     var timer = Timer()
     var fromJournal: Bool = false
@@ -16,6 +16,10 @@ class LongPromptController: UIViewController {
     @IBOutlet weak var responseShort: UITextField!
     @IBOutlet weak var responseLong: UITextField!
     @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +61,22 @@ class LongPromptController: UIViewController {
             let e: Entry = Entry(prompt: promptTitle, body: body)
             journalVC.journalList.insert(e, at: 0)
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        responseLong.resignFirstResponder()
+        responseShort.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if(textField != responseShort){
+            scrollView.setContentOffset(CGPoint(x: 0,y: 250), animated: true)
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
     }
     
     
