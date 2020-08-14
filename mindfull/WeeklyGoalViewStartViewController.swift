@@ -173,7 +173,7 @@ class WeeklyGoalViewStartViewController: UIViewController {
             newVc.origin = 4
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
-            newVc.promptTitle = thisGoal.getPrompts()
+            newVc.promptTitle = thisGoal.getTitle()
         }
         else if sentTo == 2 && buttonNumber == 2 {
             let newVc = segue.destination as! JournalController
@@ -192,7 +192,7 @@ class WeeklyGoalViewStartViewController: UIViewController {
             newVc.origin = 4
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
-            newVc.promptTitle = thisGoal.getPrompts()
+            newVc.promptTitle = thisGoal.getTitle()
         }
         saveData()
     }

@@ -100,19 +100,19 @@ class DailyGoalViewOngoingViewController: UIViewController {
         sentTo = 0
         
         if thisGoal.getTypeOfGoal() == 1 {
-            addAudioXP(xp: thisGoal.getxpPoints())
+            XPBar.shared.addAudioXP(xp: thisGoal.getxpPoints())
         }
         else if thisGoal.getTypeOfGoal() == 2 {
-            addWrittenXP(xp: thisGoal.getxpPoints())
+            XPBar.shared.addWrittenXP(xp: thisGoal.getxpPoints())
         }
         else if thisGoal.getTypeOfGoal() == 3 {
-            addProductivityXP(xp: thisGoal.getxpPoints())
+            XPBar.shared.addProductivityXP(xp: thisGoal.getxpPoints())
         }
         else if thisGoal.getTypeOfGoal() == 4 {
-            addEnviornmentXP(xp: thisGoal.getxpPoints())
+            XPBar.shared.addEnvironmentXP(xp: thisGoal.getxpPoints())
         }
         else if thisGoal.getTypeOfGoal() == 5 {
-            addAssesmentXP(xp: thisGoal.getxpPoints())
+            XPBar.shared.addAssessmentXP(xp: thisGoal.getxpPoints())
         }
         
         self.performSegue(withIdentifier: "toDWGHome", sender: self)
@@ -195,7 +195,7 @@ class DailyGoalViewOngoingViewController: UIViewController {
             newVc.origin = 2
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
-            newVc.promptTitle = thisGoal.getPrompts()
+            newVc.promptTitle = thisGoal.getTitle()
         }
         else if sentTo == 2 && buttonNumber == 2 {
             let newVc = segue.destination as! JournalController
@@ -214,7 +214,7 @@ class DailyGoalViewOngoingViewController: UIViewController {
             newVc.origin = 2
             newVc.thisGoal = thisGoal
             newVc.goalIndex = goalIndex
-            newVc.promptTitle = thisGoal.getPrompts()
+            newVc.promptTitle = thisGoal.getTitle()
         }
         saveData()
     }
