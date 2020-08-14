@@ -101,7 +101,7 @@ class DWGHomeScreenViewController: UIViewController {
         DGMGoal5.changeTypeOfGoal(newTypeOfGoal: 1)
         DGMGoal5.addAudio(link: "Link")
         let DGMGoal6 = Goal(title: "titleM", description: "Description", xpPoints: 10, status: 0)
-        DGMGoal6.changeTypeOfGoal(newTypeOfGoal: 1)
+        DGMGoal6.changeTypeOfGoal(newTypeOfGoal: 11)
         DGMGoal6.addAudio(link: "Link")
         dailyGoals.append(contentsOf: [DGMGoal1, DGMGoal2, DGMGoal3, DGMGoal4, DGMGoal5, DGMGoal6])
         
@@ -743,8 +743,8 @@ class Goal: Codable {
     var finishedTime = Date()
     
     
-    //This variable specifies what type of goal (classification) a certain goal is. 1 for Auditory/Meditation, 2 for Written, 3 for Productivity, 4 for Enviornmental Interaction and 5 for Self Assesment, with 10 as default
-    var typeOfGoal = 10
+    //This variable specifies what type of goal (classification) a certain goal is. 1 for Auditory/Meditation, 2 for Written, 3 for Productivity, 4 for Enviornmental Interaction and 5 for Self Assesment, with 0 as default. If 1 is added to the end of a number, that means that it is of the type in the tens place but has no additional resources
+    var typeOfGoal = 0
     
     var audioLink = ""
     var titles: String = ""
