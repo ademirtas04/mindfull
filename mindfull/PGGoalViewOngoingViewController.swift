@@ -53,7 +53,7 @@ class PGGoalViewOngoingViewController: UIViewController {
         thisGoal.changeFinishedTime(newFinishedTime: Date())
         productivityJournal.append(thisGoal)
     
-        addProductivityXP(xp: thisGoal.getxpPoints())
+        XPBar.shared.addProductivityXP(xp: thisGoal.getxpPoints())
         
         self.performSegue(withIdentifier: "toPGHomeScreen", sender: self)
     }

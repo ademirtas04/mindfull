@@ -28,7 +28,7 @@ class EIEntryViewController: UIViewController {
     
     var promptTitle: String = "Write about your environmental interaction"
 
-    var thisEntry = EIEntry(date: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "")
+    var thisEntry = EIEntry(date: "", whatTheySaw: "", whatTheyTouched: "", whatTheyHeard: "", whatTheySmelled: "", emotions: "", prompt: "")
     
     var thisGoal = Goal(title: "", description: "", xpPoints: 0, status: 0)
     
@@ -238,7 +238,7 @@ class EIEntry: Codable {
     var emotions = ""
     var prompt = ""
     
-    init(date: String, whatTheySaw: String, whatTheyTouched: String, whatTheyHeard: String, whatTheySmelled: String, emotions: String, promt: String) {
+    init(date: String, whatTheySaw: String, whatTheyTouched: String, whatTheyHeard: String, whatTheySmelled: String, emotions: String, prompt: String) {
         self.creationDate = date
         self.whatTheySaw = whatTheySaw
         self.whatTheyTouched = whatTheyTouched
