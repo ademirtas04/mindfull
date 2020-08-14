@@ -410,9 +410,9 @@
         <!--Audio Progress Controller-->
         <scene sceneID="csP-em-w5U">
             <objects>
-                <viewController id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SoundVC" id="Hdc-es-loy" customClass="AudioProgressController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yrh-rP-uJn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efj-oL-tRf">
@@ -866,7 +866,7 @@
             <objects>
                 <viewController id="S5g-xF-lUH" customClass="EIJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAk-dI-2zY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environmental Interaction Journal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-cK-Po4">
@@ -1710,13 +1710,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uAb-Fo-ekI"/>
-        <segue reference="aT1-o0-oDn"/>
-        <segue reference="Hae-MA-TGa"/>
-        <segue reference="ehQ-8k-4xj"/>
-        <segue reference="iTe-zY-fon"/>
+        <segue reference="JrY-X3-LC8"/>
+        <segue reference="2AS-ji-RSF"/>
+        <segue reference="aDM-4f-HfU"/>
+        <segue reference="D48-yl-Ujw"/>
+        <segue reference="bSZ-hm-9RO"/>
         <segue reference="QIW-K1-e7I"/>
-        <segue reference="SEf-RF-yae"/>
+        <segue reference="dnQ-OS-91U"/>
         <segue reference="KEb-Nm-yiV"/>
         <segue reference="IjQ-O9-ZyJ"/>
         <segue reference="cLc-3e-0Mv"/>
