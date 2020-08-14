@@ -67,7 +67,7 @@ class XPBar {
         if let x = UserDefaults.standard.object(forKey: "audioXP") as? Int {
             audioXP = x
         }
-        if(audioXP > 50) {
+        if(audioXP >= 10) {
             return 1
         } else if(audioXP > 150) {
             return 2
