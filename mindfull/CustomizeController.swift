@@ -65,6 +65,7 @@ class CustomizeController: UIViewController {
                 RedSwitch.setOn(false, animated: false)
             }
         } else {
+            RedSwitch.setOn(false, animated: false)
             RedSwitch.isEnabled = false
         }
         
@@ -76,6 +77,7 @@ class CustomizeController: UIViewController {
                 BlueSwitch.setOn(false, animated: false)
             }
         } else {
+            BlueSwitch.setOn(false, animated: false)
             BlueSwitch.isEnabled = false
         }
         
@@ -87,6 +89,7 @@ class CustomizeController: UIViewController {
                 GreenSwitch.setOn(false, animated: false)
             }
         } else {
+            GreenSwitch.setOn(false, animated: false)
             GreenSwitch.isEnabled = false
         }
         
@@ -98,6 +101,7 @@ class CustomizeController: UIViewController {
                 OrangeSwitch.setOn(false, animated: false)
             }
         } else {
+            OrangeSwitch.setOn(false, animated: false)
             OrangeSwitch.isEnabled = false
         }
         
@@ -109,6 +113,7 @@ class CustomizeController: UIViewController {
                 PurpleSwitch.setOn(false, animated: false)
             }
         } else {
+            PurpleSwitch.setOn(false, animated: false)
             PurpleSwitch.isEnabled = false
         }
         
@@ -120,6 +125,7 @@ class CustomizeController: UIViewController {
                 BirdSwitch.setOn(false, animated: false)
             }
         } else {
+            BirdSwitch.setOn(false, animated: false)
             BirdSwitch.isEnabled = false
         }
         
@@ -131,6 +137,7 @@ class CustomizeController: UIViewController {
                 BreezeSwitch.setOn(false, animated: false)
             }
         } else {
+            BreezeSwitch.setOn(false, animated: false)
             BreezeSwitch.isEnabled = false
         }
         
@@ -142,6 +149,7 @@ class CustomizeController: UIViewController {
                 WaterSwitch.setOn(false, animated: false)
             }
         } else {
+            WaterSwitch.setOn(false, animated: false)
             WaterSwitch.isEnabled = false
         }
         
@@ -153,6 +161,7 @@ class CustomizeController: UIViewController {
                 WavesSwitch.setOn(false, animated: false)
             }
         } else {
+            WavesSwitch.setOn(false, animated: false)
             WavesSwitch.isEnabled = false
         }
         
@@ -164,7 +173,9 @@ class CustomizeController: UIViewController {
                 LeavesSwitch.setOn(false, animated: false)
             }
         } else {
+            LeavesSwitch.setOn(false, animated: false)
             LeavesSwitch.isEnabled = false
+            
         }
     }
     

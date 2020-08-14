@@ -23,16 +23,16 @@ class GardenController: UIViewController {
     var ResponseList: [String] = []
     
     var isRed:Bool = false
-    var isBlue:Bool = true
+    var isBlue:Bool = false
     var isGreen: Bool = false
     var isOrange: Bool = false
-    var isPurple: Bool = true
+    var isPurple: Bool = false
     
     var isBird: Bool = false
-    var isBreeze: Bool = true
+    var isBreeze: Bool = false
     var isWater: Bool = false
     var isWaves: Bool = false
-    var isLeaves: Bool = true
+    var isLeaves: Bool = false
     
     var redUnlocked: Bool = true
     var blueUnlocked: Bool = true
@@ -57,36 +57,7 @@ class GardenController: UIViewController {
         if let x = UserDefaults.standard.object(forKey: "responseList") as? [String]{
             ResponseList = x
         }
-        if let x = UserDefaults.standard.object(forKey: "red")  as?  Bool {
-            isRed = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "blue")  as?  Bool {
-            isBlue = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "green")  as?  Bool {
-            isGreen = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "orange")  as?  Bool {
-            isOrange = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "purple")  as?  Bool {
-            isPurple = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "bird")  as?  Bool {
-            isBird = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "breeze")  as?  Bool {
-            isBreeze = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "leaves")  as?  Bool {
-            isLeaves = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "waves")  as?  Bool {
-            isWaves = x
-        }
-        if let x = UserDefaults.standard.object(forKey: "water")  as?  Bool {
-            isWater = x
-        }
+        
         if(XPBar.shared.unlockedAudio() == 0) {
             birdUnlocked = false
             breezeUnlocked = false
@@ -161,6 +132,78 @@ class GardenController: UIViewController {
             greenUnlocked = true
             orangeUnlocked = true
             purpleUnlocked = true
+        }
+        
+        if(redUnlocked == true) {
+            isRed = true
+        }
+        
+        if(blueUnlocked == true) {
+            isBlue = true
+        }
+        
+        if(greenUnlocked == true){
+            isGreen = true
+        }
+        
+        if(orangeUnlocked == true) {
+            isOrange = true
+        }
+        
+        if(purpleUnlocked == true){
+            isPurple = true
+        }
+        
+        if(birdUnlocked == true){
+            isBird = true
+        }
+        
+        if(breezeUnlocked == true){
+            isBreeze = true
+        }
+        
+        if(waterUnlocked == true){
+            isWater = true
+        }
+        
+        if(wavesUnlocked == true){
+            isWaves = true
+        }
+        
+        if(leavesUnlocked == true) {
+            isLeaves = true
+        }
+        
+        
+        if let x = UserDefaults.standard.object(forKey: "red")  as?  Bool {
+            isRed = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "blue")  as?  Bool {
+            isBlue = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "green")  as?  Bool {
+            isGreen = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "orange")  as?  Bool {
+            isOrange = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "purple")  as?  Bool {
+            isPurple = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "bird")  as?  Bool {
+            isBird = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "breeze")  as?  Bool {
+            isBreeze = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "leaves")  as?  Bool {
+            isLeaves = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "waves")  as?  Bool {
+            isWaves = x
+        }
+        if let x = UserDefaults.standard.object(forKey: "water")  as?  Bool {
+            isWater = x
         }
     }
     
