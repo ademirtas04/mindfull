@@ -123,6 +123,7 @@ class WeeklyGoalViewFinishViewController: UIViewController {
         else if thisGoal.getTypeOfGoal() == 5 {
             return "Assesment"
         }
+        return ""
     }
     
     //Return to DWG Home

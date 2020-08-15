@@ -112,6 +112,7 @@ class DailyGoalViewStartViewController: UIViewController {
         else if thisGoal.getTypeOfGoal() == 5 {
             return "Assesment"
         }
+        return ""
     }
     
     //Starting the goal

@@ -112,6 +112,7 @@ class DailyGoalViewOngoingViewController: UIViewController {
         else if thisGoal.getTypeOfGoal() == 5 {
             return "Assesment"
         }
+        return ""
     }
     
     //Finishing the goal

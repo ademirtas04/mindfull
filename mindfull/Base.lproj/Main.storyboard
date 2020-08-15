@@ -287,7 +287,7 @@
             <objects>
                 <viewController storyboardIdentifier="JourneyVC" id="Bn4-oq-gQe" customClass="JourneyController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-dw-6z9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonsai journal" id="uGF-T8-Az1">
@@ -655,7 +655,7 @@
             <objects>
                 <viewController storyboardIdentifier="EIEntryVC" id="SSR-Gg-ucn" customClass="EIEntryViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9g-6j-x0E">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonsai journal" id="Dcs-62-e9i">
@@ -821,7 +821,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Jll-3u-yiv" firstAttribute="centerX" secondItem="k9g-6j-x0E" secondAttribute="centerX" constant="140" id="3Oh-M0-pF8"/>
                             <constraint firstItem="5hg-BU-NQr" firstAttribute="top" secondItem="OaI-Y2-nK5" secondAttribute="bottom" constant="15" id="6N5-4P-Vpa"/>
@@ -894,7 +894,7 @@
             <objects>
                 <viewController id="S5g-xF-lUH" customClass="EIJournalViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAk-dI-2zY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonsai journal" id="nOi-qc-jD7">
@@ -998,7 +998,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Y0I-Bd-M79" firstAttribute="leading" secondItem="O6x-NE-mM8" secondAttribute="leading" constant="30" id="4CF-kG-qtB"/>
                             <constraint firstItem="qOc-c8-MfF" firstAttribute="top" secondItem="mi5-QX-JnC" secondAttribute="bottom" constant="10" id="4SE-Og-Nag"/>
@@ -1637,7 +1637,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wOZ-r7-WxM" firstAttribute="top" secondItem="Cjr-lB-nCv" secondAttribute="bottom" constant="120" id="02x-XP-BPg"/>
                             <constraint firstItem="UoZ-c3-Da8" firstAttribute="top" secondItem="wOZ-r7-WxM" secondAttribute="bottom" constant="10" id="0LZ-J4-Owv"/>
@@ -1746,13 +1746,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JrY-X3-LC8"/>
-        <segue reference="2AS-ji-RSF"/>
-        <segue reference="aDM-4f-HfU"/>
-        <segue reference="D48-yl-Ujw"/>
-        <segue reference="bSZ-hm-9RO"/>
+        <segue reference="yLb-gy-pdn"/>
+        <segue reference="EaA-he-cmH"/>
+        <segue reference="IaC-LR-am3"/>
+        <segue reference="jzV-LG-ucw"/>
+        <segue reference="dN8-R4-FfC"/>
+        <segue reference="RpG-b0-ybU"/>
         <segue reference="lgD-GR-JYS"/>
-        <segue reference="dnQ-OS-91U"/>
+        <segue reference="XBy-Kf-G2U"/>
         <segue reference="KEb-Nm-yiV"/>
         <segue reference="QZL-1s-D6g"/>
         <segue reference="cLc-3e-0Mv"/>

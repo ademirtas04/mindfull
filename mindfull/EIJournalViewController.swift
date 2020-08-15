@@ -55,7 +55,6 @@ class EIJournalViewController: UIViewController {
             dateLabel.text = ""
             infoLabel.text = ""
             interactionLabel.text = "Hmm, it seems that you have no entries for this journal"
-            feelingLabel.text = ""
             previousButton.backgroundColor = UIColor.white
             nextButton.backgroundColor = UIColor.white
         }
