@@ -52,7 +52,8 @@ class DailyGoalViewOngoingViewController: UIViewController {
     func setUpScreen() {
         DG2Title.text = thisGoal.getTitle()
         DG2Description.text = thisGoal.getDescription()
-        DG2Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints()))xp"
+        let theType = getType()
+        DG2Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints())) \(theType) xp"
         
         DG2AdditionalResources1.backgroundColor = UIColor.lightGray
         DG2AdditionalResources1.setTitle("None", for: .normal)
@@ -91,6 +92,25 @@ class DailyGoalViewOngoingViewController: UIViewController {
         else if thisGoal.getTypeOfGoal() == 4 {
             DG2AdditionalResources1.backgroundColor = UIColor.darkGray
             DG2AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
+        }
+    }
+    
+    //Getting the type of the goal (for xp)
+    func getType() -> String {
+        if thisGoal.getTypeOfGoal() == 1 {
+            return "Audio"
+        }
+        else if thisGoal.getTypeOfGoal() == 2 {
+            return "Wrriten"
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            return "Productivity"
+        }
+        else if thisGoal.getTypeOfGoal() == 4 {
+            return "Environment"
+        }
+        else if thisGoal.getTypeOfGoal() == 5 {
+            return "Assesment"
         }
     }
     

@@ -61,7 +61,8 @@ class WeeklyGoalViewFinishViewController: UIViewController {
         
         WG3Title.text = thisGoal.getTitle()
         WG3Description.text = thisGoal.getDescription()
-        WG3Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints()))xp"
+        let theType = getType()
+        WG3Reward.text = "Goal Reward: +\(String(thisGoal.getxpPoints())) \(theType) xp"
         
         WG3AdditionalResources1.backgroundColor = UIColor.lightGray
         WG3AdditionalResources1.setTitle("None", for: .normal)
@@ -102,6 +103,25 @@ class WeeklyGoalViewFinishViewController: UIViewController {
         else if thisGoal.getTypeOfGoal() == 4 {
             WG3AdditionalResources1.backgroundColor = UIColor.darkGray
             WG3AdditionalResources1.setTitle("Create a Journal Entry", for: .normal)
+        }
+    }
+    
+    //Getting the type of the goal (for xp)
+    func getType() -> String {
+        if thisGoal.getTypeOfGoal() == 1 {
+            return "Audio"
+        }
+        else if thisGoal.getTypeOfGoal() == 2 {
+            return "Wrriten"
+        }
+        else if thisGoal.getTypeOfGoal() == 3 {
+            return "Productivity"
+        }
+        else if thisGoal.getTypeOfGoal() == 4 {
+            return "Environment"
+        }
+        else if thisGoal.getTypeOfGoal() == 5 {
+            return "Assesment"
         }
     }
     

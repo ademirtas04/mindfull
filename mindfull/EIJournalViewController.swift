@@ -38,7 +38,6 @@ class EIJournalViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var interactionLabel: UILabel!
-    @IBOutlet weak var feelingLabel: UILabel!
     
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
@@ -81,9 +80,8 @@ class EIJournalViewController: UIViewController {
     
             let theEntry = EIJournal[currentEntryIndex]
             dateLabel.text = "-- \(theEntry.getDate()) --"
-            infoLabel.text = "On \(theEntry.getDate()) I \(theEntry.getPrompt())"
-            interactionLabel.text = "During this time I saw \(theEntry.getWhatTheySaw()), touched \(theEntry.getWhatTheyTouched()) and heard \(theEntry.getWhatTheyHeard()). Additiaonlly, I also smelled \(theEntry.getWhatTheySmelled())."
-            feelingLabel.text = "By the end I felt \(theEntry.getEmotions())."
+            infoLabel.text = "On \(theEntry.getDate()) I respondded to the following prompt: \(theEntry.getPrompt())"
+            interactionLabel.text = "What I saw:  \(theEntry.getWhatTheySaw()). What I touched: \(theEntry.getWhatTheyTouched()). What I heard: \(theEntry.getWhatTheyHeard()). What I smelled \(theEntry.getWhatTheySmelled()). How I felt:\(theEntry.getEmotions())"
         }
     }
     
