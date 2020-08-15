@@ -16,17 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atc-Fx-ai6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atc-Fx-ai6">
                                 <rect key="frame" x="82" y="634" width="250" height="75"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="EeI-S6-h0i"/>
                                     <constraint firstAttribute="height" constant="75" id="WdS-jq-XuQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Get Started!">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Get Started!" backgroundImage="buttons (1)">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="goToJournal:" destination="WgM-pW-5T3" eventType="touchUpInside" id="4mR-dh-DvH"/>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="width" constant="358" id="OcA-sQ-DVi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are logged in as [USERNAME]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKd-Dg-Ce5">
@@ -287,7 +287,7 @@
             <objects>
                 <viewController storyboardIdentifier="JourneyVC" id="Bn4-oq-gQe" customClass="JourneyController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj9-dw-6z9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonsai journal" id="uGF-T8-Az1">
@@ -427,15 +427,6 @@
                                 <rect key="frame" x="135" y="544" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EF-DC-t15">
-                                <rect key="frame" x="162" y="704" width="96" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="donePressed:" destination="Hdc-es-loy" eventType="touchUpInside" id="OSz-0s-CcC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cT6-6j-fZt">
                                 <rect key="frame" x="157" y="436" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -451,6 +442,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EF-DC-t15">
+                                <rect key="frame" x="103" y="645" width="214" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="buttons (2)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="Hdc-es-loy" eventType="touchUpInside" id="OSz-0s-CcC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3ds-mC-uz0"/>
@@ -525,11 +526,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX4-Ve-QKX">
-                                <rect key="frame" x="164" y="700" width="87" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX4-Ve-QKX">
+                                <rect key="frame" x="130" y="683" width="157" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="Done"/>
+                                <state key="normal" image="buttons (2)"/>
                                 <connections>
                                     <action selector="goToGarden:" destination="Ge6-UD-sXn" eventType="touchUpInside" id="afg-yu-KT4"/>
                                 </connections>
@@ -584,7 +584,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="br4-8V-BtJ">
-                                <rect key="frame" x="37" y="228" width="342" height="493"/>
+                                <rect key="frame" x="37" y="228" width="342" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.52899474280000003" green="1" blue="0.85818077339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -598,11 +598,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwm-8u-lSR">
-                                <rect key="frame" x="159" y="741" width="96" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwm-8u-lSR">
+                                <rect key="frame" x="129" y="710" width="157" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="Done"/>
+                                <state key="normal" image="buttons (2)"/>
                                 <connections>
                                     <action selector="goToGarden:" destination="AhJ-ko-Fq6" eventType="touchUpInside" id="IxT-Zh-fJJ"/>
                                 </connections>
@@ -648,14 +647,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwH-tz-sxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="2117"/>
+            <point key="canvasLocation" x="2037.68115942029" y="2116.7410714285716"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="tH1-XN-zTi">
             <objects>
                 <viewController storyboardIdentifier="EIEntryVC" id="SSR-Gg-ucn" customClass="EIEntryViewController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9g-6j-x0E">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonsai journal" id="Dcs-62-e9i">
@@ -1079,17 +1078,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwV-OI-YuH">
-                                <rect key="frame" x="159" y="707" width="96" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwV-OI-YuH">
+                                <rect key="frame" x="130" y="693" width="157" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="38"/>
-                                <state key="normal" title="Done"/>
+                                <state key="normal" image="buttons (2)"/>
                                 <connections>
                                     <action selector="goToJournal:" destination="Nms-JA-Gd3" eventType="touchUpInside" id="In9-DG-Y8p"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AGI-iU-bYA">
-                                <rect key="frame" x="69" y="281" width="276" height="418"/>
+                                <rect key="frame" x="69" y="281" width="276" height="404"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.52899474280000003" green="1" blue="0.85818077339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1251,7 +1249,7 @@
             <objects>
                 <viewController storyboardIdentifier="customizeVC" id="5ck-HQ-SZ7" customClass="CustomizeController" customModule="mindfull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DZ2-Qs-kK4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonsai journal" id="VVC-gY-9jE">
@@ -1430,10 +1428,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-MR-v4Y">
-                                <rect key="frame" x="163.66666666666666" y="603" width="87" height="58"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="Done"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-MR-v4Y">
+                                <rect key="frame" x="128.66666666666666" y="603" width="156.99999999999997" height="92"/>
+                                <state key="normal" image="buttons (2)"/>
                                 <connections>
                                     <action selector="goToLandscape:" destination="5ck-HQ-SZ7" eventType="touchUpInside" id="Loc-57-CDI"/>
                                 </connections>
@@ -1746,18 +1743,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yLb-gy-pdn"/>
-        <segue reference="EaA-he-cmH"/>
-        <segue reference="IaC-LR-am3"/>
-        <segue reference="jzV-LG-ucw"/>
-        <segue reference="dN8-R4-FfC"/>
-        <segue reference="RpG-b0-ybU"/>
-        <segue reference="lgD-GR-JYS"/>
-        <segue reference="XBy-Kf-G2U"/>
+        <segue reference="pV2-9g-fM5"/>
+        <segue reference="2kV-DE-oo3"/>
+        <segue reference="aPA-VX-Z8t"/>
+        <segue reference="Bdq-Lq-qBi"/>
+        <segue reference="mx7-6Z-ZKC"/>
+        <segue reference="y7v-G5-y1x"/>
+        <segue reference="uOn-iY-ZmN"/>
         <segue reference="KEb-Nm-yiV"/>
-        <segue reference="QZL-1s-D6g"/>
+        <segue reference="IjQ-O9-ZyJ"/>
         <segue reference="cLc-3e-0Mv"/>
-        <segue reference="uFY-2f-15j"/>
+        <segue reference="ALe-HE-MDJ"/>
         <segue reference="f3Q-oZ-4xk"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1767,6 +1763,8 @@
         <image name="Line" width="300" height="50"/>
         <image name="My Goals Icon" width="84" height="61.333332061767578"/>
         <image name="bonsai journal" width="249" height="322"/>
+        <image name="buttons (1)" width="489" height="207"/>
+        <image name="buttons (2)" width="157" height="92"/>
         <image name="customizable" width="50" height="50"/>
         <image name="garden-house" width="100" height="100"/>
         <image name="icons8-garden-50" width="29" height="29"/>
